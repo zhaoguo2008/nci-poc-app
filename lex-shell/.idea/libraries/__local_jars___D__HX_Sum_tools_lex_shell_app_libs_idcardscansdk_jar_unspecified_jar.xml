@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="__local_jars__:D.\HX\Sum\tools\lex-shell\app\libs\idcardscansdk.jar:unspecified@jar">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/app/libs/idcardscansdk.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
