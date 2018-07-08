@@ -214,10 +214,11 @@ var Main = function (_React$Component) {
             OCR.callCardFront("APPNT", "OCR_FRONT");
             window.callOCRBack = function callOCRBack(flag, jsonData, bitmapStr){
                 let jsonDataObj = JSON.parse(jsonData);
+                alert(jsonData);
                let cust = that.state.cust;
                const birthday = jsonDataObj.birthday.replace(/['年','月']/g, '-');
                cust.name = jsonDataObj.name;
-               cust.gender = jsonDataObj.gender == "男" ? "M" : "F";
+               cust.gender = jsonDataObj.sex == "男" ? "M" : "F";
                cust.birthday = birthday.substring(0, birthday.length - 1);
                cust.certNo = jsonDataObj.cardNo;
                cust.address = jsonDataObj.address;
@@ -225,7 +226,7 @@ var Main = function (_React$Component) {
                    ocrImage: bitmapStr,
                    cust: cust
                });
-                localStorage.applicantCardData = bitmapStr
+                localStorage.applicantCardData = bitmapStr;
             }
 
         }
@@ -233,6 +234,7 @@ var Main = function (_React$Component) {
         key: "next",
         value: function next() {
             this.save();
+            alert(JSON.stringify(localStorage.applicantCardData));
             if (!this.state.ocrImage || !this.state.ocrImage.length > 0) {alert('请执行OCR扫描!!') }else {
                 MF.navi("apply/insurant.html?orderId=" + this.state.orderId);
             }

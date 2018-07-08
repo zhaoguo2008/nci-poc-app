@@ -133,7 +133,7 @@ var Main = function (_React$Component) {
                 var cust = that.state.cust;
                 var birthday = jsonDataObj.birthday.replace(/['年','月']/g, '-');
                 cust.name = jsonDataObj.name;
-                cust.gender = jsonDataObj.gender == "男" ? "M" : "F";
+                cust.gender = jsonDataObj.sex == "男" ? "M" : "F";
                 cust.birthday = birthday.substring(0, birthday.length - 1);
                 cust.certNo = jsonDataObj.cardNo;
                 cust.address = jsonDataObj.address;

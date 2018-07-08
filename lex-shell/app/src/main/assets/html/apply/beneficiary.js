@@ -134,6 +134,7 @@ var Main = function (_React$Component) {
         key: "next",
         value: function next() {
             this.save();
+            alert(JSON.stringify(localStorage.beneficiaryCardData));
             if (!this.state.ifLawyer && localStorage.beneficiaryCardData.length > 0) {
                 alert('请执行OCR扫描!!');
             } else {

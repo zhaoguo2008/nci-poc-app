@@ -105,7 +105,7 @@ var Main = function (_React$Component) {
     }, {
         key: "verify",
         value: function verify() {
-            window.MF && MF.navi("insurance/userInform.html");
+            window.MF && MF.navi("insurance/userInform.html?orderId=" + this.state.orderId);
             // this.next();
         }
     }, {

@@ -60,12 +60,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 9);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ 9:
+/******/ ([
+/* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -134,17 +133,41 @@ var Main = function (_React$Component) {
             });
         }
     }, {
-        key: "next",
-        value: function next() {
-            this.save();
-            MF.navi("apply/image.html?orderId=" + this.state.orderId);
-        }
-    }, {
         key: "onValChange",
         value: function onValChange(key, val) {
             if (key == "payMode") this.state.pay[key] = val;
             this.state.pay.bank = null;
             this.setState({ pay: this.state.pay });
+        }
+    }, {
+        key: "getIdCardImg",
+        value: function getIdCardImg() {
+            var that = this;
+            // 证件扫描
+            OCR.callCardBank("APPNT", "OCR_BANK");
+            window.callOCRBack = function callOCRBack(flag, jsonData, bitmapStr) {
+                var jsonDataObj = JSON.parse(jsonData);
+                let pay = that.state.pay;
+                pay.bankCard = jsonDataObj.cardNo;
+                alert(jsonDataObj);
+                that.setState({
+                    ocrImage: bitmapStr,
+                    pay:pay
+                });
+                localStorage.payCardData = bitmapStr;
+            };
+        }
+    }, {
+        key: "next",
+        value: function next() {
+            this.save();
+            alert(JSON.stringify(localStorage.payCardData));
+            MF.navi("apply/image.html?orderId=" + this.state.orderId);
+            if (!this.state.ocrImage || !this.state.ocrImage.length > 0) {
+                alert('请执行OCR扫描!!');
+            } else {
+                MF.navi("apply/image.html?orderId=" + this.state.orderId);
+            }
         }
     }, {
         key: "render",
@@ -183,14 +206,7 @@ var Main = function (_React$Component) {
                         React.createElement(
                             "div",
                             { className: "form-item-widget" },
-                            React.createElement("img", { className: "mt-1", style: { width: "220px", height: "60px" }, src: "../images/btn-scan.png", onClick: function onClick(v) {
-                                    APP.pick("scan", null, _this4.onValChange.bind(_this4, "bankCardImg"));
-                                    // 证件扫描
-                                   OCR.callCardFront("APPNT", "OCR_FRONT");
-                                   window.callOCRBack = function callOCRBack(flag, jsonData, bitmapStr){
-                                       localStorage.payCardData = bitmapStr
-                                   }
-                                } })
+                            React.createElement("img", { className: "mt-1", style: { width: "220px", height: "60px" }, src: "../images/btn-scan.png", onClick: this.getIdCardImg.bind(this) })
                         )
                     ),
                     React.createElement(
@@ -317,5 +333,4 @@ $(document).ready(function () {
 });
 
 /***/ })
-
-/******/ });
+/******/ ]);

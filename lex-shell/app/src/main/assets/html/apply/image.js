@@ -101,6 +101,7 @@ var Main = function (_React$Component) {
             localStorage.insurantsCardData && cardJson.push(localStorage.insurantsCardData);
             localStorage.beneficiaryCardData && cardJson.push(localStorage.beneficiaryCardData);
             localStorage.payCardData && cardJson.push(localStorage.payCardData);
+            alert(cardJson.length);
             this.setState({
                 cardData: cardJson
             });
@@ -121,6 +122,7 @@ var Main = function (_React$Component) {
                     "div",
                     { style: { overflow: 'hidden' } },
                     this.state.cardData && this.state.cardData.map(function (prod) {
+                        alert(prod)
                        return React.createElement("img", { src: 'data:image/png;base64,' + prod, style: { width: '50%', height: '20%', float: 'left'} });
                     })
                 ),

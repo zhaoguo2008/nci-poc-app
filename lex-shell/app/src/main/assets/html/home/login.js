@@ -47,23 +47,27 @@ class Main extends React.Component {
                     "password":this.refs.password.value
                 }),
                 success(data){
-                    if(window.MF){
+                    if (data.result == "success") {
+                        if(window.MF){
+                            localStorage.channelId = data.content.channelId
+                            localStorage.orgId = data.content.orgId
 
-                        localStorage.channelId = data.content.channelId
-                        localStorage.orgId = data.content.orgId
+                            MF.setEnv("userKey", data.content.userKey);
+                            MF.setEnv("orgId", data.content.orgId);
+                            MF.navi("home/home.html")
 
-                        MF.setEnv("userKey", data.content.userKey);
-                        MF.setEnv("orgId", data.content.orgId);
-                        MF.navi("home/home.html")
-
-                    }else{
-                        localStorage.channelId = data.content.channelId
-                        localStorage.orgId = data.content.orgId
-                        location.href = 'home.html'
+                        }else{
+                            localStorage.channelId = data.content.channelId
+                            localStorage.orgId = data.content.orgId
+                            location.href = 'home.html'
+                        }
+                    } else {
+                        that.setState({ login: "fail" })
                     }
+
                 },
                 error(err){
-                    console.log(err,'err');
+                    console.log(err, 'err')
                 }
             })
             /*ajax('/user/login.json', {
@@ -93,6 +97,7 @@ class Main extends React.Component {
                         <input type="text" ref="loginName" placeholder="请输入账号" onChange={this.loginData.bind(this,'name')} value={this.state.loginName}/>
                         <input type="password" ref="password" placeholder="请输入密码" onChange={this.loginData.bind(this,'password')} value={this.state.passWord}/>
                     </div>
+                    { this.state.login == "fail" ? <div className="ml-2 mt-1 tc-red text14">账号或密码错误</div> : null }
                     <div className="loginB" onClick={this.login.bind(this)}>
                         登 录
                     </div>

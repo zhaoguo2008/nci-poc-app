@@ -60,12 +60,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ 8:
+/******/ ([
+/* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -171,8 +170,7 @@ var Main = function (_React$Component) {
             APP.pop("apply/product_list.html", 60, function (r) {
                 if (r != null) {
                     APP.apply.addProduct(_this5.state.plan.planId, null, r, function (r) {
-                    APP.apply.save({ id: _this5.state.orderId, detail: { plan: r },productName:r.product[0].abbrName,productCode:r.product[0].code,productId:r.product[0].productId,price:r.product[0].premium }, v => {
-                    })
+                        APP.apply.save({ id: _this5.state.orderId, detail: { plan: r }, productName: r.product[0].abbrName, productCode: r.product[0].code, productId: r.product[0].productId, price: r.product[0].premium }, function (v) {});
                         _this5.setState({ plan: r });
                     });
                 }
@@ -198,16 +196,6 @@ var Main = function (_React$Component) {
             APP.apply.deleteProduct(this.state.plan.planId, i, null, function (r) {
                 _this7.setState({ plan: r });
             });
-        }
-    }, {
-        key: "getIdCardImg",
-        value: function getIdCardImg() {
-        var that = this;
-           // 证件扫描
-           OCR.callCardFront("APPNT", "OCR_FRONT");
-           window.callOCRBack = function callOCRBack(flag, jsonData, bitmapStr){
-               localStorage.planCardData = bitmapStr
-           }
         }
     }, {
         key: "next",
@@ -421,23 +409,18 @@ var Main = function (_React$Component) {
                 React.createElement("div", { style: { height: "120px" } }),
                 React.createElement(
                     "div",
-                    { className: "bottom text18 tc-primary", style: { display: "flex", justifyContent: "spaceBetween", alignItems: "center" } },
+                    { className: "bottom text18 tc-primary" },
                     React.createElement(
                         "div",
-                        { className: "form-item-widget", style: { flex: 1 } },
-                        React.createElement("img", { className: "mt-1", style: { width: "220px", height: "60px" }, src: "../images/btn-scan.png", onClick: this.getIdCardImg.bind(this) })
-                    ),
-                    React.createElement(
-                        "div",
-                        { className: "ml-3 mr-0", onClick: this.showBenefit.bind(this), style: { flex: 1 } },
+                        { className: "ml-3 mr-0", style: { width: "300px" }, onClick: this.showBenefit.bind(this) },
                         "\u67E5\u770B\u5229\u76CA\u8D23\u4EFB"
                     ),
                     React.createElement(
                         "div",
-                        { className: "divx", onClick: this.next.bind(this), style: { flex: 1 } },
+                        { className: "divx", onClick: this.next.bind(this) },
                         React.createElement(
                             "div",
-                            { className: "ml-0 mr-0", style: { textAlign: "right" } },
+                            { className: "ml-0 mr-0", style: { width: "390px", textAlign: "right" } },
                             "\u5065\u5EB7\u544A\u77E5"
                         ),
                         React.createElement(
@@ -459,5 +442,4 @@ $(document).ready(function () {
 });
 
 /***/ })
-
-/******/ });
+/******/ ]);
