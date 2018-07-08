@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/xindong/Desktop/HPoc/tools/lex-shell/app/libs/fastjson-1.1.34.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="83c6df5efce5ffdf5e0360fac3838f61f4c35695">
+        <dex dex="/Users/xindong/Desktop/HPoc/tools/lex-shell/app/build/intermediates/pre-dexed/debug/fastjson-1.1.34_98f25ac1d2660c3e2dbb63b59f74e4f1fc63c0a4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/xindong/Desktop/HPoc/tools/lex-shell/app/libs/idcardscansdk.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0583677172aac954f20c90f3934947f1d884259a">
+        <dex dex="/Users/xindong/Desktop/HPoc/tools/lex-shell/app/build/intermediates/pre-dexed/debug/idcardscansdk_544e4273ebeb8a7324de315b8fb9c8592259158a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/xindong/Desktop/HPoc/tools/lex-shell/app/libs/ccrsdk_sdk.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5f0398caa5aefe181741c50d2a5e7b8627e16393">
+        <dex dex="/Users/xindong/Desktop/HPoc/tools/lex-shell/app/build/intermediates/pre-dexed/debug/ccrsdk_sdk_2ad1ef9a4baf34d01233e63c64ff0ef6cc0074d4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/xindong/Desktop/HPoc/tools/lex-shell/app/libs/gson-2.2.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="973e832af433b44c3ed11c426f2f390b29f3f3f8">
+        <dex dex="/Users/xindong/Desktop/HPoc/tools/lex-shell/app/build/intermediates/pre-dexed/debug/gson-2.2.4_c3726ae4fb3162305ccd407d4b8f7f8bf0f9d69b.jar" />
+    </item>
+
+</items>
