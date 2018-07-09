@@ -6,15 +6,13 @@ class Main extends React.Component {
         }
     }
     componentDidMount() {
-        APP.apply.queryProduct(null, localStorage.channelId,localStorage.orgId,"nci", null, r => {
+        APP.apply.queryProduct(null, "nci", null, r => {
           this.setState({ list: r })
         })
     }
-    addToPlan(code, name, id) {
-        localStorage.mainProductCode = code;
-        localStorage.mainProductName = name;
-        localStorage.mainProductId = id;
-        APP.back(code);
+    addToPlan(productId) {
+        localStorage.mainProductId = productId
+        APP.back(productId)
 
     }
     close() {
@@ -25,7 +23,7 @@ class Main extends React.Component {
             <div>
                 <div className="lh-80 h-80 center">选择产品</div>
                 { this.state.list.map((v, i) =>
-                    <div className="list-item" onClick={this.addToPlan.bind(this, v.code,v.name,v.id)} key={i}>
+                    <div className="list-item" onClick={this.addToPlan.bind(this, v.code)} key={i}>
                         <div className="list-item-icon">
                             <img src={v.icon}></img>
                         </div>

@@ -60,11 +60,12 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
-/* 0 */
+/* 0 */,
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -121,6 +122,28 @@ var Main = function (_React$Component) {
             this.setState({ cust: this.state.cust });
         }
     }, {
+        key: "getIdCardImg",
+        value: function getIdCardImg() {
+            // 证件扫描
+            var that = this;
+            // 证件扫描
+            OCR.callCardFront("BENEFIT", "OCR_FRONT");
+            window.callOCRBack = function callOCRBack(flag, jsonData, bitmapStr) {
+                var jsonDataObj = JSON.parse(jsonData);
+                var cust = that.state.cust;
+                var birthday = jsonDataObj.birthday.replace(/['年','月']/g, '-');
+                cust.name = jsonDataObj.name;
+                cust.gender = jsonDataObj.sex == "男" ? "M" : "F";
+                cust.birthday = birthday.substring(0, birthday.length - 1);
+                cust.certNo = jsonDataObj.cardNo;
+                cust.address = jsonDataObj.address;
+                that.setState({
+                    cust: cust
+                });
+                localStorage.beneficiaryCardData = bitmapStr;
+            };
+        }
+    }, {
         key: "render",
         value: function render() {
             var _this3 = this;
@@ -133,6 +156,20 @@ var Main = function (_React$Component) {
                     "div",
                     { className: "bg-white text18", style: { height: "80px", lineHeight: "80px", textAlign: "center" } },
                     "\u53D7\u76CA\u4EBA\u4FE1\u606F"
+                ),
+                React.createElement(
+                    "div",
+                    { className: "form-item-widget" },
+                    React.createElement(
+                        "div",
+                        { className: "form-item-label" },
+                        "\u8BC1\u4EF6\u626B\u63CF"
+                    ),
+                    React.createElement(
+                        "div",
+                        { className: "form-item-widget" },
+                        React.createElement("img", { className: "mt-1", style: { width: "220px", height: "60px" }, src: "../images/btn-scan.png", onClick: this.getIdCardImg.bind(this) })
+                    )
                 ),
                 React.createElement(
                     "div",
@@ -220,7 +257,7 @@ var Main = function (_React$Component) {
                         React.createElement(
                             "div",
                             { className: (cust.relation == null ? "tc-gray " : "") + "text16 ml-1 mr-auto" },
-                            cust.sequence == null ? "请选择受益人次序" : "第" + (cust.sequence + 1) + "顺位"
+                            cust.sequence == null ? "请选择与被保险人关系" : "第" + (cust.sequence + 1) + "顺位"
                         ),
                         React.createElement("img", { className: "mt-2 mr-0", style: { width: "27px", height: "39px" }, src: "../images/right.png" })
                     )

@@ -8,22 +8,7 @@ class Insurance extends React.Component {
                 {tabName:"被保险人3",id:3}
             ],
             currentIndex:1,
-            orderId: common.param("orderId")
         }
-    }
-    componentWillMount () {
-        let tabs = [];
-        APP.apply.view(this.state.orderId, r => {
-            console.log(JSON.stringify(r.detail));
-            r.detail.insurants.map((item, index) => {
-                tabs.push({tabName:`被保险人${ index + 1}`,id:index + 1});
-                return tabs;
-            });
-            alert(tabs.length);
-            /*this.setState({
-                tabs: tabs
-            })*/
-        })
     }
     componentDidMount() {
         window.MF && MF.setTitle("录入被保人告知");
@@ -52,8 +37,7 @@ class Insurance extends React.Component {
             }
             arrMsg.push(mySel)
         })
-        console.log(arrMsg);
-        window.MF && MF.navi("apply/beneficiary.html?orderId=" + this.state.orderId);
+        console.log(arrMsg)
     }   
     render(){
         var _this=this;

@@ -60,12 +60,12 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 12);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */,
-/* 1 */
+/******/ ({
+
+/***/ 12:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -98,16 +98,16 @@ var Main = function (_React$Component) {
         value: function componentDidMount() {
             var _this2 = this;
 
-            APP.apply.queryProduct(null, localStorage.channelId, localStorage.orgId, "nci", null, function (r) {
+            APP.apply.queryProduct(null,localStorage.channelId,localStorage.orgId,"nci", null, function (r) {
                 _this2.setState({ list: r });
             });
         }
     }, {
         key: "addToPlan",
-        value: function addToPlan(code, name, id) {
-            localStorage.mainProductCode = code;
-            localStorage.mainProductName = name;
-            localStorage.mainProductId = id;
+        value: function addToPlan(v,code,name,id) {
+        localStorage.mainProductCode = code
+        localStorage.mainProductName = name
+        localStorage.mainProductId = id
             APP.back(code);
         }
     }, {
@@ -131,7 +131,7 @@ var Main = function (_React$Component) {
                 this.state.list.map(function (v, i) {
                     return React.createElement(
                         "div",
-                        { className: "list-item", onClick: _this3.addToPlan.bind(_this3, v.code,v.name,v.id), key: i },
+                        { className: "list-item", onClick: _this3.addToPlan.bind(_this3,v, v.code,v.name,v.id), key: i },
                         React.createElement(
                             "div",
                             { className: "list-item-icon" },
@@ -165,4 +165,5 @@ $(document).ready(function () {
 });
 
 /***/ })
-/******/ ]);
+
+/******/ });

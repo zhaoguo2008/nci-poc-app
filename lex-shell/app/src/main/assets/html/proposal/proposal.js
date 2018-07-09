@@ -296,7 +296,7 @@ var Main = function (_React$Component) {
                         "div",
                         { className: "card-content", style: { marginTop: "10px" } },
                         plan.product.map(function (v, i) {
-                            return [v.parent == null ? React.createElement(
+                            return v.parent == null ? React.createElement(
                                 "div",
                                 { className: "product product-main bg-white text16", style: { marginTop: "10px" }, onClick: _this9.editProduct.bind(_this9, i) },
                                 React.createElement(
@@ -319,10 +319,10 @@ var Main = function (_React$Component) {
                                 React.createElement(
                                     "div",
                                     { style: { height: "60px", display: "flex" } },
-                                    React.createElement("div", { className: "center", style: { width: "80px" } }),
+                                    React.createElement("div", { className: "left" }),
                                     React.createElement(
                                         "div",
-                                        { className: "eclipse", style: { width: SIZE - 250 + "px" } },
+                                        { className: "middle eclipse" },
                                         React.createElement(
                                             "text",
                                             null,
@@ -335,7 +335,7 @@ var Main = function (_React$Component) {
                                     ),
                                     React.createElement(
                                         "div",
-                                        { className: "right", style: { width: "150px" } },
+                                        { className: "right" },
                                         React.createElement(
                                             "text",
                                             { style: { color: "#000" } },
@@ -350,7 +350,7 @@ var Main = function (_React$Component) {
                                 { className: "product product-rider bg-white text16" },
                                 React.createElement(
                                     "div",
-                                    { className: "center", style: { width: "80px" } },
+                                    { className: "left" },
                                     React.createElement(
                                         "text",
                                         { style: { color: "#0a0" } },
@@ -359,7 +359,7 @@ var Main = function (_React$Component) {
                                 ),
                                 React.createElement(
                                     "div",
-                                    { className: "eclipse", style: { width: SIZE - 250 + "px" } },
+                                    { className: "middle eclipse" },
                                     React.createElement(
                                         "text",
                                         { style: { color: "#000", marginRight: "10px" } },
@@ -377,7 +377,7 @@ var Main = function (_React$Component) {
                                 ),
                                 React.createElement(
                                     "div",
-                                    { className: "right", style: { width: "150px" } },
+                                    { className: "right" },
                                     React.createElement(
                                         "text",
                                         { style: { color: "#000" } },
@@ -385,19 +385,7 @@ var Main = function (_React$Component) {
                                         "\u5143"
                                     )
                                 )
-                            ), v.rule == null ? null : React.createElement(
-                                "div",
-                                { className: "tc-red text12 ml-1 mr-1 pl-1 pr-1", style: { lineHeight: "32px", border: "#f00 solid 1px", backgroundColor: "#ffaaaa" } },
-                                !v.rule ? null : v.rule.map(function (w, j) {
-                                    return React.createElement(
-                                        "div",
-                                        null,
-                                        j + 1,
-                                        "\u3001",
-                                        w
-                                    );
-                                })
-                            )];
+                            );
                         }),
                         plan.product && plan.product.length > 0 ? React.createElement(
                             "div",
@@ -423,13 +411,22 @@ var Main = function (_React$Component) {
                     { className: "bottom text18 tc-primary" },
                     React.createElement(
                         "div",
-                        { className: "ml-3 mr-auto", onClick: this.showBenefit.bind(this) },
+                        { className: "ml-3 mr-0", style: { width: "300px" }, onClick: this.showBenefit.bind(this) },
                         "\u67E5\u770B\u5229\u76CA\u8D23\u4EFB"
                     ),
                     React.createElement(
                         "div",
-                        { className: "mr-3", onClick: this.next.bind(this) },
-                        "\u9884\u89C8\u5EFA\u8BAE\u4E66"
+                        { className: "divx", onClick: this.next.bind(this) },
+                        React.createElement(
+                            "div",
+                            { className: "ml-0 mr-0", style: { width: "390px", textAlign: "right" } },
+                            "\u9884\u89C8\u5EFA\u8BAE\u4E66"
+                        ),
+                        React.createElement(
+                            "div",
+                            { className: "ml-1 mr-2", style: { width: "30px" } },
+                            React.createElement("img", { className: "mt-3", style: { width: "27px", height: "39px" }, src: "../images/blueright.png" })
+                        )
                     )
                 )
             );

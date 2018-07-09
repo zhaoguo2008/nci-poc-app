@@ -30,12 +30,12 @@
 }
 
 .card-content-label {
-  width: 36%;
+  width: 350px;
   margin-left: 30px;
 }
 
 .card-content-widget {
-  width: 56%;
+  width: 400px;
   display: flex;
   flex-direction: row-reverse;
   margin-right: 30px;

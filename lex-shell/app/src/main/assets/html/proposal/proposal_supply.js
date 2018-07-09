@@ -237,11 +237,20 @@ var Main = function (_React$Component) {
                 React.createElement(
                     "div",
                     { className: "bottom text18 tc-primary" },
-                    React.createElement("div", { className: "ml-3 mr-auto" }),
+                    React.createElement("div", { className: "ml-3 mr-0", style: { width: "300px" } }),
                     React.createElement(
                         "div",
-                        { className: "mr-3", onClick: this.next.bind(this) },
-                        "\u9884\u89C8\u5EFA\u8BAE\u4E66"
+                        { className: "divx", onClick: this.next.bind(this) },
+                        React.createElement(
+                            "div",
+                            { className: "ml-0 mr-0", style: { width: "390px", textAlign: "right" } },
+                            "\u9884\u89C8\u5EFA\u8BAE\u4E66"
+                        ),
+                        React.createElement(
+                            "div",
+                            { className: "ml-1 mr-2", style: { width: "30px" } },
+                            React.createElement("img", { className: "mt-3", style: { width: "27px", height: "39px" }, src: "../images/blueright.png" })
+                        )
                     )
                 )
             );

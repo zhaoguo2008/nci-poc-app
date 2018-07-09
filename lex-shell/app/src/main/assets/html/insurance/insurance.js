@@ -59,7 +59,7 @@ class Insurance extends React.Component {
                                     <section>
                                         <dl>
                                             <dt>
-                                                <div><img src="http://114.112.96.30:10003/nci/temp/apply_adver/2018/07/04/04/153069215408904490.jpg" alt=""/></div>
+                                                {prod.detail.applicant.img && <div><img src="http://114.112.96.30:10003/nci/temp/apply_adver/2018/07/04/04/153069252022603224.jpg" alt=""/></div>}
 
                                             </dt>
                                             <dd>

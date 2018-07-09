@@ -119,6 +119,7 @@ var Main = function (_React$Component) {
                 var pay = r.extra && r.extra.pay ? r.extra.pay : {};
                 _this2.setState({ applicant: r.detail.applicant, pay: pay });
             });
+
         }
     }, {
         key: "save",
@@ -127,7 +128,7 @@ var Main = function (_React$Component) {
 
             this.state.pay.applyNo = this.refs.applyNo.value;
             this.state.pay.bankCard = this.refs.bankCard.value;
-            APP.apply.save({ id: this.state.orderId, extra: { pay: this.state.pay } }, function (r) {
+            APP.apply.save({ id: this.state.orderId, extra: { pay: this.state.pay },applyNo:this.refs.applyNo.value }, function (r) {
                 _this3.setState({ pay: r.extra.pay });
             });
         }
@@ -146,11 +147,12 @@ var Main = function (_React$Component) {
             OCR.callCardBank("APPNT", "OCR_BANK");
             window.callOCRBack = function callOCRBack(flag, jsonData, bitmapStr) {
                 var jsonDataObj = JSON.parse(jsonData);
-                var pay = that.state.pay;
+                let pay = that.state.pay;
                 pay.bankCard = jsonDataObj.cardNo;
+                alert(jsonDataObj);
                 that.setState({
                     ocrImage: bitmapStr,
-                    pay: pay
+                    pay:pay
                 });
                 localStorage.payCardData = bitmapStr;
             };
@@ -159,6 +161,8 @@ var Main = function (_React$Component) {
         key: "next",
         value: function next() {
             this.save();
+            alert(JSON.stringify(localStorage.payCardData));
+            MF.navi("apply/image.html?orderId=" + this.state.orderId);
             if (!this.state.ocrImage || !this.state.ocrImage.length > 0) {
                 alert('请执行OCR扫描!!');
             } else {
@@ -301,11 +305,20 @@ var Main = function (_React$Component) {
                 React.createElement(
                     "div",
                     { className: "bottom text18 tc-primary" },
-                    React.createElement("div", { className: "ml-3 mr-auto" }),
+                    React.createElement("div", { className: "ml-3 mr-0", style: { width: "300px" } }),
                     React.createElement(
                         "div",
-                        { className: "mr-3", onClick: this.next.bind(this) },
-                        "\u786E\u8BA4\u652F\u4ED8"
+                        { className: "divx", onClick: this.next.bind(this) },
+                        React.createElement(
+                            "div",
+                            { className: "ml-0 mr-0", style: { width: "390px", textAlign: "right" } },
+                            "\u786E\u8BA4\u652F\u4ED8"
+                        ),
+                        React.createElement(
+                            "div",
+                            { className: "ml-1 mr-2", style: { width: "30px" } },
+                            React.createElement("img", { className: "mt-3", style: { width: "27px", height: "39px" }, src: "../images/blueright.png" })
+                        )
                     )
                 )
             );
