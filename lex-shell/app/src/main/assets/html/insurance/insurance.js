@@ -12,7 +12,8 @@ class Insurance extends React.Component {
         this.fetchClientList();
     }
     fetchClientList(){
-        APP.openApply('/order/list.json', {type: '2', from: 0, number: 10},(res) => {
+        APP.openApply('/order/list.json', {type: '2', from: 0, number: 20},(res) => {
+            console.log(JSON.stringify(res))
             this.setState({
                 insuranceList: res.list
             })
@@ -41,7 +42,7 @@ class Insurance extends React.Component {
                 <ul>
                     {
                         this.state.insuranceList.map((prod)=>{
-                           if (!prod.productCode) { return null } else {
+                           if (!prod.productName) { return null } else {
                                return(
                                    <li className="insuranceBox">
                                        <div className="insuranceTile">

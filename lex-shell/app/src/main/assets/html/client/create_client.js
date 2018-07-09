@@ -282,7 +282,6 @@ var CreateClient = function (_React$Component) {
         value: function finish() {
             var _JSON$stringify;
 
-            this.save();
             var cust = this.state.cust;
             var postData = {
                 "id": cust.id || '',
@@ -307,9 +306,11 @@ var CreateClient = function (_React$Component) {
                     "channelId": cust.channelId || 1
                 }, _defineProperty(_JSON$stringify, "city", cust.city || ""), _defineProperty(_JSON$stringify, "cityText", cust.cityText), _defineProperty(_JSON$stringify, "company", cust.company), _defineProperty(_JSON$stringify, "companyAddress", cust.companyAddress || ""), _defineProperty(_JSON$stringify, "education", cust.education || ""), _defineProperty(_JSON$stringify, "gender", cust.gender), _defineProperty(_JSON$stringify, "marriage", cust.marriage), _defineProperty(_JSON$stringify, "mobile", cust.marriage), _defineProperty(_JSON$stringify, "phone", cust.phone), _defineProperty(_JSON$stringify, "name", cust.name), _defineProperty(_JSON$stringify, "nation", cust.nation), _defineProperty(_JSON$stringify, "occupation1", cust.occupation1), _defineProperty(_JSON$stringify, "occupation", cust.occupation), _defineProperty(_JSON$stringify, "owner", 1), _defineProperty(_JSON$stringify, "partTimeJob", cust.partTimeJob || ""), _defineProperty(_JSON$stringify, "relation", cust.relation || ""), _defineProperty(_JSON$stringify, "workDetail", cust.workDetail || ""), _defineProperty(_JSON$stringify, "zipcode", cust.zipcode), _JSON$stringify))
             };
-            APP.list('/customer/save.json', postData, function (r) {
-                window.MF && MF.navi("client/client_list.html");
-            });
+            if (this.verify(cust)) {
+                APP.list('/customer/save.json', postData, function (r) {
+                    window.MF && MF.navi("client/client_list.html");
+                });
+            }
         }
     }, {
         key: "newInsurant",

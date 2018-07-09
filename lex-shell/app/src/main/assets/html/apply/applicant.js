@@ -95,7 +95,8 @@ var Main = function (_React$Component) {
             relationDict: { "00": "本人", "01": "夫妻" },
             verify: {},
             mode: 0,
-            cust: null
+            cust: null,
+            goNext: false
         };
         return _this;
     }
@@ -144,6 +145,24 @@ var Main = function (_React$Component) {
                     if (c.name.length > 60) v.name = "姓名太长";else if (c.name.indexOf(" ") > 0) v.name = "姓名中不能有空格";
                 }
 
+                if (!c.gender) {
+                    v.gender = "该项必填";
+                }
+
+                if (!c.nation) {
+                    v.nation = "该项必填";
+                }
+
+                if (!c.marriage) {
+                    v.marriage = "该项必填";
+                }
+                if (!c.certType) {
+                    v.certType = "该项必填";
+                }
+
+                if (!c.certValidDate) {
+                    v.certValidDate = "该项必填";
+                }
                 if (!c.birthday) {
                     v.birthday = "该项必填";
                 } else {
@@ -154,6 +173,16 @@ var Main = function (_React$Component) {
                     v.certNo = "该项必填";
                 } else {
                     if (c.certType == 1 && c.certNo.length != 18) v.certNo = "身份证号需要为18位";
+                }
+            }
+
+            if (this.state.mode == 2) {
+                if (!c.income) {
+                    v.income = "该项必填";
+                } else {
+                    if (!/^[0-9]$/.test(c.income)) {
+                        v.zipcode = "年收入需要为数字";
+                    }
                 }
             }
 
@@ -178,12 +207,16 @@ var Main = function (_React$Component) {
             if (this.state.mode == 1) {
                 c.name = this.refs.name.value;
                 c.certNo = this.refs.certNo.value;
-                c.mode1 = true;
+                if (this.verify(c)) {
+                    c.mode1 = true;
+                }
             } else if (this.state.mode == 2) {
                 c.company = this.refs.company.value;
                 c.workJob = this.refs.workJob.value;
                 c.income = this.refs.income.value;
-                c.mode2 = true;
+                if (this.verify(c)) {
+                    c.mode2 = true;
+                }
             } else if (this.state.mode == 3) {
                 c.address = this.refs.address.value;
                 c.address1 = this.refs.address1.value;
@@ -194,7 +227,9 @@ var Main = function (_React$Component) {
                 c.wechat = this.refs.wechat.value;
                 c.zipcode = this.refs.zipcode.value;
                 c.email = this.refs.email.value;
-                c.mode3 = true;
+                if (this.verify(c)) {
+                    c.mode3 = true;
+                }
             } else if (this.state.mode == 4) {
                 c.mode4 = true;
             }
@@ -232,7 +267,27 @@ var Main = function (_React$Component) {
     }, {
         key: "next",
         value: function next() {
+            var c = this.state.cust;
             this.save();
+            if (!c.mode1) {
+                this.setState({
+                    mode: 1
+                });
+                return;
+            }
+            if (!c.mode2) {
+                this.setState({
+                    mode: 2
+                });
+                return;
+            }
+            if (!c.mode3) {
+                this.setState({
+                    mode: 3
+                });
+                return;
+            }
+            if (!c.mode1 && !c.mode2 && !c.mode3) return;
             if (!this.state.ocrImage || !this.state.ocrImage.length > 0) {
                 alert('请执行OCR扫描!!');
             } else {
@@ -289,6 +344,20 @@ var Main = function (_React$Component) {
                         React.createElement(
                             "div",
                             { className: "form-item-label" },
+                            "\u8BC1\u4EF6\u5F71\u50CF"
+                        ),
+                        React.createElement(
+                            "div",
+                            { className: "form-item-widget" },
+                            React.createElement("img", { className: "mt-2", style: { width: "220px", height: "60px" }, src: "../images/btn-scan.png", onClick: this.getIdCardImg.bind(this) })
+                        )
+                    ),
+                    React.createElement(
+                        "div",
+                        { className: "form-item text16" },
+                        React.createElement(
+                            "div",
+                            { className: "form-item-label" },
                             "\u6295\u4FDD\u4EBA\u59D3\u540D"
                         ),
                         React.createElement(
@@ -323,6 +392,11 @@ var Main = function (_React$Component) {
                             React.createElement("img", { className: "mt-2 mr-0", style: { width: "27px", height: "39px" }, src: "../images/right.png" })
                         )
                     ),
+                    this.state.verify.gender ? React.createElement(
+                        "div",
+                        { className: "form-alert" },
+                        this.state.verify.gender
+                    ) : null,
                     React.createElement(
                         "div",
                         { className: "form-item text16" },
@@ -344,6 +418,11 @@ var Main = function (_React$Component) {
                             React.createElement("img", { className: "mt-2 mr-0", style: { width: "27px", height: "39px" }, src: "../images/right.png" })
                         )
                     ),
+                    this.state.verify.nation ? React.createElement(
+                        "div",
+                        { className: "form-alert" },
+                        this.state.verify.nation
+                    ) : null,
                     React.createElement(
                         "div",
                         { className: "form-item text16" },
@@ -391,20 +470,11 @@ var Main = function (_React$Component) {
                             React.createElement("img", { className: "mt-2 mr-0", style: { width: "27px", height: "39px" }, src: "../images/right.png" })
                         )
                     ),
-                    React.createElement(
+                    this.state.verify.marriage ? React.createElement(
                         "div",
-                        { className: "form-item text16" },
-                        React.createElement(
-                            "div",
-                            { className: "form-item-label" },
-                            "\u8BC1\u4EF6\u5F71\u50CF"
-                        ),
-                        React.createElement(
-                            "div",
-                            { className: "form-item-widget" },
-                            React.createElement("img", { className: "mt-2", style: { width: "220px", height: "60px" }, src: "../images/btn-scan.png", onClick: this.getIdCardImg.bind(this) })
-                        )
-                    ),
+                        { className: "form-alert" },
+                        this.state.verify.marriage
+                    ) : null,
                     React.createElement(
                         "div",
                         { className: "form-item text16" },
@@ -426,6 +496,11 @@ var Main = function (_React$Component) {
                             React.createElement("img", { className: "mt-2 mr-0", style: { width: "27px", height: "39px" }, src: "../images/right.png" })
                         )
                     ),
+                    this.state.verify.certType ? React.createElement(
+                        "div",
+                        { className: "form-alert" },
+                        this.state.verify.certType
+                    ) : null,
                     React.createElement(
                         "div",
                         { className: "form-item text16" },
@@ -466,6 +541,11 @@ var Main = function (_React$Component) {
                             React.createElement("img", { className: "mt-2 mr-0", style: { width: "27px", height: "39px" }, src: "../images/right.png" })
                         )
                     ),
+                    this.state.verify.certValidDate ? React.createElement(
+                        "div",
+                        { className: "form-alert" },
+                        this.state.verify.certValidDate
+                    ) : null,
                     React.createElement(
                         "div",
                         { className: "form-item text16" },
@@ -610,6 +690,11 @@ var Main = function (_React$Component) {
                             React.createElement("input", { className: "mt-1", ref: "income", defaultValue: cust.income, placeholder: "\u8BF7\u8F93\u5165\u5E74\u6536\u5165" })
                         )
                     ),
+                    this.state.verify.income ? React.createElement(
+                        "div",
+                        { className: "form-alert" },
+                        this.state.verify.income
+                    ) : null,
                     React.createElement(
                         "div",
                         { className: "form-item text16" },

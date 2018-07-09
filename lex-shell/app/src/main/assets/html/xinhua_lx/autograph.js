@@ -240,6 +240,11 @@ var Autograph = function (_React$Component) {
             return null;
         }
     }, {
+        key: 'submit',
+        value: function submit() {
+            this.next();
+        }
+    }, {
         key: 'next',
         value: function next() {
             if (window.MF) {
@@ -1565,6 +1570,16 @@ var Autograph = function (_React$Component) {
                             React.createElement('input', { id: 'btnClear', type: 'button', className: 'button orange', value: '\u6E05 \u5C4F', onClick: clear_canvas }),
                             React.createElement('input', { id: 'btnCancel', type: 'button', className: 'button orange', value: '\u53D6 \u6D88', onClick: cancelSign })
                         )
+                    )
+                ),
+                React.createElement(
+                    'div',
+                    { className: 'bottom text18 tc-primary' },
+                    React.createElement('div', { className: 'ml-3 mr-auto' }),
+                    React.createElement(
+                        'div',
+                        { className: 'mr-3', onClick: this.submit.bind(this) },
+                        '\u63D0\u4EA4'
                     )
                 )
             );

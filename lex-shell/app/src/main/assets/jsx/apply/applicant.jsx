@@ -10,7 +10,8 @@ class Main extends React.Component {
             relationDict: {"00":"本人", "01":"夫妻"},
             verify: {},
             mode: 0,
-            cust: null
+            cust: null,
+            goNext: false
         }
     }
     componentDidMount() {
@@ -54,6 +55,24 @@ class Main extends React.Component {
                     v.name = "姓名中不能有空格"
             }
 
+            if (!c.gender) {
+                v.gender = "该项必填"
+            }
+
+            if (!c.nation) {
+                v.nation = "该项必填"
+            }
+
+            if (!c.marriage) {
+                v.marriage = "该项必填"
+            }
+            if (!c.certType) {
+                v.certType = "该项必填"
+            }
+
+            if (!c.certValidDate) {
+                v.certValidDate = "该项必填"
+            }
             if (!c.birthday) {
                 v.birthday = "该项必填"
             } else {
@@ -69,6 +88,16 @@ class Main extends React.Component {
             }
         }
 
+        if (this.state.mode == 2) {
+            if (!c.income) {
+                v.income = "该项必填"
+            } else {
+                if (!/^[0-9]$/.test(c.income)) {
+                    v.zipcode = "年收入需要为数字"
+                }
+            }
+        }
+
         if (this.state.mode == 3) {
             if (!c.zipcode) {
                 v.zipcode = "该项必填"
@@ -78,20 +107,28 @@ class Main extends React.Component {
             }
         }
 
-         return Object.keys(v).length == 0
+        this.setState({ verify: v });
+        return Object.keys(v).length == 0
     }
+
     save() {
         let c = this.state.cust
 
         if (this.state.mode == 1) {
-            c.name = this.refs.name.value
-            c.certNo = this.refs.certNo.value
-            c.mode1 = true
+            c.name = this.refs.name.value;
+            c.certNo = this.refs.certNo.value;
+            if (this.verify(c)) {
+                c.mode1 = true
+            }
+
         } else if (this.state.mode == 2) {
             c.company = this.refs.company.value
             c.workJob = this.refs.workJob.value
             c.income = this.refs.income.value
-            c.mode2 = true
+            if (this.verify(c)) {
+                c.mode2 = true
+            }
+
         } else if (this.state.mode == 3) {
             c.address = this.refs.address.value
             c.address1 = this.refs.address1.value
@@ -102,7 +139,10 @@ class Main extends React.Component {
             c.wechat = this.refs.wechat.value
             c.zipcode = this.refs.zipcode.value
             c.email = this.refs.email.value
-            c.mode3 = true
+            if (this.verify(c)) {
+                c.mode3 = true
+            }
+
         } else if (this.state.mode == 4) {
             c.mode4 = true
         }
@@ -135,10 +175,31 @@ class Main extends React.Component {
         }
     }
     next() {
+        let c = this.state.cust;
         this.save();
-        if (!this.state.ocrImage || !this.state.ocrImage.length > 0) {alert('请执行OCR扫描!!') }else {
-            MF.navi("apply/insurant.html?orderId=" + this.state.orderId);
+        if (!c.mode1) {
+            this.setState({
+                mode: 1
+            })
+            return;
         }
+        if (!c.mode2) {
+            this.setState({
+                mode: 2
+            })
+            return;
+        }
+        if (!c.mode3) {
+            this.setState({
+                mode: 3
+            })
+            return;
+        }
+        if (!c.mode1 && !c.mode2 && !c.mode3) return;
+            if (!this.state.ocrImage || !this.state.ocrImage.length > 0) {alert('请执行OCR扫描!!') }else {
+                MF.navi("apply/insurant.html?orderId=" + this.state.orderId);
+            }
+
     }
     onValChange(key, val) {
         this.state.cust[key] = val
@@ -165,6 +226,12 @@ class Main extends React.Component {
                 </div>
                 { this.state.mode != 1 ? null : <div className="div">
                     <div className="form-item text16">
+                        <div className="form-item-label">证件影像</div>
+                        <div className="form-item-widget">
+                            <img className="mt-2" style={{width:"220px", height:"60px"}} src="../images/btn-scan.png" onClick={this.getIdCardImg.bind(this)}/>
+                        </div>
+                    </div>
+                    <div className="form-item text16">
                         <div className="form-item-label">投保人姓名</div>
                         <div className="form-item-widget">
                             <input className="mt-1" ref="name" defaultValue={cust.name} placeholder="请输入投保人姓名"/>
@@ -178,6 +245,8 @@ class Main extends React.Component {
                             <img className="mt-2 mr-0" style={{width:"27px", height:"39px"}} src="../images/right.png"/>
                         </div>
                     </div>
+                    { this.state.verify.gender ? <div className="form-alert">{this.state.verify.gender}</div> : null }
+
                     <div className="form-item text16">
                         <div className="form-item-label">国籍</div>
                         <div className="form-item-widget" onClick={v => {APP.pick("select", this.state.nationDict, this.onValChange.bind(this, "nation"))}}>
@@ -185,6 +254,8 @@ class Main extends React.Component {
                             <img className="mt-2 mr-0" style={{width:"27px", height:"39px"}} src="../images/right.png"/>
                         </div>
                     </div>
+                    { this.state.verify.nation ? <div className="form-alert">{this.state.verify.nation}</div> : null }
+
                     <div className="form-item text16">
                         <div className="form-item-label">出生日期</div>
                         <div className="form-item-widget" onClick={v => {APP.pick("date", { begin: "1900-01-01", end: new Date() }, this.onValChange.bind(this, "birthday"))}}>
@@ -200,12 +271,7 @@ class Main extends React.Component {
                             <img className="mt-2 mr-0" style={{width:"27px", height:"39px"}} src="../images/right.png"/>
                         </div>
                     </div>
-                    <div className="form-item text16">
-                        <div className="form-item-label">证件影像</div>
-                        <div className="form-item-widget">
-                            <img className="mt-2" style={{width:"220px", height:"60px"}} src="../images/btn-scan.png" onClick={this.getIdCardImg.bind(this)}/>
-                        </div>
-                    </div>
+                    { this.state.verify.marriage ? <div className="form-alert">{this.state.verify.marriage}</div> : null }
                     <div className="form-item text16">
                         <div className="form-item-label">证件类型</div>
                         <div className="form-item-widget" onClick={v => {APP.pick("select", this.state.certTypeDict, this.onValChange.bind(this, "certType"))}}>
@@ -213,6 +279,7 @@ class Main extends React.Component {
                             <img className="mt-2 mr-0" style={{width:"27px", height:"39px"}} src="../images/right.png"/>
                         </div>
                     </div>
+                    { this.state.verify.certType ? <div className="form-alert">{this.state.verify.certType}</div> : null }
                     <div className="form-item text16">
                         <div className="form-item-label">证件号码</div>
                         <div className="form-item-widget">
@@ -227,6 +294,8 @@ class Main extends React.Component {
                             <img className="mt-2 mr-0" style={{width:"27px", height:"39px"}} src="../images/right.png"/>
                         </div>
                     </div>
+                    { this.state.verify.certValidDate ? <div className="form-alert">{this.state.verify.certValidDate}</div> : null }
+
                     <div className="form-item text16">
                         <img className="mt-1 ml-auto mr-3" style={{width:"120px", height:"60px"}} src="../images/finish.png" onClick={this.save.bind(this)}/>
                     </div>
@@ -282,6 +351,8 @@ class Main extends React.Component {
                             <input className="mt-1" ref="income" defaultValue={cust.income} placeholder="请输入年收入"/>
                         </div>
                     </div>
+                    { this.state.verify.income ? <div className="form-alert">{this.state.verify.income}</div> : null }
+
                     <div className="form-item text16">
                         <img className="mt-1 ml-auto mr-3" style={{width:"120px", height:"60px"}} src="../images/finish.png" onClick={this.save.bind(this)}/>
                     </div>
