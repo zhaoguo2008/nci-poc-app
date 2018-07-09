@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.util.Log;
 import android.webkit.JavascriptInterface;
+import android.widget.Toast;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
@@ -98,7 +99,12 @@ public class JsBridge
         });
     }
 
-
+    @JavascriptInterface
+    public void toast(String title)
+    {
+        Toast t = Toast.makeText(layer.window, title, Toast.LENGTH_LONG);
+        t.show();
+    }
     @JavascriptInterface
     public void back(final String val)
     {

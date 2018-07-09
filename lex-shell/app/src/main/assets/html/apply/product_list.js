@@ -60,12 +60,12 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 13);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */,
-/* 1 */
+/******/ ({
+
+/***/ 13:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -131,7 +131,7 @@ var Main = function (_React$Component) {
                 this.state.list.map(function (v, i) {
                     return React.createElement(
                         "div",
-                        { className: "list-item", onClick: _this3.addToPlan.bind(_this3, v.code,v.name,v.id), key: i },
+                        { className: "list-item", onClick: _this3.addToPlan.bind(_this3, v.code, v.name, v.id), key: i },
                         React.createElement(
                             "div",
                             { className: "list-item-icon" },
@@ -165,4 +165,5 @@ $(document).ready(function () {
 });
 
 /***/ })
-/******/ ]);
+
+/******/ });

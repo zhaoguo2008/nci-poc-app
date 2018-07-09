@@ -118,9 +118,9 @@ var Main = function (_React$Component) {
                 url: 'http://114.112.96.30:10003/app/user/qrymodule.json',
                 type: "POST",
                 data: {
-                    "orgId": "10200" },
+                    "orgId": localStorage.orgId },
                 success: function success(data) {
-                    console.log(JSON.stringify(data));
+
                     that.setState({
                         LabelDta: data.content
                     });
@@ -167,10 +167,11 @@ var Main = function (_React$Component) {
                         var imageData = r.content.list.map(function (row) {
                             console.log(row);
                             return {
-                                url: serverUrl + row.url,
-                                link: serverUrl + row.link
+                                url: serverUrl + 'nci/' + row.url,
+                                link: serverUrl + 'nci/' + row.link
                             };
                         });
+//                        alert(JSON.stringify(imageData))
                         _this3.setState({
                             images: imageData
                         });
@@ -211,6 +212,7 @@ var Main = function (_React$Component) {
     }, {
         key: 'productDetail',
         value: function productDetail(prod) {
+//        alert(JSON.stringify(prod))
             localStorage.productData = JSON.stringify(prod);
             window.MF && MF.navi("productDetail/productDetail.html");
             // location.href = '../productDetail/productDetail.html'
@@ -225,7 +227,8 @@ var Main = function (_React$Component) {
     }, {
         key: 'toFunPage',
         value: function toFunPage(url) {
-            location.href = url + '.html';
+
+            window.MF && MF.navi("home/" + url + '.html');
         }
     }, {
         key: 'render',
@@ -278,7 +281,7 @@ var Main = function (_React$Component) {
                         { className: 'sr2-right' },
                         React.createElement(
                             'a',
-                            { 'class': 'sr2-top', onClick: this.toFunPage.bind(this, 'productIntroduction') },
+                            { 'class': 'sr2-top' },
                             React.createElement('img', { src: '../images/home/product.png' }),
                             React.createElement(
                                 'span',
@@ -331,7 +334,7 @@ var Main = function (_React$Component) {
                             return React.createElement(
                                 'a',
                                 { className: 'prod-item', onClick: _this4.productDetail.bind(_this4, prod) },
-                                React.createElement('img', { src: prod.cover ? serverUrl + "nic/" + prod.cover : "../images/home/default_img.png" }),
+                                React.createElement('img', { src: prod.cover ? serverUrl + "nci/" + prod.cover : "../images/home/default_img.png" }),
                                 React.createElement(
                                     'i',
                                     null,
@@ -354,13 +357,13 @@ var Main = function (_React$Component) {
                         } else if (index == 3) {
                             return React.createElement(
                                 'li',
-                                { className: 'actHome', onClick: _this4.toPage.bind(_this4, index) },
+                                { className: '', onClick: _this4.toPage.bind(_this4, index) },
                                 prod
                             );
                         } else {
                             return React.createElement(
                                 'li',
-                                { onClick: _this4.share.bind(_this4, index) },
+                                null,
                                 prod
                             );
                         }

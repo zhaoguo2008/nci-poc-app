@@ -18,7 +18,7 @@ import javax.net.ssl.X509TrustManager;
 
 public class Network
 {
-	public static String ADDRESS = "http://www.lerrain.com:7666/app/";
+	public static String ADDRESS = "http://114.112.96.30:10003/app/";
 
 	public static String urlOf(String url)
 	{

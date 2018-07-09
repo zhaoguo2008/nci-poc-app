@@ -4,8 +4,7 @@ class Main extends React.Component {
         this.state = {
             orderId: common.param("orderId"),
             certTypeDict: {},
-            relationDict: {},
-            ifLawyer: true
+            relationDict: {}
         }
     }
     componentDidMount() {
@@ -21,9 +20,6 @@ class Main extends React.Component {
         })
     }
     onBenefitChange(i, val) {
-        this.setState({
-            ifLawyer: val
-        });
         if (!val) {
             this.popEditor({ index: i })
         }

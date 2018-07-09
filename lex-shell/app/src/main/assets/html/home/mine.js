@@ -115,7 +115,10 @@ var Main = function (_React$Component) {
                 name: '理赔服务',
                 icon: '../images/mine/lpfw.png',
                 link: 'xxxx'
-            }]
+            }],
+            footNav:[
+                '首页','个人管理','团队管理','我的'
+            ],
         };
         return _this;
     }
@@ -131,21 +134,36 @@ var Main = function (_React$Component) {
             // 列表点击
             switch (item.name) {
                 case "客户管理":
-                    location.href = item.link;
+                    MF.navi('html/' + item.link);
                     break;
                 case "我的建议书":
-                    location.href = item.link;
+                    MF.navi('html/' + item.link);
                     break;
                 case "投保单":
-                    location.href = item.link;
+                    MF.navi('html/' + item.link);
                     break;
             }
+        }
+    },{
+      key: 'toPage',
+      value: function toPage(index) {
+          if (index == 0) {
+                  location.href = 'home.html';
+              }
+          }
+      },{
+        key: 'share',
+        value: function share() {
+            SHARE.callOneKeyShare("分享", "http://114.112.96.30:10006/xinhua_lx/notice_xh.html", "onekeyshare");
+            window.callShareBack = function callShareBack(flag, jsonData) {
+                alert(jsonData);
+            };
         }
     }, {
         key: 'myCard',
         value: function myCard() {
             // 我的名片
-            location.href = "./myCard.html";
+            MF.navi('home/' + "./myCard.html");
         }
     }, {
         key: 'render',
@@ -220,6 +238,31 @@ var Main = function (_React$Component) {
                                 )
                             )
                         );
+                    })
+                ),
+                React.createElement(
+                    'ul',
+                    { className: 'footNav' },
+                    this.state.footNav.map(function (prod, index) {
+                        if (index == 0) {
+                            return React.createElement(
+                                'li',
+                                { className: '', onClick: _this2.toPage.bind(_this2, index) },
+                                prod
+                            );
+                        } else if (index == 3) {
+                            return React.createElement(
+                                'li',
+                                { className: 'actHome', onClick: _this2.toPage.bind(_this2, index) },
+                                prod
+                            );
+                        } else {
+                            return React.createElement(
+                                'li',
+                                null,
+                                prod
+                            );
+                        }
                     })
                 )
             );

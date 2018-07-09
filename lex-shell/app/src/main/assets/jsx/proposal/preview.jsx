@@ -170,7 +170,7 @@ class Main extends React.Component {
                                 </div>
                               </div>
                               { !x.show ? null : x.content.map((y, k) =>
-                                <div className="text16">　　{y.text}</div>
+                                <div className="text16" style={{textAlign:"left"}}>　　{y.text}</div>
                               )}
                               <div style={{height:"10px"}}></div>
                             </div>
@@ -189,6 +189,7 @@ class Main extends React.Component {
                     </div>
 
                     <div className="h-60"></div>
+                    <div class="share" style={{width:'90%',height:'40px',background:'#00aff9',color:'#fff',borderRadius:"20px"}} onClick = {this.share.bind(this,'this.state.proposalId')}>分享建议书</div>
                 </div>
             </div>
         )

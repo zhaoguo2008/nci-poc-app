@@ -25,7 +25,7 @@ class Main extends React.Component {
             url: 'http://114.112.96.30:10003/app/user/qrymodule.json',
             type: "POST",
             data: {
-                "orgId":"10200"},
+                "orgId":localStorage.orgId},
             success:(data) => {
                 console.log(JSON.stringify(data))
                 that.setState({
@@ -104,6 +104,7 @@ class Main extends React.Component {
         window.MF &&  MF.navi("client/client_list.html")
     }
     productDetail(prod){
+
         localStorage.productData = JSON.stringify(prod);
         window.MF &&  MF.navi("productDetail/productDetail.html")
         // location.href = '../productDetail/productDetail.html'
@@ -207,7 +208,7 @@ class Main extends React.Component {
                                 )
                             }else if(index==3){
                                 return(
-                                    <li className="actHome" onClick={this.toPage.bind(this,index)}>{prod}</li>
+                                    <li className="" onClick={this.toPage.bind(this,index)}>{prod}</li>
                                 )
                             }else{
                                 return(

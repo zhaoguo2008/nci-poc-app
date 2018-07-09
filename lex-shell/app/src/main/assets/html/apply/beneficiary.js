@@ -60,11 +60,12 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
+/******/ ({
+
+/***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -89,8 +90,7 @@ var Main = function (_React$Component) {
         _this.state = {
             orderId: common.param("orderId"),
             certTypeDict: {},
-            relationDict: {},
-            ifLawyer: true
+            relationDict: {}
         };
         return _this;
     }
@@ -114,9 +114,6 @@ var Main = function (_React$Component) {
     }, {
         key: "onBenefitChange",
         value: function onBenefitChange(i, val) {
-            this.setState({
-                ifLawyer: val
-            });
             if (!val) {
                 this.popEditor({ index: i });
             }
@@ -250,4 +247,5 @@ $(document).ready(function () {
 });
 
 /***/ })
-/******/ ]);
+
+/******/ });
