@@ -33,55 +33,29 @@ class Main extends React.Component {
         }else{
             APP.login(this.refs.loginName.value, this.refs.password.value, data => {
                 that.setState({ login: "true" });
-                if(window.MF){
-                    localStorage.channelId = data.channelId;
-                    localStorage.orgId = data.orgId;
+//                FACE.callLivenessRecognize("信东", "210124199601051417", "01203668", "FACE");
+//                            window.callFaceBack = function callFaceBack(flag, jsonData){
+//                            		if(!jsonData.errorCode){
+//
+//                            		}
+//                            	}
+                        if(window.MF){
+                           localStorage.channelId = data.channelId;
+                           localStorage.orgId = data.orgId;
 
-                    MF.setEnv("userKey", data.userKey);
-                    MF.setEnv("orgId", data.orgId);
-                    MF.navi("home/home.html");
+                           MF.setEnv("userKey", data.userKey);
+                           MF.setEnv("orgId", data.orgId);
+                           MF.navi("home/home.html");
 
-                }else{
-                    localStorage.channelId = data.channelId;
-                    localStorage.orgId = data.orgId;
-                    location.href = 'home.html';
-                }
+                       }else{
+                           localStorage.channelId = data.channelId;
+                           localStorage.orgId = data.orgId;
+                           location.href = 'home.html';
+                       }
+
             }, r => {
                 that.setState({ login: "fail" });
             })
-           /* $.ajax({
-                contentType: 'application/json',
-                type:'POST',
-                url:"http://114.112.96.30:10003/app/user/login.json",
-                data:JSON.stringify({
-                    "loginName":this.refs.loginName.value,
-                    "password":this.refs.password.value
-                }),
-                success(data){
-                    if (data.result == "success") {
-                        if(window.MF){
-                            localStorage.channelId = data.content.channelId
-                            localStorage.orgId = data.content.orgId
-
-                            MF.setEnv("userKey", data.content.userKey);
-                            MF.setEnv("orgId", data.content.orgId);
-                            MF.navi("home/home.html")
-
-                        }else{
-                            localStorage.channelId = data.content.channelId
-                            localStorage.orgId = data.content.orgId
-                             location.href = 'home.html'
-                        }
-                        that.setState({ login: "true" })
-                    } else {
-                        that.setState({ login: "fail" })
-                    }
-
-                },
-                error(err){
-                    console.log(err, 'err')
-                }
-            })*/
 
         }
     }

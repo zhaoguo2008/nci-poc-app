@@ -269,24 +269,6 @@ var Main = function (_React$Component) {
         value: function next() {
             var c = this.state.cust;
             this.save();
-            if (!c.mode1) {
-                this.setState({
-                    mode: 1
-                });
-                return;
-            }
-            if (!c.mode2) {
-                this.setState({
-                    mode: 2
-                });
-                return;
-            }
-            if (!c.mode3) {
-                this.setState({
-                    mode: 3
-                });
-                return;
-            }
             if (!c.mode1 && !c.mode2 && !c.mode3) return;
             if (!this.state.ocrImage || !this.state.ocrImage.length > 0) {
                 alert('请执行OCR扫描!!');

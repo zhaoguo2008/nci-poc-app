@@ -85,6 +85,12 @@ class Main extends React.Component {
             dataType:"json"
         });
     }
+    share(){
+        SHARE.callOneKeyShare("分享", "http://114.112.96.30:10006/xinhua_lx/notice_xh.html", "onekeyshare");
+        window.callShareBack = function callShareBack(flag, jsonData){
+            alert(jsonData);
+        }
+    }
     openApply(orderId) {
         window.MF && MF.navi("apply/start.html?orderId=" + orderId)
     }
@@ -205,7 +211,7 @@ class Main extends React.Component {
                                 )
                             }else{
                                 return(
-                                    <li>{prod}</li>
+                                    <li onClick={this.share.bind(this,index)}>{prod}</li>
                                 )
                             }
 

@@ -1,19 +1,17 @@
 package lerrain.project.mshell;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
-import android.util.Log;
+import android.view.KeyEvent;
 
-import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.polysoft.nci.interf.IActivity;
 import com.polysoft.nci.interf.IActivityResult;
 
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -90,12 +88,47 @@ public class Main extends Activity implements IActivity
 //		}
 //
 //	}
-	
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		switch (keyCode) {
+			case KeyEvent.KEYCODE_BACK:
+				this.clickBack();
+				break;
+			default:
+				break;
+		}
+		return super.onKeyDown(keyCode, event);
+	}
+
+	private void clickBack() {
+		if (this.layers.getChildCount() > 2) {
+			this.layers.home();
+		} else if (this.layers.getChildCount() <= 2) {
+			this.showExitAppDialog();
+		}
+	}
+
+	private void showExitAppDialog() {
+		DialogInterface.OnClickListener okListener = new DialogInterface.OnClickListener() {
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				finish();
+				System.exit(0);
+			}
+		};
+		AlertDialog.Builder builder = new AlertDialog.Builder(this, AlertDialog.THEME_HOLO_LIGHT);
+		builder.setTitle("提示");
+		builder.setMessage("\n是否退出应用？\n");
+		builder.setNegativeButton("确定", okListener);
+		builder.setPositiveButton("取消", null);
+		builder.setCancelable(true);
+		builder.create().show();
+	}
 	protected Layer createBaseLayer()
 	{
 		PageLayer layer = new PageLayer(this);
 		layer.openLocal("home/login.html");
-//		layer.openLocal("ocr/html/demo.html");
+//		layer.openLocal("share/html/share.html");
 
 		return layer;
 	}
