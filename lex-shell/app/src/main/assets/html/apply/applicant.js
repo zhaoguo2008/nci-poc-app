@@ -208,34 +208,34 @@ var Main = function (_React$Component) {
     }, {
         key: "getIdCardImg",
         value: function getIdCardImg() {
-            let that = this;
+            // 证件扫描
+            var that = this;
 
             // 证件扫描
             OCR.callCardFront("APPNT", "OCR_FRONT");
-            window.callOCRBack = function callOCRBack(flag, jsonData, bitmapStr){
-                let jsonDataObj = JSON.parse(jsonData);
-                alert(jsonData);
-               let cust = that.state.cust;
-               const birthday = jsonDataObj.birthday.replace(/['年','月']/g, '-');
-               cust.name = jsonDataObj.name;
-               cust.gender = jsonDataObj.sex == "男" ? "M" : "F";
-               cust.birthday = birthday.substring(0, birthday.length - 1);
-               cust.certNo = jsonDataObj.cardNo;
-               cust.address = jsonDataObj.address;
-               that.setState({
-                   ocrImage: bitmapStr,
-                   cust: cust
-               });
+            window.callOCRBack = function callOCRBack(flag, jsonData, bitmapStr) {
+                var jsonDataObj = JSON.parse(jsonData);
+                var cust = that.state.cust;
+                var birthday = jsonDataObj.birthday.replace(/['年','月']/g, '-');
+                cust.name = jsonDataObj.name;
+                cust.gender = jsonDataObj.sex == "男" ? "M" : "F";
+                cust.birthday = birthday.substring(0, birthday.length - 1);
+                cust.certNo = jsonDataObj.cardNo;
+                cust.address = jsonDataObj.address;
+                that.setState({
+                    ocrImage: bitmapStr,
+                    cust: cust
+                });
                 localStorage.applicantCardData = bitmapStr;
-            }
-
+            };
         }
     }, {
         key: "next",
         value: function next() {
             this.save();
-            alert(JSON.stringify(localStorage.applicantCardData));
-            if (!this.state.ocrImage || !this.state.ocrImage.length > 0) {alert('请执行OCR扫描!!') }else {
+            if (!this.state.ocrImage || !this.state.ocrImage.length > 0) {
+                alert('请执行OCR扫描!!');
+            } else {
                 MF.navi("apply/insurant.html?orderId=" + this.state.orderId);
             }
         }
@@ -796,23 +796,13 @@ var Main = function (_React$Component) {
                     { className: "bottom text18 tc-primary" },
                     React.createElement(
                         "div",
-                        { className: "form-item-widget" },
-                        React.createElement("img", { className: "mt-1", style: { width: "220px", height: "60px" }, src: "../images/btn-scan.png", onClick: this.getIdCardImg.bind(this) })
+                        { className: "ml-3 mr-auto" },
+                        React.createElement("img", { className: "mt-2", style: { width: "220px", height: "60px" }, src: "../images/btn-scan.png", onClick: this.getIdCardImg.bind(this) })
                     ),
-                    React.createElement("div", { className: "ml-3 mr-0", style: { width: "300px" } }),
                     React.createElement(
                         "div",
-                        { className: "divx", onClick: this.next.bind(this) },
-                        React.createElement(
-                            "div",
-                            { className: "ml-0 mr-0", style: { width: "390px", textAlign: "right" } },
-                            "\u88AB\u4FDD\u9669\u4EBA\u4FE1\u606F"
-                        ),
-                        React.createElement(
-                            "div",
-                            { className: "ml-1 mr-2", style: { width: "30px" } },
-                            React.createElement("img", { className: "mt-3", style: { width: "27px", height: "39px" }, src: "../images/blueright.png" })
-                        )
+                        { className: "mr-3", onClick: this.next.bind(this) },
+                        "\u88AB\u4FDD\u9669\u4EBA\u4FE1\u606F"
                     )
                 )
             );

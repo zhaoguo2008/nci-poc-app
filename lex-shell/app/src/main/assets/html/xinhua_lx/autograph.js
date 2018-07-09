@@ -221,13 +221,15 @@ var Autograph = function (_React$Component) {
     }, {
         key: 'componentWillMount',
         value: function componentWillMount() {
+            var _this2 = this;
+
             window.MF && MF.setTitle("投保单预览");
-            APP.apply.view(common.param("orderId"), r => {
-                console.log(JSON.stringify(r.detail))
-                this.setState({
+            APP.apply.view(common.param("orderId"), function (r) {
+                console.log(JSON.stringify(r.detail));
+                _this2.setState({
                     cust: r.detail
-                })
-            })
+                });
+            });
         }
     }, {
         key: 'getQueryString',
@@ -1579,13 +1581,8 @@ var Autograph = function (_React$Component) {
                         { className: 'divx', onClick: this.submit.bind(this) },
                         React.createElement(
                             'div',
-                            { className: 'ml-0 mr-0', style: { width: "390px", textAlign: "right" ,fontSize: '.9em'} },
+                            { className: 'ml-0 mr-0', style: { width: "390px", textAlign: "right", fontSize: '18px' } },
                             '\u63D0\u4EA4'
-                        ),
-                        React.createElement(
-                            'div',
-                            { className: 'ml-1 mr-2', style: { width: "30px" } },
-                            React.createElement('img', { className: 'mt-3', style: { width: "27px", height: "39px" }, src: '../images/blueright.png' })
                         )
                     )
                 )

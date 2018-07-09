@@ -134,12 +134,7 @@ var Main = function (_React$Component) {
         key: "next",
         value: function next() {
             this.save();
-            alert(JSON.stringify(localStorage.beneficiaryCardData));
-            if (!this.state.ifLawyer && localStorage.beneficiaryCardData.length > 0) {
-                alert('请执行OCR扫描!!');
-            } else {
-                window.MF && MF.navi("apply/announce.html?orderId=" + this.state.orderId);
-            }
+            window.MF && MF.navi("apply/announce.html?orderId=" + this.state.orderId);
         }
     }, {
         key: "delete",
@@ -205,13 +200,13 @@ var Main = function (_React$Component) {
                                 { className: "divx" },
                                 React.createElement(
                                     "div",
-                                    { className: "text40", style: { width: "210px", height: "140px", background: "url(../images/seq1.png) no-repeat top left", backgroundSize: "140px 140px", lineHeight: "140px", textAlign: "right" } },
+                                    { className: "text40", style: { width: "180px", height: "140px", background: "url(../images/seq1.png) no-repeat top left", backgroundSize: "140px 140px", lineHeight: "140px", textAlign: "right" } },
                                     w.scale,
                                     "%"
                                 ),
                                 React.createElement(
                                     "div",
-                                    { className: "div text16 pl-3 pr-3 pt-1 pb-1", style: { width: "470px", borderTop: "1px solid #e8e8e8" } },
+                                    { className: "div text16 pl-3 pr-3 pt-1 pb-1", style: { width: "500px", borderTop: "1px solid #e8e8e8" } },
                                     React.createElement(
                                         "div",
                                         { style: { height: "60px", lineHeight: "60px" } },
@@ -236,20 +231,11 @@ var Main = function (_React$Component) {
                 React.createElement(
                     "div",
                     { className: "bottom text18 tc-primary" },
-                    React.createElement("div", { className: "ml-3 mr-0", style: { width: "300px" } }),
+                    React.createElement("div", { className: "ml-3 mr-auto" }),
                     React.createElement(
                         "div",
-                        { className: "divx", onClick: this.next.bind(this) },
-                        React.createElement(
-                            "div",
-                            { className: "ml-0 mr-0", style: { width: "390px", textAlign: "right" } },
-                            "\u58F0\u660E\u53CA\u6388\u6743"
-                        ),
-                        React.createElement(
-                            "div",
-                            { className: "ml-1 mr-2", style: { width: "30px" } },
-                            React.createElement("img", { className: "mt-3", style: { width: "27px", height: "39px" }, src: "../images/blueright.png" })
-                        )
+                        { className: "mr-3", onClick: this.next.bind(this) },
+                        "\u58F0\u660E\u53CA\u6388\u6743"
                     )
                 )
             );

@@ -49,11 +49,9 @@ class Main extends React.Component {
         // 证件扫描
         OCR.callCardBank("APPNT", "OCR_BANK");
         window.callOCRBack = function callOCRBack(flag, jsonData, bitmapStr){
-            let jsonDataObj = JSON.parse(jsonData);
-            alert(jsonData)
+            var jsonDataObj = JSON.parse(jsonData);
             let pay = that.state.pay;
-            pay.bankCard = '';
-            pay.bank = '';
+            pay.bankCard = jsonDataObj.cardNo;
             alert(jsonDataObj);
             that.setState({
                 ocrImage: bitmapStr,
@@ -118,14 +116,10 @@ class Main extends React.Component {
                 </div>
                 <div style={{height:"120px"}}></div>
                 <div className="bottom text18 tc-primary">
-                    <div className="ml-3 mr-0" style={{width:"300px"}}></div>
-                    <div className="divx" onClick={this.next.bind(this)}>
-                        <div className="ml-0 mr-0" style={{width:"390px", textAlign:"right"}}>
-                            确认支付
-                        </div>
-                        <div className="ml-1 mr-2" style={{width:"30px"}}>
-                            <img className="mt-3" style={{width:"27px", height:"39px"}} src="../images/blueright.png"/>
-                        </div>
+                    <div className="ml-3 mr-auto">
+                    </div>
+                    <div className="mr-3" onClick={this.next.bind(this)}>
+                        确认支付
                     </div>
                 </div>
             </div>
