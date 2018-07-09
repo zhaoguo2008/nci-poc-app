@@ -23,3 +23,7 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+-dontwarn com.baidu.fsg.**
+-keep class com.baidu.fsg.**{*;}
+-dontwarn com.baidu.idl.**
+-keep class com.baidu.idl.**{*;}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/webapp_reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src='../js/jquery.2.1.1min.js'></script>
+</head>
+<body>
+	<button id="call_face">两要素人脸识别</button><br /><br />
+	<button id="call_face_token">token人脸识别</button><br /><br />
+</body>
+<script type="text/javascript">
+
+	//js调原生
+	$('#call_face').click(function(event) {
+	    // 第一个参数：真实的姓名
+	    // 第二个参数：真实的身份证号，需与姓名匹配
+	    // 第三个参数：业务员号
+	    // 第四个参数：调用的标识，会回传到callback方法中
+		FACE.callLivenessRecognize("黄艺舟", "530103198506262134", "01203668", "FACE");
+	});
+	
+	$('#call_face_token').click(function(event) {
+	    // 第一个参数：从服务端获取的token
+	    // 第二个参数：业务员号
+	    // 第三个参数：调用的标识，会回传到callback方法中
+		FACE.callLivenessRecognizeToken("token", "01203668", "FACE_TOKEN");
+	});
+	
+	$('#bank').click(function(event) {
+		OCR.callCardBank("APPNT", "OCR_BANK");
+	});
+	
+	//安卓调js
+	//flag 参数为 调用方法的第二个参数
+	function callFaceBack(flag, jsonData){
+		alert(jsonData);
+	}
+</script>
+</html>
