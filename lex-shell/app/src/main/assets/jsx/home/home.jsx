@@ -16,7 +16,7 @@ class Main extends React.Component {
         }
     }
     componentDidMount() {
-        let that = this
+        let that = this;
         window.MF && MF.setTitle("首页")
         this.fetchBanner();
         this.fetchProduct();

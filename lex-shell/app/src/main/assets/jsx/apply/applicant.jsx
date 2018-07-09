@@ -78,8 +78,7 @@ class Main extends React.Component {
             }
         }
 
-        this.setState({ verify: v })
-        return Object.keys(v).length == 0
+         return Object.keys(v).length == 0
     }
     save() {
         let c = this.state.cust
@@ -121,7 +120,6 @@ class Main extends React.Component {
         OCR.callCardFront("APPNT", "OCR_FRONT");
         window.callOCRBack = function callOCRBack(flag, jsonData, bitmapStr){
             let jsonDataObj = JSON.parse(jsonData);
-            alert(jsonDataObj)
             let cust = that.state.cust;
             const birthday = jsonDataObj.birthday.replace(/['年','月']/g, '-');
             cust.name = jsonDataObj.name;
@@ -200,6 +198,12 @@ class Main extends React.Component {
                         <div className="form-item-widget" onClick={v => {APP.pick("select", this.state.marriageDict, this.onValChange.bind(this, "marriage"))}}>
                             <div className={(cust.marriage == null ? "tc-gray " : "") + "text16 ml-1 mr-auto"}>{cust.marriage == null ? "请选择婚姻状况" : this.state.marriageDict[cust.marriage]}</div>
                             <img className="mt-2 mr-0" style={{width:"27px", height:"39px"}} src="../images/right.png"/>
+                        </div>
+                    </div>
+                    <div className="form-item text16">
+                        <div className="form-item-label">证件影像</div>
+                        <div className="form-item-widget">
+                            <img className="mt-2" style={{width:"220px", height:"60px"}} src="../images/btn-scan.png" onClick={this.getIdCardImg.bind(this)}/>
                         </div>
                     </div>
                     <div className="form-item text16">
@@ -364,9 +368,7 @@ class Main extends React.Component {
                 </div> }
                 <div style={{height:"120px"}}></div>
                 <div className="bottom text18 tc-primary">
-                    <div className="ml-3 mr-auto">
-                        <img className="mt-2" style={{width:"220px", height:"60px"}} src="../images/btn-scan.png" onClick={this.getIdCardImg.bind(this)}/>
-                    </div>
+                    <div className="ml-3 mr-auto"></div>
                     <div className="mr-3" onClick={this.next.bind(this)}>
                         被保险人信息
                     </div>

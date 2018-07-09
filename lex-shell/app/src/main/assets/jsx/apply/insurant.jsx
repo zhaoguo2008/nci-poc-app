@@ -235,6 +235,12 @@ class Main extends React.Component {
                         </div>
                     </div>
                     <div className="form-item text16">
+                        <div className="form-item-label">证件影像</div>
+                        <div className="form-item-widget">
+                            <img className="mt-2" style={{width:"220px", height:"60px"}} src="../images/btn-scan.png" onClick={this.getIdCardImg.bind(this)}/>
+                        </div>
+                    </div>
+                    <div className="form-item text16">
                         <div className="form-item-label">证件类型</div>
                         <div className="form-item-widget" onClick={v => {APP.pick("select", this.state.certTypeDict, this.onValChange.bind(this, "certType"))}}>
                             <div className={(cust.certType == null ? "tc-gray " : "") + "text16 ml-1 mr-auto"}>{cust.certType == null ? "请选择证件类型" : this.state.certTypeDict[cust.certType]}</div>
@@ -397,9 +403,7 @@ class Main extends React.Component {
                 <div style={{backgroundColor:"#ff3333", borderRadius:"10px", margin:"20px", lineHeight:"70px", height:"70px", width:SIZE-40+"px", textAlign:"center", color:"#ffffff"}} onClick={this.deleteInsurant.bind(this)}>删除</div>
                 <div style={{height:"120px"}}></div>
                 <div className="bottom text18 tc-primary">
-                    <div className="ml-3 mr-auto">
-                        <img className="mt-2" style={{width:"220px", height:"60px"}} src="../images/btn-scan.png" onClick={this.getIdCardImg.bind(this)}/>
-                    </div>
+                    <div className="ml-3 mr-auto"></div>
                     <div className="mr-3" onClick={this.next.bind(this)}>
                         投保计划
                     </div>

@@ -139,7 +139,7 @@ var Main = function (_React$Component) {
             if (riderForm.form == null) {
                 APP.proposal.addProduct(this.state.planId, this.state.index, productId, function (r) {
                     r.product.map(function (r2, i) {
-                        if (r2.productId == productId && r2.parent == _this3.state.index) APP.proposal.editProduct(_this3.state.planId, i, function (r1) {
+                        if (r2.productId == productId && r2.parent == _this3.state.index) APP.apply.editProduct(_this3.state.planId,localStorage.channelId,localStorage.orgId, localStorage.mainProductId, i, function (r1) {
                             riderForm.form = _this3.formOf(r1.factors);
                             _this3.setState({ form: _this3.state.form });
                         });

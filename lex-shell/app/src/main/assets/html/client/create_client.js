@@ -96,7 +96,8 @@ var CreateClient = function (_React$Component) {
             certTypeDict: {},
             relationDict: { "00": "本人", "01": "夫妻" },
             index: 0,
-            mode: 1,
+            mode: 0,
+            verify: {},
             cust: common.customer('customerMsg')
         };
         _this.finish = _this.finish.bind(_this);
@@ -139,61 +140,97 @@ var CreateClient = function (_React$Component) {
             });
         }
     }, {
+        key: "verify",
+        value: function verify(c) {
+            var v = {};
+
+            if (this.state.mode == 1) {
+                if (!c.name) {
+                    v.name = "该项必填";
+                } else {
+                    if (c.name.length > 60) v.name = "姓名太长";else if (c.name.indexOf(" ") > 0) v.name = "姓名中不能有空格";
+                }
+
+                if (!c.birthday) {
+                    v.birthday = "该项必填";
+                } else {
+                    if (c.birthday > common.dateStr(new Date())) v.birthday = "生日不能大于当前日期";
+                }
+
+                if (!c.certNo) {
+                    v.certNo = "该项必填";
+                } else {
+                    if (c.certType == 1 && c.certNo.length != 18) v.certNo = "身份证号需要为18位";
+                }
+            }
+
+            if (this.state.mode == 3) {
+                if (!c.zipcode) {
+                    v.zipcode = "该项必填";
+                } else {
+                    if (!/^[0-9][0-9]{5}$/.test(c.zipcode)) v.zipcode = "邮政编码需要为6位数字";
+                }
+            }
+
+            this.setState({ verify: v });
+            return Object.keys(v).length == 0;
+        }
+    }, {
         key: "save",
         value: function save() {
             var c = this.state.cust;
             if (this.state.mode == 1) {
                 c.name = this.refs.name.value;
                 c.certNo = this.refs.certNo.value;
-                if (!c.name || !c.name.length) {
+                /*if (!c.name || !c.name.length) {
                     console.log('请填写用户姓名');
                     return;
                 }if (!c.gender || !c.gender.length) {
                     console.log('请选择性别');
                     return;
-                }if (!c.nation || !c.nation.length) {
+                } if (!c.nation || !c.nation.length) {
                     console.log('请选择国籍');
                     return;
-                }if (!c.birthday || !c.birthday.length) {
+                } if (!c.birthday || !c.birthday.length) {
                     console.log('请选择出生日期');
                     return;
-                }if (!c.marriage || !c.marriage.length) {
+                } if (!c.marriage || !c.marriage.length) {
                     console.log('请选择婚姻状况');
                     return;
-                }if (!c.certNo || !c.certNo.length) {
+                } if (!c.certNo || !c.certNo.length) {
                     console.log('请填写证件号');
                     return;
-                }if (!c.certValidDate || !c.certValidDate.length) {
+                } if (!c.certValidDate || !c.certValidDate.length) {
                     console.log('请填写证件有效期');
                     return;
-                }
+                }*/
                 c.mode1 = true;
             } else if (this.state.mode == 2) {
                 c.company = this.refs.company.value;
                 c.workJob = this.refs.workJob.value;
                 c.income = this.refs.income.value;
-                if (!c.company || !c.company.length) {
+                /*if (!c.company || !c.company.length) {
                     console.log('请填写工作单位');
                     return;
                 }if (!c.workJob || !c.workJob.length) {
                     console.log('请填写职位');
                     return;
-                }if (!c.occupation1 || !c.occupation1.length) {
+                } if (!c.occupation1 || !c.occupation1.length) {
                     console.log('请选择职业大类');
                     return;
-                }if (!c.occupation || !c.occupation.length) {
+                } if (!c.occupation || !c.occupation.length) {
                     console.log('请选择职业小类');
                     return;
-                }if (!c.occupation || !c.occupation.length) {
+                } if (!c.occupation || !c.occupation.length) {
                     console.log('请填写职业代码');
                     return;
-                }if (!c.occupationLevel || !c.occupationLevel.length) {
+                } if (!c.occupationLevel || !c.occupationLevel.length) {
                     console.log('请填写职业类别');
                     return;
-                }if (!c.income || !c.income.length) {
+                } if (!c.income || !c.income.length) {
                     console.log('请填写年收入');
                     return;
-                }
+                }*/
                 c.mode2 = true;
             } else if (this.state.mode == 3) {
                 c.address = this.refs.address.value;
@@ -205,44 +242,47 @@ var CreateClient = function (_React$Component) {
                 c.wechat = this.refs.wechat.value;
                 c.zipcode = this.refs.zipcode.value;
                 c.email = this.refs.email.value;
-                if (!c.address || !c.address.length) {
+                /*if (!c.address || !c.address.length) {
                     console.log('请填写联系地址');
                     return;
-                } /*if (!c.cityText || !c.cityText.length) {
-                     console.log('请填写乡镇(街道)');
-                     return;
-                  } if (!c.address2 || !c.address2.length) {
-                     console.log('请填写村(社区)');
-                     return;
-                  } */if ((!c.telephone || !c.telephone.length) && (!c.mobile || !c.mobile.length)) {
+                }/!*if (!c.cityText || !c.cityText.length) {
+                    console.log('请填写乡镇(街道)');
+                    return;
+                } if (!c.address2 || !c.address2.length) {
+                    console.log('请填写村(社区)');
+                    return;
+                } *!/if ((!c.telephone || !c.telephone.length) && (!c.mobile || !c.mobile.length)) {
                     console.log('手机或者电话二者选其一');
                     return;
-                } /*if (!c.qq || !c.qq.length) {
+                } /!*if (!c.qq || !c.qq.length) {
                     console.log('请填写qq号码');
                     return;
-                  } if (!c.wechat || !c.wechat.length) {
+                } if (!c.wechat || !c.wechat.length) {
                     console.log('请填写微信号码');
                     return;
-                  } */if (!c.zipcode || !c.zipcode.length) {
+                } *!/if (!c.zipcode || !c.zipcode.length) {
                     console.log('请填写邮政编码');
                     return;
-                }if (!c.email || !c.email.length) {
+                } if (!c.email || !c.email.length) {
                     console.log('请填写邮箱');
                     return;
-                }
+                }*/
                 c.mode3 = true;
             } else if (this.state.mode == 4) {
                 c.mode4 = true;
             }
 
             this.state.cust = c;
-            this.setState({ mode: 0 });
+            if (this.verify(c)) {
+                this.setState({ mode: 0, cust: c });
+            }
         }
     }, {
         key: "finish",
         value: function finish() {
             var _JSON$stringify;
 
+            this.save();
             var cust = this.state.cust;
             var postData = {
                 "id": cust.id || '',
@@ -265,15 +305,9 @@ var CreateClient = function (_React$Component) {
                         "certType": cust.certType
                     },
                     "channelId": cust.channelId || 1
-                }, _defineProperty(_JSON$stringify, "city", cust.city || ""), _defineProperty(_JSON$stringify, "cityText", cust.cityText), _defineProperty(_JSON$stringify, "company", cust.company), _defineProperty(_JSON$stringify, "companyAddress", cust.companyAddress || ""), _defineProperty(_JSON$stringify, "education", cust.education || ""), _defineProperty(_JSON$stringify, "gender", cust.gender), _defineProperty(_JSON$stringify, "marriage", cust.marriage), _defineProperty(_JSON$stringify, "mobile", cust.marriage), _defineProperty(_JSON$stringify, "phone", cust.phone), _defineProperty(_JSON$stringify, "name", cust.name), _defineProperty(_JSON$stringify, "nation", cust.nation), _defineProperty(_JSON$stringify, "occupation", cust.occupation), _defineProperty(_JSON$stringify, "owner", 1), _defineProperty(_JSON$stringify, "partTimeJob", cust.partTimeJob || ""), _defineProperty(_JSON$stringify, "relation", cust.relation || ""), _defineProperty(_JSON$stringify, "workDetail", cust.workDetail || ""), _defineProperty(_JSON$stringify, "zipcode", cust.zipcode), _JSON$stringify))
+                }, _defineProperty(_JSON$stringify, "city", cust.city || ""), _defineProperty(_JSON$stringify, "cityText", cust.cityText), _defineProperty(_JSON$stringify, "company", cust.company), _defineProperty(_JSON$stringify, "companyAddress", cust.companyAddress || ""), _defineProperty(_JSON$stringify, "education", cust.education || ""), _defineProperty(_JSON$stringify, "gender", cust.gender), _defineProperty(_JSON$stringify, "marriage", cust.marriage), _defineProperty(_JSON$stringify, "mobile", cust.marriage), _defineProperty(_JSON$stringify, "phone", cust.phone), _defineProperty(_JSON$stringify, "name", cust.name), _defineProperty(_JSON$stringify, "nation", cust.nation), _defineProperty(_JSON$stringify, "occupation1", cust.occupation1), _defineProperty(_JSON$stringify, "occupation", cust.occupation), _defineProperty(_JSON$stringify, "owner", 1), _defineProperty(_JSON$stringify, "partTimeJob", cust.partTimeJob || ""), _defineProperty(_JSON$stringify, "relation", cust.relation || ""), _defineProperty(_JSON$stringify, "workDetail", cust.workDetail || ""), _defineProperty(_JSON$stringify, "zipcode", cust.zipcode), _JSON$stringify))
             };
-            this.save();
-            if (!cust.mode1 || !cust.mode2 || !cust.mode3 || !cust.mode4) {
-                console.log('请补充信息');
-                return;
-            }
             APP.list('/customer/save.json', postData, function (r) {
-                alert(r)
                 window.MF && MF.navi("client/client_list.html");
             });
         }
@@ -305,6 +339,11 @@ var CreateClient = function (_React$Component) {
             this.setState({ cust: this.state.cust });
         }
     }, {
+        key: "switchMode",
+        value: function switchMode(mode) {
+            this.setState({ mode: this.state.mode == mode ? 0 : mode, verify: {} });
+        }
+    }, {
         key: "render",
         value: function render() {
             var _this3 = this;
@@ -315,9 +354,7 @@ var CreateClient = function (_React$Component) {
                 null,
                 React.createElement(
                     "div",
-                    { className: "divx bg-white pl-3 pr-3", style: { height: "100px", marginTop: "20px", textAlign: "center" }, onClick: function onClick(v) {
-                            _this3.setState({ mode: _this3.state.mode == 1 ? 0 : 1 });
-                        } },
+                    { className: "divx bg-white pl-3 pr-3", style: { height: "100px", marginTop: "20px", textAlign: "center" }, onClick: this.switchMode.bind(this, 1) },
                     React.createElement(
                         "div",
                         { className: "divx text18", style: { height: "60px", margin: "25px auto 0 auto", verticalAlign: "middle", lineHeight: "50px" } },
@@ -347,6 +384,11 @@ var CreateClient = function (_React$Component) {
                             React.createElement("input", { className: "mt-1", ref: "name", defaultValue: cust.name, placeholder: "\u8BF7\u8F93\u5165\u6295\u4FDD\u4EBA\u59D3\u540D" })
                         )
                     ),
+                    this.state.verify.name ? React.createElement(
+                        "div",
+                        { className: "form-alert" },
+                        this.state.verify.name
+                    ) : null,
                     React.createElement(
                         "div",
                         { className: "form-item text16" },
@@ -410,6 +452,11 @@ var CreateClient = function (_React$Component) {
                             React.createElement("img", { className: "mt-2 mr-0", style: { width: "27px", height: "39px" }, src: "../images/right.png" })
                         )
                     ),
+                    this.state.verify.birthday ? React.createElement(
+                        "div",
+                        { className: "form-alert" },
+                        this.state.verify.birthday
+                    ) : null,
                     React.createElement(
                         "div",
                         { className: "form-item text16" },
@@ -466,6 +513,11 @@ var CreateClient = function (_React$Component) {
                             React.createElement("input", { className: "mt-1", ref: "certNo", defaultValue: cust.certNo, placeholder: "\u8BF7\u8F93\u5165\u8BC1\u4EF6\u53F7\u7801" })
                         )
                     ),
+                    this.state.verify.certNo ? React.createElement(
+                        "div",
+                        { className: "form-alert" },
+                        this.state.verify.certNo
+                    ) : null,
                     React.createElement(
                         "div",
                         { className: "form-item text16" },
@@ -495,9 +547,7 @@ var CreateClient = function (_React$Component) {
                 ),
                 React.createElement(
                     "div",
-                    { className: "divx bg-white pl-3 pr-3", style: { height: "100px", marginTop: "20px", textAlign: "center" }, onClick: function onClick(v) {
-                            _this3.setState({ mode: _this3.state.mode == 2 ? 0 : 2 });
-                        } },
+                    { className: "divx bg-white pl-3 pr-3", style: { height: "100px", marginTop: "20px", textAlign: "center" }, onClick: this.switchMode.bind(this, 2) },
                     React.createElement(
                         "div",
                         { className: "divx text18", style: { height: "60px", margin: "25px auto 0 auto", verticalAlign: "middle", lineHeight: "50px" } },
@@ -641,9 +691,7 @@ var CreateClient = function (_React$Component) {
                 ),
                 React.createElement(
                     "div",
-                    { className: "divx bg-white pl-3 pr-3", style: { height: "100px", marginTop: "20px", textAlign: "center" }, onClick: function onClick(v) {
-                            _this3.setState({ mode: _this3.state.mode == 3 ? 0 : 3 });
-                        } },
+                    { className: "divx bg-white pl-3 pr-3", style: { height: "100px", marginTop: "20px", textAlign: "center" }, onClick: this.switchMode.bind(this, 3) },
                     React.createElement(
                         "div",
                         { className: "divx text18", style: { height: "60px", margin: "25px auto 0 auto", verticalAlign: "middle", lineHeight: "50px" } },
@@ -715,6 +763,11 @@ var CreateClient = function (_React$Component) {
                             React.createElement("input", { className: "mt-1", ref: "zipcode", defaultValue: cust.zipcode, placeholder: "\u8BF7\u8F93\u5165\u90AE\u653F\u7F16\u7801" })
                         )
                     ),
+                    this.state.verify.zipcode ? React.createElement(
+                        "div",
+                        { className: "form-alert" },
+                        this.state.verify.zipcode
+                    ) : null,
                     React.createElement(
                         "div",
                         { className: "form-item text16" },
@@ -802,9 +855,7 @@ var CreateClient = function (_React$Component) {
                 ),
                 React.createElement(
                     "div",
-                    { className: "divx bg-white pl-3 pr-3", style: { height: "100px", marginTop: "20px", textAlign: "center" }, onClick: function onClick(v) {
-                            _this3.setState({ mode: _this3.state.mode == 4 ? 0 : 4 });
-                        } },
+                    { className: "divx bg-white pl-3 pr-3", style: { height: "100px", marginTop: "20px", textAlign: "center" }, onClick: this.switchMode.bind(this, 4) },
                     React.createElement(
                         "div",
                         { className: "divx text18", style: { height: "60px", margin: "25px auto 0 auto", verticalAlign: "middle", lineHeight: "50px" } },

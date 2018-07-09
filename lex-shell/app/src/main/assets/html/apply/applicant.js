@@ -397,6 +397,20 @@ var Main = function (_React$Component) {
                         React.createElement(
                             "div",
                             { className: "form-item-label" },
+                            "\u8BC1\u4EF6\u5F71\u50CF"
+                        ),
+                        React.createElement(
+                            "div",
+                            { className: "form-item-widget" },
+                            React.createElement("img", { className: "mt-2", style: { width: "220px", height: "60px" }, src: "../images/btn-scan.png", onClick: this.getIdCardImg.bind(this) })
+                        )
+                    ),
+                    React.createElement(
+                        "div",
+                        { className: "form-item text16" },
+                        React.createElement(
+                            "div",
+                            { className: "form-item-label" },
                             "\u8BC1\u4EF6\u7C7B\u578B"
                         ),
                         React.createElement(
@@ -794,11 +808,7 @@ var Main = function (_React$Component) {
                 React.createElement(
                     "div",
                     { className: "bottom text18 tc-primary" },
-                    React.createElement(
-                        "div",
-                        { className: "ml-3 mr-auto" },
-                        React.createElement("img", { className: "mt-2", style: { width: "220px", height: "60px" }, src: "../images/btn-scan.png", onClick: this.getIdCardImg.bind(this) })
-                    ),
+                    React.createElement("div", { className: "ml-3 mr-auto" }),
                     React.createElement(
                         "div",
                         { className: "mr-3", onClick: this.next.bind(this) },

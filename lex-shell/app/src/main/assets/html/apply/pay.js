@@ -124,18 +124,22 @@ var Main = function (_React$Component) {
         key: "save",
         value: function save() {
             var _this3 = this;
-
+            let  num = Math.random();//Math.random()：得到一个0到1之间的随机数
+            num = Math.ceil(num * 5);
             this.state.pay.applyNo = this.refs.applyNo.value;
             this.state.pay.bankCard = this.refs.bankCard.value;
-            APP.apply.save({ id: this.state.orderId, extra: { pay: this.state.pay } }, function (r) {
+            APP.apply.save({ id: this.state.orderId, extra: { pay: this.state.pay }, status: num }, function (r) {
                 _this3.setState({ pay: r.extra.pay });
             });
         }
     }, {
         key: "onValChange",
         value: function onValChange(key, val) {
-            if (key == "payMode") this.state.pay[key] = val;
-            this.state.pay.bank = null;
+            if (key == "payMode") {
+                this.state.pay.bank = null;
+            }
+            this.state.pay[key] = val;
+
             this.setState({ pay: this.state.pay });
         }
     }, {

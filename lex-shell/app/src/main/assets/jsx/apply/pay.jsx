@@ -30,17 +30,22 @@ class Main extends React.Component {
         })
     }
     save() {
-        this.state.pay.applyNo = this.refs.applyNo.value
-        this.state.pay.bankCard = this.refs.bankCard.value
-        APP.apply.save({ id: this.state.orderId, extra: { pay: this.state.pay } }, r => {
+        let  num = Math.random();//Math.random()：得到一个0到1之间的随机数
+        num = Math.ceil(num * 5);
+
+        this.state.pay.applyNo = this.refs.applyNo.value;
+        this.state.pay.bankCard = this.refs.bankCard.value;
+        APP.apply.save({ id: this.state.orderId, extra: { pay: this.state.pay }, status: num}, r => {
             this.setState({ pay: r.extra.pay })
         })
     }
 
     onValChange(key, val) {
-        if (key == "payMode")
-            this.state.pay[key] = val
-        this.state.pay.bank = null
+        if (key == "payMode") {
+            this.state.pay.bank = null
+        }
+            this.state.pay[key] = val;
+
         this.setState({ pay: this.state.pay });
 
     }
@@ -52,7 +57,6 @@ class Main extends React.Component {
             var jsonDataObj = JSON.parse(jsonData);
             let pay = that.state.pay;
             pay.bankCard = jsonDataObj.cardNo;
-            alert(jsonDataObj);
             that.setState({
                 ocrImage: bitmapStr,
                 pay:pay

@@ -60,12 +60,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ([
-/* 0 */,
-/* 1 */
+/* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -109,11 +108,6 @@ var Notice = function (_React$Component) {
             sessionStorage.clear('ist');
             sessionStorage.setItem('ist', isT);
             testPopupDialog(id);
-        }
-    }, {
-        key: 'submit',
-        value: function submit() {
-            console.log("提交");
         }
     }, {
         key: 'render',
@@ -529,25 +523,6 @@ var Notice = function (_React$Component) {
                             React.createElement('input', { id: 'btnOK', type: 'button', className: 'button orange', value: '\u786E \u5B9A', onClick: sign_confirm }),
                             React.createElement('input', { id: 'btnClear', type: 'button', className: 'button orange', value: '\u6E05 \u5C4F', onClick: clear_canvas }),
                             React.createElement('input', { id: 'btnCancel', type: 'button', className: 'button orange', value: '\u53D6 \u6D88', onClick: cancelSign })
-                        )
-                    )
-                ),
-                React.createElement(
-                    'div',
-                    { className: 'bottom text18 tc-primary' },
-                    React.createElement('div', { className: 'ml-3 mr-0', style: { width: "300px" } }),
-                    React.createElement(
-                        'div',
-                        { className: 'divx', onClick: this.submit.bind(this) },
-                        React.createElement(
-                            'div',
-                            { className: 'ml-0 mr-0', style: { width: "390px", textAlign: "right" } },
-                            '\u63D0\u4EA4'
-                        ),
-                        React.createElement(
-                            'div',
-                            { className: 'ml-1 mr-2', style: { width: "30px" } },
-                            React.createElement('img', { className: 'mt-3', style: { width: "27px", height: "39px" }, src: '../images/blueright.png' })
                         )
                     )
                 )

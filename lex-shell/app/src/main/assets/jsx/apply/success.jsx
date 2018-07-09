@@ -2,11 +2,11 @@ class Main extends React.Component {
     constructor() {
         super()
         this.state = {
-            orderId: common.param("orderId"),
+            orderId: common.param("orderId")
         }
     }
-    componentDidMount() {
-        MF.setTitle("投保结果")
+    componentDidMount () {
+        MF.setTitle("投保结果");
     }
     next() {
         MF.navi("home/home.html")
@@ -18,7 +18,7 @@ class Main extends React.Component {
                     <img style={{width:"250", height:"250px"}} src="../images/success.png"/>
                 </div>
                 <div className="text19 ml-auto mr-auto mt-3" style={{textAlign:"center"}}>
-                    投保成功<br/>保单号：123456789012345678
+                    投保成功<br/>保单号：123456789
                 </div>
                 <div className="bottom text18 tc-primary">
                     <div className="ml-3 mr-auto">

@@ -60,12 +60,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ 2:
+/******/ ([
+/* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -235,7 +234,6 @@ var Main = function (_React$Component) {
         key: "next",
         value: function next() {
             this.save();
-            console.log(localStorage.insurantsCardData, '==========')
             if (!this.state.ocrImage || !this.state.ocrImage.length > 0) {
                 alert('请执行OCR扫描!!');
             } else {
@@ -453,6 +451,20 @@ var Main = function (_React$Component) {
                                 cust.marriage == null ? "请选择婚姻状况" : this.state.marriageDict[cust.marriage]
                             ),
                             React.createElement("img", { className: "mt-2 mr-0", style: { width: "27px", height: "39px" }, src: "../images/right.png" })
+                        )
+                    ),
+                    React.createElement(
+                        "div",
+                        { className: "form-item text16" },
+                        React.createElement(
+                            "div",
+                            { className: "form-item-label" },
+                            "\u8BC1\u4EF6\u5F71\u50CF"
+                        ),
+                        React.createElement(
+                            "div",
+                            { className: "form-item-widget" },
+                            React.createElement("img", { className: "mt-2", style: { width: "220px", height: "60px" }, src: "../images/btn-scan.png", onClick: this.getIdCardImg.bind(this) })
                         )
                     ),
                     React.createElement(
@@ -869,11 +881,7 @@ var Main = function (_React$Component) {
                 React.createElement(
                     "div",
                     { className: "bottom text18 tc-primary" },
-                    React.createElement(
-                        "div",
-                        { className: "ml-3 mr-auto" },
-                        React.createElement("img", { className: "mt-2", style: { width: "220px", height: "60px" }, src: "../images/btn-scan.png", onClick: this.getIdCardImg.bind(this) })
-                    ),
+                    React.createElement("div", { className: "ml-3 mr-auto" }),
                     React.createElement(
                         "div",
                         { className: "mr-3", onClick: this.next.bind(this) },
@@ -892,5 +900,4 @@ $(document).ready(function () {
 });
 
 /***/ })
-
-/******/ });
+/******/ ]);

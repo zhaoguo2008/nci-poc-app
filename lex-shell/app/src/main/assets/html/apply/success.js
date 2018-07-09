@@ -60,12 +60,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 14);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ 14:
+/******/ ([
+/* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -88,7 +87,8 @@ var Main = function (_React$Component) {
         var _this = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this));
 
         _this.state = {
-            orderId: common.param("orderId")
+            orderId: common.param("orderId"),
+            orderNumber: null
         };
         return _this;
     }
@@ -96,7 +96,15 @@ var Main = function (_React$Component) {
     _createClass(Main, [{
         key: "componentDidMount",
         value: function componentDidMount() {
+            var _this2 = this;
+
             MF.setTitle("投保结果");
+            APP.apply.view(common.param("orderId"), function (r) {
+                console.log(JSON.stringify(r));
+                _this2.setState({
+                    orderNumber: '12'
+                });
+            });
         }
     }, {
         key: "next",
@@ -119,7 +127,8 @@ var Main = function (_React$Component) {
                     { className: "text19 ml-auto mr-auto mt-3", style: { textAlign: "center" } },
                     "\u6295\u4FDD\u6210\u529F",
                     React.createElement("br", null),
-                    "\u4FDD\u5355\u53F7\uFF1A123456789012345678"
+                    "\u4FDD\u5355\u53F7\uFF1A",
+                    this.state.orderNumber && this.state.orderNumber
                 ),
                 React.createElement(
                     "div",
@@ -143,5 +152,4 @@ $(document).ready(function () {
 });
 
 /***/ })
-
-/******/ });
+/******/ ]);

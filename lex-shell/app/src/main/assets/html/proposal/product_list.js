@@ -104,9 +104,11 @@ var Main = function (_React$Component) {
         }
     }, {
         key: "addToPlan",
-        value: function addToPlan(productId) {
-            localStorage.mainProductId = productId;
-            APP.back(productId);
+        value: function addToPlan(code, name, id) {
+            localStorage.mainProductCode = code;
+            localStorage.mainProductName = name;
+            localStorage.mainProductId = id;
+            APP.back(code);
         }
     }, {
         key: "close",
@@ -129,7 +131,7 @@ var Main = function (_React$Component) {
                 this.state.list.map(function (v, i) {
                     return React.createElement(
                         "div",
-                        { className: "list-item", onClick: _this3.addToPlan.bind(_this3, v.code), key: i },
+                        { className: "list-item", onClick: _this3.addToPlan.bind(_this3, v.code,v.name,v.id), key: i },
                         React.createElement(
                             "div",
                             { className: "list-item-icon" },
@@ -146,7 +148,7 @@ var Main = function (_React$Component) {
                             React.createElement(
                                 "div",
                                 { className: "text12", style: { height: "35px", lineHeight: "35px", color: "gray" } },
-                                v.name
+                                v.code
                             )
                         )
                     );

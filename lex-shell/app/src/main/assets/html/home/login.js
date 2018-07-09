@@ -3,7 +3,7 @@ class Main extends React.Component {
         super()
         this.state = {
             loginName:'',
-            passWord:''
+            passWord:'',
         }
     }
     componentDidMount() {
@@ -31,14 +31,25 @@ class Main extends React.Component {
         }else if(this.refs.password.value == ''){
             alert('登录密码不能为空!')
         }else{
-            /*APP.login(this.refs.loginName.value, this.refs.password.value, r => {
-                MF.setEnv("userKey", r.content.userKey)
-                MF.navi("home/home.html")
+            APP.login(this.refs.loginName.value, this.refs.password.value, data => {
+                that.setState({ login: "true" });
+                if(window.MF){
+                    localStorage.channelId = data.channelId;
+                    localStorage.orgId = data.orgId;
+
+                    MF.setEnv("userKey", data.userKey);
+                    MF.setEnv("orgId", data.orgId);
+                    MF.navi("home/home.html");
+
+                }else{
+                    localStorage.channelId = data.channelId;
+                    localStorage.orgId = data.orgId;
+                    location.href = 'home.html';
+                }
             }, r => {
-                that.setState({ login: "fail" })
-                // MF.navi("home/home.html")
-            })*/
-            $.ajax({
+                that.setState({ login: "fail" });
+            })
+           /* $.ajax({
                 contentType: 'application/json',
                 type:'POST',
                 url:"http://114.112.96.30:10003/app/user/login.json",
@@ -59,8 +70,9 @@ class Main extends React.Component {
                         }else{
                             localStorage.channelId = data.content.channelId
                             localStorage.orgId = data.content.orgId
-                            location.href = 'home.html'
+                             location.href = 'home.html'
                         }
+                        that.setState({ login: "true" })
                     } else {
                         that.setState({ login: "fail" })
                     }
@@ -69,19 +81,6 @@ class Main extends React.Component {
                 error(err){
                     console.log(err, 'err')
                 }
-            })
-            /*ajax('/user/login.json', {
-                "loginName":this.refs.loginName.value,
-                "password":this.refs.password.value
-            },(data)=>{
-
-                if(data.result == 'success'){
-                        MF.setEnv("userKey", data.userKey)
-                        MF.navi("home/home.html")
-                }else{
-                    alert('登录出错！')
-                }
-
             })*/
 
         }
