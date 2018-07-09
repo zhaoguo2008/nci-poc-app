@@ -30,17 +30,22 @@ class Main extends React.Component {
         })
     }
     save() {
-        this.state.pay.applyNo = this.refs.applyNo.value
-        this.state.pay.bankCard = this.refs.bankCard.value
-        APP.apply.save({ id: this.state.orderId, extra: { pay: this.state.pay } }, r => {
+        let  num = Math.random();//Math.random()：得到一个0到1之间的随机数
+        num = Math.ceil(num * 5);
+
+        this.state.pay.applyNo = this.refs.applyNo.value;
+        this.state.pay.bankCard = this.refs.bankCard.value;
+        APP.apply.save({ id: this.state.orderId, extra: { pay: this.state.pay }, status: num}, r => {
             this.setState({ pay: r.extra.pay })
         })
     }
 
     onValChange(key, val) {
-        if (key == "payMode")
-            this.state.pay[key] = val
-        this.state.pay.bank = null
+        if (key == "payMode") {
+            this.state.pay.bank = null
+        }
+            this.state.pay[key] = val;
+
         this.setState({ pay: this.state.pay });
 
     }
@@ -49,12 +54,9 @@ class Main extends React.Component {
         // 证件扫描
         OCR.callCardBank("APPNT", "OCR_BANK");
         window.callOCRBack = function callOCRBack(flag, jsonData, bitmapStr){
-            let jsonDataObj = JSON.parse(jsonData);
-            alert(jsonData)
+            var jsonDataObj = JSON.parse(jsonData);
             let pay = that.state.pay;
-            pay.bankCard = '';
-            pay.bank = '';
-            alert(jsonDataObj);
+            pay.bankCard = jsonDataObj.cardNo;
             that.setState({
                 ocrImage: bitmapStr,
                 pay:pay
@@ -118,14 +120,10 @@ class Main extends React.Component {
                 </div>
                 <div style={{height:"120px"}}></div>
                 <div className="bottom text18 tc-primary">
-                    <div className="ml-3 mr-0" style={{width:"300px"}}></div>
-                    <div className="divx" onClick={this.next.bind(this)}>
-                        <div className="ml-0 mr-0" style={{width:"390px", textAlign:"right"}}>
-                            确认支付
-                        </div>
-                        <div className="ml-1 mr-2" style={{width:"30px"}}>
-                            <img className="mt-3" style={{width:"27px", height:"39px"}} src="../images/blueright.png"/>
-                        </div>
+                    <div className="ml-3 mr-auto">
+                    </div>
+                    <div className="mr-3" onClick={this.next.bind(this)}>
+                        确认支付
                     </div>
                 </div>
             </div>

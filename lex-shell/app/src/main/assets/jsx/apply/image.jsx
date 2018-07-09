@@ -5,15 +5,17 @@ class Main extends React.Component {
             orderId: common.param("orderId"),
         }
     }
-    componentDidMount() {
+    componentWillMount() {
         MF.setTitle("影像");
         var cardJson = []
         localStorage.applicantCardData && cardJson.push(localStorage.applicantCardData);
         localStorage.insurantsCardData && cardJson.push(localStorage.insurantsCardData);
-        localStorage.beneficiaryCardData && cardJson.push(localStorage.beneficiaryCardData);
+        // localStorage.beneficiaryCardData && cardJson.push(localStorage.beneficiaryCardData);
         localStorage.payCardData && cardJson.push(localStorage.payCardData);
         this.setState({
             cardData: cardJson
+        }, () => {
+        console.log(this.state.cardData.length);
         });
     }
     next() {
@@ -27,23 +29,18 @@ class Main extends React.Component {
                 <div style={{overflow:'hidden'}}>
                     {
                         this.state.cardData && this.state.cardData.map((prod)=>{
-                            alert(prod)
                             return(
-                                <img src={prod} style={{width:'50%',height:'20%',float:'left'}}/>
+                                <img src={'data:image/png;base64,' + prod} style={{width:'50%',height:'20%',float:'left'}}/>
                             )
                         })
                     }
                 </div>
 
                 <div className="bottom text18 tc-primary">
-                    <div className="ml-3 mr-0" style={{width:"300px"}}></div>
-                    <div className="divx" onClick={this.next.bind(this)}>
-                        <div className="ml-0 mr-0" style={{width:"390px", textAlign:"right"}}>
-                            预览
-                        </div>
-                        <div className="ml-1 mr-2" style={{width:"30px"}}>
-                            <img className="mt-3" style={{width:"27px", height:"39px"}} src="../images/blueright.png"/>
-                        </div>
+                    <div className="ml-3 mr-auto">
+                    </div>
+                    <div className="mr-3" onClick={this.next.bind(this)}>
+                        预览
                     </div>
                 </div>
             </div>

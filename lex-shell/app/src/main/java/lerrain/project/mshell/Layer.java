@@ -3,8 +3,11 @@ package lerrain.project.mshell;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.graphics.Color;
+import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.animation.AccelerateDecelerateInterpolator;
+import android.webkit.CookieManager;
 import android.webkit.JsResult;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
@@ -13,13 +16,9 @@ import android.webkit.WebViewClient;
 import android.widget.RelativeLayout;
 import android.widget.Scroller;
 
-import com.polysoft.nci.face.FaceCallJavaScriptImpl;
-import com.polysoft.nci.face.FaceNativeApi;
-import com.polysoft.nci.interf.IJavaScript;
 import com.polysoft.nci.ocr.IOCRScript;
 import com.polysoft.nci.ocr.OCRCallJavaScriptImpl;
 import com.polysoft.nci.ocr.OCRNativeApi;
-import com.polysoft.nci.share.ShareNativeApi;
 
 public abstract class Layer extends RelativeLayout
 {
@@ -85,9 +84,6 @@ public abstract class Layer extends RelativeLayout
 
 		IOCRScript iScript = new OCRCallJavaScriptImpl(wv);
 		wv.addJavascriptInterface(new OCRNativeApi(this.window, iScript), "OCR");
-		wv.addJavascriptInterface(new FaceNativeApi(this.window, new FaceCallJavaScriptImpl(wv)), "FACE");
-		wv.addJavascriptInterface(new ShareNativeApi(this.window), "SHARE");
-
 		setWebViewLoadListener(wv);
 
 		wvc = new WebViewClient()

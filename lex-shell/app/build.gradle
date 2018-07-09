@@ -1,27 +1,16 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.mob.sdk'
 
 android {
     compileSdkVersion 22
     buildToolsVersion "25.0.2"
     defaultConfig {
-        applicationId "com.picc.ehomern"
+        applicationId "com.picc.ehome"
         minSdkVersion 22
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
-
-    signingConfigs {
-        debug {
-            storeFile file("./picc-ehome.picc-ehome")
-            keyAlias 'android.keystore'
-            keyPassword 'hyl123'
-            storePassword 'hyl123'
-        }
-    }
-
     buildTypes {
         release {
             minifyEnabled false
@@ -37,41 +26,6 @@ android {
     }
 }
 
-MobSDK {
-    appKey "26bfb56ecb57d"
-    appSecret "691d4dbc5755d629a0b40bea0a9334f5"
-    ShareSDK {
-        devInfo {
-//            Wechat {
-//                appId "wx4868b35061f87885"
-//                appSecret "64020361b8ec4c99936c0e3999a9f249"
-//                userName "gh_afb25ac019c9"
-//                path "pages/index/index.html?id=1"
-//                miniprogramType 2
-//                bypassApproval false
-//            }
-//            QQ {
-//                appId "1106953945"
-//                appKey "ChjyzfrB5USN4HEU"
-//                shareByAppClient true
-//                bypassApproval false
-//            }
-            QQ {
-                appId "100371282"
-                appKey "aed9b0303e3ed1e27bae87c33761161d"
-                shareByAppClient true
-                bypassApproval false
-            }
-        }
-    }
-}
-
-repositories {
-    flatDir {
-        dirs 'libs'
-    }
-}
-
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
@@ -79,7 +33,4 @@ dependencies {
     })
     testCompile 'junit:junit:4.12'
     compile files('libs/fastjson-1.1.34.jar')
-    compile files('libs/galaxy-lite-2.0.0.jar')
-    compile(name: 'rim-sdk-api-1.6.2.9-release', ext: 'aar')
-    compile(name: 'rim-sdk-face-1.6.2.9-release', ext: 'aar')
 }

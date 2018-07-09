@@ -2,13 +2,18 @@ package lerrain.project.mshell;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
+import android.util.Log;
 
+import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.polysoft.nci.interf.IActivity;
 import com.polysoft.nci.interf.IActivityResult;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -90,7 +95,7 @@ public class Main extends Activity implements IActivity
 	{
 		PageLayer layer = new PageLayer(this);
 		layer.openLocal("home/login.html");
-//		layer.openLocal("share/html/share.html");
+//		layer.openLocal("ocr/html/demo.html");
 
 		return layer;
 	}

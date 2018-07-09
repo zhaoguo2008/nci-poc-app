@@ -9,7 +9,8 @@ class CreateClient extends React.Component {
             certTypeDict: {},
             relationDict: {"00":"本人", "01":"夫妻"},
             index: 0,
-            mode: 1,
+            mode: 0,
+            verify: {},
             cust: common.customer('customerMsg')
         };
         this.finish = this.finish.bind(this);
@@ -45,12 +46,52 @@ class CreateClient extends React.Component {
             })
         })
     }
+    verify(c) {
+        let v = {}
+
+        if (this.state.mode == 1) {
+            if (!c.name) {
+                v.name = "该项必填"
+            } else {
+                if (c.name.length > 60)
+                    v.name = "姓名太长"
+                else if (c.name.indexOf(" ") > 0)
+                    v.name = "姓名中不能有空格"
+            }
+
+            if (!c.birthday) {
+                v.birthday = "该项必填"
+            } else {
+                if (c.birthday > common.dateStr(new Date()))
+                    v.birthday = "生日不能大于当前日期"
+            }
+
+            if (!c.certNo) {
+                v.certNo = "该项必填"
+            } else {
+                if (c.certType == 1 && c.certNo.length != 18)
+                    v.certNo = "身份证号需要为18位"
+            }
+        }
+
+        if (this.state.mode == 3) {
+            if (!c.zipcode) {
+                v.zipcode = "该项必填"
+            } else {
+                if (!/^[0-9][0-9]{5}$/.test(c.zipcode))
+                    v.zipcode = "邮政编码需要为6位数字"
+            }
+        }
+
+        this.setState({ verify: v });
+        return Object.keys(v).length == 0;
+    }
     save() {
         let c = this.state.cust;
         if (this.state.mode == 1) {
             c.name = this.refs.name.value
             c.certNo = this.refs.certNo.value
-            if (!c.name || !c.name.length) {
+            /*if (!c.name || !c.name.length) {
                 console.log('请填写用户姓名');
                 return;
             }if (!c.gender || !c.gender.length) {
@@ -71,13 +112,13 @@ class CreateClient extends React.Component {
             } if (!c.certValidDate || !c.certValidDate.length) {
                 console.log('请填写证件有效期');
                 return;
-            }
+            }*/
             c.mode1 = true
         } else if (this.state.mode == 2) {
             c.company = this.refs.company.value
             c.workJob = this.refs.workJob.value
             c.income = this.refs.income.value
-             if (!c.company || !c.company.length) {
+             /*if (!c.company || !c.company.length) {
                  console.log('请填写工作单位');
                  return;
              }if (!c.workJob || !c.workJob.length) {
@@ -98,7 +139,7 @@ class CreateClient extends React.Component {
              } if (!c.income || !c.income.length) {
                  console.log('请填写年收入');
                  return;
-             }
+             }*/
             c.mode2 = true
         } else if (this.state.mode == 3) {
             c.address = this.refs.address.value
@@ -110,39 +151,40 @@ class CreateClient extends React.Component {
             c.wechat = this.refs.wechat.value
             c.zipcode = this.refs.zipcode.value
             c.email = this.refs.email.value
-            if (!c.address || !c.address.length) {
+            /*if (!c.address || !c.address.length) {
                 console.log('请填写联系地址');
                 return;
-            }/*if (!c.cityText || !c.cityText.length) {
+            }/!*if (!c.cityText || !c.cityText.length) {
                 console.log('请填写乡镇(街道)');
                 return;
             } if (!c.address2 || !c.address2.length) {
                 console.log('请填写村(社区)');
                 return;
-            } */if ((!c.telephone || !c.telephone.length) && (!c.mobile || !c.mobile.length)) {
+            } *!/if ((!c.telephone || !c.telephone.length) && (!c.mobile || !c.mobile.length)) {
                 console.log('手机或者电话二者选其一');
                 return;
-            } /*if (!c.qq || !c.qq.length) {
+            } /!*if (!c.qq || !c.qq.length) {
                 console.log('请填写qq号码');
                 return;
             } if (!c.wechat || !c.wechat.length) {
                 console.log('请填写微信号码');
                 return;
-            } */if (!c.zipcode || !c.zipcode.length) {
+            } *!/if (!c.zipcode || !c.zipcode.length) {
                 console.log('请填写邮政编码');
                 return;
             } if (!c.email || !c.email.length) {
                 console.log('请填写邮箱');
                 return;
-            }
+            }*/
             c.mode3 = true
         } else if (this.state.mode == 4) {
             c.mode4 = true
         }
 
         this.state.cust= c;
-        this.setState({mode: 0})
-
+        if (this.verify(c)) {
+            this.setState({ mode: 0, cust: c})
+        }
     }
     finish() {
         let cust = this.state.cust;
@@ -187,18 +229,12 @@ class CreateClient extends React.Component {
                 "zipcode": cust.zipcode
             })
         }
-        this.save();
-        if (!cust.mode1 ||
-            !cust.mode2 ||
-            !cust.mode3 ||
-            !cust.mode4) {
-            console.log('请补充信息');
-            return;
+        if (this.verify(cust)) {
+            APP.list('/customer/save.json', postData, r => {
+                window.MF && MF.navi("client/client_list.html");
+            })
         }
-        APP.list('/customer/save.json', postData, r => {
-            alert(r)
-            // window.MF && MF.navi("client/client_list.html");
-        })
+
     }
     newInsurant() {
         this.state.cust.push({});
@@ -221,12 +257,14 @@ class CreateClient extends React.Component {
         }
         this.setState({ cust: this.state.cust })
     }
-
+    switchMode(mode) {
+        this.setState({ mode:this.state.mode==mode?0:mode, verify:{} })
+    }
     render(){
         let cust = this.state.cust
         return (
             <div>
-                <div className="divx bg-white pl-3 pr-3" style={{height:"100px", marginTop:"20px", textAlign:"center"}} onClick={v => { this.setState({ mode: this.state.mode==1?0:1 }) }}>
+                <div className="divx bg-white pl-3 pr-3" style={{height:"100px", marginTop:"20px", textAlign:"center"}} onClick={this.switchMode.bind(this, 1)}>
                     <div className="divx text18" style={{height:"60px", margin:"25px auto 0 auto", verticalAlign:"middle", lineHeight:"50px"}}>
                         <img style={{width:"50px", height:"50px", margin:"0 20px 0 65px"}} src={"../images/"+(this.state.mode==1?"sub":"add")+".png"}/>基本信息
                     </div>
@@ -239,6 +277,7 @@ class CreateClient extends React.Component {
                             <input className="mt-1" ref="name" defaultValue={cust.name} placeholder="请输入投保人姓名"/>
                         </div>
                     </div>
+                    { this.state.verify.name ? <div className="form-alert">{this.state.verify.name}</div> : null }
                     <div className="form-item text16">
                         <div className="form-item-label">性别</div>
                         <div className="form-item-widget" onClick={v => {APP.pick("select", this.state.genderDict, this.onValChange.bind(this, "gender"))}}>
@@ -260,6 +299,7 @@ class CreateClient extends React.Component {
                             <img className="mt-2 mr-0" style={{width:"27px", height:"39px"}} src="../images/right.png"/>
                         </div>
                     </div>
+                    { this.state.verify.birthday ? <div className="form-alert">{this.state.verify.birthday}</div> : null }
                     <div className="form-item text16">
                         <div className="form-item-label">婚姻状况</div>
                         <div className="form-item-widget" onClick={v => {APP.pick("select", this.state.marriageDict, this.onValChange.bind(this, "marriage"))}}>
@@ -280,6 +320,7 @@ class CreateClient extends React.Component {
                             <input className="mt-1" ref="certNo" defaultValue={cust.certNo} placeholder="请输入证件号码"/>
                         </div>
                     </div>
+                    { this.state.verify.certNo ? <div className="form-alert">{this.state.verify.certNo}</div> : null }
                     <div className="form-item text16">
                         <div className="form-item-label">证件有效期</div>
                         <div className="form-item-widget" onClick={v => {APP.pick("date", { begin: new Date() }, this.onValChange.bind(this, "certValidDate"))}}>
@@ -291,7 +332,7 @@ class CreateClient extends React.Component {
                         <img className="mt-1 ml-auto mr-3" style={{width:"120px", height:"60px"}} src="../images/finish.png" onClick={this.save.bind(this)}/>
                     </div>
                 </div> }
-                <div className="divx bg-white pl-3 pr-3" style={{height:"100px", marginTop:"20px", textAlign:"center"}} onClick={v => { this.setState({ mode: this.state.mode==2?0:2 }) }}>
+                <div className="divx bg-white pl-3 pr-3" style={{height:"100px", marginTop:"20px", textAlign:"center"}} onClick={this.switchMode.bind(this, 2)}>
                     <div className="divx text18" style={{height:"60px", margin:"25px auto 0 auto", verticalAlign:"middle", lineHeight:"50px"}}>
                         <img style={{width:"50px", height:"50px", margin:"0 20px 0 65px"}} src={"../images/"+(this.state.mode==2?"sub":"add")+".png"}/>职业信息
                     </div>
@@ -346,7 +387,7 @@ class CreateClient extends React.Component {
                         <img className="mt-1 ml-auto mr-3" style={{width:"120px", height:"60px"}} src="../images/finish.png" onClick={this.save.bind(this)}/>
                     </div>
                 </div> }
-                <div className="divx bg-white pl-3 pr-3" style={{height:"100px", marginTop:"20px", textAlign:"center"}} onClick={v => { this.setState({ mode: this.state.mode==3?0:3 }) }}>
+                <div className="divx bg-white pl-3 pr-3" style={{height:"100px", marginTop:"20px", textAlign:"center"}} onClick={this.switchMode.bind(this, 3)}>
                     <div className="divx text18" style={{height:"60px", margin:"25px auto 0 auto", verticalAlign:"middle", lineHeight:"50px"}}>
                         <img style={{width:"50px", height:"50px", margin:"0 20px 0 65px"}} src={"../images/"+(this.state.mode==3?"sub":"add")+".png"}/>联系方式
                     </div>
@@ -377,6 +418,7 @@ class CreateClient extends React.Component {
                             <input className="mt-1" ref="zipcode" defaultValue={cust.zipcode} placeholder="请输入邮政编码"/>
                         </div>
                     </div>
+                    { this.state.verify.zipcode ? <div className="form-alert">{this.state.verify.zipcode}</div> : null }
                     <div className="form-item text16">
                         <div className="form-item-label" style={{width:"670px"}}>联系方式(手机或者电话二者选其一)</div>
                     </div>
@@ -414,7 +456,7 @@ class CreateClient extends React.Component {
                         <img className="mt-1 ml-auto mr-3" style={{width:"120px", height:"60px"}} src="../images/finish.png" onClick={this.save.bind(this)}/>
                     </div>
                 </div> }
-                <div className="divx bg-white pl-3 pr-3" style={{height:"100px", marginTop:"20px", textAlign:"center"}} onClick={v => { this.setState({ mode: this.state.mode==4?0:4 }) }}>
+                <div className="divx bg-white pl-3 pr-3" style={{height:"100px", marginTop:"20px", textAlign:"center"}} onClick={this.switchMode.bind(this, 4)}>
                     <div className="divx text18" style={{height:"60px", margin:"25px auto 0 auto", verticalAlign:"middle", lineHeight:"50px"}}>
                         <img style={{width:"50px", height:"50px", margin:"0 20px 0 65px"}} src={"../images/"+(this.state.mode==4?"sub":"add")+".png"}/>其他信息
                     </div>

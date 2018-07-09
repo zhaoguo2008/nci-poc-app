@@ -60,12 +60,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 11);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ 11:
+/******/ ([
+/* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -100,16 +99,16 @@ var Main = function (_React$Component) {
         value: function componentDidMount() {
             var _this2 = this;
 
-            this.state.form = [];
-            APP.apply.editProduct(this.state.planId,localStorage.channelId,localStorage.orgId, localStorage.mainProductId,this.state.index, function (r) {
-                _this2.state.form.push({
+            this.state.form = [{}];
+            APP.apply.editProduct(this.state.planId, localStorage.channelId, localStorage.orgId, localStorage.mainProductId, this.state.index, function (r) {
+                _this2.state.form[0] = {
                     name: r.name,
                     form: _this2.formOf(r.factors)
-                });
+                };
                 _this2.setState({ form: _this2.state.form });
             });
             APP.apply.viewPlan(this.state.planId, function (plan) {
-                APP.apply.listRiders(_this2.state.planId,localStorage.channelId,localStorage.orgId, _this2.state.index, function (r) {
+                APP.apply.listRiders(_this2.state.planId, localStorage.channelId, localStorage.orgId, _this2.state.index, function (r) {
                     r.map(function (v) {
                         var prdForm = {
                             name: v.name,
@@ -118,7 +117,7 @@ var Main = function (_React$Component) {
                         };
                         plan.product.map(function (r3, i) {
                             if (r3.productId == v.code && r3.parent == _this2.state.index) {
-                                APP.apply.editProduct(_this2.state.planId,localStorage.channelId,localStorage.orgId,localStorage.productId, i, function (r4) {
+                                APP.apply.editProduct(_this2.state.planId, localStorage.channelId, localStorage.orgId, localStorage.productId, i, function (r4) {
                                     prdForm.form = _this2.formOf(r4.factors);
                                     _this2.setState({ form: _this2.state.form });
                                 });
@@ -127,10 +126,8 @@ var Main = function (_React$Component) {
                         _this2.state.form.push(prdForm);
                     });
                     _this2.setState({ form: _this2.state.form });
-
                 });
             });
-
         }
     }, {
         key: "addRider",
@@ -154,8 +151,6 @@ var Main = function (_React$Component) {
                     _this3.setState({ form: _this3.state.form });
                 });
             }
-
-
         }
     }, {
         key: "close",
@@ -229,7 +224,9 @@ var Main = function (_React$Component) {
                                 React.createElement(
                                     "div",
                                     { className: "form-item-widget", style: { width: "410px", margin: "10px 20px 0 0", textAlign: "right" } },
-                                    v.widget == "number" ? React.createElement("input", { type: "number", placeholder: "请输入" + v.label }) : v.widget == "switch" || v.widget == "select" ? React.createElement(
+                                    v.widget == "number" ? React.createElement("input", { type: "number", placeholder: "请输入" + v.label, onChange: function onChange(e) {
+                                            _this5.onValChange(v, i, j, e.target.value);
+                                        } }) : v.widget == "switch" || v.widget == "select" ? React.createElement(
                                         "div",
                                         { style: { display: "flex" }, onClick: function onClick(x) {
                                                 APP.pick("select", v.detail, _this5.onValChange.bind(_this5, v, i, j));
@@ -263,5 +260,4 @@ $(document).ready(function () {
 });
 
 /***/ })
-
-/******/ });
+/******/ ]);

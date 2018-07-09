@@ -5,7 +5,7 @@ import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.Scroller;
 
-import com.picc.ehomern.R;
+import com.picc.ehome.R;
 
 public class TopButton extends ImageView implements OnClickListener
 {

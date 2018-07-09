@@ -6,11 +6,12 @@ class Main extends React.Component {
         }
     }
     componentDidMount() {
-        APP.proposal.queryProduct(null, "nci", null, r => {
+        APP.proposal.queryProduct(null, "nci",localStorage.channelId,localStorage.orgId, null, r => {
           this.setState({ list: r })
         })
     }
     addToPlan(productId) {
+        localStorage.mainProductId = productId
         APP.back(productId)
     }
     close() {

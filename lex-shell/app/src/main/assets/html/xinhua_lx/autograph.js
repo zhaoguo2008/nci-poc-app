@@ -221,13 +221,15 @@ var Autograph = function (_React$Component) {
     }, {
         key: 'componentWillMount',
         value: function componentWillMount() {
+            var _this2 = this;
+
             window.MF && MF.setTitle("投保单预览");
-            APP.apply.view(common.param("orderId"), r => {
-                console.log(JSON.stringify(r.detail))
-                this.setState({
+            APP.apply.view(common.param("orderId"), function (r) {
+                console.log(JSON.stringify(r.detail));
+                _this2.setState({
                     cust: r.detail
-                })
-            })
+                });
+            });
         }
     }, {
         key: 'getQueryString',
@@ -1573,20 +1575,11 @@ var Autograph = function (_React$Component) {
                 React.createElement(
                     'div',
                     { className: 'bottom text18 tc-primary' },
-                    React.createElement('div', { className: 'ml-3 mr-0', style: { width: "300px" } }),
+                    React.createElement('div', { className: 'ml-3 mr-auto' }),
                     React.createElement(
                         'div',
-                        { className: 'divx', onClick: this.submit.bind(this) },
-                        React.createElement(
-                            'div',
-                            { className: 'ml-0 mr-0', style: { width: "390px", textAlign: "right" ,fontSize: '.9em'} },
-                            '\u63D0\u4EA4'
-                        ),
-                        React.createElement(
-                            'div',
-                            { className: 'ml-1 mr-2', style: { width: "30px" } },
-                            React.createElement('img', { className: 'mt-3', style: { width: "27px", height: "39px" }, src: '../images/blueright.png' })
-                        )
+                        { className: 'mr-3', onClick: this.submit.bind(this) },
+                        '\u63D0\u4EA4'
                     )
                 )
             );

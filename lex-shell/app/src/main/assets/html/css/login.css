@@ -362,6 +362,16 @@ input::-webkit-input-placeholder {
   color: #9B9B9B;
   font-size: .9rem;
 }
+.photo-show {
+  display: flex;
+  flex-wrap: wrap;
+}
+.photo-show img {
+  display: flex;
+  width: 5em;
+  height: 5em;
+  background: red;
+}
 /* 被保人告知 */
 .inform-wrap {
   width: 100%;

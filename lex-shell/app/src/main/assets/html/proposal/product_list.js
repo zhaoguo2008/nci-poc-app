@@ -60,12 +60,12 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ 5:
+/******/ ([
+/* 0 */,
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -97,15 +97,15 @@ var Main = function (_React$Component) {
         key: "componentDidMount",
         value: function componentDidMount() {
             var _this2 = this;
-            APP.proposal.queryProduct(null,"nci", localStorage.channelId,localStorage.orgId, null, function (r) {
+
+            APP.proposal.queryProduct(null, "nci", localStorage.channelId, localStorage.orgId, null, function (r) {
                 _this2.setState({ list: r });
             });
         }
     }, {
         key: "addToPlan",
         value: function addToPlan(productId) {
-            localStorage.mainProductId = productId
-
+            localStorage.mainProductId = productId;
             APP.back(productId);
         }
     }, {
@@ -163,5 +163,4 @@ $(document).ready(function () {
 });
 
 /***/ })
-
-/******/ });
+/******/ ]);

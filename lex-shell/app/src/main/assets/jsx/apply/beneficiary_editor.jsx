@@ -25,38 +25,12 @@ class Main extends React.Component {
         this.state.cust[key] = val
         this.setState({ cust: this.state.cust })
     }
-
-    getIdCardImg () {// 证件扫描
-        let that = this;
-        // 证件扫描
-        OCR.callCardFront("BENEFIT", "OCR_FRONT");
-        window.callOCRBack = function callOCRBack(flag, jsonData, bitmapStr){
-            let jsonDataObj = JSON.parse(jsonData);
-            let cust = that.state.cust;
-            const birthday = jsonDataObj.birthday.replace(/['年','月']/g, '-');
-            cust.name = jsonDataObj.name;
-            cust.gender = jsonDataObj.gender == "男" ? "M" : "F";
-            cust.birthday = birthday.substring(0, birthday.length - 1);
-            cust.certNo = jsonDataObj.cardNo;
-            cust.address = jsonDataObj.address;
-            that.setState({
-                cust: cust
-            });
-            localStorage.beneficiaryCardData = bitmapStr
-        }
-    }
     render() {
         let cust = this.state.cust
         return (
             <div>
                 <div className="bg-white text18" style={{height:"80px", lineHeight:"80px", textAlign:"center"}}>
                     受益人信息
-                </div>
-                <div className="form-item-widget">
-                    <div className="form-item-label">证件扫描</div>
-                    <div className="form-item-widget">
-                        <img className="mt-1" style={{width:"220px", height:"60px"}} src="../images/btn-scan.png" onClick={this.getIdCardImg.bind(this)}/>
-                    </div>
                 </div>
                 <div className="form-item text16">
                     <div className="form-item-label">姓名</div>
@@ -87,7 +61,7 @@ class Main extends React.Component {
                 <div className="form-item text16">
                     <div className="form-item-label">受益次序</div>
                     <div className="form-item-widget" onClick={v => {APP.pick("select", [1,2,3,4,5,6], this.onValChange.bind(this, "sequence"))}}>
-                        <div className={(cust.relation == null ? "tc-gray " : "") + "text16 ml-1 mr-auto"}>{cust.sequence == null ? "请选择与被保险人关系" : "第" + (cust.sequence+1) + "顺位"}</div>
+                        <div className={(cust.relation == null ? "tc-gray " : "") + "text16 ml-1 mr-auto"}>{cust.sequence == null ? "请选择受益人次序" : "第" + (cust.sequence+1) + "顺位"}</div>
                         <img className="mt-2 mr-0" style={{width:"27px", height:"39px"}} src="../images/right.png"/>
                     </div>
                 </div>

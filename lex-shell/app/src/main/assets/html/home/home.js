@@ -118,9 +118,8 @@ var Main = function (_React$Component) {
                 url: 'http://114.112.96.30:10003/app/user/qrymodule.json',
                 type: "POST",
                 data: {
-                    "orgId": "10200" },
+                    "orgId": localStorage.orgId },
                 success: function success(data) {
-                    console.log(JSON.stringify(data));
                     that.setState({
                         LabelDta: data.content
                     });
@@ -142,7 +141,6 @@ var Main = function (_React$Component) {
                     "number": 10,
                     "state": 1 }),
                 success: function success(r) {
-                    console.log(JSON.stringify(r))
                     _this2.setState({
                         products: r.content.list || []
                     });
@@ -205,7 +203,6 @@ var Main = function (_React$Component) {
     }, {
         key: 'productDetail',
         value: function productDetail(prod) {
-            console.log(JSON.stringify(prod));
             localStorage.productData = JSON.stringify(prod);
 //            window.MF &&  MF.navi("productDetail/productDetail.html")
              location.href = '../productDetail/productDetail.html';
