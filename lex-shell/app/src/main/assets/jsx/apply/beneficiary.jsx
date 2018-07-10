@@ -68,9 +68,27 @@ class Main extends React.Component {
                         { law ? null : v.beneficiary.map((w, j) =>
 
                             <div className="divx">
-                                <div className="text40" style={{width:"180px", height:"140px", background:"url(../images/seq1.png) no-repeat top left", backgroundSize:"140px 140px", lineHeight:"140px", textAlign:"right"}}>
-                                    {w.scale}%
-                                </div>
+                                {
+                                    if(w.sequence == 0）{
+                                        return(
+                                            <div className="text40" style={{width:"180px", height:"140px", background:"url(../images/seq1.png) no-repeat top left", backgroundSize:"140px 140px", lineHeight:"140px", textAlign:"right"}}>
+                                                {w.scale}%
+                                            </div>
+                                        )
+                                    }else if(w.sequence == 1){
+                                        return(
+                                            <div className="text40" style={{width:"180px", height:"140px", background:"url(../images/seq2.png) no-repeat top left", backgroundSize:"140px 140px", lineHeight:"140px", textAlign:"right"}}>
+                                                {w.scale}%
+                                            </div>
+                                        )
+                                    }else if(w.sequence == 2){
+                                         return(
+                                             <div className="text40" style={{width:"180px", height:"140px", background:"url(../images/seq3.png) no-repeat top left", backgroundSize:"140px 140px", lineHeight:"140px", textAlign:"right"}}>
+                                                 {w.scale}%
+                                             </div>
+                                         )
+                                     }
+                                }
                                 <div className="div text16 pl-3 pr-3 pt-1 pb-1" style={{width:"500px", borderTop:"1px solid #e8e8e8"}}>
                                     <div style={{height:"60px", lineHeight:"60px"}}>{w.name}（被保险人的{this.state.relationDict[w.relation]}）</div>
                                     <div style={{height:"60px", lineHeight:"60px"}}>{this.state.certTypeDict[w.certType]}：{w.certNo}</div>

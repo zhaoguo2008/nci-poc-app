@@ -460,7 +460,7 @@ var Main = function (_React$Component) {
       value: function share(proposalId) {
         SHARE.callOneKeyShare("建议书", "http://114.112.96.30:10006/shareHtml/preview.html?" + 'proposalId=' + this.state.proposalId, "onekeyshare");
         window.callShareBack = function callShareBack(flag, jsonData) {
-            alert(jsonData);
+//            alert(jsonData);
         };
       }
     }, {

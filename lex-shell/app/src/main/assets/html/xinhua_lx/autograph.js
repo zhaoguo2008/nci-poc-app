@@ -221,19 +221,28 @@ var Autograph = function (_React$Component) {
     }, {
         key: 'componentWillMount',
         value: function componentWillMount() {
-            var _this2 = this;
-
             window.MF && MF.setTitle("投保单预览");
-            APP.apply.view(common.param("orderId"), function (r) {
-                console.log(JSON.stringify(r.detail));
-                _this2.setState({
-                    cust: r.detail
-                });
-            });
+             APP.apply.view(common.param("orderId"), r => {
+                 console.log(JSON.stringify(r.detail))
+                 this.setState({
+                     cust: r.detail
+                 })
+             })
         }
-    }, {
+    },{
+      key: 'componentDidMount',
+      value: function componentDidMount() {
+                ajax('http://114.112.96.30:10003/app/policy/qry_policysign.json',{
+                        "policyNo":"5000010"
+                    },data=>{
+                    alert(JSON.stringify(data))
+                      document.getElementById("xss_20").src = data.conetnt.signImg
+                })
+      }
+  }, {
         key: 'getQueryString',
         value: function getQueryString(name) {
+
             var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
             var r = window.location.search.substr(1).match(reg);
             if (r != null) return unescape(r[2]);
@@ -244,7 +253,23 @@ var Autograph = function (_React$Component) {
         value: function submit() {
             this.next();
         }
-    }, {
+    },{
+          key: 'share',
+          value: function share() {
+              SHARE.callOneKeyShare("投保单", "http://114.112.96.30:10006/xinhua_lx/autograph_xh.html", "onekeyshare");
+              var that = this
+              ajax('http://114.112.96.30:10003/app/policy/qry_policysign.json',{
+                        "policyNo":"5000010"
+                    },data=>{
+                    alert(JSON.stringify(data))
+                      document.getElementById("xss_20").src = data.conetnt.signImg
+                })
+              window.callShareBack = function callShareBack(flag, jsonData) {
+                  alert(jsonData);
+
+              };
+          }
+      }, {
         key: 'next',
         value: function next() {
             if (window.MF) {
@@ -1574,17 +1599,29 @@ var Autograph = function (_React$Component) {
                 ),
                 React.createElement(
                     'div',
-                    { className: 'bottom text18 tc-primary' },
-                    React.createElement('div', { className: 'ml-3 mr-auto' }),
+                    { className: 'bottom text18 tc-primary',style: {display:'block',width:'100%'} },
                     React.createElement(
                         'div',
-                        { className: 'ml-0 mr-0', onClick: this.submit.bind(this),style:{width:"390px", textAlign:"right",float:right} },
-                        '\u63D0\u4EA4'
+                        { className: 'divx', onClick: this.share.bind(this),style: {float:'right'}  },
+                        React.createElement(
+                            'div',
+                            { className: 'ml-0 mr-0', style: { width: "390px", textAlign: "right" ,fontSize: '.9em'} },
+                            '分享'
+                        ),
+                        React.createElement(
+                            'div',
+                            { className: 'ml-1 mr-2', style: { width: "30px" } },
+                            React.createElement('img', { className: 'mt-3', style: { width: "27px", height: "39px" }, src: '../images/blueright.png' })
+                        )
                     ),
                     React.createElement(
-
-                        { className: 'ml-0 mr-0', onClick: this.share.bind(this),style:{float:'left'} },
-                        '\u63D0\u4EA4'
+                        'div',
+                        { className: 'divx', onClick: this.share.bind(this),style: {float:'left',marginLeft:'20px',background:'#000'}  },
+                        React.createElement(
+                            'div',
+                            { className: 'ml-0 mr-0', style: { width: "390px", textAlign: "left" ,fontSize: '.9em'} },
+                            '分享'
+                        )
                     )
                 )
             );

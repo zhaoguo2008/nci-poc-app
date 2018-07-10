@@ -127,6 +127,7 @@ public class Main extends Activity implements IActivity
 	protected Layer createBaseLayer()
 	{
 		PageLayer layer = new PageLayer(this);
+//		layer.openLocal("xinhua_lx/autograph_xh.html");
 		layer.openLocal("home/login.html");
 //		layer.openLocal("share/html/share.html");
 

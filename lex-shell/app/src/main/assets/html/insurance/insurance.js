@@ -24,8 +24,8 @@ class Insurance extends React.Component {
         /*已投保，投保成功， 失败，核保中（上传通知书），已签单（回执）*/
         if (status == 3) {
             MF.navi("xinhua_lx/notice_xh.html");
-        } else if(status == 4) {
-            MF.navi("receipt/receipt.html");
+        } else if(status == 1) {
+           window.MF && MF.navi("xinhua_lx/autograph_xh.html?orderId=" + common.param("orderId"));
         }
     }
     /*获取性别函数*/

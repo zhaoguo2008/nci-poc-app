@@ -167,7 +167,7 @@ class Autograph extends React.Component {
     componentWillMount() {
         window.MF && MF.setTitle("投保单预览");
         APP.apply.view(common.param("orderId"), r => {
-            console.log(JSON.stringify(r.detail));
+            console.log(JSON.stringify(r.detail))
             this.setState({
                 cust: r.detail
             })
@@ -225,6 +225,7 @@ class Autograph extends React.Component {
                                 <li>
                                     {
                                         this.state.autographlistTop.map(item => {
+                                           alert(cust.applicant[item.value])
                                             return (
                                                 <p>{Object.keys(cust).length && cust.applicant[item.value] || '无'}</p>
                                             )
@@ -659,13 +660,17 @@ class Autograph extends React.Component {
                             <input id="btnClear" type="button" className="button orange"  value="清 屏" onClick={clear_canvas}/>
                             <input id="btnCancel" type="button" className="button orange" value="取 消" onClick={cancelSign}/>
                         </div>
-
                     </div>
                 </div>
                 <div className="bottom text18 tc-primary">
-                    <div className="ml-3 mr-auto"></div>
-                    <div className="mr-3" onClick={this.submit.bind(this)}>
-                        提交
+                    <div className="ml-3 mr-0" style={{width:"300px"}}></div>
+                    <div className="divx" onClick={this.submit.bind(this)}>
+                        <div className="ml-0 mr-0" style={{width:"390px", textAlign:"right", fontSize: '.9em'}}>
+                            提交
+                        </div>
+                        <div className="ml-1 mr-2" style={{width:"30px"}}>
+                            <img className="mt-3" style={{width:"27px", height:"39px"}} src="../images/blueright.png"/>
+                        </div>
                     </div>
                 </div>
             </div>

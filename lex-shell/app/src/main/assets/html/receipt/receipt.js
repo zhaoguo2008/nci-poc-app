@@ -12,7 +12,6 @@ class Main extends React.Component {
     }
     componentDidMount() {
         window.MF && MF.setTitle("保单签收回执");
-
     }
     testPopupDialog1(id,isT){
         // var oHead = document.getElementsByTagName('HEAD').item(0);
@@ -27,7 +26,6 @@ class Main extends React.Component {
 
     submit() {
          console.log("提交");
-         
     }
     render() {
         return (
@@ -102,7 +100,6 @@ class Main extends React.Component {
                 <div className="receipt-block5">
                     <ul>
                         <li>
-
                             <span>保单号：880001100003</span>
                             <span>业务员姓名：张海宾</span>
                             <span>回单日期：2018-05-22</span>
