@@ -67,9 +67,11 @@ class Main extends React.Component {
         })
     }
     deleteProduct(i) {
-        APP.proposal.deleteProduct(this.state.plan.planId, i, null, r => {
-            this.setState({ plan: r })
-        })
+        APP.alert("注意", "确定删除吗？", function (r) {
+            APP.proposal.deleteProduct(this.state.plan.planId, i, null, r => {
+                        this.setState({ plan: r })
+                    })
+        }, function (r) {});
     }
     showBenefit() {
         APP.pop("proposal/benefit.html?planId=" + this.state.plan.planId, 90)

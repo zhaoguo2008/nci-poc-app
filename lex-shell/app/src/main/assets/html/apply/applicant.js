@@ -221,10 +221,10 @@ var Main = function (_React$Component) {
         value: function getIdCardImg() {
             // 证件扫描
             var that = this;
-            var applicantCardData = sessionStorage.applicantCardData ? JSON.parse(sessionStorage.applicantCardData) : [];
             // 证件扫描
             OCR.callCardFront("APPNT", "OCR_FRONT");
             window.callOCRBack = function callOCRBack(flag, jsonData, bitmapStr) {
+                let CardData = localStorage.CardData ? JSON.parse(localStorage.CardData):[];
                 var jsonDataObj = JSON.parse(jsonData);
                 var cust = that.state.cust;
                 if (jsonDataObj.name) { // 正面
@@ -234,24 +234,20 @@ var Main = function (_React$Component) {
                     cust.birthday = birthday.substring(0, birthday.length - 1);
                     cust.certNo = jsonDataObj.cardNo;
                     cust.address = jsonDataObj.address;
-                    applicantCardData.push(bitmapStr);
                 } else if (jsonDataObj.validity) { // 反面
-                    cust.certValidDate = jsonDataObj.validity.split('-')[1];
-                    applicantCardData.push(bitmapStr);
+                    cust.certValidDate = jsonDataObj.validity.split('-')[1].replace(/\./g, '-');
                 }
                 that.setState({
-                    ocrImage: applicantCardData,
                     cust: cust
                 });
-                sessionStorage.applicantCardData = JSON.stringify(applicantCardData);
-
+                localStorage.CardData = JSON.stringify([...CardData, bitmapStr]);
+                localStorage.appliCardDataState = JSON.stringify(true)
             };
         }
     }, {
         key: "next",
         value: function next() {
             var c = this.state.cust;
-            alert(this.state.ocrImage.length);
             if (c.mode1 && c.mode2 && c.mode3 && c.mode4) {
                 localStorage.everyState = JSON.stringify({ applicant: this.state }); // 存放每个界面state数据
                 // localStorage.OcrArr = JSON.stringify(this.state.IdCardImg); // 存放ocr对象
@@ -260,10 +256,11 @@ var Main = function (_React$Component) {
                 MF.toast("请完善客户信息");
             }
             if (!c.mode1 && !c.mode2 && !c.mode3) return;
-            if (!this.state.ocrImage || !this.state.ocrImage.length > 0) {
+            if (localStorage.appliCardDataState && !JSON.parse(localStorage.appliCardDataState)) {
                 alert('请执行OCR扫描!!');
             } else {
-                MF.navi("apply/insurant.html?orderId=" + this.state.orderId);
+                // MF.navi("apply/insurant.html?orderId=" + this.state.orderId);
+                MF.navi("apply/image.html?orderId=" + this.state.orderId);
             }
         }
     }, {

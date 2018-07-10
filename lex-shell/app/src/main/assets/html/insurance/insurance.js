@@ -41,32 +41,30 @@ class Insurance extends React.Component {
             <div className="insuranceMain">
                 <ul>
                     {
-                        this.state.insuranceList.map((prod)=>{
-                           if (!prod.productName) { return null } else {
-                               return(
-                                   <li className="insuranceBox">
-                                       <div className="insuranceTile">
-                                           <img src="../images/user.png" alt=""/>
-                                           <font>{prod.detail.applicant.name}</font>
-                                           <span>{prod.detail.applicant.gender == 'M'? '男' : '女'}</span>
-                                           <span>{prod.detail.applicant.birthday}</span>
-                                       </div>
+                        this.state.insuranceList.map((prod,index)=>{
+                            return(
+                                <li className="insuranceBox">
+                                    <div className="insuranceTile">
+                                        <img src="../images/user.png" alt=""/>
+                                        <font>{prod.detail.applicant.name}</font>
+                                        <span>{prod.detail.applicant.gender == 'M'? '男' : '女'}</span>
+                                        <span>{prod.detail.applicant.birthday}</span>
+                                    </div>
 
-                                       <section>
-                                           <h2>{prod.productName}</h2>
-                                       </section>
+                                    <section>
+                                        <h2>{prod.productName}</h2>
+                                    </section>
 
-                                       <div className="insurancePremium">
-                                           <font>首付保险费合计: <b>{prod.price}</b>元</font>
-                                       </div>
+                                    <div className="insurancePremium">
+                                        <font>首付保险费合计: <b>{prod.price}</b>元</font>
+                                    </div>
 
-                                       <div className="insuranceButton">
+                                    <div className="insuranceButton">
                                         <span onClick={this.btnClick.bind(this, prod.status)}>{this.state.butArr[prod.status]}</span>
-                                       </div>
+                                    </div>
 
-                                   </li>
-                               )
-                           }
+                                </li>
+                            )
                         })
                     }
                 </ul>

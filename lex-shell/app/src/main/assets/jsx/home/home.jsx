@@ -116,6 +116,11 @@ class Main extends React.Component {
     toFunPage(url){
         location.href = url + '.html'
     }
+    goTo (prod) {
+        if (prod.name === "一键投保" && localStorage.CardData) {
+            localStorage.removeItem('CardData');
+        }
+    }
     render() {
         return (
             <div className="home-container">
@@ -146,7 +151,7 @@ class Main extends React.Component {
                     {
                         this.state.LabelDta&&this.state.LabelDta.map((prod)=>{
                            return(
-                               <a className="srow-item" href={prod.link}>
+                               <a className="srow-item"  href = {prod.link} onClick={this.goTo.bind(this,prod)}>
                                    <div>
                                        <img src={prod.img}/>
                                    </div>

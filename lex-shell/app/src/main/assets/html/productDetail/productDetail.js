@@ -5,7 +5,9 @@ class Main extends React.Component {
         }
     }
     componentDidMount() {
+
         let productData = JSON.parse(localStorage.productData)
+//        alert(JSON.stringify(productData))
         this.setState({
             productData:productData
         },()=>{

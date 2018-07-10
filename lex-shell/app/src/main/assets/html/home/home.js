@@ -228,6 +228,13 @@ var Main = function (_React$Component) {
             location.href = url + '.html';
         }
     }, {
+        key: 'goTo',
+        value: function goTo(prod) {
+            if (prod.name === "一键投保" && localStorage.CardData) {
+                localStorage.removeItem('CardData');
+            }
+        }
+    }, {
         key: 'render',
         value: function render() {
             var _this4 = this;
@@ -246,7 +253,7 @@ var Main = function (_React$Component) {
                     this.state.LabelDta && this.state.LabelDta.map(function (prod) {
                         return React.createElement(
                             'a',
-                            { className: 'srow-item', href: prod.link },
+                            { className: 'srow-item', href: prod.link, onClick: _this4.goTo.bind(_this4, prod) },
                             React.createElement(
                                 'div',
                                 null,
