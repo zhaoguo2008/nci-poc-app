@@ -218,6 +218,7 @@ var Main = function (_React$Component) {
             // 证件扫描
             OCR.callCardFront("INSURED", "OCR_FRONT");
             window.callOCRBack = function callOCRBack(flag, jsonData, bitmapStr) {
+                var CardData = localStorage.applicantCardData?localStorage.applicantCardData:[]
                 var jsonDataObj = JSON.parse(jsonData);
                 var cust = that.state.cust[that.state.index];
                 var birthday = jsonDataObj.birthday.replace(/['年','月']/g, '-');
@@ -230,7 +231,8 @@ var Main = function (_React$Component) {
                 that.setState({
                     ocrImage: bitmapStr
                 });
-                localStorage.insurantsCardData = bitmapStr;
+                localStorage.CardData = JSON.stringify(CardData.push(bitmapStr));
+                localStorage.InsurCardDataState = true
             };
         }
     }, {
@@ -241,7 +243,7 @@ var Main = function (_React$Component) {
                 pass = pass && c.mode1 && c.mode2 && c.mode3 && c.mode4;
             });
             if (pass) {
-                if (!this.state.ocrImage || !this.state.ocrImage.length > 0) {
+                if (!localStorage.InsurCardDataState) {
                     alert('请执行OCR扫描!!');
                 } else {
                     MF.navi("apply/plan.html?orderId=" + this.state.orderId);

@@ -407,8 +407,12 @@
                 switch (apiInstance.showSignatureDialog(context_id))
                 {
                     case RESULT_OK:
-                    console.log(document.getElementById("other"))
-        				document.getElementById("other").style.display = "none";
+                    // console.log(document.getElementById("other"))
+                        if($('#other')){
+                            $('#other').hide()
+                        }
+
+        				// document.getElementById("other").style.display = "none";
                         break;
                     case EC_API_NOT_INITED:
                         // alert("信手书接口没有初始化");
@@ -437,7 +441,10 @@
                 switch (apiInstance.showCommentDialog(context_id))
                 {
                     case RESULT_OK:
-        				document.getElementById("other").style.display = "none";
+                        if($('#other')){
+                            $('#other').hide()
+                        }
+        				// document.getElementById("other").style.display = "none";
                         break;
                     case EC_API_NOT_INITED:
                         // alert("信手书接口没有初始化");

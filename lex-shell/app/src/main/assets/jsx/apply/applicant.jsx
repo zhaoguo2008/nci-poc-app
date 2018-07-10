@@ -133,6 +133,7 @@ class Main extends React.Component {
         // 证件扫描
         OCR.callCardFront("APPNT", "OCR_FRONT");
         window.callOCRBack = function callOCRBack(flag, jsonData, bitmapStr){
+
             let jsonDataObj = JSON.parse(jsonData);
             let cust = that.state.cust;
             const birthday = jsonDataObj.birthday.replace(/['年','月']/g, '-');

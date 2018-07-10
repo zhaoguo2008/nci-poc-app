@@ -498,7 +498,7 @@ var Main = function (_React$Component) {
                                 React.createElement(
                                     "div",
                                     { className: "lh-50 text16" },
-                                    plan.insurant.name ? plan.insurant.name : "被保险人"
+                                    plan.insurant.name ?localStorage.insuranceName:localStorage.insuranceName
                                 ),
                                 React.createElement(
                                     "div",

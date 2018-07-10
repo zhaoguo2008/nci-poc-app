@@ -12,18 +12,22 @@ class Main extends React.Component {
     }
     componentDidMount() {
         window.MF && MF.setTitle("保单签收回执");
+
     }
-    testPopupDialog1(id){
-    // var oHead = document.getElementsByTagName('HEAD').item(0);
-    // var oScript= document.createElement("script");
-    // oScript.type = "text/javascript";
-    // oScript.src="qianming.js";
-    // oHead.appendChild( oScript);
-    testPopupDialog(id)
-}
+    testPopupDialog1(id,isT){
+        // var oHead = document.getElementsByTagName('HEAD').item(0);
+        // var oScript= document.createElement("script");
+        // oScript.type = "text/javascript";
+        // oScript.src="qianming.js";
+        // oHead.appendChild( oScript);
+        sessionStorage.clear('ist');
+        sessionStorage.setItem('ist',isT)
+        testPopupDialog(id)
+    }
 
     submit() {
          console.log("提交");
+         
     }
     render() {
         return (
@@ -91,13 +95,14 @@ class Main extends React.Component {
 
                 <div className="receipt-block4">
                     <ul>
-                        <li>投保人签名：<img id="xss_20"  src="data:image/gif;base64,R0lGODlhhwBIAJECAL6+vtHR0f///wAAACH5BAEAAAIALAAAAACHAEgAAAL/jI+py+0Po5y02ouz3rz7Dx7CSJbmiabqyrbuC6NLTNf2jddKzvf+r9oBh8TiS2hMKo3IpfOJa0KnVJa0is0Krtruk+sNMxPi8hJsTufQ6jaN7Y634PK6jGzPu+j6PL9f9wcYJzjYVmiYhphYtngCAMkDUDOJEklzCeRokolTCdNZEuoyyrPJaRnz+dL5uSrwahnbcyr6WJoyuwLJywvb28sCPKw7hyc5THmbOxLryqqCu3ecU3xLTBz9TLIqza3rbYzgYw1t3jw5Wo4bLi7S81qeSor6+yhszylvRQ2KDYyJnixYqr6J2sdvnLJdC+dp40YqnkFa/c4xu/YvY7FQ7O1yIZymMCBDkST1fUQ3xNG6kfVsacv4KxizjjFU4nvYcqI+f8I00jSh0ucuZ/d2FnXZwle0GzaH4kQKkSXBgz3zXdRR8Ym6o0tRepXlytrJEovAQTV6dqrTZlFZiWWaVWorqstysk0aday3sSQQSdSplm7afUTTonX4Jq7HnK1mZcsG1ifAlzBtCNra9QZfzZvdGWCUqBZoLKJHUyltGgrq1E5Ws1bi+vWYkLIJKa4tJjZuTbd3d9HtmyLt4I16E68C/Djc4cp/G2/+5Tn0M9KnJ0lu/Uj17ERmcEceIrz48eTLmz+PPr368gUAADs=" onClick={this.testPopupDialog1.bind(this,20)}/><br/>签收日期：</li>
+                        <li>投保人签名：<img id="xss_20"  src="data:image/gif;base64,R0lGODlhhwBIAJECAL6+vtHR0f///wAAACH5BAEAAAIALAAAAACHAEgAAAL/jI+py+0Po5y02ouz3rz7Dx7CSJbmiabqyrbuC6NLTNf2jddKzvf+r9oBh8TiS2hMKo3IpfOJa0KnVJa0is0Krtruk+sNMxPi8hJsTufQ6jaN7Y634PK6jGzPu+j6PL9f9wcYJzjYVmiYhphYtngCAMkDUDOJEklzCeRokolTCdNZEuoyyrPJaRnz+dL5uSrwahnbcyr6WJoyuwLJywvb28sCPKw7hyc5THmbOxLryqqCu3ecU3xLTBz9TLIqza3rbYzgYw1t3jw5Wo4bLi7S81qeSor6+yhszylvRQ2KDYyJnixYqr6J2sdvnLJdC+dp40YqnkFa/c4xu/YvY7FQ7O1yIZymMCBDkST1fUQ3xNG6kfVsacv4KxizjjFU4nvYcqI+f8I00jSh0ucuZ/d2FnXZwle0GzaH4kQKkSXBgz3zXdRR8Ym6o0tRepXlytrJEovAQTV6dqrTZlFZiWWaVWorqstysk0aday3sSQQSdSplm7afUTTonX4Jq7HnK1mZcsG1ifAlzBtCNra9QZfzZvdGWCUqBZoLKJHUyltGgrq1E5Ws1bi+vWYkLIJKa4tJjZuTbd3d9HtmyLt4I16E68C/Djc4cp/G2/+5Tn0M9KnJ0lu/Uj17ERmcEceIrz48eTLmz+PPr368gUAADs=" onClick={this.testPopupDialog1.bind(this,20,0)}/><br/>签收日期：</li>
                     </ul>
                 </div>
 
                 <div className="receipt-block5">
                     <ul>
                         <li>
+
                             <span>保单号：880001100003</span>
                             <span>业务员姓名：张海宾</span>
                             <span>回单日期：2018-05-22</span>
@@ -151,12 +156,6 @@ class Main extends React.Component {
                     </div>
 
                 </div>
-                <div id="single_scrollbar" style={{textAlign: 'center',  verticalAlign:'middle'}}  width="100%">
-                    <span id="single_scroll_text"> *滑动操作：</span>
-                    <input id="single_scrollbar_up" type="button" className="button orange" value="左移" />
-                    <input id="single_scrollbar_down" type="button" className="button orange" value="右移" />
-                </div>
-
                 <div id="btnContainerOuter" width="100%">
 
                     <div id="btnContainerInner" style={{textAlign: 'center',   fontSize:'5pt'}} width="100%">

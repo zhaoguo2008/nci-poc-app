@@ -192,12 +192,13 @@ var Main = function (_React$Component) {
                             )
                         ),
                         law ? null : v.beneficiary.map(function (w, j) {
+                        alert(JSON.stringify(w),'w')
                             return React.createElement(
                                 "div",
                                 { className: "divx" },
                                 React.createElement(
                                     "div",
-                                    { className: "text40", style: { width: "180px", height: "140px", background: "url(../images/seq1.png) no-repeat top left", backgroundSize: "140px 140px", lineHeight: "140px", textAlign: "right" } },
+                                    { className: "text40", style: { width: "180px", height: "140px", background: "url={"../images/seq" + w.sequence + '.png'} no-repeat top left", backgroundSize: "140px 140px", lineHeight: "140px", textAlign: "right" } },
                                     w.scale,
                                     "%"
                                 ),

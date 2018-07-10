@@ -140,7 +140,9 @@ var Main = function (_React$Component) {
         key: "onValChange",
         value: function onValChange(index, key, e) {
             if (key == "name") {
+            var name = e.target.value
                 e = e.value;
+                localStorage.insuranceName = name
             } else if (key == "birthday") {
                 this.state.cust[index].age = null;
             } else if (key == "age") {
@@ -190,7 +192,7 @@ var Main = function (_React$Component) {
                                 React.createElement(
                                     "div",
                                     { className: "form-item-widget" },
-                                    React.createElement("input", { className: "mt-1", value: v.name, placeholder: "\u8BF7\u8F93\u5165\u59D3\u540D", onChange: _this4.onValChange.bind(_this4, i, "name") })
+                                    React.createElement("input", { className: "mt-1",  placeholder: "\u8BF7\u8F93\u5165\u59D3\u540D", onChange: _this4.onValChange.bind(_this4, i, "name") })
                                 )
                             ),
                             React.createElement(

@@ -1578,7 +1578,12 @@ var Autograph = function (_React$Component) {
                     React.createElement('div', { className: 'ml-3 mr-auto' }),
                     React.createElement(
                         'div',
-                        { className: 'mr-3', onClick: this.submit.bind(this) },
+                        { className: 'ml-0 mr-0', onClick: this.submit.bind(this),style:{width:"390px", textAlign:"right",float:right} },
+                        '\u63D0\u4EA4'
+                    ),
+                    React.createElement(
+
+                        { className: 'ml-0 mr-0', onClick: this.share.bind(this),style:{float:'left'} },
                         '\u63D0\u4EA4'
                     )
                 )

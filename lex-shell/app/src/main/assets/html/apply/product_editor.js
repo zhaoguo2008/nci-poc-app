@@ -231,7 +231,7 @@ var Main = function (_React$Component) {
                                         } }) : v.widget == "switch" || v.widget == "select" ? React.createElement(
                                         "div",
                                         { style: { display: "flex" }, onClick: function onClick(x) {
-                                                APP.pick("select", v.detail, _this5.onValChange.bind(_this5, v, i, j));
+                                                APP.pick("select", v.detail, _this5.onValChange.bind(_this5, v, i, j, e.target.value));
                                             } },
                                         React.createElement(
                                             "div",

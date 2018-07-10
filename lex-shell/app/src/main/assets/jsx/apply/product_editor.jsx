@@ -100,7 +100,7 @@ class Main extends React.Component {
                                     {
                                         v.widget == "number" ? <input type="number" placeholder={"请输入"+v.label} value={v.value} onChange={ e => { this.onValChange(v, i, j, e.target.value) } }/> :
                                         v.widget == "switch" || v.widget == "select" ?
-                                            <div style={{display:"flex"}} onClick={x => { APP.pick("select", v.detail, this.onValChange.bind(this, v, i, j)) }}>
+                                            <div style={{display:"flex"}} onClick={x => { APP.pick("select", v.detail, this.onValChange.bind(this, v, i, j, e.target.value)) }}>
                                                 <div className="text17" style={{width:"350px", lineHeight:"60px"}}>{v.detail[v.value]}</div>
                                                 <img style={{width:"60px", height:"60px"}} src="../images/arrow-7-down.png"/>
                                             </div>

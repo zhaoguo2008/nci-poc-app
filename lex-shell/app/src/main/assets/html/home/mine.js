@@ -115,6 +115,11 @@ var Main = function (_React$Component) {
                 name: '理赔服务',
                 icon: '../images/mine/lpfw.png',
                 link: 'xxxx'
+            },
+            {
+                name: '设置',
+                icon: '../images/mine/lpfw.png',
+                link: 'xxxx'
             }],
             footNav:[
                 '首页','个人管理','团队管理','我的'
@@ -230,11 +235,6 @@ var Main = function (_React$Component) {
                                     'span',
                                     null,
                                     item.name
-                                ),
-                                React.createElement(
-                                    'b',
-                                    null,
-                                    '\uFF1E'
                                 )
                             )
                         );
