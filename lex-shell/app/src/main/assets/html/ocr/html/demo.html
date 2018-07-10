@@ -37,5 +37,20 @@
 	function callOCRBack(flag, jsonData, bitmapStr){
 		alert(jsonData);
 	}
+
+
+	//分享js调原生
+    $('#share').click(function(event) {
+        // 第一个参数：分享内容
+        // 第二个参数：分享的url地址
+        // 第三个参数：调用的标识，会回传到callback方法中
+        SHARE.callOneKeyShare("建议书分享", "https://www.jianshu.com/p/44e2c9d09398", "onekeyshare");
+    });
+
+    //安卓调js
+    //flag 参数为 调用方法的第二个参数
+    function callShareBack(flag, jsonData){
+        alert(jsonData);
+    }
 </script>
 </html>

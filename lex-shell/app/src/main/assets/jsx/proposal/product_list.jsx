@@ -2,6 +2,7 @@ class Main extends React.Component {
     constructor() {
         super()
         this.state = {
+            total: 0,
             list: []
         }
     }

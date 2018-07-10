@@ -27,6 +27,7 @@ var Proposal = {
   save(proposalId, onSucc) {
     Proposal.host.req('/proposal/save.json', { proposalId: proposalId }, r => {
       onSucc(r)
+
     })
   },
   view(proposalId, onSucc) {

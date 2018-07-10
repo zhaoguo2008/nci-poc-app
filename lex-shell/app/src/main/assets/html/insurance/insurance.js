@@ -41,7 +41,7 @@ class Insurance extends React.Component {
             <div className="insuranceMain">
                 <ul>
                     {
-                        this.state.insuranceList.map((prod)=>{
+                        this.state.insuranceList.map((prod,index)=>{
                            if (!prod.productName) { return null } else {
                                return(
                                    <li className="insuranceBox">

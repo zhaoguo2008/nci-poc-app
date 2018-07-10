@@ -60,11 +60,12 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
+/******/ ({
+
+/***/ 3:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -105,6 +106,35 @@ var Main = function (_React$Component) {
                     relationDict: r.relation
                 });
             });
+        }
+    }, {
+        key: "verify",
+        value: function verify(c) {
+            var v = {};
+
+            if (!c.name) {
+                v.name = "该项必填";
+            } else {
+                if (c.name.length > 60) v.name = "姓名太长";else if (c.name.indexOf(" ") > 0) v.name = "姓名中不能有空格";
+            }
+
+            if (!c.birthday) {
+                v.birthday = "该项必填";
+            } else {
+                if (c.birthday > common.dateStr(new Date())) v.birthday = "生日不能大于当前日期";
+            }
+
+            if (!c.certNo) {
+                v.certNo = "该项必填";
+            } else {
+                if (c.certType == 1) {
+                    var r1 = checkIdCard(c.certNo);
+                    if (r1) v.certNo = r1;
+                }
+            }
+
+            this.setState({ verify: v });
+            return Object.keys(v).length == 0;
         }
     }, {
         key: "close",
@@ -256,4 +286,5 @@ $(document).ready(function () {
 });
 
 /***/ })
-/******/ ]);
+
+/******/ });

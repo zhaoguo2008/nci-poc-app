@@ -41,6 +41,7 @@ class Main extends React.Component {
     onValChange(index, key, e) {
         if (key == "name") {
             e = e.value
+            localStorage.insuranceName = e.value
         } else if (key == "birthday") {
             this.state.cust[index].age = null
         } else if (key == "age") {

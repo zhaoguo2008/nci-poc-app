@@ -455,6 +455,14 @@ var Main = function (_React$Component) {
             this.state.coverage[i].content[j].show = !this.state.coverage[i].content[j].show;
             this.setState({ coverage: this.state.coverage });
         }
+    },{
+      key: 'share',
+      value: function share(proposalId) {
+        SHARE.callOneKeyShare("建议书", "http://114.112.96.30:10006/shareHtml/preview.html?" + 'proposalId=' + this.state.proposalId, "onekeyshare");
+        window.callShareBack = function callShareBack(flag, jsonData) {
+            alert(jsonData);
+        };
+      }
     }, {
         key: "render",
         value: function render() {
@@ -490,7 +498,7 @@ var Main = function (_React$Component) {
                                 React.createElement(
                                     "div",
                                     { className: "lh-50 text16" },
-                                    plan.insurant.name ? plan.insurant.name : "被保险人"
+                                    plan.insurant.name ?localStorage.insuranceName:localStorage.insuranceName
                                 ),
                                 React.createElement(
                                     "div",
@@ -784,7 +792,7 @@ var Main = function (_React$Component) {
                                         !x.show ? null : x.content.map(function (y, k) {
                                             return React.createElement(
                                                 "div",
-                                                { className: "text16" },
+                                                { className: "text16", style: { textAlign: "left" } },
                                                 "\u3000\u3000",
                                                 y.text
                                             );
@@ -810,6 +818,11 @@ var Main = function (_React$Component) {
                         "div",
                         { className: "ml-1 mr-1 p-1 bg-white tc-dark text15", style: { border: "#dddddd 1px solid" } },
                         "\u3000\u3000\u514D\u9664\u4FDD\u9669\u516C\u53F8\u8D23\u4EFB\u6761\u6B3E\u3001\u72B9\u8C6B\u671F\u3001\u89E3\u9664\u5408\u540C\u7684\u624B\u7EED\u53CA\u98CE\u9669\u3001\u8D39\u7528\u6263\u9664\u7B49\u5185\u5BB9\uFF0C\u8BF7\u60A8\u4ED4\u7EC6\u9605\u8BFB\u4FDD\u9669\u5408\u540C\u3002\u672C\u6F14\u793A\u8BF4\u660E\u4EC5\u4F9B\u53C2\u8003\uFF0C\u5177\u4F53\u4FDD\u9669\u8D23\u4EFB\u3001\u514D\u9664\u4FDD\u9669\u516C\u53F8\u8D23\u4EFB\u7684\u6761\u6B3E\u7B49\u5185\u5BB9\u4EE5\u6B63\u5F0F\u4FDD\u9669\u5408\u540C\u4E3A\u51C6\u3002"
+                    ),
+                    React.createElement(
+                        "div",
+                        { className: "share",onClick: _this4.share.bind(_this4, _this4.state.proposalId), style: {width:'90%',height:'80px',lineHeight:'80px',margin:'0 auto',marginTop:'10px',background:'#00aff9',color:'#fff',borderRadius:"20px"}},
+                        "建议书分享"
                     ),
                     React.createElement("div", { className: "h-60" })
                 )

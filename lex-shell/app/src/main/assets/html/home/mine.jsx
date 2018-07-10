@@ -37,6 +37,11 @@ class Main extends React.Component {
                     name: '理赔服务',
                     icon: '../images/mine/lpfw.png',
                     link: 'xxxx'
+                },
+                {
+                    name: '设置',
+                    icon: '../images/mine/lpfw.png',
+                    link: 'xxxx'
                 }
             ]
         }

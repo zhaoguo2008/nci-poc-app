@@ -60,11 +60,12 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
+/******/ ({
+
+/***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -89,8 +90,7 @@ var Main = function (_React$Component) {
         _this.state = {
             orderId: common.param("orderId"),
             certTypeDict: {},
-            relationDict: {},
-            ifLawyer: true
+            relationDict: {}
         };
         return _this;
     }
@@ -114,9 +114,6 @@ var Main = function (_React$Component) {
     }, {
         key: "onBenefitChange",
         value: function onBenefitChange(i, val) {
-            this.setState({
-                ifLawyer: val
-            });
             if (!val) {
                 this.popEditor({ index: i });
             }
@@ -195,12 +192,13 @@ var Main = function (_React$Component) {
                             )
                         ),
                         law ? null : v.beneficiary.map(function (w, j) {
+                        alert(JSON.stringify(w),'w')
                             return React.createElement(
                                 "div",
                                 { className: "divx" },
                                 React.createElement(
                                     "div",
-                                    { className: "text40", style: { width: "180px", height: "140px", background: "url(../images/seq1.png) no-repeat top left", backgroundSize: "140px 140px", lineHeight: "140px", textAlign: "right" } },
+                                    { className: "text40", style: { width: "180px", height: "140px", background: "url={"../images/seq" + w.sequence + '.png'} no-repeat top left", backgroundSize: "140px 140px", lineHeight: "140px", textAlign: "right" } },
                                     w.scale,
                                     "%"
                                 ),
@@ -250,4 +248,5 @@ $(document).ready(function () {
 });
 
 /***/ })
-/******/ ]);
+
+/******/ });

@@ -510,8 +510,8 @@ var Notice = function (_React$Component) {
                         React.createElement(
                             'p',
                             null,
-                            React.createElement('input', { id: 'single_scrollbar_up', type: 'button', className: 'button orange', value: '\u5DE6\u79FB' }),
-                            React.createElement('input', { id: 'single_scrollbar_down', type: 'button', className: 'button orange', value: '\u53F3\u79FB' })
+                            React.createElement('input', { id: 'single_scrollbar_up', type: 'button', className: 'button orange', value: '\u5DE6\u79FB' ,style:{display:'none'}}),
+                            React.createElement('input', { id: 'single_scrollbar_down', type: 'button', className: 'button orange', value: '\u53F3\u79FB',style:{display:'none'} })
                         )
                     ),
                     React.createElement(

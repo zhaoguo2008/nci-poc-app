@@ -651,13 +651,6 @@ class Autograph extends React.Component {
                         </div>
 
                     </div>
-                    <div id="single_scrollbar" style={{textAlign: 'center',  verticalAlign:'middle'}}  width="100%">
-                        <p><span id="single_scroll_text"> *滑动操作：</span></p>
-                        <p>
-                            <input id="single_scrollbar_up" type="button" className="button orange" value="左移" />
-                            <input id="single_scrollbar_down" type="button" className="button orange" value="右移" />
-                        </p>
-                    </div>
 
                     <div id="btnContainerOuter" width="100%">
 

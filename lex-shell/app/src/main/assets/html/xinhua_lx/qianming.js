@@ -416,7 +416,7 @@
                 {
                     case RESULT_OK:
                     // console.log(document.getElementById("other"))
-        				document.getElementById("other").style.display = "none";
+                        $('#other').hide()
                         break;
                     case EC_API_NOT_INITED:
                         console.log("信手书接口没有初始化");

@@ -4,8 +4,7 @@ class Main extends React.Component {
         this.state = {
             orderId: common.param("orderId"),
             certTypeDict: {},
-            relationDict: {},
-            ifLawyer: true
+            relationDict: {}
         }
     }
     componentDidMount() {
@@ -21,9 +20,6 @@ class Main extends React.Component {
         })
     }
     onBenefitChange(i, val) {
-        this.setState({
-            ifLawyer: val
-        });
         if (!val) {
             this.popEditor({ index: i })
         }
@@ -70,6 +66,7 @@ class Main extends React.Component {
                             <div className={"btn-sm text17 " + (!law ? "btn-sel" : "")} onClick={this.onBenefitChange.bind(this, i, false)}>{law?"约定":"添加"}</div>
                         </div>
                         { law ? null : v.beneficiary.map((w, j) =>
+
                             <div className="divx">
                                 <div className="text40" style={{width:"180px", height:"140px", background:"url(../images/seq1.png) no-repeat top left", backgroundSize:"140px 140px", lineHeight:"140px", textAlign:"right"}}>
                                     {w.scale}%
