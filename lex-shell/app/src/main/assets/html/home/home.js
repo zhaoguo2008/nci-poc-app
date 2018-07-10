@@ -120,6 +120,7 @@ var Main = function (_React$Component) {
                 data: {
                     "orgId": localStorage.orgId },
                 success: function success(data) {
+                    console.log(JSON.stringify(data));
                     that.setState({
                         LabelDta: data.content
                     });
@@ -145,9 +146,7 @@ var Main = function (_React$Component) {
                         products: r.content.list || []
                     });
                 },
-                fail: function fail(r) {
-                    alert(r, 'err')
-                },
+                fail: function fail(r) {},
                 dataType: "json"
             });
         }
@@ -166,8 +165,9 @@ var Main = function (_React$Component) {
                 success: function success(r) {
                     if (r.result == "success") {
                         var imageData = r.content.list.map(function (row) {
+                            console.log(row);
                             return {
-                                url: serverUrl + 'nci/' + row.url,
+                                url: serverUrl + row.url,
                                 link: serverUrl + row.link
                             };
                         });
@@ -179,6 +179,14 @@ var Main = function (_React$Component) {
                 fail: function fail(r) {},
                 dataType: "json"
             });
+        }
+    }, {
+        key: 'share',
+        value: function share() {
+            SHARE.callOneKeyShare("分享", "http://114.112.96.30:10006/xinhua_lx/notice_xh.html", "onekeyshare");
+            window.callShareBack = function callShareBack(flag, jsonData) {
+                alert(jsonData);
+            };
         }
     }, {
         key: 'openApply',
@@ -204,14 +212,14 @@ var Main = function (_React$Component) {
         key: 'productDetail',
         value: function productDetail(prod) {
             localStorage.productData = JSON.stringify(prod);
-//            window.MF &&  MF.navi("productDetail/productDetail.html")
-             location.href = '../productDetail/productDetail.html';
+            window.MF && MF.navi("productDetail/productDetail.html");
+            // location.href = '../productDetail/productDetail.html'
         }
     }, {
         key: 'toPage',
         value: function toPage(index) {
             if (index == 3) {
-                window.MF &&  MF.navi("home/mine.html");
+                location.href = 'mine.html';
             }
         }
     }, {
@@ -270,7 +278,7 @@ var Main = function (_React$Component) {
                         { className: 'sr2-right' },
                         React.createElement(
                             'a',
-                            { 'class': 'sr2-top' },
+                            { 'class': 'sr2-top', onClick: this.toFunPage.bind(this, 'productIntroduction') },
                             React.createElement('img', { src: '../images/home/product.png' }),
                             React.createElement(
                                 'span',
@@ -323,7 +331,7 @@ var Main = function (_React$Component) {
                             return React.createElement(
                                 'a',
                                 { className: 'prod-item', onClick: _this4.productDetail.bind(_this4, prod) },
-                                React.createElement('img', { src: prod.cover ? serverUrl + "nci/"+ prod.cover : "../images/home/default_img.png" }),
+                                React.createElement('img', { src: prod.cover ? serverUrl + "nic/" + prod.cover : "../images/home/default_img.png" }),
                                 React.createElement(
                                     'i',
                                     null,
@@ -352,7 +360,7 @@ var Main = function (_React$Component) {
                         } else {
                             return React.createElement(
                                 'li',
-                                null,
+                                { onClick: _this4.share.bind(_this4, index) },
                                 prod
                             );
                         }

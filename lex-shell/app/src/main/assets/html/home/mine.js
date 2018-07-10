@@ -94,7 +94,7 @@ var Main = function (_React$Component) {
             }, {
                 name: '我的建议书',
                 icon: '../images/mine/wdjys.png',
-                link: '../proposal/start.html'
+                link: '../proposal/proposal_list.html'
             }, {
                 name: '投保单',
                 icon: '../images/mine/tbd.png',

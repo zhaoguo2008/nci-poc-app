@@ -98,6 +98,7 @@ var CreateClient = function (_React$Component) {
             index: 0,
             mode: 0,
             verify: {},
+            goNext: false,
             cust: common.customer('customerMsg')
         };
         _this.finish = _this.finish.bind(_this);
@@ -160,7 +161,18 @@ var CreateClient = function (_React$Component) {
                 if (!c.certNo) {
                     v.certNo = "该项必填";
                 } else {
-                    if (c.certType == 1 && c.certNo.length != 18) v.certNo = "身份证号需要为18位";
+                    if (c.certType == 1) {
+                        var r1 = checkIdCard(c.certNo);
+                        if (r1) v.certNo = r1;
+                    }
+                }
+            }
+
+            if (this.state.mode == 2) {
+                if (!c.income) {
+                    v.income = "该项必填";
+                } else {
+                    if (!/^[0-9]*$/.test(c.income)) v.income = "年收入需要为数字";
                 }
             }
 
@@ -182,56 +194,10 @@ var CreateClient = function (_React$Component) {
             if (this.state.mode == 1) {
                 c.name = this.refs.name.value;
                 c.certNo = this.refs.certNo.value;
-                /*if (!c.name || !c.name.length) {
-                    console.log('请填写用户姓名');
-                    return;
-                }if (!c.gender || !c.gender.length) {
-                    console.log('请选择性别');
-                    return;
-                } if (!c.nation || !c.nation.length) {
-                    console.log('请选择国籍');
-                    return;
-                } if (!c.birthday || !c.birthday.length) {
-                    console.log('请选择出生日期');
-                    return;
-                } if (!c.marriage || !c.marriage.length) {
-                    console.log('请选择婚姻状况');
-                    return;
-                } if (!c.certNo || !c.certNo.length) {
-                    console.log('请填写证件号');
-                    return;
-                } if (!c.certValidDate || !c.certValidDate.length) {
-                    console.log('请填写证件有效期');
-                    return;
-                }*/
-                c.mode1 = true;
             } else if (this.state.mode == 2) {
                 c.company = this.refs.company.value;
                 c.workJob = this.refs.workJob.value;
                 c.income = this.refs.income.value;
-                /*if (!c.company || !c.company.length) {
-                    console.log('请填写工作单位');
-                    return;
-                }if (!c.workJob || !c.workJob.length) {
-                    console.log('请填写职位');
-                    return;
-                } if (!c.occupation1 || !c.occupation1.length) {
-                    console.log('请选择职业大类');
-                    return;
-                } if (!c.occupation || !c.occupation.length) {
-                    console.log('请选择职业小类');
-                    return;
-                } if (!c.occupation || !c.occupation.length) {
-                    console.log('请填写职业代码');
-                    return;
-                } if (!c.occupationLevel || !c.occupationLevel.length) {
-                    console.log('请填写职业类别');
-                    return;
-                } if (!c.income || !c.income.length) {
-                    console.log('请填写年收入');
-                    return;
-                }*/
-                c.mode2 = true;
             } else if (this.state.mode == 3) {
                 c.address = this.refs.address.value;
                 c.cityText = this.refs.cityText.value;
@@ -242,39 +208,12 @@ var CreateClient = function (_React$Component) {
                 c.wechat = this.refs.wechat.value;
                 c.zipcode = this.refs.zipcode.value;
                 c.email = this.refs.email.value;
-                /*if (!c.address || !c.address.length) {
-                    console.log('请填写联系地址');
-                    return;
-                }/!*if (!c.cityText || !c.cityText.length) {
-                    console.log('请填写乡镇(街道)');
-                    return;
-                } if (!c.address2 || !c.address2.length) {
-                    console.log('请填写村(社区)');
-                    return;
-                } *!/if ((!c.telephone || !c.telephone.length) && (!c.mobile || !c.mobile.length)) {
-                    console.log('手机或者电话二者选其一');
-                    return;
-                } /!*if (!c.qq || !c.qq.length) {
-                    console.log('请填写qq号码');
-                    return;
-                } if (!c.wechat || !c.wechat.length) {
-                    console.log('请填写微信号码');
-                    return;
-                } *!/if (!c.zipcode || !c.zipcode.length) {
-                    console.log('请填写邮政编码');
-                    return;
-                } if (!c.email || !c.email.length) {
-                    console.log('请填写邮箱');
-                    return;
-                }*/
-                c.mode3 = true;
-            } else if (this.state.mode == 4) {
-                c.mode4 = true;
-            }
-
-            this.state.cust = c;
+            } else if (this.state.mode == 4) {}
             if (this.verify(c)) {
+                c["mode" + this.state.mode] = true;
                 this.setState({ mode: 0, cust: c });
+            } else {
+                c["mode" + this.state.mode] = false;
             }
         }
     }, {
@@ -377,6 +316,11 @@ var CreateClient = function (_React$Component) {
                         React.createElement(
                             "div",
                             { className: "form-item-label" },
+                            React.createElement(
+                                "span",
+                                { style: { color: "red" } },
+                                "*"
+                            ),
                             "\u59D3\u540D"
                         ),
                         React.createElement(
@@ -396,6 +340,11 @@ var CreateClient = function (_React$Component) {
                         React.createElement(
                             "div",
                             { className: "form-item-label" },
+                            React.createElement(
+                                "span",
+                                { style: { color: "red" } },
+                                "*"
+                            ),
                             "\u6027\u522B"
                         ),
                         React.createElement(
@@ -417,6 +366,16 @@ var CreateClient = function (_React$Component) {
                         React.createElement(
                             "div",
                             { className: "form-item-label" },
+                            React.createElement(
+                                "span",
+                                { style: { color: "red" } },
+                                "*"
+                            ),
+                            React.createElement(
+                                "span",
+                                { style: { color: "red" } },
+                                "*"
+                            ),
                             "\u56FD\u7C4D"
                         ),
                         React.createElement(
@@ -438,6 +397,11 @@ var CreateClient = function (_React$Component) {
                         React.createElement(
                             "div",
                             { className: "form-item-label" },
+                            React.createElement(
+                                "span",
+                                { style: { color: "red" } },
+                                "*"
+                            ),
                             "\u51FA\u751F\u65E5\u671F"
                         ),
                         React.createElement(
@@ -464,6 +428,11 @@ var CreateClient = function (_React$Component) {
                         React.createElement(
                             "div",
                             { className: "form-item-label" },
+                            React.createElement(
+                                "span",
+                                { style: { color: "red" } },
+                                "*"
+                            ),
                             "\u5A5A\u59FB\u72B6\u51B5"
                         ),
                         React.createElement(
@@ -485,6 +454,11 @@ var CreateClient = function (_React$Component) {
                         React.createElement(
                             "div",
                             { className: "form-item-label" },
+                            React.createElement(
+                                "span",
+                                { style: { color: "red" } },
+                                "*"
+                            ),
                             "\u8BC1\u4EF6\u7C7B\u578B"
                         ),
                         React.createElement(
@@ -506,6 +480,11 @@ var CreateClient = function (_React$Component) {
                         React.createElement(
                             "div",
                             { className: "form-item-label" },
+                            React.createElement(
+                                "span",
+                                { style: { color: "red" } },
+                                "*"
+                            ),
                             "\u8BC1\u4EF6\u53F7\u7801"
                         ),
                         React.createElement(
@@ -525,6 +504,11 @@ var CreateClient = function (_React$Component) {
                         React.createElement(
                             "div",
                             { className: "form-item-label" },
+                            React.createElement(
+                                "span",
+                                { style: { color: "red" } },
+                                "*"
+                            ),
                             "\u8BC1\u4EF6\u6709\u6548\u671F"
                         ),
                         React.createElement(
@@ -598,6 +582,11 @@ var CreateClient = function (_React$Component) {
                         React.createElement(
                             "div",
                             { className: "form-item-label" },
+                            React.createElement(
+                                "span",
+                                { style: { color: "red" } },
+                                "*"
+                            ),
                             "\u804C\u4E1A\u5927\u7C7B"
                         ),
                         React.createElement(
@@ -619,6 +608,11 @@ var CreateClient = function (_React$Component) {
                         React.createElement(
                             "div",
                             { className: "form-item-label" },
+                            React.createElement(
+                                "span",
+                                { style: { color: "red" } },
+                                "*"
+                            ),
                             "\u804C\u4E1A\u5C0F\u7C7B"
                         ),
                         React.createElement(
@@ -676,6 +670,11 @@ var CreateClient = function (_React$Component) {
                         React.createElement(
                             "div",
                             { className: "form-item-label" },
+                            React.createElement(
+                                "span",
+                                { style: { color: "red" } },
+                                "*"
+                            ),
                             "\u5E74\u6536\u5165(\u4E07\u5143)"
                         ),
                         React.createElement(
@@ -714,6 +713,11 @@ var CreateClient = function (_React$Component) {
                         React.createElement(
                             "div",
                             { className: "form-item-label" },
+                            React.createElement(
+                                "span",
+                                { style: { color: "red" } },
+                                "*"
+                            ),
                             "\u8054\u7CFB\u5730\u5740"
                         ),
                         React.createElement(
@@ -756,6 +760,11 @@ var CreateClient = function (_React$Component) {
                         React.createElement(
                             "div",
                             { className: "form-item-label" },
+                            React.createElement(
+                                "span",
+                                { style: { color: "red" } },
+                                "*"
+                            ),
                             "\u90AE\u653F\u7F16\u7801"
                         ),
                         React.createElement(
@@ -798,6 +807,11 @@ var CreateClient = function (_React$Component) {
                         React.createElement(
                             "div",
                             { className: "form-item-label" },
+                            React.createElement(
+                                "span",
+                                { style: { color: "red" } },
+                                "*"
+                            ),
                             "\u624B\u673A"
                         ),
                         React.createElement(

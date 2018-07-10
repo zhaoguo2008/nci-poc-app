@@ -202,8 +202,11 @@ class Insurance extends React.Component {
                     </dl>
                     
                 </div>
-                <div className="on-submit" onClick={this.OnSubmit.bind(this)}>
-                    <button className="submit-btn">提交</button>
+                <div className="bottom text18 tc-primary">
+                    <div className="ml-3 mr-auto"></div>
+                    <div className="mr-3" onClick={this.OnSubmit.bind(this)}>
+                        提交
+                    </div>
                 </div>
             </div>
         )

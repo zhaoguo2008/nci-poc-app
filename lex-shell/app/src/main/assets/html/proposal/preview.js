@@ -784,7 +784,7 @@ var Main = function (_React$Component) {
                                         !x.show ? null : x.content.map(function (y, k) {
                                             return React.createElement(
                                                 "div",
-                                                { className: "text16" },
+                                                { className: "text16", style: { textAlign: "left" } },
                                                 "\u3000\u3000",
                                                 y.text
                                             );

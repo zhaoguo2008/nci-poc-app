@@ -123,7 +123,8 @@ var Main = function (_React$Component) {
                     occMap: occMap,
                     occRank: occRank,
                     occDict: occDict,
-                    nationDict: APP.toMapDict(r.nation),
+                    nationDict: r.nation,
+                    nationDictMap: APP.toMapDict(r.nation),
                     certTypeDict: r.cert,
                     marriageDict: r.marriage
                 });
@@ -145,24 +146,6 @@ var Main = function (_React$Component) {
                     if (c.name.length > 60) v.name = "姓名太长";else if (c.name.indexOf(" ") > 0) v.name = "姓名中不能有空格";
                 }
 
-                if (!c.gender) {
-                    v.gender = "该项必填";
-                }
-
-                if (!c.nation) {
-                    v.nation = "该项必填";
-                }
-
-                if (!c.marriage) {
-                    v.marriage = "该项必填";
-                }
-                if (!c.certType) {
-                    v.certType = "该项必填";
-                }
-
-                if (!c.certValidDate) {
-                    v.certValidDate = "该项必填";
-                }
                 if (!c.birthday) {
                     v.birthday = "该项必填";
                 } else {
@@ -172,7 +155,10 @@ var Main = function (_React$Component) {
                 if (!c.certNo) {
                     v.certNo = "该项必填";
                 } else {
-                    if (c.certType == 1 && c.certNo.length != 18) v.certNo = "身份证号需要为18位";
+                    if (c.certType == 1) {
+                        var r1 = checkIdCard(c.certNo);
+                        if (r1) v.certNo = r1;
+                    }
                 }
             }
 
@@ -180,9 +166,7 @@ var Main = function (_React$Component) {
                 if (!c.income) {
                     v.income = "该项必填";
                 } else {
-                    if (!/^[0-9]$/.test(c.income)) {
-                        v.zipcode = "年收入需要为数字";
-                    }
+                    if (!/^[0-9]*$/.test(c.income)) v.income = "年收入需要为数字";
                 }
             }
 
@@ -207,16 +191,10 @@ var Main = function (_React$Component) {
             if (this.state.mode == 1) {
                 c.name = this.refs.name.value;
                 c.certNo = this.refs.certNo.value;
-                if (this.verify(c)) {
-                    c.mode1 = true;
-                }
             } else if (this.state.mode == 2) {
                 c.company = this.refs.company.value;
                 c.workJob = this.refs.workJob.value;
                 c.income = this.refs.income.value;
-                if (this.verify(c)) {
-                    c.mode2 = true;
-                }
             } else if (this.state.mode == 3) {
                 c.address = this.refs.address.value;
                 c.address1 = this.refs.address1.value;
@@ -227,17 +205,15 @@ var Main = function (_React$Component) {
                 c.wechat = this.refs.wechat.value;
                 c.zipcode = this.refs.zipcode.value;
                 c.email = this.refs.email.value;
-                if (this.verify(c)) {
-                    c.mode3 = true;
-                }
-            } else if (this.state.mode == 4) {
-                c.mode4 = true;
-            }
+            } else if (this.state.mode == 4) {}
 
             if (this.verify(c)) {
+                c["mode" + this.state.mode] = true;
                 APP.apply.save({ id: this.state.orderId, detail: { applicant: c } }, function (v) {
                     _this3.setState({ mode: 0, cust: c });
                 });
+            } else {
+                c["mode" + this.state.mode] = false;
             }
         }
     }, {
@@ -245,47 +221,43 @@ var Main = function (_React$Component) {
         value: function getIdCardImg() {
             // 证件扫描
             var that = this;
-
+            var applicantCardData = sessionStorage.applicantCardData ? JSON.parse(sessionStorage.applicantCardData) : [];
             // 证件扫描
             OCR.callCardFront("APPNT", "OCR_FRONT");
             window.callOCRBack = function callOCRBack(flag, jsonData, bitmapStr) {
                 var jsonDataObj = JSON.parse(jsonData);
                 var cust = that.state.cust;
-                var birthday = jsonDataObj.birthday.replace(/['年','月']/g, '-');
-                cust.name = jsonDataObj.name;
-                cust.gender = jsonDataObj.sex == "男" ? "M" : "F";
-                cust.birthday = birthday.substring(0, birthday.length - 1);
-                cust.certNo = jsonDataObj.cardNo;
-                cust.address = jsonDataObj.address;
+                if (jsonDataObj.name) { // 正面
+                    var birthday = jsonDataObj.birthday.replace(/['年','月']/g, '-');
+                    cust.name = jsonDataObj.name;
+                    cust.gender = jsonDataObj.sex == "男" ? "M" : "F";
+                    cust.birthday = birthday.substring(0, birthday.length - 1);
+                    cust.certNo = jsonDataObj.cardNo;
+                    cust.address = jsonDataObj.address;
+                    applicantCardData.push(bitmapStr);
+                } else if (jsonDataObj.validity) { // 反面
+                    cust.certValidDate = jsonDataObj.validity.split('-')[1];
+                    applicantCardData.push(bitmapStr);
+                }
                 that.setState({
-                    ocrImage: bitmapStr,
+                    ocrImage: applicantCardData,
                     cust: cust
                 });
-                localStorage.applicantCardData = bitmapStr;
+                sessionStorage.applicantCardData = JSON.stringify(applicantCardData);
+
             };
         }
     }, {
         key: "next",
         value: function next() {
             var c = this.state.cust;
-            this.save();
-            if (!c.mode1) {
-                this.setState({
-                    mode: 1
-                });
-                return;
-            }
-            if (!c.mode2) {
-                this.setState({
-                    mode: 2
-                });
-                return;
-            }
-            if (!c.mode3) {
-                this.setState({
-                    mode: 3
-                });
-                return;
+            alert(this.state.ocrImage.length);
+            if (c.mode1 && c.mode2 && c.mode3 && c.mode4) {
+                localStorage.everyState = JSON.stringify({ applicant: this.state }); // 存放每个界面state数据
+                // localStorage.OcrArr = JSON.stringify(this.state.IdCardImg); // 存放ocr对象
+                MF.navi("apply/insurant.html?orderId=" + this.state.orderId);
+            } else {
+                MF.toast("请完善客户信息");
             }
             if (!c.mode1 && !c.mode2 && !c.mode3) return;
             if (!this.state.ocrImage || !this.state.ocrImage.length > 0) {
@@ -358,6 +330,11 @@ var Main = function (_React$Component) {
                         React.createElement(
                             "div",
                             { className: "form-item-label" },
+                            React.createElement(
+                                "span",
+                                { style: { color: "red" } },
+                                "*"
+                            ),
                             "\u6295\u4FDD\u4EBA\u59D3\u540D"
                         ),
                         React.createElement(
@@ -377,6 +354,11 @@ var Main = function (_React$Component) {
                         React.createElement(
                             "div",
                             { className: "form-item-label" },
+                            React.createElement(
+                                "span",
+                                { style: { color: "red" } },
+                                "*"
+                            ),
                             "\u6027\u522B"
                         ),
                         React.createElement(
@@ -392,17 +374,17 @@ var Main = function (_React$Component) {
                             React.createElement("img", { className: "mt-2 mr-0", style: { width: "27px", height: "39px" }, src: "../images/right.png" })
                         )
                     ),
-                    this.state.verify.gender ? React.createElement(
-                        "div",
-                        { className: "form-alert" },
-                        this.state.verify.gender
-                    ) : null,
                     React.createElement(
                         "div",
                         { className: "form-item text16" },
                         React.createElement(
                             "div",
                             { className: "form-item-label" },
+                            React.createElement(
+                                "span",
+                                { style: { color: "red" } },
+                                "*"
+                            ),
                             "\u56FD\u7C4D"
                         ),
                         React.createElement(
@@ -413,22 +395,22 @@ var Main = function (_React$Component) {
                             React.createElement(
                                 "div",
                                 { className: (cust.nation == null ? "tc-gray " : "") + "text16 ml-1 mr-auto" },
-                                cust.nation == null ? "请选择国籍" : this.state.nationDict[cust.nation]
+                                cust.nation == null ? "请选择国籍" : this.state.nationDictMap[cust.nation]
                             ),
                             React.createElement("img", { className: "mt-2 mr-0", style: { width: "27px", height: "39px" }, src: "../images/right.png" })
                         )
                     ),
-                    this.state.verify.nation ? React.createElement(
-                        "div",
-                        { className: "form-alert" },
-                        this.state.verify.nation
-                    ) : null,
                     React.createElement(
                         "div",
                         { className: "form-item text16" },
                         React.createElement(
                             "div",
                             { className: "form-item-label" },
+                            React.createElement(
+                                "span",
+                                { style: { color: "red" } },
+                                "*"
+                            ),
                             "\u51FA\u751F\u65E5\u671F"
                         ),
                         React.createElement(
@@ -455,6 +437,11 @@ var Main = function (_React$Component) {
                         React.createElement(
                             "div",
                             { className: "form-item-label" },
+                            React.createElement(
+                                "span",
+                                { style: { color: "red" } },
+                                "*"
+                            ),
                             "\u5A5A\u59FB\u72B6\u51B5"
                         ),
                         React.createElement(
@@ -470,17 +457,17 @@ var Main = function (_React$Component) {
                             React.createElement("img", { className: "mt-2 mr-0", style: { width: "27px", height: "39px" }, src: "../images/right.png" })
                         )
                     ),
-                    this.state.verify.marriage ? React.createElement(
-                        "div",
-                        { className: "form-alert" },
-                        this.state.verify.marriage
-                    ) : null,
                     React.createElement(
                         "div",
                         { className: "form-item text16" },
                         React.createElement(
                             "div",
                             { className: "form-item-label" },
+                            React.createElement(
+                                "span",
+                                { style: { color: "red" } },
+                                "*"
+                            ),
                             "\u8BC1\u4EF6\u7C7B\u578B"
                         ),
                         React.createElement(
@@ -496,17 +483,17 @@ var Main = function (_React$Component) {
                             React.createElement("img", { className: "mt-2 mr-0", style: { width: "27px", height: "39px" }, src: "../images/right.png" })
                         )
                     ),
-                    this.state.verify.certType ? React.createElement(
-                        "div",
-                        { className: "form-alert" },
-                        this.state.verify.certType
-                    ) : null,
                     React.createElement(
                         "div",
                         { className: "form-item text16" },
                         React.createElement(
                             "div",
                             { className: "form-item-label" },
+                            React.createElement(
+                                "span",
+                                { style: { color: "red" } },
+                                "*"
+                            ),
                             "\u8BC1\u4EF6\u53F7\u7801"
                         ),
                         React.createElement(
@@ -526,6 +513,11 @@ var Main = function (_React$Component) {
                         React.createElement(
                             "div",
                             { className: "form-item-label" },
+                            React.createElement(
+                                "span",
+                                { style: { color: "red" } },
+                                "*"
+                            ),
                             "\u8BC1\u4EF6\u6709\u6548\u671F"
                         ),
                         React.createElement(
@@ -541,11 +533,6 @@ var Main = function (_React$Component) {
                             React.createElement("img", { className: "mt-2 mr-0", style: { width: "27px", height: "39px" }, src: "../images/right.png" })
                         )
                     ),
-                    this.state.verify.certValidDate ? React.createElement(
-                        "div",
-                        { className: "form-alert" },
-                        this.state.verify.certValidDate
-                    ) : null,
                     React.createElement(
                         "div",
                         { className: "form-item text16" },
@@ -604,6 +591,11 @@ var Main = function (_React$Component) {
                         React.createElement(
                             "div",
                             { className: "form-item-label" },
+                            React.createElement(
+                                "span",
+                                { style: { color: "red" } },
+                                "*"
+                            ),
                             "\u804C\u4E1A\u5927\u7C7B"
                         ),
                         React.createElement(
@@ -625,6 +617,11 @@ var Main = function (_React$Component) {
                         React.createElement(
                             "div",
                             { className: "form-item-label" },
+                            React.createElement(
+                                "span",
+                                { style: { color: "red" } },
+                                "*"
+                            ),
                             "\u804C\u4E1A\u5C0F\u7C7B"
                         ),
                         React.createElement(
@@ -682,6 +679,11 @@ var Main = function (_React$Component) {
                         React.createElement(
                             "div",
                             { className: "form-item-label" },
+                            React.createElement(
+                                "span",
+                                { style: { color: "red" } },
+                                "*"
+                            ),
                             "\u5E74\u6536\u5165\uFF08\u4E07\u5143\uFF09"
                         ),
                         React.createElement(
@@ -725,6 +727,11 @@ var Main = function (_React$Component) {
                         React.createElement(
                             "div",
                             { className: "form-item-label" },
+                            React.createElement(
+                                "span",
+                                { style: { color: "red" } },
+                                "*"
+                            ),
                             "\u8054\u7CFB\u5730\u5740"
                         ),
                         React.createElement(
@@ -767,6 +774,11 @@ var Main = function (_React$Component) {
                         React.createElement(
                             "div",
                             { className: "form-item-label" },
+                            React.createElement(
+                                "span",
+                                { style: { color: "red" } },
+                                "*"
+                            ),
                             "\u90AE\u653F\u7F16\u7801"
                         ),
                         React.createElement(
@@ -775,11 +787,6 @@ var Main = function (_React$Component) {
                             React.createElement("input", { className: "mt-1", ref: "zipcode", defaultValue: cust.zipcode, placeholder: "\u8BF7\u8F93\u5165\u90AE\u653F\u7F16\u7801" })
                         )
                     ),
-                    this.state.verify.zipcode ? React.createElement(
-                        "div",
-                        { className: "form-alert" },
-                        this.state.verify.zipcode
-                    ) : null,
                     React.createElement(
                         "div",
                         { className: "form-item text16" },
@@ -809,6 +816,11 @@ var Main = function (_React$Component) {
                         React.createElement(
                             "div",
                             { className: "form-item-label" },
+                            React.createElement(
+                                "span",
+                                { style: { color: "red" } },
+                                "*"
+                            ),
                             "\u624B\u673A"
                         ),
                         React.createElement(

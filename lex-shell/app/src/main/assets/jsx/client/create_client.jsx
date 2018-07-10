@@ -11,6 +11,7 @@ class CreateClient extends React.Component {
             index: 0,
             mode: 0,
             verify: {},
+            goNext: false,
             cust: common.customer('customerMsg')
         };
         this.finish = this.finish.bind(this);
@@ -69,8 +70,19 @@ class CreateClient extends React.Component {
             if (!c.certNo) {
                 v.certNo = "该项必填"
             } else {
-                if (c.certType == 1 && c.certNo.length != 18)
-                    v.certNo = "身份证号需要为18位"
+                if (c.certType == 1) {
+                    var r1 = checkIdCard(c.certNo)
+                    if (r1) v.certNo = r1
+                }
+            }
+        }
+
+        if (this.state.mode == 2) {
+            if (!c.income) {
+                v.income = "该项必填"
+            } else {
+                if (!/^[0-9]*$/.test(c.income))
+                    v.income = "年收入需要为数字"
             }
         }
 
@@ -83,64 +95,18 @@ class CreateClient extends React.Component {
             }
         }
 
-        this.setState({ verify: v });
-        return Object.keys(v).length == 0;
+        this.setState({ verify: v })
+        return Object.keys(v).length == 0
     }
     save() {
         let c = this.state.cust;
         if (this.state.mode == 1) {
             c.name = this.refs.name.value
             c.certNo = this.refs.certNo.value
-            /*if (!c.name || !c.name.length) {
-                console.log('请填写用户姓名');
-                return;
-            }if (!c.gender || !c.gender.length) {
-                console.log('请选择性别');
-                return;
-            } if (!c.nation || !c.nation.length) {
-                console.log('请选择国籍');
-                return;
-            } if (!c.birthday || !c.birthday.length) {
-                console.log('请选择出生日期');
-                return;
-            } if (!c.marriage || !c.marriage.length) {
-                console.log('请选择婚姻状况');
-                return;
-            } if (!c.certNo || !c.certNo.length) {
-                console.log('请填写证件号');
-                return;
-            } if (!c.certValidDate || !c.certValidDate.length) {
-                console.log('请填写证件有效期');
-                return;
-            }*/
-            c.mode1 = true
         } else if (this.state.mode == 2) {
             c.company = this.refs.company.value
             c.workJob = this.refs.workJob.value
             c.income = this.refs.income.value
-             /*if (!c.company || !c.company.length) {
-                 console.log('请填写工作单位');
-                 return;
-             }if (!c.workJob || !c.workJob.length) {
-                 console.log('请填写职位');
-                 return;
-             } if (!c.occupation1 || !c.occupation1.length) {
-                 console.log('请选择职业大类');
-                 return;
-             } if (!c.occupation || !c.occupation.length) {
-                 console.log('请选择职业小类');
-                 return;
-             } if (!c.occupation || !c.occupation.length) {
-                 console.log('请填写职业代码');
-                 return;
-             } if (!c.occupationLevel || !c.occupationLevel.length) {
-                 console.log('请填写职业类别');
-                 return;
-             } if (!c.income || !c.income.length) {
-                 console.log('请填写年收入');
-                 return;
-             }*/
-            c.mode2 = true
         } else if (this.state.mode == 3) {
             c.address = this.refs.address.value
             c.cityText = this.refs.cityText.value
@@ -151,40 +117,15 @@ class CreateClient extends React.Component {
             c.wechat = this.refs.wechat.value
             c.zipcode = this.refs.zipcode.value
             c.email = this.refs.email.value
-            /*if (!c.address || !c.address.length) {
-                console.log('请填写联系地址');
-                return;
-            }/!*if (!c.cityText || !c.cityText.length) {
-                console.log('请填写乡镇(街道)');
-                return;
-            } if (!c.address2 || !c.address2.length) {
-                console.log('请填写村(社区)');
-                return;
-            } *!/if ((!c.telephone || !c.telephone.length) && (!c.mobile || !c.mobile.length)) {
-                console.log('手机或者电话二者选其一');
-                return;
-            } /!*if (!c.qq || !c.qq.length) {
-                console.log('请填写qq号码');
-                return;
-            } if (!c.wechat || !c.wechat.length) {
-                console.log('请填写微信号码');
-                return;
-            } *!/if (!c.zipcode || !c.zipcode.length) {
-                console.log('请填写邮政编码');
-                return;
-            } if (!c.email || !c.email.length) {
-                console.log('请填写邮箱');
-                return;
-            }*/
-            c.mode3 = true
         } else if (this.state.mode == 4) {
-            c.mode4 = true
+        }
+        if (this.verify(c)) {
+            c["mode" + this.state.mode] = true
+            this.setState({ mode: 0, cust: c})
+        } else {
+            c["mode" + this.state.mode] = false
         }
 
-        this.state.cust= c;
-        if (this.verify(c)) {
-            this.setState({ mode: 0, cust: c})
-        }
     }
     finish() {
         let cust = this.state.cust;
@@ -272,28 +213,28 @@ class CreateClient extends React.Component {
                 </div>
                 { this.state.mode != 1 ? null : <div className="div">
                     <div className="form-item text16">
-                        <div className="form-item-label">姓名</div>
+                        <div className="form-item-label"><span style={{color:"red"}}>*</span>姓名</div>
                         <div className="form-item-widget">
                             <input className="mt-1" ref="name" defaultValue={cust.name} placeholder="请输入投保人姓名"/>
                         </div>
                     </div>
                     { this.state.verify.name ? <div className="form-alert">{this.state.verify.name}</div> : null }
                     <div className="form-item text16">
-                        <div className="form-item-label">性别</div>
+                        <div className="form-item-label"><span style={{color:"red"}}>*</span>性别</div>
                         <div className="form-item-widget" onClick={v => {APP.pick("select", this.state.genderDict, this.onValChange.bind(this, "gender"))}}>
                             <div className={(cust.gender == null ? "tc-gray " : "") + "text16 ml-1 mr-auto"}>{cust.gender == null ? "请选择性别" : this.state.genderDict[cust.gender]}</div>
                             <img className="mt-2 mr-0" style={{width:"27px", height:"39px"}} src="../images/right.png"/>
                         </div>
                     </div>
                     <div className="form-item text16">
-                        <div className="form-item-label">国籍</div>
+                        <div className="form-item-label"><span style={{color:"red"}}>*</span><span style={{color:"red"}}>*</span>国籍</div>
                         <div className="form-item-widget" onClick={v => {APP.pick("select", this.state.nationDict, this.onValChange.bind(this, "nation"))}}>
                             <div className={(cust.nation == null ? "tc-gray " : "") + "text16 ml-1 mr-auto"}>{cust.nation == null ? "请选择国籍" : this.state.nationDict[cust.nation]}</div>
                             <img className="mt-2 mr-0" style={{width:"27px", height:"39px"}} src="../images/right.png"/>
                         </div>
                     </div>
                     <div className="form-item text16">
-                        <div className="form-item-label">出生日期</div>
+                        <div className="form-item-label"><span style={{color:"red"}}>*</span>出生日期</div>
                         <div className="form-item-widget" onClick={v => {APP.pick("date", { begin: "1900-01-01", end: new Date() }, this.onValChange.bind(this, "birthday"))}}>
                             <div className={(cust.birthday == null ? "tc-gray " : "") + "text16 ml-1 mr-auto"}>{cust.birthday == null ? "请选择出生日期" : cust.birthday}</div>
                             <img className="mt-2 mr-0" style={{width:"27px", height:"39px"}} src="../images/right.png"/>
@@ -301,28 +242,28 @@ class CreateClient extends React.Component {
                     </div>
                     { this.state.verify.birthday ? <div className="form-alert">{this.state.verify.birthday}</div> : null }
                     <div className="form-item text16">
-                        <div className="form-item-label">婚姻状况</div>
+                        <div className="form-item-label"><span style={{color:"red"}}>*</span>婚姻状况</div>
                         <div className="form-item-widget" onClick={v => {APP.pick("select", this.state.marriageDict, this.onValChange.bind(this, "marriage"))}}>
                             <div className={(cust.marriage == null ? "tc-gray " : "") + "text16 ml-1 mr-auto"}>{cust.marriage == null ? "请选择婚姻状况" : this.state.marriageDict[cust.marriage]}</div>
                             <img className="mt-2 mr-0" style={{width:"27px", height:"39px"}} src="../images/right.png"/>
                         </div>
                     </div>
                     <div className="form-item text16">
-                        <div className="form-item-label">证件类型</div>
+                        <div className="form-item-label"><span style={{color:"red"}}>*</span>证件类型</div>
                         <div className="form-item-widget" onClick={v => {APP.pick("select", this.state.certTypeDict, this.onValChange.bind(this, "certType"))}}>
                             <div className={(cust.certType == null ? "tc-gray " : "") + "text16 ml-1 mr-auto"}>{cust.certType == null ? "请选择证件类型" : this.state.certTypeDict[cust.certType]}</div>
                             <img className="mt-2 mr-0" style={{width:"27px", height:"39px"}} src="../images/right.png"/>
                         </div>
                     </div>
                     <div className="form-item text16">
-                        <div className="form-item-label">证件号码</div>
+                        <div className="form-item-label"><span style={{color:"red"}}>*</span>证件号码</div>
                         <div className="form-item-widget">
                             <input className="mt-1" ref="certNo" defaultValue={cust.certNo} placeholder="请输入证件号码"/>
                         </div>
                     </div>
                     { this.state.verify.certNo ? <div className="form-alert">{this.state.verify.certNo}</div> : null }
                     <div className="form-item text16">
-                        <div className="form-item-label">证件有效期</div>
+                        <div className="form-item-label"><span style={{color:"red"}}>*</span>证件有效期</div>
                         <div className="form-item-widget" onClick={v => {APP.pick("date", { begin: new Date() }, this.onValChange.bind(this, "certValidDate"))}}>
                             <div className={(cust.certValidDate == null ? "tc-gray " : "") + "text16 ml-1 mr-auto"}>{cust.certValidDate == null ? "请选择证件有效期" : cust.certValidDate}</div>
                             <img className="mt-2 mr-0" style={{width:"27px", height:"39px"}} src="../images/right.png"/>
@@ -352,14 +293,14 @@ class CreateClient extends React.Component {
                         </div>
                     </div>
                     <div className="form-item text16">
-                        <div className="form-item-label">职业大类</div>
+                        <div className="form-item-label"><span style={{color:"red"}}>*</span>职业大类</div>
                         <div className="form-item-widget" onClick={v => {APP.pick("select", this.state.occDict, this.onValChange.bind(this, "occupation1"))}}>
                             <div className={(cust.occupation1 == null ? "tc-gray " : "") + "text16 ml-1 mr-auto"}>{cust.occupation1 == null ? "请选择职业大类" : (this.state.occMap[cust.occupation1] ? this.state.occMap[cust.occupation1].text : "请选择职业大类")}</div>
                             <img className="mt-2 mr-0" style={{width:"27px", height:"39px"}} src="../images/right.png"/>
                         </div>
                     </div>
                     <div className="form-item text16">
-                        <div className="form-item-label">职业小类</div>
+                        <div className="form-item-label"><span style={{color:"red"}}>*</span>职业小类</div>
                         <div className="form-item-widget" onClick={v => {APP.pick("select", this.state.occMap[cust.occupation1].children, this.onValChange.bind(this, "occupation"))}}>
                             <div className={(cust.occupation == null ? "tc-gray " : "") + "text16 ml-1 mr-auto"}>{cust.occupation == null ? "请选择职业小类" : (this.state.occMap[cust.occupation] ? this.state.occMap[cust.occupation].text : "请选择职业小类")}</div>
                             <img className="mt-2 mr-0" style={{width:"27px", height:"39px"}} src="../images/right.png"/>
@@ -378,7 +319,7 @@ class CreateClient extends React.Component {
                         </div>
                     </div>
                     <div className="form-item text16">
-                        <div className="form-item-label">年收入(万元)</div>
+                        <div className="form-item-label"><span style={{color:"red"}}>*</span>年收入(万元)</div>
                         <div className="form-item-widget">
                             <input className="mt-1" ref="income" defaultValue={cust.income} placeholder="请输入年收入"/>
                         </div>
@@ -395,7 +336,7 @@ class CreateClient extends React.Component {
                 </div>
                 { this.state.mode != 3 ? null : <div className="div">
                     <div className="form-item text16">
-                        <div className="form-item-label">联系地址</div>
+                        <div className="form-item-label"><span style={{color:"red"}}>*</span>联系地址</div>
                         <div className="form-item-widget">
                             <input className="mt-1" ref="address" defaultValue={cust.address} placeholder="请输入联系地址"/>
                         </div>
@@ -413,7 +354,7 @@ class CreateClient extends React.Component {
                         </div>
                     </div>
                     <div className="form-item text16">
-                        <div className="form-item-label">邮政编码</div>
+                        <div className="form-item-label"><span style={{color:"red"}}>*</span>邮政编码</div>
                         <div className="form-item-widget">
                             <input className="mt-1" ref="zipcode" defaultValue={cust.zipcode} placeholder="请输入邮政编码"/>
                         </div>
@@ -429,7 +370,7 @@ class CreateClient extends React.Component {
                         </div>
                     </div>
                     <div className="form-item text16">
-                        <div className="form-item-label">手机</div>
+                        <div className="form-item-label"><span style={{color:"red"}}>*</span>手机</div>
                         <div className="form-item-widget">
                             <input className="mt-1" ref="mobile" defaultValue={cust.mobile} placeholder="请输入手机"/>
                         </div>
