@@ -3,9 +3,7 @@ class Insurance extends React.Component {
         super();
         this.state = {
             tabs:[
-                {tabName:"被保险人1",id:1},
-                {tabName:"被保险人2",id:2},
-                {tabName:"被保险人3",id:3}
+                {tabName:"被保险人1",id:1}
             ],
             currentIndex:1,
             orderId: common.param("orderId")

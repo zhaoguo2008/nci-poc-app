@@ -2,6 +2,7 @@ package com.polysoft.nci.application;
 
 import android.app.Application;
 
+import com.polysoft.nci.face.FaceApiMgr;
 import com.polysoft.nci.utils.CtxUtil;
 
 public class MyApplication extends Application {
@@ -15,5 +16,6 @@ public class MyApplication extends Application {
 
 	private void init() {
 		CtxUtil.setApplication(this);
+		FaceApiMgr.initApi();
 	}
 }

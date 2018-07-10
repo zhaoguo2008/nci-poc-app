@@ -60,11 +60,12 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 9);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
+/******/ ({
+
+/***/ 9:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -170,7 +171,6 @@ var Main = function (_React$Component) {
             APP.pop("apply/product_list.html", 60, function (r) {
                 if (r != null) {
                     APP.apply.addProduct(_this5.state.plan.planId, null, r, function (r) {
-                        APP.apply.save({ id: _this5.state.orderId, detail: { plan: r }, productName: r.product[0].abbrName, productCode: r.product[0].code, productId: r.product[0].productId, price: r.product[0].premium }, function (v) {});
                         _this5.setState({ plan: r });
                     });
                 }
@@ -299,31 +299,33 @@ var Main = function (_React$Component) {
                         "div",
                         { className: "card-content", style: { marginTop: "10px" } },
                         plan.product.map(function (v, i) {
-                            return v.parent == null ? React.createElement(
+                            return [v.parent == null ? React.createElement(
                                 "div",
                                 { className: "product product-main text16", style: { marginTop: "10px" }, onClick: _this8.editProduct.bind(_this8, i) },
                                 React.createElement(
                                     "div",
-                                    { style: { height: "70px", display: "flex" } },
+                                    { style: { width: "100%", height: "70px", display: "flex" } },
                                     React.createElement("img", { style: { width: "60px", height: "60px", margin: "10px 10px 0 10px" }, src: plan.icons[v.vendor] }),
                                     React.createElement(
                                         "div",
-                                        { style: { width: "600px", marginTop: "10px" } },
+                                        { className: "mr-auto", style: { marginTop: "10px" } },
                                         React.createElement(
                                             "text",
                                             { className: "text20 eclipse" },
                                             v.name
                                         )
                                     ),
-                                    React.createElement("img", { className: "mt-1 mr-1 mb-1 ml-1", style: { width: "50px", height: "50px", opacity: "0.4" }, src: "../images/stop.png", onClick: _this8.deleteProduct.bind(_this8, i) })
+                                    React.createElement("img", { className: "mt-1 mr-1 mb-1 ml-1", style: { width: "50px", height: "50px", opacity: "0.4" }, src: "../images/stop.png", onClick: function onClick(e) {
+                                            e.stopPropagation();_this8.deleteProduct(i);
+                                        } })
                                 ),
                                 React.createElement(
                                     "div",
                                     { style: { height: "60px", display: "flex" } },
-                                    React.createElement("div", { className: "left" }),
+                                    React.createElement("div", { className: "center", style: { width: "80px" } }),
                                     React.createElement(
                                         "div",
-                                        { className: "middle eclipse" },
+                                        { className: "eclipse", style: { width: SIZE - 250 + "px" } },
                                         React.createElement(
                                             "text",
                                             null,
@@ -336,7 +338,7 @@ var Main = function (_React$Component) {
                                     ),
                                     React.createElement(
                                         "div",
-                                        { className: "right" },
+                                        { className: "right", style: { width: "150px" } },
                                         React.createElement(
                                             "text",
                                             { style: { color: "#000" } },
@@ -351,7 +353,7 @@ var Main = function (_React$Component) {
                                 { className: "product product-rider text16" },
                                 React.createElement(
                                     "div",
-                                    { className: "left" },
+                                    { className: "center", style: { width: "80px" } },
                                     React.createElement(
                                         "text",
                                         { style: { color: "#0a0" } },
@@ -360,7 +362,7 @@ var Main = function (_React$Component) {
                                 ),
                                 React.createElement(
                                     "div",
-                                    { className: "middle eclipse" },
+                                    { className: "eclipse", style: { width: SIZE - 250 + "px" } },
                                     React.createElement(
                                         "text",
                                         { style: { color: "#000", marginRight: "10px" } },
@@ -378,7 +380,7 @@ var Main = function (_React$Component) {
                                 ),
                                 React.createElement(
                                     "div",
-                                    { className: "right" },
+                                    { className: "right", style: { width: "150px" } },
                                     React.createElement(
                                         "text",
                                         { style: { color: "#000" } },
@@ -386,7 +388,19 @@ var Main = function (_React$Component) {
                                         "\u5143"
                                     )
                                 )
-                            );
+                            ), v.rule == null ? null : React.createElement(
+                                "div",
+                                { className: "tc-red text12 ml-1 mr-1 pl-1 pr-1", style: { lineHeight: "32px", border: "#f00 solid 1px", backgroundColor: "#ffaaaa" } },
+                                !v.rule ? null : v.rule.map(function (w, j) {
+                                    return React.createElement(
+                                        "div",
+                                        null,
+                                        j + 1,
+                                        "\u3001",
+                                        w
+                                    );
+                                })
+                            )];
                         }),
                         plan.product && plan.product.length > 0 ? React.createElement(
                             "div",
@@ -409,25 +423,16 @@ var Main = function (_React$Component) {
                 React.createElement("div", { style: { height: "120px" } }),
                 React.createElement(
                     "div",
-                    { className: "bottom text18 tc-primary" },
+                    { className: "bottom text18 tc-primary", style: { display: "flex", justifyContent: "spaceBetween", alignItems: "center" } },
                     React.createElement(
                         "div",
-                        { className: "ml-3 mr-0", style: { width: "300px" }, onClick: this.showBenefit.bind(this) },
+                        { className: "ml-3 mr-auto", onClick: this.showBenefit.bind(this) },
                         "\u67E5\u770B\u5229\u76CA\u8D23\u4EFB"
                     ),
                     React.createElement(
                         "div",
-                        { className: "divx", onClick: this.next.bind(this) },
-                        React.createElement(
-                            "div",
-                            { className: "ml-0 mr-0", style: { width: "390px", textAlign: "right" } },
-                            "\u5065\u5EB7\u544A\u77E5"
-                        ),
-                        React.createElement(
-                            "div",
-                            { className: "ml-1 mr-2", style: { width: "30px" } },
-                            React.createElement("img", { className: "mt-3", style: { width: "27px", height: "39px" }, src: "../images/blueright.png" })
-                        )
+                        { className: "mr-3", onClick: this.next.bind(this) },
+                        "\u5065\u5EB7\u544A\u77E5"
                     )
                 )
             );
@@ -442,4 +447,5 @@ $(document).ready(function () {
 });
 
 /***/ })
-/******/ ]);
+
+/******/ });

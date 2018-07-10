@@ -46,7 +46,7 @@ class Main extends React.Component {
                                 <img src={plan.insurant.gender == "M"?"../images/male.png":"../images/female.png"} style={{width:"100px",height:"100px"}}/>
                             </div>
                             <div className="pt-1 pb-1">
-                                <div className="lh-50 text16">{ plan.insurant.name ? plan.insurant.name : "被保险人" }</div>
+                                <div className="lh-50 text16">{ plan.insurant.name ? plan.insurant.name : localStorage.insuranceName }</div>
                                 <div className="lh-30 text13">{ plan.insurant.gender == "M" ? "男" : "女" } { plan.insurant.age }岁</div>
                             </div>
                         </div>
@@ -144,7 +144,7 @@ class Main extends React.Component {
                             <div>
                                 <div className="text17 lh-60 center pl-3 pr-3 ml-3 mr-3 mt-1 mb-2 tc-primary bg-white" style={{border:"#00aff9 1px solid", borderRadius:"30px"}}>{v.productName}</div>
                                 <div className="divx">
-                                    <BenefitChart ref={"benefitChart"+i} id={"benefitChart"+i} chart={v} years={[-2,-1,0,1,2]}/>
+                                    <BenefitChart size={750} ref={"benefitChart"+i} id={"benefitChart"+i} chart={v} years={[-2,-1,0,1,2]}/>
                                 </div>
                             </div>
                         )}
@@ -170,7 +170,7 @@ class Main extends React.Component {
                                 </div>
                               </div>
                               { !x.show ? null : x.content.map((y, k) =>
-                                <div className="text16">　　{y.text}</div>
+                                <div className="text16" style={{textAlign:"left"}}>　　{y.text}</div>
                               )}
                               <div style={{height:"10px"}}></div>
                             </div>
@@ -189,6 +189,7 @@ class Main extends React.Component {
                     </div>
 
                     <div className="h-60"></div>
+                    <div class="share" style={{width:'90%',height:'40px',background:'#00aff9',color:'#fff',borderRadius:"20px"}} onClick = {this.share.bind(this,'this.state.proposalId')}>分享建议书</div>
                 </div>
             </div>
         )

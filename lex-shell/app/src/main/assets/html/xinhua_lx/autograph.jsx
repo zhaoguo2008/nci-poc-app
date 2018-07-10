@@ -652,13 +652,6 @@ class Autograph extends React.Component {
                         </div>
 
                     </div>
-                    <div id="single_scrollbar" style={{textAlign: 'center',  verticalAlign:'middle'}}  width="100%">
-                        <p><span id="single_scroll_text"> *滑动操作：</span></p>
-                        <p>
-                            <input id="single_scrollbar_up" type="button" className="button orange" value="左移" />
-                            <input id="single_scrollbar_down" type="button" className="button orange" value="右移" />
-                        </p>
-                    </div>
 
                     <div id="btnContainerOuter" width="100%">
 
@@ -667,7 +660,6 @@ class Autograph extends React.Component {
                             <input id="btnClear" type="button" className="button orange"  value="清 屏" onClick={clear_canvas}/>
                             <input id="btnCancel" type="button" className="button orange" value="取 消" onClick={cancelSign}/>
                         </div>
-
                     </div>
                 </div>
                 <div className="bottom text18 tc-primary">

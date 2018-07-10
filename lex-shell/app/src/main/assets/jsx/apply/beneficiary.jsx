@@ -4,8 +4,7 @@ class Main extends React.Component {
         this.state = {
             orderId: common.param("orderId"),
             certTypeDict: {},
-            relationDict: {},
-            ifLawyer: true
+            relationDict: {}
         }
     }
     componentDidMount() {
@@ -21,9 +20,6 @@ class Main extends React.Component {
         })
     }
     onBenefitChange(i, val) {
-        this.setState({
-            ifLawyer: val
-        });
         if (!val) {
             this.popEditor({ index: i })
         }
@@ -38,8 +34,7 @@ class Main extends React.Component {
     }
     next() {
         this.save();
-        if (!this.state.ifLawyer && localStorage.beneficiaryCardData.length > 0) {alert('请执行OCR扫描!!') }else {
-            window.MF && MF.navi("apply/announce.html?orderId=" + this.state.orderId);}
+         window.MF && MF.navi("apply/announce.html?orderId=" + this.state.orderId);
     }
     delete(i, j) {
         this.state.order.detail.insurants[i].beneficiary.splice(j, 1)
@@ -56,6 +51,7 @@ class Main extends React.Component {
             this.forceUpdate()
         })
     }
+
     render() {
         return this.state.order == null ? null : (
             <div>
@@ -70,30 +66,33 @@ class Main extends React.Component {
                             <div className={"btn-sm text17 " + (law ? "btn-sel" : "")} onClick={this.onBenefitChange.bind(this, i, true)}>法定</div>
                             <div className={"btn-sm text17 " + (!law ? "btn-sel" : "")} onClick={this.onBenefitChange.bind(this, i, false)}>{law?"约定":"添加"}</div>
                         </div>
-                        { law ? null : v.beneficiary.map((w, j) =>
-                            <div className="divx">
-                                <div className="text40" style={{width:"210px", height:"140px", background:"url(../images/seq1.png) no-repeat top left", backgroundSize:"140px 140px", lineHeight:"140px", textAlign:"right"}}>
-                                    {w.scale}%
+                        { law ? null : v.beneficiary.map((w, j) =>{
+                            return (
+                                <div className="divx">
+                                    {
+                                        w.sequence == 0?<div className="text40" style={{width:"180px", height:"140px", background:"url(../images/seq1.png) no-repeat top left", backgroundSize:"140px 140px", lineHeight:"140px", textAlign:"right"}}>
+                                            {w.scale}%
+                                        </div>: (w.sequence == 1 ? <div className="text40" style={{width:"180px", height:"140px", background:"url(../images/seq2.png) no-repeat top left", backgroundSize:"140px 140px", lineHeight:"140px", textAlign:"right"}}>
+                                            {w.scale}%
+                                        </div> : <div className="text40" style={{width:"180px", height:"140px", background:"url(../images/seq3.png) no-repeat top left", backgroundSize:"140px 140px", lineHeight:"140px", textAlign:"right"}}>
+                                            {w.scale}%
+                                        </div>)
+                                    }
+                                    <div className="div text16 pl-3 pr-3 pt-1 pb-1" style={{width:"500px", borderTop:"1px solid #e8e8e8"}}>
+                                        <div style={{height:"60px", lineHeight:"60px"}}>{w.name}（被保险人的{this.state.relationDict[w.relation]}）</div>
+                                        <div style={{height:"60px", lineHeight:"60px"}}>{this.state.certTypeDict[w.certType]}：{w.certNo}</div>
+                                    </div>
+                                    <img className="mt-1 mr-1 ml-1" style={{width:"50px", height:"50px", opacity:"0.4"}} src="../images/stop.png" onClick={this.delete.bind(this, i, j)}/>
                                 </div>
-                                <div className="div text16 pl-3 pr-3 pt-1 pb-1" style={{width:"470px", borderTop:"1px solid #e8e8e8"}}>
-                                    <div style={{height:"60px", lineHeight:"60px"}}>{w.name}（被保险人的{this.state.relationDict[w.relation]}）</div>
-                                    <div style={{height:"60px", lineHeight:"60px"}}>{this.state.certTypeDict[w.certType]}：{w.certNo}</div>
-                                </div>
-                                <img className="mt-1 mr-1 ml-1" style={{width:"50px", height:"50px", opacity:"0.4"}} src="../images/stop.png" onClick={this.delete.bind(this, i, j)}/>
-                            </div>
-                        )}
+                            )
+                        })}
                     </div>
                 })}
                 <div className="bottom text18 tc-primary">
-
-                    <div className="ml-3 mr-0" style={{width:"300px"}}></div>
-                    <div className="divx" onClick={this.next.bind(this)}>
-                        <div className="ml-0 mr-0" style={{width:"390px", textAlign:"right"}}>
-                            声明及授权
-                        </div>
-                        <div className="ml-1 mr-2" style={{width:"30px"}}>
-                            <img className="mt-3" style={{width:"27px", height:"39px"}} src="../images/blueright.png"/>
-                        </div>
+                    <div className="ml-3 mr-auto">
+                    </div>
+                    <div className="mr-3" onClick={this.next.bind(this)}>
+                        声明及授权
                     </div>
                 </div>
             </div>

@@ -140,7 +140,9 @@ var Main = function (_React$Component) {
         key: "onValChange",
         value: function onValChange(index, key, e) {
             if (key == "name") {
+            var name = e.target.value
                 e = e.value;
+                localStorage.insuranceName = name
             } else if (key == "birthday") {
                 this.state.cust[index].age = null;
             } else if (key == "age") {
@@ -190,7 +192,7 @@ var Main = function (_React$Component) {
                                 React.createElement(
                                     "div",
                                     { className: "form-item-widget" },
-                                    React.createElement("input", { className: "mt-1", value: v.name, placeholder: "\u8BF7\u8F93\u5165\u59D3\u540D", onChange: _this4.onValChange.bind(_this4, i, "name") })
+                                    React.createElement("input", { className: "mt-1",  placeholder: "\u8BF7\u8F93\u5165\u59D3\u540D", onChange: _this4.onValChange.bind(_this4, i, "name") })
                                 )
                             ),
                             React.createElement(
@@ -246,20 +248,11 @@ var Main = function (_React$Component) {
                 React.createElement(
                     "div",
                     { className: "bottom text18 tc-primary" },
-                    React.createElement("div", { className: "ml-3 mr-0", style: { width: "300px" } }),
+                    React.createElement("div", { className: "ml-3 mr-auto" }),
                     React.createElement(
                         "div",
-                        { className: "divx", onClick: this.next.bind(this) },
-                        React.createElement(
-                            "div",
-                            { className: "ml-0 mr-0", style: { width: "390px", textAlign: "right" } },
-                            "\u6295\u4FDD\u8BA1\u5212"
-                        ),
-                        React.createElement(
-                            "div",
-                            { className: "ml-1 mr-2", style: { width: "30px" } },
-                            React.createElement("img", { className: "mt-3", style: { width: "27px", height: "39px" }, src: "../images/blueright.png" })
-                        )
+                        { className: "mr-3", onClick: this.next.bind(this) },
+                        "\u6295\u4FDD\u8BA1\u5212"
                     )
                 )
             );

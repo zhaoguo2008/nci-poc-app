@@ -86,7 +86,6 @@ class Main extends React.Component {
                                                 <img src={item.img} alt="xx"/>
                                                : ''
                                             }
-                                            <b>＞</b>
                                         </span>
                                     </p>
                                 </li>

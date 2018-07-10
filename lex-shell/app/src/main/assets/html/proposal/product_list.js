@@ -88,6 +88,7 @@ var Main = function (_React$Component) {
         var _this = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this));
 
         _this.state = {
+            total: 0,
             list: []
         };
         return _this;
@@ -97,15 +98,15 @@ var Main = function (_React$Component) {
         key: "componentDidMount",
         value: function componentDidMount() {
             var _this2 = this;
-            APP.proposal.queryProduct(null,"nci", localStorage.channelId,localStorage.orgId, null, function (r) {
+
+            APP.proposal.queryProduct(null, "nci", localStorage.channelId, localStorage.orgId, null, function (r) {
                 _this2.setState({ list: r });
             });
         }
     }, {
         key: "addToPlan",
         value: function addToPlan(productId) {
-            localStorage.mainProductId = productId
-
+            localStorage.mainProductId = productId;
             APP.back(productId);
         }
     }, {

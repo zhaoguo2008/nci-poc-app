@@ -60,11 +60,12 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
+/******/ ({
+
+/***/ 7:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -93,17 +94,20 @@ var Main = function (_React$Component) {
     }
 
     _createClass(Main, [{
-        key: "componentDidMount",
-        value: function componentDidMount() {
+        key: "componentWillMount",
+        value: function componentWillMount() {
+            var _this2 = this;
+
             MF.setTitle("影像");
             var cardJson = [];
             localStorage.applicantCardData && cardJson.push(localStorage.applicantCardData);
             localStorage.insurantsCardData && cardJson.push(localStorage.insurantsCardData);
-            localStorage.beneficiaryCardData && cardJson.push(localStorage.beneficiaryCardData);
+            // localStorage.beneficiaryCardData && cardJson.push(localStorage.beneficiaryCardData);
             localStorage.payCardData && cardJson.push(localStorage.payCardData);
-            alert(cardJson.length);
             this.setState({
                 cardData: cardJson
+            }, function () {
+                console.log(_this2.state.cardData.length);
             });
         }
     }, {
@@ -122,27 +126,17 @@ var Main = function (_React$Component) {
                     "div",
                     { style: { overflow: 'hidden' } },
                     this.state.cardData && this.state.cardData.map(function (prod) {
-                        alert(prod)
-                       return React.createElement("img", { src: 'data:image/png;base64,' + prod, style: { width: '50%', height: '20%', float: 'left'} });
+                        return React.createElement("img", { src: 'data:image/png;base64,' + prod, style: { width: '50%', height: '20%', float: 'left' } });
                     })
                 ),
                 React.createElement(
                     "div",
                     { className: "bottom text18 tc-primary" },
-                    React.createElement("div", { className: "ml-3 mr-0", style: { width: "300px" } }),
+                    React.createElement("div", { className: "ml-3 mr-auto" }),
                     React.createElement(
                         "div",
-                        { className: "divx", onClick: this.next.bind(this) },
-                        React.createElement(
-                            "div",
-                            { className: "ml-0 mr-0", style: { width: "390px", textAlign: "right" } },
-                            "\u9884\u89C8"
-                        ),
-                        React.createElement(
-                            "div",
-                            { className: "ml-1 mr-2", style: { width: "30px" } },
-                            React.createElement("img", { className: "mt-3", style: { width: "27px", height: "39px" }, src: "../images/blueright.png" })
-                        )
+                        { className: "mr-3", onClick: this.next.bind(this) },
+                        "\u9884\u89C8"
                     )
                 )
             );
@@ -157,4 +151,5 @@ $(document).ready(function () {
 });
 
 /***/ })
-/******/ ]);
+
+/******/ });

@@ -84,32 +84,34 @@ var BenefitChart = function (_React$Component) {
   function BenefitChart() {
     _classCallCheck(this, BenefitChart);
 
-    var _this = _possibleConstructorReturn(this, (BenefitChart.__proto__ || Object.getPrototypeOf(BenefitChart)).call(this));
-
-    _this.state = {
-      raw: {
-        ml: 80,
-        mr: 40,
-        mt: 80,
-        mb: 130,
-        w: 750,
-        h: 550,
-        m: 5, //坐标尺刻度长短
-        bar: 20, //bar宽度
-        barm: 50, //bar空白
-        font: 24,
-        text: 24
-      },
-      pos: 0,
-      chart: {
-        age: 0,
-        data: []
-      }
-    };
-    return _this;
+    return _possibleConstructorReturn(this, (BenefitChart.__proto__ || Object.getPrototypeOf(BenefitChart)).call(this));
   }
 
   _createClass(BenefitChart, [{
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+      this.state = {
+        raw: {
+          ml: 80,
+          mr: 40,
+          mt: 80,
+          mb: 130,
+          w: this.props.size,
+          h: this.props.size / 3 * 2,
+          m: 5, //坐标尺刻度长短
+          bar: 20, //bar宽度
+          barm: 50, //bar空白
+          font: 24,
+          text: 24
+        },
+        pos: 0,
+        chart: {
+          age: 0,
+          data: []
+        }
+      };
+    }
+  }, {
     key: 'componentDidMount',
     value: function componentDidMount() {
       var chart = this.props.chart;
@@ -154,7 +156,7 @@ var BenefitChart = function (_React$Component) {
       ctx.font = ax.font + "px Arial";
       ctx.textAlign = 'right';
       ctx.textBaseline = 'middle';
-      ctx.fillText("万", x0, y0 - h * 1.1);
+      ctx.fillText("万", x0, ax.mt / 2);
       for (var i = 0; i <= 10; i++) {
         ctx.moveTo(x0, y0 - h * i / 10);
         ctx.lineTo(x0 - ax.m, y0 - h * i / 10);
@@ -195,16 +197,21 @@ var BenefitChart = function (_React$Component) {
       });
 
       //画顶部的介绍
-      ctx.textAlign = 'right';
+      ctx.textAlign = 'left';
       ctx.textBaseline = 'middle';
       var x = ax.w - ax.mr;
+      var y = ax.mt / 2;
       this.state.chart.data.map(function (v1) {
         if (v1.type == "text") return;
         ctx.fillStyle = "#" + v1.color;
-        ctx.fillText(v1.name, x, y0 - h * 1.1);
-        x -= ctx.measureText(v1.name).width + ax.m + ax.bar;
-        ctx.fillRect(x, y0 - h * 1.1 - ax.bar / 2, ax.bar, ax.bar);
-        x -= ax.m;
+        var ww = ctx.measureText(v1.name).width + ax.m + ax.bar;
+        if (x < ax.ml + ww) {
+          x = ax.w - ax.mr;
+          y += ax.bar + 10;
+        }
+        x -= ww - ax.m;
+        ctx.fillText(v1.name, x + ax.bar + ax.m, y);
+        ctx.fillRect(x, y - ax.bar / 2, ax.bar, ax.bar);
       });
 
       //计算点击的位置
@@ -306,38 +313,40 @@ var BenefitChart = function (_React$Component) {
       var _this2 = this;
 
       var pos = this.state.pos;
+      var lw = "130px";
+      var bw = (this.props.size > 1000 ? 150 : 120) + "px";
       return React.createElement(
         'div',
         { className: 'text13 center' },
-        React.createElement('canvas', { id: this.props.id, style: { marginLeft: "5px", width: "720px", height: "550px" }, width: '750', height: '550', onTouchStart: this.onTouch.bind(this), onTouchMove: this.onTouch.bind(this) }),
+        React.createElement('canvas', { id: this.props.id, style: { marginLeft: "5px", width: this.props.size - 30 + "px", height: this.props.size / 3 * 2 + "px" }, width: this.props.size, height: this.props.size / 3 * 2, onTouchStart: this.onTouch.bind(this), onTouchMove: this.onTouch.bind(this) }),
         React.createElement(
           'div',
-          { style: { display: "flex", marginLeft: "15px", lineHeight: "50px" } },
+          { style: { display: "flex", marginLeft: "10px", lineHeight: "50px" } },
           React.createElement(
             'div',
-            { style: { width: "110px" } },
+            { style: { width: lw } },
             '\u4FDD\u5355\u5E74\u5EA6'
           ),
           this.props.years.map(function (w) {
             return React.createElement(
               'div',
-              { style: { width: "120px", color: w == 0 ? '#008800' : '#aaaaaa' } },
+              { style: { width: bw, color: w == 0 ? '#008800' : '#aaaaaa' } },
               pos + w >= 0 ? "第" + (pos + w + 1) + "年" : ""
             );
           })
         ),
         React.createElement(
           'div',
-          { style: { display: "flex", marginLeft: "15px", lineHeight: "50px" } },
+          { style: { display: "flex", marginLeft: "10px", lineHeight: "50px" } },
           React.createElement(
             'div',
-            { style: { width: "110px" } },
+            { style: { width: lw } },
             '\u671F\u521D\u5E74\u9F84'
           ),
           this.props.years.map(function (w) {
             return React.createElement(
               'div',
-              { style: { width: "120px", color: w == 0 ? '#008800' : '#aaaaaa' } },
+              { style: { width: bw, color: w == 0 ? '#008800' : '#aaaaaa' } },
               pos + w >= 0 ? _this2.state.chart.age + pos + w + "岁" : ""
             );
           })
@@ -348,16 +357,16 @@ var BenefitChart = function (_React$Component) {
             { style: { display: "flex", flexDirection: "column", lineHeight: "50px" } },
             React.createElement(
               'div',
-              { style: { display: "flex", marginLeft: "15px" } },
+              { style: { display: "flex", marginLeft: "10px" } },
               React.createElement(
                 'div',
-                { style: { width: "110px" } },
+                { style: { width: lw } },
                 v.name
               ),
               _this2.props.years.map(function (w) {
                 return React.createElement(
                   'div',
-                  { style: { width: "120px", color: w == 0 ? '#008800' : '#aaaaaa' } },
+                  { style: { width: bw, color: w == 0 ? '#008800' : '#aaaaaa' } },
                   pos + w >= 0 && pos + w < v.data.length ? v.data[pos + w] : ""
                 );
               })
@@ -448,7 +457,7 @@ var Main = function (_React$Component) {
         null,
         React.createElement(
           "div",
-          { style: { display: "flex", width: "750px", position: "fixed", zIndex: "50", top: "0", backgroundColor: "#e6e6e6" } },
+          { style: { display: "flex", width: "100%", position: "fixed", zIndex: "50", top: "0", backgroundColor: "#e6e6e6" } },
           this.state.tabs.map(function (v, i) {
             return React.createElement(
               "div",
@@ -473,7 +482,7 @@ var Main = function (_React$Component) {
                 { style: { marginTop: (i != 0 ? 10 : 0) + "px" } },
                 React.createElement(
                   "div",
-                  { className: "text17 eclipse", style: { width: "690px", textAlign: "center", padding: "10px", lineHeight: "60px", borderBottom: "#ddd solid 1px" } },
+                  { className: "text17 eclipse", style: { width: SIZE - 60 + "px", textAlign: "center", padding: "10px", lineHeight: "60px", borderBottom: "#ddd solid 1px" } },
                   v.productName
                 )
               ),
@@ -514,10 +523,10 @@ var Main = function (_React$Component) {
               { className: "pl-1 bg-white" },
               React.createElement(
                 "div",
-                { "class": "eclipse text18", style: { width: "660px", textAlign: "center", marginLeft: "35px", height: "80px", lineHeight: "80px", borderBottom: "#ddd solid 1px" } },
+                { "class": "eclipse text18", style: { width: SIZE - 90 + "px", textAlign: "center", marginLeft: "35px", height: "80px", lineHeight: "80px", borderBottom: "#ddd solid 1px" } },
                 v.productName
               ),
-              React.createElement(_benefit_chart2.default, { ref: "benefitChart" + i, id: "benefitChart" + i, chart: v, years: [-2, -1, 0, 1, 2] }),
+              React.createElement(_benefit_chart2.default, { size: SIZE, ref: "benefitChart" + i, id: "benefitChart" + i, chart: v, years: SIZE > 1000 ? [-4, -3, -2, -1, 0, 1, 2, 3, 4] : [-2, -1, 0, 1, 2] }),
               React.createElement("div", { style: { height: "10px", backgroundColor: "#e6e6e6" } })
             );
           })

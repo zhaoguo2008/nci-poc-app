@@ -210,7 +210,6 @@ input::-webkit-input-placeholder{
     }
   }
 }
-
 /* 我的 */
 .mine-wrap{
   background: #F5F5F5;
@@ -362,6 +361,18 @@ input::-webkit-input-placeholder{
   font-size: .9rem;
 }
 
+.photo-show {
+  display: flex;
+  flex-wrap: wrap;
+  img {
+    display: flex;
+    width: 5em;
+    height: 5em;
+    background: red;
+  }
+
+}
+
 /* 被保人告知 */
 .inform-wrap{
   width: 100%;
@@ -509,4 +520,70 @@ input[type="radio"]:checked+label::after {
   border-radius:18px;
   position:absolute;
   vertical-align:middle;
+}
+.footNav {
+  width: 100%;
+  box-shadow: 5px 5px 5px #000;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  height: 4.08333333rem;
+}
+.footNav .actHome {
+  background: url("../images/homeC.png") center center no-repeat;
+  color: #3398DB;
+}
+.footNav .actMine {
+  background: url("../images/mineB.png") center center no-repeat;
+  color: #3398DB;
+}
+.footNav li {
+  width: 25%;
+  padding-top: 2.5rem;
+  font-size: 0.83333333rem;
+  cursor: pointer;
+  color: #4A4A4A;
+  text-align: center;
+  background: url("../images/homeC2.png") center 1rem no-repeat;
+  float: left;
+  display: block;
+  background-size: 2rem;
+
+}
+.footNav li:nth-child(2) {
+  background: url("../images/gerenC.png") center 1rem no-repeat;
+  background-size: 1.5rem;
+
+}
+.prod-item{
+    text-align:center
+}
+.footNav li:nth-child(3) {
+  background: url("../images/teamC.png") center 1rem no-repeat;
+  background-size: 1.5rem;
+}
+.footNav li:nth-child(4) {
+  background: url("../images/mineC.png") center 1rem no-repeat;
+  background-size: 1.5rem;
+}
+.footNav li:nth-child(1):hover {
+  background: url("../images/homeC.png") center 1rem no-repeat;
+  color: #3398DB;
+  background-size: 1.5rem;
+}
+.footNav li:nth-child(2):hover {
+  background: url("../images/gerenB.png") center 1rem no-repeat;
+  color: #3398DB;
+  background-size: 1.5rem;
+}
+.footNav li:nth-child(3):hover {
+  background: url("../images/teamB.png") center 1rem no-repeat;
+  color: #3398DB;
+  background-size: 1.5rem;
+}
+.footNav li:nth-child(4):hover {
+  background: url("../images/mineB.png") center 1rem no-repeat;
+  color: #3398DB;
+  background-size: 1.5rem;
 }

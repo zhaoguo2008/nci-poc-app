@@ -9,6 +9,10 @@ var Host = {
     }
 }
 
+var SIZE = common.param("size")
+if (SIZE == null)
+    SIZE = 750
+
 //var MF = {
 //    env: () => {},
 //    setTitle: () => {}

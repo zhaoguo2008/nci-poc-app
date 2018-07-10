@@ -1,14 +1,16 @@
 class BenefitChart extends React.Component {
   constructor() {
     super()
+  }
+  componentWillMount() {
     this.state = {
       raw: {
         ml: 80,
         mr: 40,
         mt: 80,
         mb: 130,
-        w: 750,
-        h: 550,
+        w: this.props.size,
+        h: this.props.size/3*2,
         m: 5, //坐标尺刻度长短
         bar: 20, //bar宽度
         barm: 50, //bar空白
@@ -62,7 +64,7 @@ class BenefitChart extends React.Component {
     ctx.font = ax.font + "px Arial"
     ctx.textAlign = 'right'
     ctx.textBaseline = 'middle'
-    ctx.fillText("万", x0, y0 - h * 1.1)
+    ctx.fillText("万", x0, ax.mt / 2)
     for (let i = 0; i <= 10; i++) {
       ctx.moveTo(x0, y0 - h * i / 10)
       ctx.lineTo(x0 - ax.m, y0 - h * i / 10)
@@ -104,17 +106,22 @@ class BenefitChart extends React.Component {
     })
 
     //画顶部的介绍
-    ctx.textAlign = 'right'
+    ctx.textAlign = 'left'
     ctx.textBaseline = 'middle'
     let x = ax.w - ax.mr
+    let y = ax.mt / 2
     this.state.chart.data.map(v1 => {
       if (v1.type == "text")
         return
       ctx.fillStyle = "#" + v1.color
-      ctx.fillText(v1.name, x, y0 - h * 1.1)
-      x -= ctx.measureText(v1.name).width + ax.m + ax.bar
-      ctx.fillRect(x, y0 - h * 1.1 - ax.bar / 2, ax.bar, ax.bar)
-      x -= ax.m 
+      let ww = ctx.measureText(v1.name).width + ax.m + ax.bar
+      if (x < ax.ml + ww) {
+        x = ax.w - ax.mr
+        y += ax.bar + 10
+      }
+      x -= ww - ax.m
+      ctx.fillText(v1.name, x + ax.bar + ax.m, y)
+      ctx.fillRect(x, y - ax.bar / 2, ax.bar, ax.bar)
     })
 
     //计算点击的位置
@@ -215,27 +222,29 @@ class BenefitChart extends React.Component {
   }
   render() {
     let pos = this.state.pos
+    let lw = "130px"
+    let bw = (this.props.size>1000?150:120)+"px"
     return (
       <div className="text13 center">
-        <canvas id={this.props.id} style={{marginLeft:"5px", width:"720px", height:"550px"}} width="750" height="550" onTouchStart={this.onTouch.bind(this)} onTouchMove={this.onTouch.bind(this)}></canvas>
-        <div style={{display:"flex", marginLeft:"15px", lineHeight:"50px"}}>
-          <div style={{width:"110px"}}>保单年度</div>
+        <canvas id={this.props.id} style={{marginLeft:"5px", width:this.props.size-30+"px", height:this.props.size/3*2+"px"}} width={this.props.size} height={this.props.size/3*2} onTouchStart={this.onTouch.bind(this)} onTouchMove={this.onTouch.bind(this)}></canvas>
+        <div style={{display:"flex", marginLeft:"10px", lineHeight:"50px"}}>
+          <div style={{width:lw}}>保单年度</div>
           { this.props.years.map(w =>
-            <div style={{width:"120px", color:w == 0 ? '#008800' : '#aaaaaa'}}>{pos + w >= 0 ? "第" + (pos + w + 1) + "年" : ""}</div>
+            <div style={{width:bw, color:w == 0 ? '#008800' : '#aaaaaa'}}>{pos + w >= 0 ? "第" + (pos + w + 1) + "年" : ""}</div>
           )}
         </div>
-        <div style={{display:"flex", marginLeft:"15px", lineHeight:"50px"}}>
-          <div style={{width:"110px"}}>期初年龄</div>
+        <div style={{display:"flex", marginLeft:"10px", lineHeight:"50px"}}>
+          <div style={{width:lw}}>期初年龄</div>
           { this.props.years.map(w =>
-            <div style={{width:"120px", color:w == 0 ? '#008800' : '#aaaaaa'}}>{pos + w >= 0 ? (this.state.chart.age + pos + w) + "岁" : ""}</div>
+            <div style={{width:bw, color:w == 0 ? '#008800' : '#aaaaaa'}}>{pos + w >= 0 ? (this.state.chart.age + pos + w) + "岁" : ""}</div>
           )}
         </div>
         { this.state.chart.data.map((v, i) =>
           <div style={{display:"flex", flexDirection:"column", lineHeight:"50px"}}>
-            <div style={{display:"flex", marginLeft:"15px"}}>
-              <div style={{width:"110px"}}>{v.name}</div>
+            <div style={{display:"flex", marginLeft:"10px"}}>
+              <div style={{width:lw}}>{v.name}</div>
               { this.props.years.map(w =>
-                <div style={{width:"120px", color:w == 0 ? '#008800' : '#aaaaaa'}}>{pos + w >= 0 && pos + w < v.data.length ? v.data[pos + w] : ""}</div>
+                <div style={{width:bw, color:w == 0 ? '#008800' : '#aaaaaa'}}>{pos + w >= 0 && pos + w < v.data.length ? v.data[pos + w] : ""}</div>
               )}
             </div>
           </div>
