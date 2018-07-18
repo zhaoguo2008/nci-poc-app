@@ -17,6 +17,7 @@ class CreateClient extends React.Component {
         this.finish = this.finish.bind(this);
     }
     componentDidMount() {
+        console.log(JSON.stringify(common.customer('customerMsg')));
         if (Object.keys(this.state.cust).length > 0) {
             window.MF && MF.setTitle("客户编辑");
         } else {
@@ -170,10 +171,12 @@ class CreateClient extends React.Component {
                 "zipcode": cust.zipcode
             })
         }
-        if (this.verify(cust)) {
+        if (c.mode1 && c.mode2 && c.mode3 && c.mode4) {
             APP.list('/customer/save.json', postData, r => {
                 window.MF && MF.navi("client/client_list.html");
             })
+        } else {
+            MF.toast("请完善客户信息");
         }
 
     }
@@ -209,7 +212,7 @@ class CreateClient extends React.Component {
                     <div className="divx text18" style={{height:"60px", margin:"25px auto 0 auto", verticalAlign:"middle", lineHeight:"50px"}}>
                         <img style={{width:"50px", height:"50px", margin:"0 20px 0 65px"}} src={"../images/"+(this.state.mode==1?"sub":"add")+".png"}/>基本信息
                     </div>
-                    <div style={{width:"65px"}}>{ cust.mode1 ? <img style={{width:"65px", height:"50px", marginTop:"25px", float:"right"}} src={"../images/filled.png"}/> : null }</div>
+                    <div style={{width:"65px"}}>{ cust.mode1 ? <img style={{width:"39px", height:"30px", marginTop:"35px", float:"right"}} src="../images/filled.png"/> : null }</div>
                 </div>
                 { this.state.mode != 1 ? null : <div className="div">
                     <div className="form-item text16">
@@ -277,7 +280,7 @@ class CreateClient extends React.Component {
                     <div className="divx text18" style={{height:"60px", margin:"25px auto 0 auto", verticalAlign:"middle", lineHeight:"50px"}}>
                         <img style={{width:"50px", height:"50px", margin:"0 20px 0 65px"}} src={"../images/"+(this.state.mode==2?"sub":"add")+".png"}/>职业信息
                     </div>
-                    <div style={{width:"65px"}}>{ cust.mode2 ? <img style={{width:"65px", height:"50px", marginTop:"25px", float:"right"}} src={"../images/filled.png"}/> : null }</div>
+                    <div style={{width:"65px"}}>{ cust.mode2 ? <img style={{width:"39px", height:"30px", marginTop:"35px", float:"right"}} src="../images/filled.png"/> : null }</div>
                 </div>
                 { this.state.mode != 2 ? null : <div className="div">
                     <div className="form-item text16">
@@ -332,7 +335,7 @@ class CreateClient extends React.Component {
                     <div className="divx text18" style={{height:"60px", margin:"25px auto 0 auto", verticalAlign:"middle", lineHeight:"50px"}}>
                         <img style={{width:"50px", height:"50px", margin:"0 20px 0 65px"}} src={"../images/"+(this.state.mode==3?"sub":"add")+".png"}/>联系方式
                     </div>
-                    <div style={{width:"65px"}}>{ cust.mode3 ? <img style={{width:"65px", height:"50px", marginTop:"25px", float:"right"}} src={"../images/filled.png"}/> : null }</div>
+                    <div style={{width:"65px"}}>{ cust.mode3 ? <img style={{width:"39px", height:"30px", marginTop:"35px", float:"right"}} src="../images/filled.png"/> : null }</div>
                 </div>
                 { this.state.mode != 3 ? null : <div className="div">
                     <div className="form-item text16">
@@ -401,7 +404,7 @@ class CreateClient extends React.Component {
                     <div className="divx text18" style={{height:"60px", margin:"25px auto 0 auto", verticalAlign:"middle", lineHeight:"50px"}}>
                         <img style={{width:"50px", height:"50px", margin:"0 20px 0 65px"}} src={"../images/"+(this.state.mode==4?"sub":"add")+".png"}/>其他信息
                     </div>
-                    <div style={{width:"65px"}}>{ cust.mode4 ? <img style={{width:"65px", height:"50px", marginTop:"25px", float:"right"}} src={"../images/filled.png"}/> : null }</div>
+                    <div style={{width:"65px"}}>{ cust.mode4 ? <img style={{width:"39px", height:"30px", marginTop:"35px", float:"right"}} src="../images/filled.png"/> : null }</div>
                 </div>
                 { this.state.mode != 4 ? null : <div className="div">
                     <div className="form-item text16">
@@ -411,12 +414,9 @@ class CreateClient extends React.Component {
 
                 <div style={{height:"120px"}}></div>
                 <div className="bottom text18 tc-primary">
-                    <div className="ml-3 mr-0" style={{width:"300px"}}></div>
-                    <div onClick={ () => {this.finish ()}}>
-                        <div className="ml-0 mr-0" style={{width:"390px", textAlign:"right"}}>
-                            完成
-                        </div>
-
+                    <div className="ml-3 mr-auto"></div>
+                    <div className="mr-3" onClick={this.finish.bind(this)}>
+                        完成
                     </div>
                 </div>
             </div>

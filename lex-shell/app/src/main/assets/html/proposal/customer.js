@@ -258,9 +258,9 @@ var Main = function (_React$Component) {
                                         v.birthday && v.age ? " / " : "",
                                         v.age ? v.age + "周岁" : ""
                                     ),
-                                    React.createElement("img", { className: "mt-1 mr-0", style: { width: "60px", height: "60px" }, src: "../images/calendar.png", onClick: function onClick(e) {
+                                    v.birthday ? React.createElement("img", { className: "mt-1 mr-0", style: { width: "60px", height: "60px" }, src: "../images/calendar.png", onClick: function onClick(e) {
                                             e.stopPropagation();APP.pick("date", { begin: "1900-01-01", end: new Date() }, _this5.onValChange.bind(_this5, i, "birthday"));
-                                        } })
+                                        } }) : React.createElement("img", { className: "mt-2 mr-0", style: { width: "27px", height: "39px" }, src: "../images/right.png" })
                                 )
                             )
                         )

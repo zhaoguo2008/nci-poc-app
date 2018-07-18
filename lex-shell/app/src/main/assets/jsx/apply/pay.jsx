@@ -31,7 +31,7 @@ class Main extends React.Component {
     }
     save() {
         let  num = Math.random();//Math.random()：得到一个0到1之间的随机数
-        num = Math.ceil(num * 5);
+        num = Math.ceil(num * 4) + 1;
 
         this.state.pay.applyNo = this.refs.applyNo.value;
         this.state.pay.bankCard = this.refs.bankCard.value;
@@ -62,6 +62,7 @@ class Main extends React.Component {
                 pay: pay
             });
             localStorage.CardData = JSON.stringify([...CardData, bitmapStr]);
+
             localStorage.payCardData = JSON.stringify(true)
         }
     }

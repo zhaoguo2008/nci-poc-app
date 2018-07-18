@@ -105,6 +105,7 @@ var Main = function (_React$Component) {
     }, {
         key: "addToPlan",
         value: function addToPlan(code, name, id) {
+            alert(id)
             localStorage.mainProductCode = code;
             localStorage.mainProductName = name;
             localStorage.mainProductId = id;

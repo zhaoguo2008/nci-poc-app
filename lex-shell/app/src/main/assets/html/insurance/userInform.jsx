@@ -14,10 +14,9 @@ class Insurance extends React.Component {
         APP.apply.view(this.state.orderId, r => {
             console.log(JSON.stringify(r.detail));
             r.detail.insurants.map((item, index) => {
-                tabs.push({tabName:`被保险人${ index + 1}`,id:index + 1});
+                tabs.push({tabName:item.name,id:index + 1});
                 return tabs;
             });
-            alert(tabs.length);
             /*this.setState({
                 tabs: tabs
             })*/

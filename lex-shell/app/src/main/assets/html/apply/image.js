@@ -102,7 +102,7 @@ var Main = function (_React$Component) {
             // localStorage.insurantsCardData && cardJson.push(localStorage.insurantsCardData);
             // localStorage.beneficiaryCardData && cardJson.push(localStorage.beneficiaryCardData);
             // localStorage.payCardData && cardJson.push(localStorage.payCardData);
-            this.setState({
+                                       this.setState({
                 cardData: JSON.parse(localStorage.CardData)
             }, function () {
                 console.log(_this2.state.cardData);

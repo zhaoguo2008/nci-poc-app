@@ -9,7 +9,7 @@ class Main extends React.Component {
     }
     componentDidMount() {
         this.state.form = [{}]
-        APP.proposal.editProduct(this.state.planId, localStorage.orgId,localStorage.mainProductId, this.state.index, r => {
+        APP.proposal.editProduct(this.state.planId,localStorage.channelId, localStorage.orgId,localStorage.mainProductId, this.state.index, r => {
             this.state.form[0] = {
                 name: r.name,
                 form: this.formOf(r.factors)

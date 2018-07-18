@@ -151,7 +151,8 @@ class Autograph extends React.Component {
                 }
             ],
             isElectronics: true, // 是否电子签名
-            cust: {}
+            cust: {},
+            policysign:''
         }
     }
     testPopupDialog1(id,isT){
@@ -166,12 +167,20 @@ class Autograph extends React.Component {
     }
     componentWillMount() {
         window.MF && MF.setTitle("投保单预览");
-        APP.apply.view(common.param("orderId"), r => {
-            console.log(JSON.stringify(r.detail))
-            this.setState({
-                cust: r.detail
+        if (common.param("orderId")) {
+            APP.apply.view(common.param("orderId"), r => {
+                console.log(JSON.stringify(r.detail))
+                this.setState({
+                    cust: r.detail
+                })
             })
-        })
+        } else {
+            console.log(JSON.stringify(common.customer("prod").detail));
+            this.setState({
+                cust: common.customer("prod").detail
+            });
+        }
+
     }
     getQueryString(name) {
         var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
@@ -189,6 +198,20 @@ class Autograph extends React.Component {
             location.href = "../apply/success.html?orderId=" + this.state.orderId
         }
 
+    }
+    share () {
+        var that = this
+        SHARE.callOneKeyShare("投保单", "http://114.112.96.30:10006/xinhua_lx/autograph_xh.html", "onekeyshare");
+        ajax('/app/policy/qry_policysign.json',{
+            "policyNo":"5000010"
+        },data=>{
+            that.setState({
+                policysign:data.content.signImg
+            })
+        })
+        window.callShareBack = function callShareBack(flag, jsonData) {
+            alert(jsonData);
+        };
     }
     render() {
         const { cust } = this.state;
@@ -225,9 +248,12 @@ class Autograph extends React.Component {
                                 <li>
                                     {
                                         this.state.autographlistTop.map(item => {
-                                           alert(cust.applicant[item.value])
                                             return (
-                                                <p>{Object.keys(cust).length && cust.applicant[item.value] || '无'}</p>
+                                                <p>
+                                                    {
+                                                        item.value == 'gender' ? (Object.keys(cust).length && cust.applicant[item.value] == "M" ? '男': '女' ) : (Object.keys(cust).length && cust.applicant[item.value] || '无')
+                                                    }
+                                                </p>
                                             )
                                         })
                                     }
@@ -236,7 +262,11 @@ class Autograph extends React.Component {
                                     {
                                         this.state.autographlistTop.map(item => {
                                             return (
-                                                <p>{Object.keys(cust).length && cust.insurants[0][item.value]  || '无'}</p>
+                                                <p>
+                                                    {
+                                                        item.value == 'gender' ? (Object.keys(cust).length && cust.insurants[0][item.value] == "M" ? '男': '女' ) : (Object.keys(cust).length && cust.insurants[0][item.value] || '无')
+                                                    }
+                                                </p>
                                             )
                                         })
                                     }
@@ -597,11 +627,11 @@ class Autograph extends React.Component {
                             <ul className="sign-box">
                                 <li>
                                     <span>投保人签名:</span>
-                                    <span><img id="xss_20"  src="data:image/gif;base64,R0lGODlhhwBIAJECAL6+vtHR0f///wAAACH5BAEAAAIALAAAAACHAEgAAAL/jI+py+0Po5y02ouz3rz7Dx7CSJbmiabqyrbuC6NLTNf2jddKzvf+r9oBh8TiS2hMKo3IpfOJa0KnVJa0is0Krtruk+sNMxPi8hJsTufQ6jaN7Y634PK6jGzPu+j6PL9f9wcYJzjYVmiYhphYtngCAMkDUDOJEklzCeRokolTCdNZEuoyyrPJaRnz+dL5uSrwahnbcyr6WJoyuwLJywvb28sCPKw7hyc5THmbOxLryqqCu3ecU3xLTBz9TLIqza3rbYzgYw1t3jw5Wo4bLi7S81qeSor6+yhszylvRQ2KDYyJnixYqr6J2sdvnLJdC+dp40YqnkFa/c4xu/YvY7FQ7O1yIZymMCBDkST1fUQ3xNG6kfVsacv4KxizjjFU4nvYcqI+f8I00jSh0ucuZ/d2FnXZwle0GzaH4kQKkSXBgz3zXdRR8Ym6o0tRepXlytrJEovAQTV6dqrTZlFZiWWaVWorqstysk0aday3sSQQSdSplm7afUTTonX4Jq7HnK1mZcsG1ifAlzBtCNra9QZfzZvdGWCUqBZoLKJHUyltGgrq1E5Ws1bi+vWYkLIJKa4tJjZuTbd3d9HtmyLt4I16E68C/Djc4cp/G2/+5Tn0M9KnJ0lu/Uj17ERmcEceIrz48eTLmz+PPr368gUAADs=" onClick={this.testPopupDialog1.bind(this,20,0)}/></span>
+                                    <span><img id="xss_20"  src={this.state.policysign==''?'data:image/gif;base64,R0lGODlhhwBIAJECAL6+vtHR0f///wAAACH5BAEAAAIALAAAAACHAEgAAAL/jI+py+0Po5y02ouz3rz7Dx7CSJbmiabqyrbuC6NLTNf2jddKzvf+r9oBh8TiS2hMKo3IpfOJa0KnVJa0is0Krtruk+sNMxPi8hJsTufQ6jaN7Y634PK6jGzPu+j6PL9f9wcYJzjYVmiYhphYtngCAMkDUDOJEklzCeRokolTCdNZEuoyyrPJaRnz+dL5uSrwahnbcyr6WJoyuwLJywvb28sCPKw7hyc5THmbOxLryqqCu3ecU3xLTBz9TLIqza3rbYzgYw1t3jw5Wo4bLi7S81qeSor6+yhszylvRQ2KDYyJnixYqr6J2sdvnLJdC+dp40YqnkFa/c4xu/YvY7FQ7O1yIZymMCBDkST1fUQ3xNG6kfVsacv4KxizjjFU4nvYcqI+f8I00jSh0ucuZ/d2FnXZwle0GzaH4kQKkSXBgz3zXdRR8Ym6o0tRepXlytrJEovAQTV6dqrTZlFZiWWaVWorqstysk0aday3sSQQSdSplm7afUTTonX4Jq7HnK1mZcsG1ifAlzBtCNra9QZfzZvdGWCUqBZoLKJHUyltGgrq1E5Ws1bi+vWYkLIJKa4tJjZuTbd3d9HtmyLt4I16E68C/Djc4cp/G2/+5Tn0M9KnJ0lu/Uj17ERmcEceIrz48eTLmz+PPr368gUAADs=':this.state.policysign} onClick={this.testPopupDialog1.bind(this,20,0)}/></span>
                                 </li>
                                 <li>
                                     <span>被保险人(法定监护人)签名:</span>
-                                    <span><img id="xss_21"  src="data:image/gif;base64,R0lGODlhhwBIAJECAL6+vtHR0f///wAAACH5BAEAAAIALAAAAACHAEgAAAL/jI+py+0Po5y02ouz3rz7Dx7CSJbmiabqyrbuC6NLTNf2jddKzvf+r9oBh8TiS2hMKo3IpfOJa0KnVJa0is0Krtruk+sNMxPi8hJsTufQ6jaN7Y634PK6jGzPu+j6PL9f9wcYJzjYVmiYhphYtngCAMkDUDOJEklzCeRokolTCdNZEuoyyrPJaRnz+dL5uSrwahnbcyr6WJoyuwLJywvb28sCPKw7hyc5THmbOxLryqqCu3ecU3xLTBz9TLIqza3rbYzgYw1t3jw5Wo4bLi7S81qeSor6+yhszylvRQ2KDYyJnixYqr6J2sdvnLJdC+dp40YqnkFa/c4xu/YvY7FQ7O1yIZymMCBDkST1fUQ3xNG6kfVsacv4KxizjjFU4nvYcqI+f8I00jSh0ucuZ/d2FnXZwle0GzaH4kQKkSXBgz3zXdRR8Ym6o0tRepXlytrJEovAQTV6dqrTZlFZiWWaVWorqstysk0aday3sSQQSdSplm7afUTTonX4Jq7HnK1mZcsG1ifAlzBtCNra9QZfzZvdGWCUqBZoLKJHUyltGgrq1E5Ws1bi+vWYkLIJKa4tJjZuTbd3d9HtmyLt4I16E68C/Djc4cp/G2/+5Tn0M9KnJ0lu/Uj17ERmcEceIrz48eTLmz+PPr368gUAADs=" onClick={this.testPopupDialog1.bind(this,20,2)}/></span>
+                                    <span><img id="xss_21"  src={this.state.policysign==''?'data:image/gif;base64,R0lGODlhhwBIAJECAL6+vtHR0f///wAAACH5BAEAAAIALAAAAACHAEgAAAL/jI+py+0Po5y02ouz3rz7Dx7CSJbmiabqyrbuC6NLTNf2jddKzvf+r9oBh8TiS2hMKo3IpfOJa0KnVJa0is0Krtruk+sNMxPi8hJsTufQ6jaN7Y634PK6jGzPu+j6PL9f9wcYJzjYVmiYhphYtngCAMkDUDOJEklzCeRokolTCdNZEuoyyrPJaRnz+dL5uSrwahnbcyr6WJoyuwLJywvb28sCPKw7hyc5THmbOxLryqqCu3ecU3xLTBz9TLIqza3rbYzgYw1t3jw5Wo4bLi7S81qeSor6+yhszylvRQ2KDYyJnixYqr6J2sdvnLJdC+dp40YqnkFa/c4xu/YvY7FQ7O1yIZymMCBDkST1fUQ3xNG6kfVsacv4KxizjjFU4nvYcqI+f8I00jSh0ucuZ/d2FnXZwle0GzaH4kQKkSXBgz3zXdRR8Ym6o0tRepXlytrJEovAQTV6dqrTZlFZiWWaVWorqstysk0aday3sSQQSdSplm7afUTTonX4Jq7HnK1mZcsG1ifAlzBtCNra9QZfzZvdGWCUqBZoLKJHUyltGgrq1E5Ws1bi+vWYkLIJKa4tJjZuTbd3d9HtmyLt4I16E68C/Djc4cp/G2/+5Tn0M9KnJ0lu/Uj17ERmcEceIrz48eTLmz+PPr368gUAADs=':this.state.policysign} onClick={this.testPopupDialog1.bind(this,20,2)}/></span>
                                 </li>
                                 <li>
                                     <span>投保日期</span>
@@ -652,6 +682,13 @@ class Autograph extends React.Component {
                         </div>
 
                     </div>
+                    <div id="single_scrollbar" style={{textAlign: 'center',  verticalAlign:'middle'}}  width="100%">
+                        <p><span id="single_scroll_text"> *滑动操作：</span></p>
+                        <p style={{display: 'none'}}>
+                            <input id="single_scrollbar_up" type="button" className="button orange" value="左移" />
+                            <input id="single_scrollbar_down" type="button" className="button orange" value="右移" />
+                        </p>
+                    </div>
 
                     <div id="btnContainerOuter" width="100%">
 
@@ -662,17 +699,15 @@ class Autograph extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="bottom text18 tc-primary">
-                    <div className="ml-3 mr-0" style={{width:"300px"}}></div>
-                    <div className="divx" onClick={this.submit.bind(this)}>
-                        <div className="ml-0 mr-0" style={{width:"390px", textAlign:"right", fontSize: '.9em'}}>
+                {
+                    common.param("orderId") && <div className="bottom text18 tc-primary">
+                        <div className="ml-3 mr-auto" onClick={this.share.bind(this)}>分享</div>
+                        <div className="mr-3" onClick={this.submit.bind(this)}>
                             提交
                         </div>
-                        <div className="ml-1 mr-2" style={{width:"30px"}}>
-                            <img className="mt-3" style={{width:"27px", height:"39px"}} src="../images/blueright.png"/>
-                        </div>
                     </div>
-                </div>
+                }
+
             </div>
 		)
     }

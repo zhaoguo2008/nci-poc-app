@@ -110,6 +110,7 @@ var CreateClient = function (_React$Component) {
         value: function componentDidMount() {
             var _this2 = this;
 
+            console.log(JSON.stringify(common.customer('customerMsg')));
             if (Object.keys(this.state.cust).length > 0) {
                 window.MF && MF.setTitle("客户编辑");
             } else {
@@ -245,10 +246,12 @@ var CreateClient = function (_React$Component) {
                     "channelId": cust.channelId || 1
                 }, _defineProperty(_JSON$stringify, "city", cust.city || ""), _defineProperty(_JSON$stringify, "cityText", cust.cityText), _defineProperty(_JSON$stringify, "company", cust.company), _defineProperty(_JSON$stringify, "companyAddress", cust.companyAddress || ""), _defineProperty(_JSON$stringify, "education", cust.education || ""), _defineProperty(_JSON$stringify, "gender", cust.gender), _defineProperty(_JSON$stringify, "marriage", cust.marriage), _defineProperty(_JSON$stringify, "mobile", cust.marriage), _defineProperty(_JSON$stringify, "phone", cust.phone), _defineProperty(_JSON$stringify, "name", cust.name), _defineProperty(_JSON$stringify, "nation", cust.nation), _defineProperty(_JSON$stringify, "occupation1", cust.occupation1), _defineProperty(_JSON$stringify, "occupation", cust.occupation), _defineProperty(_JSON$stringify, "owner", 1), _defineProperty(_JSON$stringify, "partTimeJob", cust.partTimeJob || ""), _defineProperty(_JSON$stringify, "relation", cust.relation || ""), _defineProperty(_JSON$stringify, "workDetail", cust.workDetail || ""), _defineProperty(_JSON$stringify, "zipcode", cust.zipcode), _JSON$stringify))
             };
-            if (this.verify(cust)) {
+            if (c.mode1 && c.mode2 && c.mode3 && c.mode4) {
                 APP.list('/customer/save.json', postData, function (r) {
                     window.MF && MF.navi("client/client_list.html");
                 });
+            } else {
+                MF.toast("请完善客户信息");
             }
         }
     }, {
@@ -304,7 +307,7 @@ var CreateClient = function (_React$Component) {
                     React.createElement(
                         "div",
                         { style: { width: "65px" } },
-                        cust.mode1 ? React.createElement("img", { style: { width: "65px", height: "50px", marginTop: "25px", float: "right" }, src: "../images/filled.png" }) : null
+                        cust.mode1 ? React.createElement("img", { style: { width: "39px", height: "30px", marginTop: "35px", float: "right" }, src: "../images/filled.png" }) : null
                     )
                 ),
                 this.state.mode != 1 ? null : React.createElement(
@@ -542,7 +545,7 @@ var CreateClient = function (_React$Component) {
                     React.createElement(
                         "div",
                         { style: { width: "65px" } },
-                        cust.mode2 ? React.createElement("img", { style: { width: "65px", height: "50px", marginTop: "25px", float: "right" }, src: "../images/filled.png" }) : null
+                        cust.mode2 ? React.createElement("img", { style: { width: "39px", height: "30px", marginTop: "35px", float: "right" }, src: "../images/filled.png" }) : null
                     )
                 ),
                 this.state.mode != 2 ? null : React.createElement(
@@ -701,7 +704,7 @@ var CreateClient = function (_React$Component) {
                     React.createElement(
                         "div",
                         { style: { width: "65px" } },
-                        cust.mode3 ? React.createElement("img", { style: { width: "65px", height: "50px", marginTop: "25px", float: "right" }, src: "../images/filled.png" }) : null
+                        cust.mode3 ? React.createElement("img", { style: { width: "39px", height: "30px", marginTop: "35px", float: "right" }, src: "../images/filled.png" }) : null
                     )
                 ),
                 this.state.mode != 3 ? null : React.createElement(
@@ -880,7 +883,7 @@ var CreateClient = function (_React$Component) {
                     React.createElement(
                         "div",
                         { style: { width: "65px" } },
-                        cust.mode4 ? React.createElement("img", { style: { width: "65px", height: "50px", marginTop: "25px", float: "right" }, src: "../images/filled.png" }) : null
+                        cust.mode4 ? React.createElement("img", { style: { width: "39px", height: "30px", marginTop: "35px", float: "right" }, src: "../images/filled.png" }) : null
                     )
                 ),
                 this.state.mode != 4 ? null : React.createElement(
@@ -896,17 +899,11 @@ var CreateClient = function (_React$Component) {
                 React.createElement(
                     "div",
                     { className: "bottom text18 tc-primary" },
-                    React.createElement("div", { className: "ml-3 mr-0", style: { width: "300px" } }),
+                    React.createElement("div", { className: "ml-3 mr-auto" }),
                     React.createElement(
                         "div",
-                        { onClick: function onClick() {
-                                _this3.finish();
-                            } },
-                        React.createElement(
-                            "div",
-                            { className: "ml-0 mr-0", style: { width: "390px", textAlign: "right" } },
-                            "\u5B8C\u6210"
-                        )
+                        { className: "mr-3", onClick: this.finish.bind(this) },
+                        "\u5B8C\u6210"
                     )
                 )
             );

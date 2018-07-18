@@ -60,18 +60,20 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ 8:
+/******/ ([
+/* 0 */,
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -215,12 +217,12 @@ var Main = function (_React$Component) {
         key: "getIdCardImg",
         value: function getIdCardImg() {
             var that = this;
-            var cust = that.state.cust[that.state.index];
             // 证件扫描
             OCR.callCardFront("INSURED", "OCR_FRONT");
             window.callOCRBack = function callOCRBack(flag, jsonData, bitmapStr) {
                 var CardData = JSON.parse(localStorage.CardData);
                 var jsonDataObj = JSON.parse(jsonData);
+                var cust = that.state.cust[that.state.index];
                 if (jsonDataObj.name) {
                     var birthday = jsonDataObj.birthday.replace(/['年','月']/g, '-');
                     cust.name = jsonDataObj.name;
@@ -229,13 +231,14 @@ var Main = function (_React$Component) {
                     cust.certNo = jsonDataObj.cardNo;
                     cust.address = jsonDataObj.address;
                 } else if (jsonDataObj.validity) {
-                    cust.certValidDate = jsonDataObj.validity.split('-')[1].replace(/\./g, '-');
+                    cust.certValidDate = jsonDataObj.validity.split('-')[0].replace(/\./g, '-');
+                    cust.certUnValidDate = jsonDataObj.validity.split('-')[1].replace(/\./g, '-');
                 }
                 that.state.cust[that.state.index] = cust;
                 that.setState({
                     cust: that.state.cust
                 });
-                localStorage.CardData = JSON.stringify([...CardData, bitmapStr]);
+                localStorage.CardData = JSON.stringify([].concat(_toConsumableArray(CardData), [bitmapStr]));
                 localStorage.InsurCardDataState = JSON.stringify(true);
             };
         }
@@ -579,6 +582,32 @@ var Main = function (_React$Component) {
                                 "div",
                                 { className: (cust.certValidDate == null ? "tc-gray " : "") + "text16 ml-1 mr-auto" },
                                 cust.certValidDate == null ? "请选择证件有效期" : cust.certValidDate
+                            ),
+                            React.createElement("img", { className: "mt-2 mr-0", style: { width: "27px", height: "39px" }, src: "../images/right.png" })
+                        )
+                    ),
+                    React.createElement(
+                        "div",
+                        { className: "form-item text16" },
+                        React.createElement(
+                            "div",
+                            { className: "form-item-label" },
+                            React.createElement(
+                                "span",
+                                { style: { color: "red" } },
+                                "*"
+                            ),
+                            "\u8BC1\u4EF6\u5931\u6548\u671F"
+                        ),
+                        React.createElement(
+                            "div",
+                            { className: "form-item-widget", onClick: function onClick(v) {
+                                    APP.pick("date", { begin: new Date() }, _this5.onValChange.bind(_this5, "certUnValidDate"));
+                                } },
+                            React.createElement(
+                                "div",
+                                { className: (cust.certUnValidDate == null ? "tc-gray " : "") + "text16 ml-1 mr-auto" },
+                                cust.certUnValidDate == null ? "请选择证件失效期" : cust.certUnValidDate
                             ),
                             React.createElement("img", { className: "mt-2 mr-0", style: { width: "27px", height: "39px" }, src: "../images/right.png" })
                         )
@@ -980,5 +1009,4 @@ $(document).ready(function () {
 });
 
 /***/ })
-
-/******/ });
+/******/ ]);

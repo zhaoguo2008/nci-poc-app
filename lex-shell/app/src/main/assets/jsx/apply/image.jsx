@@ -35,6 +35,7 @@ class Main extends React.Component {
                             )
                         })
                     }
+
                 </div>
 
                 <div className="bottom text18 tc-primary">

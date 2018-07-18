@@ -97,7 +97,10 @@ class Main extends React.Component {
                                 <div className="form-item-label">{v.birthday?"出生日期":"年龄"}</div>
                                 <div className="form-item-widget" onClick={e => { APP.pick("select", this.state.ages, this.onValChange.bind(this, i, "age")) }}>
                                     <div className="text17 ml-1 mr-auto">{ v.birthday }{ v.birthday && v.age ? " / " : "" }{ v.age ? v.age + "周岁" : "" }</div>
-                                    <img className="mt-1 mr-0" style={{width:"60px", height:"60px"}} src="../images/calendar.png" onClick={e => { e.stopPropagation(); APP.pick("date", { begin: "1900-01-01", end: new Date() }, this.onValChange.bind(this, i, "birthday")) }}/>
+                                    {
+                                        v.birthday?<img className="mt-1 mr-0" style={{width:"60px", height:"60px"}} src="../images/calendar.png" onClick={e => { e.stopPropagation(); APP.pick("date", { begin: "1900-01-01", end: new Date() }, this.onValChange.bind(this, i, "birthday")) }}/> : <img className="mt-2 mr-0" style={{width:"27px", height:"39px"}} src="../images/right.png"/>
+
+                                    }
                                 </div>
                             </div>
                         </div>

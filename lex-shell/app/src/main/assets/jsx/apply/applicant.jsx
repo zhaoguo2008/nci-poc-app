@@ -105,6 +105,7 @@ class Main extends React.Component {
             c.company = this.refs.company.value
             c.workJob = this.refs.workJob.value
             c.income = this.refs.income.value
+
         } else if (this.state.mode == 3) {
             c.address = this.refs.address.value
             c.address1 = this.refs.address1.value
@@ -144,7 +145,8 @@ class Main extends React.Component {
                 cust.certNo = jsonDataObj.cardNo;
                 cust.address = jsonDataObj.address;
             } else if (jsonDataObj.validity) { // 反面
-                cust.certValidDate = jsonDataObj.validity.split('-')[1].replace(/\./g, '-');
+                cust.certValidDate = jsonDataObj.validity.split('-')[0].replace(/\./g, '-');
+                cust.certUnValidDate = jsonDataObj.validity.split('-')[1].replace(/\./g, '-');
             }
             that.setState({
                 cust: cust
@@ -157,15 +159,15 @@ class Main extends React.Component {
         let c = this.state.cust
         if (c.mode1 && c.mode2 && c.mode3 && c.mode4) {
             localStorage.everyState = JSON.stringify({ applicant: this.state }); // 存放每个界面state数据
-            MF.navi("apply/insurant.html?orderId=" + this.state.orderId);
+            if (localStorage.appliCardDataState && !JSON.parse(localStorage.appliCardDataState)) {
+                alert('请执行OCR扫描!!');
+            } else {
+                MF.navi("apply/insurant.html?orderId=" + this.state.orderId);
+            }
         } else {
             MF.toast("请完善客户信息");
         }
-        if (localStorage.appliCardDataState && !JSON.parse(localStorage.appliCardDataState)) {
-            alert('请执行OCR扫描!!');
-        } else {
-            MF.navi("apply/insurant.html?orderId=" + this.state.orderId);
-        }
+
 
     }
     onValChange(key, val) {
@@ -248,10 +250,18 @@ class Main extends React.Component {
                         </div>
                     </div>
                     { this.state.verify.certNo ? <div className="form-alert">{this.state.verify.certNo}</div> : null }
+
                     <div className="form-item text16">
                         <div className="form-item-label"><span style={{color:"red"}}>*</span>证件有效期</div>
                         <div className="form-item-widget" onClick={v => {APP.pick("date", { begin: new Date() }, this.onValChange.bind(this, "certValidDate"))}}>
                             <div className={(cust.certValidDate == null ? "tc-gray " : "") + "text16 ml-1 mr-auto"}>{cust.certValidDate == null ? "请选择证件有效期" : cust.certValidDate}</div>
+                            <img className="mt-2 mr-0" style={{width:"27px", height:"39px"}} src="../images/right.png"/>
+                        </div>
+                    </div>
+                    <div className="form-item text16">
+                        <div className="form-item-label"><span style={{color:"red"}}>*</span>证件失效期</div>
+                        <div className="form-item-widget" onClick={v => {APP.pick("date", { begin: new Date() }, this.onValChange.bind(this, "certUnValidDate"))}}>
+                            <div className={(cust.certUnValidDate == null ? "tc-gray " : "") + "text16 ml-1 mr-auto"}>{cust.certUnValidDate == null ? "请选择证件失效期" : cust.certUnValidDate}</div>
                             <img className="mt-2 mr-0" style={{width:"27px", height:"39px"}} src="../images/right.png"/>
                         </div>
                     </div>

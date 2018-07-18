@@ -201,7 +201,8 @@ var Autograph = function (_React$Component) {
                 value: '否'
             }],
             isElectronics: true, // 是否电子签名
-            cust: {}
+            cust: {},
+            policysign: ''
         };
         return _this;
     }
@@ -221,13 +222,22 @@ var Autograph = function (_React$Component) {
     }, {
         key: 'componentWillMount',
         value: function componentWillMount() {
+            var _this2 = this;
+
             window.MF && MF.setTitle("投保单预览");
-            APP.apply.view(common.param("orderId"), r => {
-                console.log(JSON.stringify(r.detail))
+            if (common.param("orderId")) {
+                APP.apply.view(common.param("orderId"), function (r) {
+                    console.log(JSON.stringify(r.detail));
+                    _this2.setState({
+                        cust: r.detail
+                    });
+                });
+            } else {
+                console.log(JSON.stringify(common.customer("prod").detail));
                 this.setState({
-                    cust: r.detail
-                })
-            })
+                    cust: common.customer("prod").detail
+                });
+            }
         }
     }, {
         key: 'getQueryString',
@@ -250,6 +260,22 @@ var Autograph = function (_React$Component) {
             } else {
                 location.href = "../apply/success.html?orderId=" + this.state.orderId;
             }
+        }
+    }, {
+        key: 'share',
+        value: function share() {
+            var that = this;
+            SHARE.callOneKeyShare("投保单", "http://114.112.96.30:10006/xinhua_lx/autograph_xh.html", "onekeyshare");
+            ajax('/app/policy/qry_policysign.json', {
+                "policyNo": "5000010"
+            }, function (data) {
+                that.setState({
+                    policysign: data.content.signImg
+                });
+            });
+            window.callShareBack = function callShareBack(flag, jsonData) {
+                alert(jsonData);
+            };
         }
     }, {
         key: 'render',
@@ -341,7 +367,7 @@ var Autograph = function (_React$Component) {
                                         return React.createElement(
                                             'p',
                                             null,
-                                            Object.keys(cust).length && cust.applicant[item.value] || '无'
+                                            item.value == 'gender' ? Object.keys(cust).length && cust.applicant[item.value] == "M" ? '男' : '女' : Object.keys(cust).length && cust.applicant[item.value] || '无'
                                         );
                                     })
                                 ),
@@ -352,7 +378,7 @@ var Autograph = function (_React$Component) {
                                         return React.createElement(
                                             'p',
                                             null,
-                                            Object.keys(cust).length && cust.insurants[0][item.value] || '无'
+                                            item.value == 'gender' ? Object.keys(cust).length && cust.insurants[0][item.value] == "M" ? '男' : '女' : Object.keys(cust).length && cust.insurants[0][item.value] || '无'
                                         );
                                     })
                                 )
@@ -1397,7 +1423,7 @@ var Autograph = function (_React$Component) {
                             React.createElement(
                                 'span',
                                 null,
-                                React.createElement('img', { id: 'xss_20', src: 'data:image/gif;base64,R0lGODlhhwBIAJECAL6+vtHR0f///wAAACH5BAEAAAIALAAAAACHAEgAAAL/jI+py+0Po5y02ouz3rz7Dx7CSJbmiabqyrbuC6NLTNf2jddKzvf+r9oBh8TiS2hMKo3IpfOJa0KnVJa0is0Krtruk+sNMxPi8hJsTufQ6jaN7Y634PK6jGzPu+j6PL9f9wcYJzjYVmiYhphYtngCAMkDUDOJEklzCeRokolTCdNZEuoyyrPJaRnz+dL5uSrwahnbcyr6WJoyuwLJywvb28sCPKw7hyc5THmbOxLryqqCu3ecU3xLTBz9TLIqza3rbYzgYw1t3jw5Wo4bLi7S81qeSor6+yhszylvRQ2KDYyJnixYqr6J2sdvnLJdC+dp40YqnkFa/c4xu/YvY7FQ7O1yIZymMCBDkST1fUQ3xNG6kfVsacv4KxizjjFU4nvYcqI+f8I00jSh0ucuZ/d2FnXZwle0GzaH4kQKkSXBgz3zXdRR8Ym6o0tRepXlytrJEovAQTV6dqrTZlFZiWWaVWorqstysk0aday3sSQQSdSplm7afUTTonX4Jq7HnK1mZcsG1ifAlzBtCNra9QZfzZvdGWCUqBZoLKJHUyltGgrq1E5Ws1bi+vWYkLIJKa4tJjZuTbd3d9HtmyLt4I16E68C/Djc4cp/G2/+5Tn0M9KnJ0lu/Uj17ERmcEceIrz48eTLmz+PPr368gUAADs=', onClick: this.testPopupDialog1.bind(this, 20, 0) })
+                                React.createElement('img', { id: 'xss_20', src: this.state.policysign == '' ? 'data:image/gif;base64,R0lGODlhhwBIAJECAL6+vtHR0f///wAAACH5BAEAAAIALAAAAACHAEgAAAL/jI+py+0Po5y02ouz3rz7Dx7CSJbmiabqyrbuC6NLTNf2jddKzvf+r9oBh8TiS2hMKo3IpfOJa0KnVJa0is0Krtruk+sNMxPi8hJsTufQ6jaN7Y634PK6jGzPu+j6PL9f9wcYJzjYVmiYhphYtngCAMkDUDOJEklzCeRokolTCdNZEuoyyrPJaRnz+dL5uSrwahnbcyr6WJoyuwLJywvb28sCPKw7hyc5THmbOxLryqqCu3ecU3xLTBz9TLIqza3rbYzgYw1t3jw5Wo4bLi7S81qeSor6+yhszylvRQ2KDYyJnixYqr6J2sdvnLJdC+dp40YqnkFa/c4xu/YvY7FQ7O1yIZymMCBDkST1fUQ3xNG6kfVsacv4KxizjjFU4nvYcqI+f8I00jSh0ucuZ/d2FnXZwle0GzaH4kQKkSXBgz3zXdRR8Ym6o0tRepXlytrJEovAQTV6dqrTZlFZiWWaVWorqstysk0aday3sSQQSdSplm7afUTTonX4Jq7HnK1mZcsG1ifAlzBtCNra9QZfzZvdGWCUqBZoLKJHUyltGgrq1E5Ws1bi+vWYkLIJKa4tJjZuTbd3d9HtmyLt4I16E68C/Djc4cp/G2/+5Tn0M9KnJ0lu/Uj17ERmcEceIrz48eTLmz+PPr368gUAADs=' : this.state.policysign, onClick: this.testPopupDialog1.bind(this, 20, 0) })
                             )
                         ),
                         React.createElement(
@@ -1411,7 +1437,7 @@ var Autograph = function (_React$Component) {
                             React.createElement(
                                 'span',
                                 null,
-                                React.createElement('img', { id: 'xss_21', src: 'data:image/gif;base64,R0lGODlhhwBIAJECAL6+vtHR0f///wAAACH5BAEAAAIALAAAAACHAEgAAAL/jI+py+0Po5y02ouz3rz7Dx7CSJbmiabqyrbuC6NLTNf2jddKzvf+r9oBh8TiS2hMKo3IpfOJa0KnVJa0is0Krtruk+sNMxPi8hJsTufQ6jaN7Y634PK6jGzPu+j6PL9f9wcYJzjYVmiYhphYtngCAMkDUDOJEklzCeRokolTCdNZEuoyyrPJaRnz+dL5uSrwahnbcyr6WJoyuwLJywvb28sCPKw7hyc5THmbOxLryqqCu3ecU3xLTBz9TLIqza3rbYzgYw1t3jw5Wo4bLi7S81qeSor6+yhszylvRQ2KDYyJnixYqr6J2sdvnLJdC+dp40YqnkFa/c4xu/YvY7FQ7O1yIZymMCBDkST1fUQ3xNG6kfVsacv4KxizjjFU4nvYcqI+f8I00jSh0ucuZ/d2FnXZwle0GzaH4kQKkSXBgz3zXdRR8Ym6o0tRepXlytrJEovAQTV6dqrTZlFZiWWaVWorqstysk0aday3sSQQSdSplm7afUTTonX4Jq7HnK1mZcsG1ifAlzBtCNra9QZfzZvdGWCUqBZoLKJHUyltGgrq1E5Ws1bi+vWYkLIJKa4tJjZuTbd3d9HtmyLt4I16E68C/Djc4cp/G2/+5Tn0M9KnJ0lu/Uj17ERmcEceIrz48eTLmz+PPr368gUAADs=', onClick: this.testPopupDialog1.bind(this, 20, 2) })
+                                React.createElement('img', { id: 'xss_21', src: this.state.policysign == '' ? 'data:image/gif;base64,R0lGODlhhwBIAJECAL6+vtHR0f///wAAACH5BAEAAAIALAAAAACHAEgAAAL/jI+py+0Po5y02ouz3rz7Dx7CSJbmiabqyrbuC6NLTNf2jddKzvf+r9oBh8TiS2hMKo3IpfOJa0KnVJa0is0Krtruk+sNMxPi8hJsTufQ6jaN7Y634PK6jGzPu+j6PL9f9wcYJzjYVmiYhphYtngCAMkDUDOJEklzCeRokolTCdNZEuoyyrPJaRnz+dL5uSrwahnbcyr6WJoyuwLJywvb28sCPKw7hyc5THmbOxLryqqCu3ecU3xLTBz9TLIqza3rbYzgYw1t3jw5Wo4bLi7S81qeSor6+yhszylvRQ2KDYyJnixYqr6J2sdvnLJdC+dp40YqnkFa/c4xu/YvY7FQ7O1yIZymMCBDkST1fUQ3xNG6kfVsacv4KxizjjFU4nvYcqI+f8I00jSh0ucuZ/d2FnXZwle0GzaH4kQKkSXBgz3zXdRR8Ym6o0tRepXlytrJEovAQTV6dqrTZlFZiWWaVWorqstysk0aday3sSQQSdSplm7afUTTonX4Jq7HnK1mZcsG1ifAlzBtCNra9QZfzZvdGWCUqBZoLKJHUyltGgrq1E5Ws1bi+vWYkLIJKa4tJjZuTbd3d9HtmyLt4I16E68C/Djc4cp/G2/+5Tn0M9KnJ0lu/Uj17ERmcEceIrz48eTLmz+PPr368gUAADs=' : this.state.policysign, onClick: this.testPopupDialog1.bind(this, 20, 2) })
                             )
                         ),
                         React.createElement(
@@ -1550,6 +1576,12 @@ var Autograph = function (_React$Component) {
                                 { id: 'single_scroll_text' },
                                 ' *\u6ED1\u52A8\u64CD\u4F5C\uFF1A'
                             )
+                        ),
+                        React.createElement(
+                            'p',
+                            { style: { display: 'none' } },
+                            React.createElement('input', { id: 'single_scrollbar_up', type: 'button', className: 'button orange', value: '\u5DE6\u79FB' }),
+                            React.createElement('input', { id: 'single_scrollbar_down', type: 'button', className: 'button orange', value: '\u53F3\u79FB' })
                         )
                     ),
                     React.createElement(
@@ -1564,23 +1596,18 @@ var Autograph = function (_React$Component) {
                         )
                     )
                 ),
-                React.createElement(
+                common.param("orderId") && React.createElement(
                     'div',
                     { className: 'bottom text18 tc-primary' },
-                    React.createElement('div', { className: 'ml-3 mr-0', style: { width: "300px" } }),
                     React.createElement(
                         'div',
-                        { className: 'divx', onClick: this.submit.bind(this) },
-                        React.createElement(
-                            'div',
-                            { className: 'ml-0 mr-0', style: { width: "390px", textAlign: "right" ,fontSize: '.9em'} },
-                            '\u63D0\u4EA4'
-                        ),
-                        React.createElement(
-                            'div',
-                            { className: 'ml-1 mr-2', style: { width: "30px" } },
-                            React.createElement('img', { className: 'mt-3', style: { width: "27px", height: "39px" }, src: '../images/blueright.png' })
-                        )
+                        { className: 'ml-3 mr-auto', onClick: this.share.bind(this) },
+                        '\u5206\u4EAB'
+                    ),
+                    React.createElement(
+                        'div',
+                        { className: 'mr-3', onClick: this.submit.bind(this) },
+                        '\u63D0\u4EA4'
                     )
                 )
             );

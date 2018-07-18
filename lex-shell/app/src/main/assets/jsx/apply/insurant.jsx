@@ -126,6 +126,7 @@ class Main extends React.Component {
         window.callOCRBack = function callOCRBack(flag, jsonData, bitmapStr){
             var CardData = JSON.parse(localStorage.CardData);
             var jsonDataObj = JSON.parse(jsonData);
+            var cust = that.state.cust[that.state.index];
             if (jsonDataObj.name) {
                 var birthday = jsonDataObj.birthday.replace(/['年','月']/g, '-');
                 cust.name = jsonDataObj.name;
@@ -134,7 +135,8 @@ class Main extends React.Component {
                 cust.certNo = jsonDataObj.cardNo;
                 cust.address = jsonDataObj.address;
             } else if (jsonDataObj.validity) {
-                cust.certValidDate = jsonDataObj.validity.split('-')[1].replace(/\./g, '-');
+                cust.certValidDate = jsonDataObj.validity.split('-')[0].replace(/\./g, '-');
+                cust.certUnValidDate = jsonDataObj.validity.split('-')[1].replace(/\./g, '-');
             }
             that.state.cust[that.state.index] = cust;
             that.setState({
@@ -277,6 +279,13 @@ class Main extends React.Component {
                         <div className="form-item-label"><span style={{color:"red"}}>*</span>证件有效期</div>
                         <div className="form-item-widget" onClick={v => {APP.pick("date", { begin: new Date() }, this.onValChange.bind(this, "certValidDate"))}}>
                             <div className={(cust.certValidDate == null ? "tc-gray " : "") + "text16 ml-1 mr-auto"}>{cust.certValidDate == null ? "请选择证件有效期" : cust.certValidDate}</div>
+                            <img className="mt-2 mr-0" style={{width:"27px", height:"39px"}} src="../images/right.png"/>
+                        </div>
+                    </div>
+                    <div className="form-item text16">
+                        <div className="form-item-label"><span style={{color:"red"}}>*</span>证件失效期</div>
+                        <div className="form-item-widget" onClick={v => {APP.pick("date", { begin: new Date() }, this.onValChange.bind(this, "certUnValidDate"))}}>
+                            <div className={(cust.certUnValidDate == null ? "tc-gray " : "") + "text16 ml-1 mr-auto"}>{cust.certUnValidDate == null ? "请选择证件失效期" : cust.certUnValidDate}</div>
                             <img className="mt-2 mr-0" style={{width:"27px", height:"39px"}} src="../images/right.png"/>
                         </div>
                     </div>

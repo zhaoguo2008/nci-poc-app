@@ -1,0 +1,1508 @@
+
+lex-shell/app/build/reports/lint-results-release-fatal.xml
+lex-shell/app/build/reports/lint-results-release-fatal.html
+lex-shell/app/build/outputs/logs/manifest-merger-release-report.txt
+lex-shell/app/build/outputs/logs/manifest-merger-debug-report.txt
+lex-shell/app/build/outputs/apk/app-debug.apk
+lex-shell/app/build/intermediates/transforms/mergeJniLibs/release/folders/2000/1f/main/lib/armeabi-v7a/libIDCardScan.so
+lex-shell/app/build/intermediates/transforms/mergeJniLibs/release/folders/2000/1f/main/lib/armeabi-v7a/libBankCardScanSDK.so
+lex-shell/app/build/intermediates/transforms/mergeJniLibs/release/folders/2000/1f/main/lib/arm64-v8a/libIDCardScan.so
+lex-shell/app/build/intermediates/transforms/mergeJniLibs/release/folders/2000/1f/main/lib/arm64-v8a/libBankCardScanSDK.so
+lex-shell/app/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main/lib/armeabi-v7a/libIDCardScan.so
+lex-shell/app/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main/lib/armeabi-v7a/libBankCardScanSDK.so
+lex-shell/app/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main/lib/arm64-v8a/libIDCardScan.so
+lex-shell/app/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main/lib/arm64-v8a/libBankCardScanSDK.so
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/polysoft/nci/ocr/OCRTypeEnum.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/polysoft/nci/ocr/OCRNativeApi.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/polysoft/nci/ocr/OCRNativeApi$3.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/polysoft/nci/ocr/OCRNativeApi$2.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/polysoft/nci/ocr/OCRNativeApi$1.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/polysoft/nci/ocr/OCRData.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/polysoft/nci/ocr/OCRData$OCRFrontData.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/polysoft/nci/ocr/OCRData$OCRBankData.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/polysoft/nci/ocr/OCRData$OCRBackData.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/polysoft/nci/ocr/OCRConstant.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/polysoft/nci/ocr/OCRCardCamera.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/polysoft/nci/ocr/OCRCallJavaScriptImpl.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/polysoft/nci/ocr/OCRCallJavaScriptImpl$1.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/polysoft/nci/ocr/OCRBankCamera.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/polysoft/nci/ocr/IOCRScript.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/polysoft/nci/interf/IStartActivity.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/polysoft/nci/interf/IActivityResult.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/polysoft/nci/interf/IActivity.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/polysoft/nci/interf/Callback.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/android/tools/fd/dummy/slice_9.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_8/com/picc/ehome/R.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_8/com/picc/ehome/R$style.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_8/com/picc/ehome/R$string.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_8/com/picc/ehome/R$mipmap.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_8/com/picc/ehome/R$drawable.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_8/com/picc/ehome/R$color.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_8/com/picc/ehome/R$attr.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_8/com/picc/ehome/BuildConfig.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_8/com/android/tools/fd/dummy/slice_8.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_7/com/android/tools/fd/dummy/slice_7.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/android/tools/fd/dummy/slice_6.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/lerrain/project/mshell/Ui.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/lerrain/project/mshell/TopButton.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/lerrain/project/mshell/PopLayer.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/lerrain/project/mshell/PopLayer$1.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/lerrain/project/mshell/PageLayer.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/lerrain/project/mshell/PageLayer$3.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/lerrain/project/mshell/PageLayer$2.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/lerrain/project/mshell/PageLayer$1.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/lerrain/project/mshell/Network.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/lerrain/project/mshell/Network$MyX509TrustManager.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/lerrain/project/mshell/Network$1.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/lerrain/project/mshell/Main.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/lerrain/project/mshell/Main$1.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/lerrain/project/mshell/Layers.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/lerrain/project/mshell/Layer.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/lerrain/project/mshell/Layer$2.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/lerrain/project/mshell/Layer$2$1.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/lerrain/project/mshell/Layer$1.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/lerrain/project/mshell/JsBridge.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/lerrain/project/mshell/JsBridge$9.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/lerrain/project/mshell/JsBridge$9$1.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/lerrain/project/mshell/JsBridge$8.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/lerrain/project/mshell/JsBridge$8$1.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/lerrain/project/mshell/JsBridge$7.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/lerrain/project/mshell/JsBridge$6.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/lerrain/project/mshell/JsBridge$5.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/lerrain/project/mshell/JsBridge$4.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/lerrain/project/mshell/JsBridge$3.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/lerrain/project/mshell/JsBridge$2.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/lerrain/project/mshell/JsBridge$1.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/lerrain/project/mshell/Common.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/polysoft/nci/application/MyApplication.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/android/tools/fd/dummy/slice_5.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/buildId.txt
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/lerrain/project/mshell/component/SelectPicker.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/lerrain/project/mshell/component/SelectPicker$1.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/lerrain/project/mshell/component/SelectPicker$1$1.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/lerrain/project/mshell/component/OnSelectListener.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/lerrain/project/mshell/component/DatePicker.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/lerrain/project/mshell/component/DatePicker$1.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/lerrain/project/mshell/component/DatePicker$1$1.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/android/tools/fd/dummy/slice_4.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/android/tools/fd/dummy/slice_3.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/android/tools/fd/dummy/slice_2.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/com/android/tools/fd/dummy/slice_1.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/polysoft/nci/utils/FileUtil.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/polysoft/nci/utils/CtxUtil.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/polysoft/nci/utils/BitmapUtil.class
+lex-shell/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/android/tools/fd/dummy/slice_0.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/Ui.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/TopButton.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/PopLayer.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/PopLayer$1.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/PageLayer.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/PageLayer$3.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/PageLayer$2.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/PageLayer$1.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/Network.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/Network$MyX509TrustManager.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/Network$1.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/Main.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/Main$1.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/Layers.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/Layer.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/Layer$2.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/Layer$2$1.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/Layer$1.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/JsBridge.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/JsBridge$9.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/JsBridge$9$1.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/JsBridge$8.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/JsBridge$8$1.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/JsBridge$7.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/JsBridge$6.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/JsBridge$5.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/JsBridge$4.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/JsBridge$3.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/JsBridge$2.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/JsBridge$1.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/component/SelectPicker.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/component/SelectPicker$1.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/component/SelectPicker$1$1.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/component/OnSelectListener.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/component/DatePicker.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/component/DatePicker$1.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/component/DatePicker$1$1.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/lerrain/project/mshell/Common.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/polysoft/nci/utils/FileUtil.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/polysoft/nci/utils/CtxUtil.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/polysoft/nci/utils/BitmapUtil.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/polysoft/nci/ocr/OCRTypeEnum.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/polysoft/nci/ocr/OCRNativeApi.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/polysoft/nci/ocr/OCRNativeApi$3.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/polysoft/nci/ocr/OCRNativeApi$2.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/polysoft/nci/ocr/OCRNativeApi$1.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/polysoft/nci/ocr/OCRData.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/polysoft/nci/ocr/OCRData$OCRFrontData.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/polysoft/nci/ocr/OCRData$OCRBankData.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/polysoft/nci/ocr/OCRData$OCRBackData.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/polysoft/nci/ocr/OCRConstant.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/polysoft/nci/ocr/OCRCardCamera.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/polysoft/nci/ocr/OCRCallJavaScriptImpl.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/polysoft/nci/ocr/OCRCallJavaScriptImpl$1.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/polysoft/nci/ocr/OCRBankCamera.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/polysoft/nci/ocr/IOCRScript.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/polysoft/nci/interf/IStartActivity.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/polysoft/nci/interf/IActivityResult.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/polysoft/nci/interf/IActivity.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/polysoft/nci/interf/Callback.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/polysoft/nci/application/MyApplication.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/picc/ehome/R.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/picc/ehome/R$style.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/picc/ehome/R$string.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/picc/ehome/R$mipmap.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/picc/ehome/R$drawable.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/picc/ehome/R$color.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/picc/ehome/R$attr.class
+lex-shell/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/picc/ehome/BuildConfig.class
+lex-shell/app/build/intermediates/transforms/dex/release/folders/1000/1f/main/classes.dex
+lex-shell/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
+lex-shell/app/build/intermediates/symbols/androidTest/debug/R.txt
+lex-shell/app/build/intermediates/split-apk/debug/slices/slice_9.apk
+lex-shell/app/build/intermediates/split-apk/debug/slices/slice_8.apk
+lex-shell/app/build/intermediates/split-apk/debug/slices/slice_7.apk
+lex-shell/app/build/intermediates/split-apk/debug/slices/slice_6.apk
+lex-shell/app/build/intermediates/split-apk/debug/slices/slice_5.apk
+lex-shell/app/build/intermediates/split-apk/debug/slices/slice_4.apk
+lex-shell/app/build/intermediates/split-apk/debug/slices/slice_3.apk
+lex-shell/app/build/intermediates/split-apk/debug/slices/slice_2.apk
+lex-shell/app/build/intermediates/split-apk/debug/slices/slice_1.apk
+lex-shell/app/build/intermediates/split-apk/debug/slices/slice_0.apk
+lex-shell/app/build/intermediates/split-apk/debug/dep/dependencies.apk
+lex-shell/app/build/intermediates/restart-dex/debug/build-info.xml
+lex-shell/app/build/intermediates/res/resources-release.ap_
+lex-shell/app/build/intermediates/res/resources-debug.ap_
+lex-shell/app/build/intermediates/res/resources-debug-androidTest.ap_
+lex-shell/app/build/intermediates/res/merged/release/values/values.xml
+lex-shell/app/build/intermediates/res/merged/release/mipmap-xxxhdpi/ic_launcher_round.png
+lex-shell/app/build/intermediates/res/merged/release/mipmap-xxxhdpi/ic_launcher.png
+lex-shell/app/build/intermediates/res/merged/release/mipmap-xxhdpi/ic_launcher_round.png
+lex-shell/app/build/intermediates/res/merged/release/mipmap-xxhdpi/ic_launcher.png
+lex-shell/app/build/intermediates/res/merged/release/mipmap-xhdpi/ic_launcher_round.png
+lex-shell/app/build/intermediates/res/merged/release/mipmap-xhdpi/ic_launcher.png
+lex-shell/app/build/intermediates/res/merged/release/mipmap-mdpi/ic_launcher_round.png
+lex-shell/app/build/intermediates/res/merged/release/mipmap-mdpi/ic_launcher.png
+lex-shell/app/build/intermediates/res/merged/release/mipmap-hdpi/ic_launcher_round.png
+lex-shell/app/build/intermediates/res/merged/release/mipmap-hdpi/ic_launcher.png
+lex-shell/app/build/intermediates/res/merged/release/drawable/arrow_left_1.png
+lex-shell/app/build/intermediates/res/merged/release/drawable/arrow_left.png
+lex-shell/app/build/intermediates/res/merged/debug/values/values.xml
+lex-shell/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi/ic_launcher_round.png
+lex-shell/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi/ic_launcher.png
+lex-shell/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher_round.png
+lex-shell/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png
+lex-shell/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher_round.png
+lex-shell/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png
+lex-shell/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher_round.png
+lex-shell/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher.png
+lex-shell/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher_round.png
+lex-shell/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png
+lex-shell/app/build/intermediates/res/merged/debug/drawable/arrow_left_1.png
+lex-shell/app/build/intermediates/res/merged/debug/drawable/arrow_left.png
+lex-shell/app/build/intermediates/res/merged/androidTest/debug/values/values.xml
+lex-shell/app/build/intermediates/pre-dexed/release/release_91dba739a5eb062264671aa4426cddd82f5a1b30.jar
+lex-shell/app/build/intermediates/pre-dexed/release/idcardscansdk_2a112e738c50f17ee40eb77d1c3d871033c7154f.jar
+lex-shell/app/build/intermediates/pre-dexed/release/gson-2.2.4_75da3d6f64aede965a5b0d5328730d1da54ffdcd.jar
+lex-shell/app/build/intermediates/pre-dexed/release/fastjson-1.1.34_eaadf4dc43459feb3bc24d410733226785d9702d.jar
+lex-shell/app/build/intermediates/pre-dexed/release/ccrsdk_sdk_0b9204ca0ec4a69ae02a59a397b003dc7dcd831f.jar
+lex-shell/app/build/intermediates/pre-dexed/debug/idcardscansdk_2a112e738c50f17ee40eb77d1c3d871033c7154f.jar
+lex-shell/app/build/intermediates/pre-dexed/debug/gson-2.2.4_75da3d6f64aede965a5b0d5328730d1da54ffdcd.jar
+lex-shell/app/build/intermediates/pre-dexed/debug/fastjson-1.1.34_eaadf4dc43459feb3bc24d410733226785d9702d.jar
+lex-shell/app/build/intermediates/pre-dexed/debug/debug_143fa7e51a6cf237606c277ccb9e2acacbdce8ce.jar
+lex-shell/app/build/intermediates/pre-dexed/debug/ccrsdk_sdk_0b9204ca0ec4a69ae02a59a397b003dc7dcd831f.jar
+lex-shell/app/build/intermediates/manifests/instant-run/debug/AndroidManifest.xml
+lex-shell/app/build/intermediates/manifests/full/release/AndroidManifest.xml
+lex-shell/app/build/intermediates/manifests/full/debug/AndroidManifest.xml
+lex-shell/app/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml
+lex-shell/app/build/intermediates/jniLibs/release/idcardscansdk.jar
+lex-shell/app/build/intermediates/jniLibs/release/gson-2.2.4.jar
+lex-shell/app/build/intermediates/jniLibs/release/fastjson-1.1.34.jar
+lex-shell/app/build/intermediates/jniLibs/release/ccrsdk_sdk.jar
+lex-shell/app/build/intermediates/jniLibs/release/armeabi-v7a/libIDCardScan.so
+lex-shell/app/build/intermediates/jniLibs/release/armeabi-v7a/libBankCardScanSDK.so
+lex-shell/app/build/intermediates/jniLibs/release/arm64-v8a/libIDCardScan.so
+lex-shell/app/build/intermediates/jniLibs/release/arm64-v8a/libBankCardScanSDK.so
+lex-shell/app/build/intermediates/jniLibs/debug/idcardscansdk.jar
+lex-shell/app/build/intermediates/jniLibs/debug/gson-2.2.4.jar
+lex-shell/app/build/intermediates/jniLibs/debug/fastjson-1.1.34.jar
+lex-shell/app/build/intermediates/jniLibs/debug/ccrsdk_sdk.jar
+lex-shell/app/build/intermediates/jniLibs/debug/armeabi-v7a/libIDCardScan.so
+lex-shell/app/build/intermediates/jniLibs/debug/armeabi-v7a/libBankCardScanSDK.so
+lex-shell/app/build/intermediates/jniLibs/debug/arm64-v8a/libIDCardScan.so
+lex-shell/app/build/intermediates/jniLibs/debug/arm64-v8a/libBankCardScanSDK.so
+lex-shell/app/build/intermediates/instant-run-support/debug/slice_9/AndroidManifest.xml
+lex-shell/app/build/intermediates/instant-run-support/debug/slice_8/AndroidManifest.xml
+lex-shell/app/build/intermediates/instant-run-support/debug/slice_7/AndroidManifest.xml
+lex-shell/app/build/intermediates/instant-run-support/debug/slice_6/AndroidManifest.xml
+lex-shell/app/build/intermediates/instant-run-support/debug/slice_5/AndroidManifest.xml
+lex-shell/app/build/intermediates/instant-run-support/debug/slice_4/AndroidManifest.xml
+lex-shell/app/build/intermediates/instant-run-support/debug/slice_3/AndroidManifest.xml
+lex-shell/app/build/intermediates/instant-run-support/debug/slice_2/AndroidManifest.xml
+lex-shell/app/build/intermediates/instant-run-support/debug/slice_1/AndroidManifest.xml
+lex-shell/app/build/intermediates/instant-run-support/debug/slice_0/AndroidManifest.xml
+lex-shell/app/build/intermediates/instant-run-support/debug/package_slice_9/dex-renamer-state.txt
+lex-shell/app/build/intermediates/instant-run-support/debug/package_slice_8/dex-renamer-state.txt
+lex-shell/app/build/intermediates/instant-run-support/debug/package_slice_7/dex-renamer-state.txt
+lex-shell/app/build/intermediates/instant-run-support/debug/package_slice_6/dex-renamer-state.txt
+lex-shell/app/build/intermediates/instant-run-support/debug/package_slice_5/dex-renamer-state.txt
+lex-shell/app/build/intermediates/instant-run-support/debug/package_slice_4/dex-renamer-state.txt
+lex-shell/app/build/intermediates/instant-run-support/debug/package_slice_3/dex-renamer-state.txt
+lex-shell/app/build/intermediates/instant-run-support/debug/package_slice_2/dex-renamer-state.txt
+lex-shell/app/build/intermediates/instant-run-support/debug/package_slice_1/dex-renamer-state.txt
+lex-shell/app/build/intermediates/instant-run-support/debug/package_slice_0/dex-renamer-state.txt
+lex-shell/app/build/intermediates/instant-run-support/debug/package_dependencies/dex-renamer-state.txt
+lex-shell/app/build/intermediates/instant-run-support/debug/manifest.xml
+lex-shell/app/build/intermediates/instant-run-support/debug/manifest.crc
+lex-shell/app/build/intermediates/instant-run-support/debug/dependencies/AndroidManifest.xml
+lex-shell/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_
+lex-shell/app/build/intermediates/incremental/packageRelease/zip-cache/YgVSGFqCakwKOrUmC9mtCEEiZCY=
+lex-shell/app/build/intermediates/incremental/packageRelease/file-input-save-data.txt
+lex-shell/app/build/intermediates/incremental/packageRelease/dex-renamer-state.txt
+lex-shell/app/build/intermediates/incremental/packageInstantRunResourcesDebug/zip-cache/X+V7f7ZGTV0kFqRTceY3XcO5anU=
+lex-shell/app/build/intermediates/incremental/packageInstantRunResourcesDebug/file-input-save-data.txt
+lex-shell/app/build/intermediates/incremental/packageInstantRunResourcesDebug/dex-renamer-state.txt
+lex-shell/app/build/intermediates/incremental/packageDebug/zip-cache/X+V7f7ZGTV0kFqRTceY3XcO5anU=
+lex-shell/app/build/intermediates/incremental/packageDebug/file-input-save-data.txt
+lex-shell/app/build/intermediates/incremental/packageDebug/dex-renamer-state.txt
+lex-shell/app/build/intermediates/incremental/mergeReleaseShaders/merger.xml
+lex-shell/app/build/intermediates/incremental/mergeReleaseResources/merger.xml
+lex-shell/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml
+lex-shell/app/build/intermediates/incremental/mergeReleaseResources/compile-file-map.properties
+lex-shell/app/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml
+lex-shell/app/build/intermediates/incremental/mergeReleaseAssets/merger.xml
+lex-shell/app/build/intermediates/incremental/mergeDebugShaders/merger.xml
+lex-shell/app/build/intermediates/incremental/mergeDebugResources/merger.xml
+lex-shell/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml
+lex-shell/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties
+lex-shell/app/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml
+lex-shell/app/build/intermediates/incremental/mergeDebugAssets/merger.xml
+lex-shell/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml
+lex-shell/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml
+lex-shell/app/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties
+lex-shell/app/build/intermediates/incremental/compileReleaseAidl/dependency.store
+lex-shell/app/build/intermediates/incremental/compileDebugAndroidTestAidl/dependency.store
+lex-shell/app/build/intermediates/incremental/compileDebugAidl/dependency.store
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/Ui.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/TopButton.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/PopLayer.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/PopLayer$1.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/PageLayer.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/PageLayer$3.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/PageLayer$2.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/PageLayer$1.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/Network.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/Network$MyX509TrustManager.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/Network$1.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/Main.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/Main$1.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/Layers.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/Layer.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/Layer$2.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/Layer$2$1.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/Layer$1.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/JsBridge.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/JsBridge$9.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/JsBridge$9$1.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/JsBridge$8.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/JsBridge$8$1.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/JsBridge$7.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/JsBridge$6.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/JsBridge$5.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/JsBridge$4.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/JsBridge$3.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/JsBridge$2.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/JsBridge$1.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/component/SelectPicker.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/component/SelectPicker$1.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/component/SelectPicker$1$1.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/component/OnSelectListener.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/component/DatePicker.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/component/DatePicker$1.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/component/DatePicker$1$1.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/lerrain/project/mshell/Common.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/com/polysoft/nci/utils/FileUtil.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/com/polysoft/nci/utils/CtxUtil.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/com/polysoft/nci/utils/BitmapUtil.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/com/polysoft/nci/ocr/OCRTypeEnum.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/com/polysoft/nci/ocr/OCRNativeApi.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/com/polysoft/nci/ocr/OCRNativeApi$3.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/com/polysoft/nci/ocr/OCRNativeApi$2.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/com/polysoft/nci/ocr/OCRNativeApi$1.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/com/polysoft/nci/ocr/OCRData.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/com/polysoft/nci/ocr/OCRData$OCRFrontData.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/com/polysoft/nci/ocr/OCRData$OCRBankData.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/com/polysoft/nci/ocr/OCRData$OCRBackData.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/com/polysoft/nci/ocr/OCRConstant.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/com/polysoft/nci/ocr/OCRCardCamera.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/com/polysoft/nci/ocr/OCRCallJavaScriptImpl.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/com/polysoft/nci/ocr/OCRCallJavaScriptImpl$1.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/com/polysoft/nci/ocr/OCRBankCamera.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/com/polysoft/nci/ocr/IOCRScript.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/com/polysoft/nci/interf/IStartActivity.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/com/polysoft/nci/interf/IActivityResult.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/com/polysoft/nci/interf/IActivity.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/com/polysoft/nci/interf/Callback.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/com/polysoft/nci/application/MyApplication.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/com/picc/ehome/R.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/com/picc/ehome/R$style.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/com/picc/ehome/R$string.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/com/picc/ehome/R$mipmap.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/com/picc/ehome/R$drawable.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/com/picc/ehome/R$color.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/com/picc/ehome/R$attr.class
+lex-shell/app/build/intermediates/incremental-verifier/debug/com/picc/ehome/BuildConfig.class
+lex-shell/app/build/intermediates/incremental-safeguard/release/tag.txt
+lex-shell/app/build/intermediates/incremental-safeguard/debug/tag.txt
+lex-shell/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar
+lex-shell/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/Ui.class
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/TopButton.class
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/PopLayer.class
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/PopLayer$1.class
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/PageLayer.class
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/PageLayer$3.class
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/PageLayer$2.class
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/PageLayer$1.class
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/Network.class
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/Network$MyX509TrustManager.class
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/Network$1.class
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/Main.class
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/Main$1.class
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/Layers.class
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/Layer.class
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/Layer$2.class
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/Layer$2$1.class
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/Layer$1.class
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/JsBridge.class
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/JsBridge$9.class
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/JsBridge$9$1.class
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/JsBridge$8.class
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/JsBridge$8$1.class
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/JsBridge$7.class
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/JsBridge$6.class
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/JsBridge$5.class
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/JsBridge$4.class
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/JsBridge$3.class
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/JsBridge$2.class
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/JsBridge$1.class
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/component/SelectPicker.class
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/component/SelectPicker$1.class
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/component/SelectPicker$1$1.class
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/component/OnSelectListener.class
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/component/DatePicker.class
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/component/DatePicker$1.class
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/component/DatePicker$1$1.class
+lex-shell/app/build/intermediates/classes/release/lerrain/project/mshell/Common.class
+lex-shell/app/build/intermediates/classes/release/com/polysoft/nci/utils/FileUtil.class
+lex-shell/app/build/intermediates/classes/release/com/polysoft/nci/utils/CtxUtil.class
+lex-shell/app/build/intermediates/classes/release/com/polysoft/nci/utils/BitmapUtil.class
+lex-shell/app/build/intermediates/classes/release/com/polysoft/nci/ocr/OCRTypeEnum.class
+lex-shell/app/build/intermediates/classes/release/com/polysoft/nci/ocr/OCRNativeApi.class
+lex-shell/app/build/intermediates/classes/release/com/polysoft/nci/ocr/OCRNativeApi$3.class
+lex-shell/app/build/intermediates/classes/release/com/polysoft/nci/ocr/OCRNativeApi$2.class
+lex-shell/app/build/intermediates/classes/release/com/polysoft/nci/ocr/OCRNativeApi$1.class
+lex-shell/app/build/intermediates/classes/release/com/polysoft/nci/ocr/OCRData.class
+lex-shell/app/build/intermediates/classes/release/com/polysoft/nci/ocr/OCRData$OCRFrontData.class
+lex-shell/app/build/intermediates/classes/release/com/polysoft/nci/ocr/OCRData$OCRBankData.class
+lex-shell/app/build/intermediates/classes/release/com/polysoft/nci/ocr/OCRData$OCRBackData.class
+lex-shell/app/build/intermediates/classes/release/com/polysoft/nci/ocr/OCRConstant.class
+lex-shell/app/build/intermediates/classes/release/com/polysoft/nci/ocr/OCRCardCamera.class
+lex-shell/app/build/intermediates/classes/release/com/polysoft/nci/ocr/OCRCallJavaScriptImpl.class
+lex-shell/app/build/intermediates/classes/release/com/polysoft/nci/ocr/OCRCallJavaScriptImpl$1.class
+lex-shell/app/build/intermediates/classes/release/com/polysoft/nci/ocr/OCRBankCamera.class
+lex-shell/app/build/intermediates/classes/release/com/polysoft/nci/ocr/IOCRScript.class
+lex-shell/app/build/intermediates/classes/release/com/polysoft/nci/interf/IStartActivity.class
+lex-shell/app/build/intermediates/classes/release/com/polysoft/nci/interf/IActivityResult.class
+lex-shell/app/build/intermediates/classes/release/com/polysoft/nci/interf/IActivity.class
+lex-shell/app/build/intermediates/classes/release/com/polysoft/nci/interf/Callback.class
+lex-shell/app/build/intermediates/classes/release/com/polysoft/nci/application/MyApplication.class
+lex-shell/app/build/intermediates/classes/release/com/picc/ehome/R.class
+lex-shell/app/build/intermediates/classes/release/com/picc/ehome/R$style.class
+lex-shell/app/build/intermediates/classes/release/com/picc/ehome/R$string.class
+lex-shell/app/build/intermediates/classes/release/com/picc/ehome/R$mipmap.class
+lex-shell/app/build/intermediates/classes/release/com/picc/ehome/R$drawable.class
+lex-shell/app/build/intermediates/classes/release/com/picc/ehome/R$color.class
+lex-shell/app/build/intermediates/classes/release/com/picc/ehome/R$attr.class
+lex-shell/app/build/intermediates/classes/release/com/picc/ehome/BuildConfig.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/Ui.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/TopButton.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/PopLayer.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/PopLayer$1.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/PageLayer.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/PageLayer$3.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/PageLayer$2.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/PageLayer$1.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/Network.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/Network$MyX509TrustManager.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/Network$1.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/Main.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/Main$1.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/Layers.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/Layer.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/Layer$2.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/Layer$2$1.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/Layer$1.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/JsBridge.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/JsBridge$9.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/JsBridge$9$1.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/JsBridge$8.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/JsBridge$8$1.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/JsBridge$7.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/JsBridge$6.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/JsBridge$5.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/JsBridge$4.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/JsBridge$3.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/JsBridge$2.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/JsBridge$1.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/component/SelectPicker.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/component/SelectPicker$1.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/component/SelectPicker$1$1.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/component/OnSelectListener.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/component/DatePicker.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/component/DatePicker$1.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/component/DatePicker$1$1.class
+lex-shell/app/build/intermediates/classes/debug/lerrain/project/mshell/Common.class
+lex-shell/app/build/intermediates/classes/debug/com/polysoft/nci/utils/FileUtil.class
+lex-shell/app/build/intermediates/classes/debug/com/polysoft/nci/utils/CtxUtil.class
+lex-shell/app/build/intermediates/classes/debug/com/polysoft/nci/utils/BitmapUtil.class
+lex-shell/app/build/intermediates/classes/debug/com/polysoft/nci/ocr/OCRTypeEnum.class
+lex-shell/app/build/intermediates/classes/debug/com/polysoft/nci/ocr/OCRNativeApi.class
+lex-shell/app/build/intermediates/classes/debug/com/polysoft/nci/ocr/OCRNativeApi$3.class
+lex-shell/app/build/intermediates/classes/debug/com/polysoft/nci/ocr/OCRNativeApi$2.class
+lex-shell/app/build/intermediates/classes/debug/com/polysoft/nci/ocr/OCRNativeApi$1.class
+lex-shell/app/build/intermediates/classes/debug/com/polysoft/nci/ocr/OCRData.class
+lex-shell/app/build/intermediates/classes/debug/com/polysoft/nci/ocr/OCRData$OCRFrontData.class
+lex-shell/app/build/intermediates/classes/debug/com/polysoft/nci/ocr/OCRData$OCRBankData.class
+lex-shell/app/build/intermediates/classes/debug/com/polysoft/nci/ocr/OCRData$OCRBackData.class
+lex-shell/app/build/intermediates/classes/debug/com/polysoft/nci/ocr/OCRConstant.class
+lex-shell/app/build/intermediates/classes/debug/com/polysoft/nci/ocr/OCRCardCamera.class
+lex-shell/app/build/intermediates/classes/debug/com/polysoft/nci/ocr/OCRCallJavaScriptImpl.class
+lex-shell/app/build/intermediates/classes/debug/com/polysoft/nci/ocr/OCRCallJavaScriptImpl$1.class
+lex-shell/app/build/intermediates/classes/debug/com/polysoft/nci/ocr/OCRBankCamera.class
+lex-shell/app/build/intermediates/classes/debug/com/polysoft/nci/ocr/IOCRScript.class
+lex-shell/app/build/intermediates/classes/debug/com/polysoft/nci/interf/IStartActivity.class
+lex-shell/app/build/intermediates/classes/debug/com/polysoft/nci/interf/IActivityResult.class
+lex-shell/app/build/intermediates/classes/debug/com/polysoft/nci/interf/IActivity.class
+lex-shell/app/build/intermediates/classes/debug/com/polysoft/nci/interf/Callback.class
+lex-shell/app/build/intermediates/classes/debug/com/polysoft/nci/application/MyApplication.class
+lex-shell/app/build/intermediates/classes/debug/com/picc/ehome/R.class
+lex-shell/app/build/intermediates/classes/debug/com/picc/ehome/R$style.class
+lex-shell/app/build/intermediates/classes/debug/com/picc/ehome/R$string.class
+lex-shell/app/build/intermediates/classes/debug/com/picc/ehome/R$mipmap.class
+lex-shell/app/build/intermediates/classes/debug/com/picc/ehome/R$drawable.class
+lex-shell/app/build/intermediates/classes/debug/com/picc/ehome/R$color.class
+lex-shell/app/build/intermediates/classes/debug/com/picc/ehome/R$attr.class
+lex-shell/app/build/intermediates/classes/debug/com/picc/ehome/BuildConfig.class
+lex-shell/app/build/intermediates/blame/res/release/single/mipmap-xxxhdpi.json
+lex-shell/app/build/intermediates/blame/res/release/single/mipmap-xxhdpi.json
+lex-shell/app/build/intermediates/blame/res/release/single/mipmap-xhdpi.json
+lex-shell/app/build/intermediates/blame/res/release/single/mipmap-mdpi.json
+lex-shell/app/build/intermediates/blame/res/release/single/mipmap-hdpi.json
+lex-shell/app/build/intermediates/blame/res/release/single/drawable.json
+lex-shell/app/build/intermediates/blame/res/release/multi/values.json
+lex-shell/app/build/intermediates/blame/res/debug/single/mipmap-xxxhdpi.json
+lex-shell/app/build/intermediates/blame/res/debug/single/mipmap-xxhdpi.json
+lex-shell/app/build/intermediates/blame/res/debug/single/mipmap-xhdpi.json
+lex-shell/app/build/intermediates/blame/res/debug/single/mipmap-mdpi.json
+lex-shell/app/build/intermediates/blame/res/debug/single/mipmap-hdpi.json
+lex-shell/app/build/intermediates/blame/res/debug/single/drawable.json
+lex-shell/app/build/intermediates/blame/res/debug/multi/values.json
+lex-shell/app/build/intermediates/blame/res/androidTest/debug/multi/values.json
+lex-shell/app/build/intermediates/assets/release/jsx/proposal/proposal_supply.jsx
+lex-shell/app/build/intermediates/assets/release/jsx/proposal/proposal_list.jsx
+lex-shell/app/build/intermediates/assets/release/jsx/proposal/proposal.jsx
+lex-shell/app/build/intermediates/assets/release/jsx/proposal/product_list.jsx
+lex-shell/app/build/intermediates/assets/release/jsx/proposal/product_editor.jsx
+lex-shell/app/build/intermediates/assets/release/jsx/proposal/preview.jsx
+lex-shell/app/build/intermediates/assets/release/jsx/proposal/customer.jsx
+lex-shell/app/build/intermediates/assets/release/jsx/proposal/benefit_chart.jsx
+lex-shell/app/build/intermediates/assets/release/jsx/proposal/benefit.jsx
+lex-shell/app/build/intermediates/assets/release/jsx/home/login2.jsx
+lex-shell/app/build/intermediates/assets/release/jsx/home/home.jsx
+lex-shell/app/build/intermediates/assets/release/jsx/components/Swiper.jsx
+lex-shell/app/build/intermediates/assets/release/jsx/client/create_client.jsx
+lex-shell/app/build/intermediates/assets/release/jsx/client/client_selector.jsx
+lex-shell/app/build/intermediates/assets/release/jsx/client/client_list.jsx
+lex-shell/app/build/intermediates/assets/release/jsx/apply/success.jsx
+lex-shell/app/build/intermediates/assets/release/jsx/apply/product_list.jsx
+lex-shell/app/build/intermediates/assets/release/jsx/apply/product_editor.jsx
+lex-shell/app/build/intermediates/assets/release/jsx/apply/preview.jsx
+lex-shell/app/build/intermediates/assets/release/jsx/apply/plan.jsx
+lex-shell/app/build/intermediates/assets/release/jsx/apply/pay.jsx
+lex-shell/app/build/intermediates/assets/release/jsx/apply/insurant.jsx
+lex-shell/app/build/intermediates/assets/release/jsx/apply/image.jsx
+lex-shell/app/build/intermediates/assets/release/jsx/apply/health.jsx
+lex-shell/app/build/intermediates/assets/release/jsx/apply/benefit.jsx
+lex-shell/app/build/intermediates/assets/release/jsx/apply/beneficiary_editor.jsx
+lex-shell/app/build/intermediates/assets/release/jsx/apply/beneficiary.jsx
+lex-shell/app/build/intermediates/assets/release/jsx/apply/applicant.jsx
+lex-shell/app/build/intermediates/assets/release/jsx/apply/announce.jsx
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/qianming.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/notice_xh.html
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/notice.jsx
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/notice.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/zlib/zlib_and_gzip.min.js.map
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/zlib/zlib_and_gzip.min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/zlib/zlib.min.js.map
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/zlib/zlib.min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/zlib/zip.min.js.map
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/zlib/zip.min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/zlib/unzip.min.js.map
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/zlib/unzip.min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/zlib/rawinflate.min.js.map
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/zlib/rawinflate.min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/zlib/rawdeflate.min.js.map
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/zlib/rawdeflate.min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/zlib/node-zlib.js.map
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/zlib/node-zlib.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/zlib/inflate_stream.min.js.map
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/zlib/inflate_stream.min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/zlib/inflate.min.js.map
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/zlib/inflate.min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/zlib/gzip.min.js.map
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/zlib/gzip.min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/zlib/gunzip.min.js.map
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/zlib/gunzip.min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/zlib/deflate.min.js.map
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/zlib/deflate.min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/zlib/crc32.min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/jquery-1.4.2.min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/tripledes.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/sha512.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/sha384.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/sha3.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/sha256.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/sha224.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/sha1.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/ripemd160.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/rc4.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/rabbit.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/rabbit-legacy.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/pbkdf2.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/md5.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/hmac-sha512.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/hmac-sha384.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/hmac-sha3.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/hmac-sha256.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/hmac-sha224.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/hmac-sha1.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/hmac-ripemd160.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/hmac-md5.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/aes.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/x64-core.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/x64-core-min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/tripledes.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/tripledes-min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/sha512.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/sha512-min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/sha384.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/sha384-min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/sha3.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/sha3-min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/sha256.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/sha256-min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/sha224.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/sha224-min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/sha1.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/sha1-min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/ripemd160.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/ripemd160-min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/rc4.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/rc4-min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/rabbit.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/rabbit-min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/rabbit-legacy.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/rabbit-legacy-min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/pbkdf2.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/pbkdf2-min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/pad-zeropadding.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/pad-zeropadding-min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/pad-nopadding.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/pad-nopadding-min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/pad-iso97971.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/pad-iso97971-min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/pad-iso10126.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/pad-iso10126-min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/pad-ansix923.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/pad-ansix923-min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/mode-ofb.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/mode-ofb-min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/mode-ecb.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/mode-ecb-min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/mode-ctr.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/mode-ctr-min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/mode-ctr-gladman.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/mode-ctr-gladman-min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/mode-cfb.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/mode-cfb-min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/md5.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/md5-min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/lib-typedarrays.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/lib-typedarrays-min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/hmac.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/hmac-min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/format-hex.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/format-hex-min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/evpkdf.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/evpkdf-min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/enc-utf16.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/enc-utf16-min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/enc-base64.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/enc-base64-min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/core.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/core-min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/cipher-core.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/cipher-core-min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/aes.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/CryptoJS v3.1.2/components/aes-min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/anysignCommentUI.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/libs/anysign_all.min.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/css/sw1024.css
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/css/sp.css
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/css/plugin.css
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/css/notice.css
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/css/mw480Portrait.css
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/css/canvas_css.css
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/css/autograph.css
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/autograph_xh.html
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/autograph.jsx
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/autograph.js
+lex-shell/app/build/intermediates/assets/release/html/xinhua_lx/anysignWebInterface.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/style.css
+lex-shell/app/build/intermediates/assets/release/html/receipt/receipt.jsx
+lex-shell/app/build/intermediates/assets/release/html/receipt/receipt.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/receipt.html
+lex-shell/app/build/intermediates/assets/release/html/receipt/qianming.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/zlib/zlib_and_gzip.min.js.map
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/zlib/zlib_and_gzip.min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/zlib/zlib.min.js.map
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/zlib/zlib.min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/zlib/zip.min.js.map
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/zlib/zip.min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/zlib/unzip.min.js.map
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/zlib/unzip.min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/zlib/rawinflate.min.js.map
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/zlib/rawinflate.min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/zlib/rawdeflate.min.js.map
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/zlib/rawdeflate.min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/zlib/node-zlib.js.map
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/zlib/node-zlib.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/zlib/inflate_stream.min.js.map
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/zlib/inflate_stream.min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/zlib/inflate.min.js.map
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/zlib/inflate.min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/zlib/gzip.min.js.map
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/zlib/gzip.min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/zlib/gunzip.min.js.map
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/zlib/gunzip.min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/zlib/deflate.min.js.map
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/zlib/deflate.min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/zlib/crc32.min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/jquery-1.4.2.min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/rollups/tripledes.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/rollups/sha512.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/rollups/sha384.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/rollups/sha3.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/rollups/sha256.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/rollups/sha224.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/rollups/sha1.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/rollups/ripemd160.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/rollups/rc4.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/rollups/rabbit.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/rollups/rabbit-legacy.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/rollups/pbkdf2.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/rollups/md5.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/rollups/hmac-sha512.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/rollups/hmac-sha384.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/rollups/hmac-sha3.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/rollups/hmac-sha256.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/rollups/hmac-sha224.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/rollups/hmac-sha1.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/rollups/hmac-ripemd160.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/rollups/hmac-md5.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/rollups/aes.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/x64-core.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/x64-core-min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/tripledes.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/tripledes-min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/sha512.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/sha512-min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/sha384.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/sha384-min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/sha3.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/sha3-min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/sha256.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/sha256-min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/sha224.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/sha224-min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/sha1.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/sha1-min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/ripemd160.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/ripemd160-min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/rc4.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/rc4-min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/rabbit.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/rabbit-min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/rabbit-legacy.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/rabbit-legacy-min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/pbkdf2.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/pbkdf2-min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/pad-zeropadding.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/pad-zeropadding-min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/pad-nopadding.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/pad-nopadding-min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/pad-iso97971.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/pad-iso97971-min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/pad-iso10126.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/pad-iso10126-min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/pad-ansix923.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/pad-ansix923-min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/mode-ofb.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/mode-ofb-min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/mode-ecb.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/mode-ecb-min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/mode-ctr.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/mode-ctr-min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/mode-ctr-gladman.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/mode-ctr-gladman-min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/mode-cfb.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/mode-cfb-min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/md5.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/md5-min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/lib-typedarrays.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/lib-typedarrays-min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/hmac.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/hmac-min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/format-hex.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/format-hex-min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/evpkdf.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/evpkdf-min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/enc-utf16.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/enc-utf16-min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/enc-base64.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/enc-base64-min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/core.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/core-min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/cipher-core.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/cipher-core-min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/aes.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/CryptoJS v3.1.2/components/aes-min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/anysignCommentUI.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/libs/anysign_all.min.js
+lex-shell/app/build/intermediates/assets/release/html/receipt/css/sw1024.css
+lex-shell/app/build/intermediates/assets/release/html/receipt/css/sp.css
+lex-shell/app/build/intermediates/assets/release/html/receipt/css/plugin.css
+lex-shell/app/build/intermediates/assets/release/html/receipt/css/mw480Portrait.css
+lex-shell/app/build/intermediates/assets/release/html/receipt/css/canvas_css.css
+lex-shell/app/build/intermediates/assets/release/html/receipt/anysignWebInterface.js
+lex-shell/app/build/intermediates/assets/release/html/proposal/start.html
+lex-shell/app/build/intermediates/assets/release/html/proposal/proposal_supply.js
+lex-shell/app/build/intermediates/assets/release/html/proposal/proposal_supply.html
+lex-shell/app/build/intermediates/assets/release/html/proposal/proposal_list.js
+lex-shell/app/build/intermediates/assets/release/html/proposal/proposal_list.html
+lex-shell/app/build/intermediates/assets/release/html/proposal/proposal.js
+lex-shell/app/build/intermediates/assets/release/html/proposal/proposal.html
+lex-shell/app/build/intermediates/assets/release/html/proposal/proposal.css
+lex-shell/app/build/intermediates/assets/release/html/proposal/product_list.js
+lex-shell/app/build/intermediates/assets/release/html/proposal/product_list.html
+lex-shell/app/build/intermediates/assets/release/html/proposal/product_editor.js
+lex-shell/app/build/intermediates/assets/release/html/proposal/product_editor.html
+lex-shell/app/build/intermediates/assets/release/html/proposal/preview.js
+lex-shell/app/build/intermediates/assets/release/html/proposal/preview.html
+lex-shell/app/build/intermediates/assets/release/html/proposal/customer.js
+lex-shell/app/build/intermediates/assets/release/html/proposal/customer.html
+lex-shell/app/build/intermediates/assets/release/html/proposal/benefit_chart.js
+lex-shell/app/build/intermediates/assets/release/html/proposal/benefit.js
+lex-shell/app/build/intermediates/assets/release/html/proposal/benefit.html
+lex-shell/app/build/intermediates/assets/release/html/productDetail/productDetail.js
+lex-shell/app/build/intermediates/assets/release/html/productDetail/productDetail.html
+lex-shell/app/build/intermediates/assets/release/html/ocr/js/jquery.2.1.1min.js
+lex-shell/app/build/intermediates/assets/release/html/ocr/html/demo.html
+lex-shell/app/build/intermediates/assets/release/html/js/swiper.min.js.map
+lex-shell/app/build/intermediates/assets/release/html/js/swiper.min.js
+lex-shell/app/build/intermediates/assets/release/html/js/swiper.js
+lex-shell/app/build/intermediates/assets/release/html/js/react.production.min.js
+lex-shell/app/build/intermediates/assets/release/html/js/react.js
+lex-shell/app/build/intermediates/assets/release/html/js/react-dom.production.min.js
+lex-shell/app/build/intermediates/assets/release/html/js/react-dom.js
+lex-shell/app/build/intermediates/assets/release/html/js/proposal.js
+lex-shell/app/build/intermediates/assets/release/html/js/pinyinUtil.js
+lex-shell/app/build/intermediates/assets/release/html/js/pinyin_dict_firstletter.js
+lex-shell/app/build/intermediates/assets/release/html/js/jquery.min.js
+lex-shell/app/build/intermediates/assets/release/html/js/home.js
+lex-shell/app/build/intermediates/assets/release/html/js/customer.js
+lex-shell/app/build/intermediates/assets/release/html/js/common.js
+lex-shell/app/build/intermediates/assets/release/html/js/check.js
+lex-shell/app/build/intermediates/assets/release/html/js/browser.min.js
+lex-shell/app/build/intermediates/assets/release/html/js/babel.min.js
+lex-shell/app/build/intermediates/assets/release/html/js/apply.js
+lex-shell/app/build/intermediates/assets/release/html/js/app.js
+lex-shell/app/build/intermediates/assets/release/html/js/ajax.js
+lex-shell/app/build/intermediates/assets/release/html/insurance/userInform.jsx
+lex-shell/app/build/intermediates/assets/release/html/insurance/userInform.html
+lex-shell/app/build/intermediates/assets/release/html/insurance/insurance.js
+lex-shell/app/build/intermediates/assets/release/html/insurance/insurance.html
+lex-shell/app/build/intermediates/assets/release/html/images/zoom.png
+lex-shell/app/build/intermediates/assets/release/html/images/white-arrow-right.png
+lex-shell/app/build/intermediates/assets/release/html/images/user.png
+lex-shell/app/build/intermediates/assets/release/html/images/unchecked.png
+lex-shell/app/build/intermediates/assets/release/html/images/teamC.png
+lex-shell/app/build/intermediates/assets/release/html/images/teamB.png
+lex-shell/app/build/intermediates/assets/release/html/images/success.png
+lex-shell/app/build/intermediates/assets/release/html/images/sub.png
+lex-shell/app/build/intermediates/assets/release/html/images/stop.png
+lex-shell/app/build/intermediates/assets/release/html/images/seq3.png
+lex-shell/app/build/intermediates/assets/release/html/images/seq2.png
+lex-shell/app/build/intermediates/assets/release/html/images/seq1.png
+lex-shell/app/build/intermediates/assets/release/html/images/right.png
+lex-shell/app/build/intermediates/assets/release/html/images/proposal.png
+lex-shell/app/build/intermediates/assets/release/html/images/mineC.png
+lex-shell/app/build/intermediates/assets/release/html/images/mineB.png
+lex-shell/app/build/intermediates/assets/release/html/images/mine/xzbq.png
+lex-shell/app/build/intermediates/assets/release/html/images/mine/wdjys.png
+lex-shell/app/build/intermediates/assets/release/html/images/mine/tbjdcx.png
+lex-shell/app/build/intermediates/assets/release/html/images/mine/tbd.png
+lex-shell/app/build/intermediates/assets/release/html/images/mine/myqrcode.png
+lex-shell/app/build/intermediates/assets/release/html/images/mine/mycart-ewm.png
+lex-shell/app/build/intermediates/assets/release/html/images/mine/lpfw.png
+lex-shell/app/build/intermediates/assets/release/html/images/mine/khgl.png
+lex-shell/app/build/intermediates/assets/release/html/images/mine/dzbd.png
+lex-shell/app/build/intermediates/assets/release/html/images/md-levels-alt.png
+lex-shell/app/build/intermediates/assets/release/html/images/male.png
+lex-shell/app/build/intermediates/assets/release/html/images/logintitle.jpg
+lex-shell/app/build/intermediates/assets/release/html/images/loginhead.jpg
+lex-shell/app/build/intermediates/assets/release/html/images/login/loginportrait.png
+lex-shell/app/build/intermediates/assets/release/html/images/login/loginButton.png
+lex-shell/app/build/intermediates/assets/release/html/images/login/loginB.png
+lex-shell/app/build/intermediates/assets/release/html/images/introduce5.gif
+lex-shell/app/build/intermediates/assets/release/html/images/introduce4.gif
+lex-shell/app/build/intermediates/assets/release/html/images/introduce3.gif
+lex-shell/app/build/intermediates/assets/release/html/images/introduce2.gif
+lex-shell/app/build/intermediates/assets/release/html/images/introduce1.gif
+lex-shell/app/build/intermediates/assets/release/html/images/homeC2.png
+lex-shell/app/build/intermediates/assets/release/html/images/homeC.png
+lex-shell/app/build/intermediates/assets/release/html/images/homeB.png
+lex-shell/app/build/intermediates/assets/release/html/images/home/showHome.png
+lex-shell/app/build/intermediates/assets/release/html/images/home/search.png
+lex-shell/app/build/intermediates/assets/release/html/images/home/proposal.png
+lex-shell/app/build/intermediates/assets/release/html/images/home/product.png
+lex-shell/app/build/intermediates/assets/release/html/images/home/oneKey.png
+lex-shell/app/build/intermediates/assets/release/html/images/home/message.png
+lex-shell/app/build/intermediates/assets/release/html/images/home/logo.png
+lex-shell/app/build/intermediates/assets/release/html/images/home/insurePolicy.png
+lex-shell/app/build/intermediates/assets/release/html/images/home/insure.png
+lex-shell/app/build/intermediates/assets/release/html/images/home/independent.png
+lex-shell/app/build/intermediates/assets/release/html/images/home/default_img.png
+lex-shell/app/build/intermediates/assets/release/html/images/home/customer.png
+lex-shell/app/build/intermediates/assets/release/html/images/home/company.png
+lex-shell/app/build/intermediates/assets/release/html/images/home/banner.jpg
+lex-shell/app/build/intermediates/assets/release/html/images/healthverify.png
+lex-shell/app/build/intermediates/assets/release/html/images/gerenC.png
+lex-shell/app/build/intermediates/assets/release/html/images/gerenB.png
+lex-shell/app/build/intermediates/assets/release/html/images/finish.png
+lex-shell/app/build/intermediates/assets/release/html/images/filled.png
+lex-shell/app/build/intermediates/assets/release/html/images/file-add.png
+lex-shell/app/build/intermediates/assets/release/html/images/female.png
+lex-shell/app/build/intermediates/assets/release/html/images/favourite-add.png
+lex-shell/app/build/intermediates/assets/release/html/images/documents.png
+lex-shell/app/build/intermediates/assets/release/html/images/client/remind-renew.png
+lex-shell/app/build/intermediates/assets/release/html/images/client/remind-birthday.png
+lex-shell/app/build/intermediates/assets/release/html/images/checked.png
+lex-shell/app/build/intermediates/assets/release/html/images/calendar.png
+lex-shell/app/build/intermediates/assets/release/html/images/btn-scan.png
+lex-shell/app/build/intermediates/assets/release/html/images/blueright.png
+lex-shell/app/build/intermediates/assets/release/html/images/arrow.png
+lex-shell/app/build/intermediates/assets/release/html/images/arrow-7-up.png
+lex-shell/app/build/intermediates/assets/release/html/images/arrow-7-right.png
+lex-shell/app/build/intermediates/assets/release/html/images/arrow-7-down.png
+lex-shell/app/build/intermediates/assets/release/html/images/arrow-4-up.png
+lex-shell/app/build/intermediates/assets/release/html/images/arrow-1-up.png
+lex-shell/app/build/intermediates/assets/release/html/images/arrow-1-right.png
+lex-shell/app/build/intermediates/assets/release/html/images/add.png
+lex-shell/app/build/intermediates/assets/release/html/images/add-ins.png
+lex-shell/app/build/intermediates/assets/release/html/images/1530287674060056.mp4
+lex-shell/app/build/intermediates/assets/release/html/home/test.html
+lex-shell/app/build/intermediates/assets/release/html/home/setting.html
+lex-shell/app/build/intermediates/assets/release/html/home/setname.jsx
+lex-shell/app/build/intermediates/assets/release/html/home/setname.html
+lex-shell/app/build/intermediates/assets/release/html/home/qrCode.jsx
+lex-shell/app/build/intermediates/assets/release/html/home/qrCode.html
+lex-shell/app/build/intermediates/assets/release/html/home/productDetail.js
+lex-shell/app/build/intermediates/assets/release/html/home/myCard.jsx
+lex-shell/app/build/intermediates/assets/release/html/home/myCard.html
+lex-shell/app/build/intermediates/assets/release/html/home/mine.jsx
+lex-shell/app/build/intermediates/assets/release/html/home/mine.js
+lex-shell/app/build/intermediates/assets/release/html/home/mine.html
+lex-shell/app/build/intermediates/assets/release/html/home/login2.js
+lex-shell/app/build/intermediates/assets/release/html/home/login2.html
+lex-shell/app/build/intermediates/assets/release/html/home/login.js
+lex-shell/app/build/intermediates/assets/release/html/home/login.html
+lex-shell/app/build/intermediates/assets/release/html/home/home.js
+lex-shell/app/build/intermediates/assets/release/html/home/home.html
+lex-shell/app/build/intermediates/assets/release/html/home/CompanyIntroduction.html
+lex-shell/app/build/intermediates/assets/release/html/home/ComoanyIntroduction.js
+lex-shell/app/build/intermediates/assets/release/html/css/swiper.min.css
+lex-shell/app/build/intermediates/assets/release/html/css/swiper.css
+lex-shell/app/build/intermediates/assets/release/html/css/productDetail.less
+lex-shell/app/build/intermediates/assets/release/html/css/productDetail.css
+lex-shell/app/build/intermediates/assets/release/html/css/login.less
+lex-shell/app/build/intermediates/assets/release/html/css/login.css
+lex-shell/app/build/intermediates/assets/release/html/css/insurance.css
+lex-shell/app/build/intermediates/assets/release/html/css/home.less
+lex-shell/app/build/intermediates/assets/release/html/css/home.css
+lex-shell/app/build/intermediates/assets/release/html/css/common.css
+lex-shell/app/build/intermediates/assets/release/html/css/client.less
+lex-shell/app/build/intermediates/assets/release/html/css/client.css
+lex-shell/app/build/intermediates/assets/release/html/client/create_client.js
+lex-shell/app/build/intermediates/assets/release/html/client/create_client.html
+lex-shell/app/build/intermediates/assets/release/html/client/client_selector.js
+lex-shell/app/build/intermediates/assets/release/html/client/client_selector.html
+lex-shell/app/build/intermediates/assets/release/html/client/client_list.js
+lex-shell/app/build/intermediates/assets/release/html/client/client_list.html
+lex-shell/app/build/intermediates/assets/release/html/apply/success.js
+lex-shell/app/build/intermediates/assets/release/html/apply/success.html
+lex-shell/app/build/intermediates/assets/release/html/apply/start.html
+lex-shell/app/build/intermediates/assets/release/html/apply/product_list.js
+lex-shell/app/build/intermediates/assets/release/html/apply/product_list.html
+lex-shell/app/build/intermediates/assets/release/html/apply/product_editor.js
+lex-shell/app/build/intermediates/assets/release/html/apply/product_editor.html
+lex-shell/app/build/intermediates/assets/release/html/apply/preview.js
+lex-shell/app/build/intermediates/assets/release/html/apply/preview.html
+lex-shell/app/build/intermediates/assets/release/html/apply/plan.js
+lex-shell/app/build/intermediates/assets/release/html/apply/plan.html
+lex-shell/app/build/intermediates/assets/release/html/apply/plan.css
+lex-shell/app/build/intermediates/assets/release/html/apply/pay.js
+lex-shell/app/build/intermediates/assets/release/html/apply/pay.html
+lex-shell/app/build/intermediates/assets/release/html/apply/insurant.js
+lex-shell/app/build/intermediates/assets/release/html/apply/insurant.html
+lex-shell/app/build/intermediates/assets/release/html/apply/image.js
+lex-shell/app/build/intermediates/assets/release/html/apply/image.html
+lex-shell/app/build/intermediates/assets/release/html/apply/health.js
+lex-shell/app/build/intermediates/assets/release/html/apply/health.html
+lex-shell/app/build/intermediates/assets/release/html/apply/benefit.js
+lex-shell/app/build/intermediates/assets/release/html/apply/benefit.html
+lex-shell/app/build/intermediates/assets/release/html/apply/beneficiary_editor.js
+lex-shell/app/build/intermediates/assets/release/html/apply/beneficiary_editor.html
+lex-shell/app/build/intermediates/assets/release/html/apply/beneficiary.js
+lex-shell/app/build/intermediates/assets/release/html/apply/beneficiary.html
+lex-shell/app/build/intermediates/assets/release/html/apply/applicant.js
+lex-shell/app/build/intermediates/assets/release/html/apply/applicant.html
+lex-shell/app/build/intermediates/assets/release/html/apply/announce.js
+lex-shell/app/build/intermediates/assets/release/html/apply/announce.html
+lex-shell/app/build/intermediates/assets/release/DB2.dat
+lex-shell/app/build/intermediates/assets/release/DB1.dat
+lex-shell/app/build/intermediates/assets/release/cui_idc_front.png
+lex-shell/app/build/intermediates/assets/release/cui_idc_back.png
+lex-shell/app/build/intermediates/assets/release/cui_close.png
+lex-shell/app/build/intermediates/assets/debug/jsx/proposal/proposal_supply.jsx
+lex-shell/app/build/intermediates/assets/debug/jsx/proposal/proposal_list.jsx
+lex-shell/app/build/intermediates/assets/debug/jsx/proposal/proposal.jsx
+lex-shell/app/build/intermediates/assets/debug/jsx/proposal/product_list.jsx
+lex-shell/app/build/intermediates/assets/debug/jsx/proposal/product_editor.jsx
+lex-shell/app/build/intermediates/assets/debug/jsx/proposal/preview.jsx
+lex-shell/app/build/intermediates/assets/debug/jsx/proposal/customer.jsx
+lex-shell/app/build/intermediates/assets/debug/jsx/proposal/benefit_chart.jsx
+lex-shell/app/build/intermediates/assets/debug/jsx/proposal/benefit.jsx
+lex-shell/app/build/intermediates/assets/debug/jsx/home/login2.jsx
+lex-shell/app/build/intermediates/assets/debug/jsx/home/home.jsx
+lex-shell/app/build/intermediates/assets/debug/jsx/components/Swiper.jsx
+lex-shell/app/build/intermediates/assets/debug/jsx/client/create_client.jsx
+lex-shell/app/build/intermediates/assets/debug/jsx/client/client_selector.jsx
+lex-shell/app/build/intermediates/assets/debug/jsx/client/client_list.jsx
+lex-shell/app/build/intermediates/assets/debug/jsx/apply/success.jsx
+lex-shell/app/build/intermediates/assets/debug/jsx/apply/product_list.jsx
+lex-shell/app/build/intermediates/assets/debug/jsx/apply/product_editor.jsx
+lex-shell/app/build/intermediates/assets/debug/jsx/apply/preview.jsx
+lex-shell/app/build/intermediates/assets/debug/jsx/apply/plan.jsx
+lex-shell/app/build/intermediates/assets/debug/jsx/apply/pay.jsx
+lex-shell/app/build/intermediates/assets/debug/jsx/apply/insurant.jsx
+lex-shell/app/build/intermediates/assets/debug/jsx/apply/image.jsx
+lex-shell/app/build/intermediates/assets/debug/jsx/apply/health.jsx
+lex-shell/app/build/intermediates/assets/debug/jsx/apply/benefit.jsx
+lex-shell/app/build/intermediates/assets/debug/jsx/apply/beneficiary_editor.jsx
+lex-shell/app/build/intermediates/assets/debug/jsx/apply/beneficiary.jsx
+lex-shell/app/build/intermediates/assets/debug/jsx/apply/applicant.jsx
+lex-shell/app/build/intermediates/assets/debug/jsx/apply/announce.jsx
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/qianming.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/notice_xh.html
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/notice.jsx
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/notice.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/zlib/zlib_and_gzip.min.js.map
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/zlib/zlib_and_gzip.min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/zlib/zlib.min.js.map
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/zlib/zlib.min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/zlib/zip.min.js.map
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/zlib/zip.min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/zlib/unzip.min.js.map
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/zlib/unzip.min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/zlib/rawinflate.min.js.map
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/zlib/rawinflate.min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/zlib/rawdeflate.min.js.map
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/zlib/rawdeflate.min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/zlib/node-zlib.js.map
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/zlib/node-zlib.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/zlib/inflate_stream.min.js.map
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/zlib/inflate_stream.min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/zlib/inflate.min.js.map
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/zlib/inflate.min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/zlib/gzip.min.js.map
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/zlib/gzip.min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/zlib/gunzip.min.js.map
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/zlib/gunzip.min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/zlib/deflate.min.js.map
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/zlib/deflate.min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/zlib/crc32.min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/jquery-1.4.2.min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/tripledes.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/sha512.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/sha384.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/sha3.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/sha256.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/sha224.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/sha1.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/ripemd160.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/rc4.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/rabbit.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/rabbit-legacy.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/pbkdf2.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/md5.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/hmac-sha512.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/hmac-sha384.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/hmac-sha3.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/hmac-sha256.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/hmac-sha224.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/hmac-sha1.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/hmac-ripemd160.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/hmac-md5.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/aes.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/x64-core.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/x64-core-min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/tripledes.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/tripledes-min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/sha512.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/sha512-min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/sha384.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/sha384-min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/sha3.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/sha3-min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/sha256.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/sha256-min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/sha224.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/sha224-min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/sha1.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/sha1-min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/ripemd160.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/ripemd160-min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/rc4.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/rc4-min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/rabbit.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/rabbit-min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/rabbit-legacy.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/rabbit-legacy-min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/pbkdf2.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/pbkdf2-min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/pad-zeropadding.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/pad-zeropadding-min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/pad-nopadding.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/pad-nopadding-min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/pad-iso97971.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/pad-iso97971-min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/pad-iso10126.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/pad-iso10126-min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/pad-ansix923.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/pad-ansix923-min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/mode-ofb.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/mode-ofb-min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/mode-ecb.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/mode-ecb-min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/mode-ctr.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/mode-ctr-min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/mode-ctr-gladman.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/mode-ctr-gladman-min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/mode-cfb.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/mode-cfb-min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/md5.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/md5-min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/lib-typedarrays.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/lib-typedarrays-min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/hmac.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/hmac-min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/format-hex.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/format-hex-min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/evpkdf.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/evpkdf-min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/enc-utf16.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/enc-utf16-min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/enc-base64.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/enc-base64-min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/core.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/core-min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/cipher-core.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/cipher-core-min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/aes.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/CryptoJS v3.1.2/components/aes-min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/anysignCommentUI.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/libs/anysign_all.min.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/css/sw1024.css
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/css/sp.css
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/css/plugin.css
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/css/notice.css
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/css/mw480Portrait.css
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/css/canvas_css.css
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/css/autograph.css
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/autograph_xh.html
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/autograph.jsx
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/autograph.js
+lex-shell/app/build/intermediates/assets/debug/html/xinhua_lx/anysignWebInterface.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/style.css
+lex-shell/app/build/intermediates/assets/debug/html/receipt/receipt.jsx
+lex-shell/app/build/intermediates/assets/debug/html/receipt/receipt.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/receipt.html
+lex-shell/app/build/intermediates/assets/debug/html/receipt/qianming.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/zlib/zlib_and_gzip.min.js.map
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/zlib/zlib_and_gzip.min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/zlib/zlib.min.js.map
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/zlib/zlib.min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/zlib/zip.min.js.map
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/zlib/zip.min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/zlib/unzip.min.js.map
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/zlib/unzip.min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/zlib/rawinflate.min.js.map
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/zlib/rawinflate.min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/zlib/rawdeflate.min.js.map
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/zlib/rawdeflate.min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/zlib/node-zlib.js.map
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/zlib/node-zlib.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/zlib/inflate_stream.min.js.map
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/zlib/inflate_stream.min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/zlib/inflate.min.js.map
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/zlib/inflate.min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/zlib/gzip.min.js.map
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/zlib/gzip.min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/zlib/gunzip.min.js.map
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/zlib/gunzip.min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/zlib/deflate.min.js.map
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/zlib/deflate.min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/zlib/crc32.min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/jquery-1.4.2.min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/rollups/tripledes.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/rollups/sha512.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/rollups/sha384.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/rollups/sha3.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/rollups/sha256.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/rollups/sha224.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/rollups/sha1.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/rollups/ripemd160.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/rollups/rc4.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/rollups/rabbit.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/rollups/rabbit-legacy.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/rollups/pbkdf2.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/rollups/md5.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/rollups/hmac-sha512.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/rollups/hmac-sha384.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/rollups/hmac-sha3.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/rollups/hmac-sha256.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/rollups/hmac-sha224.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/rollups/hmac-sha1.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/rollups/hmac-ripemd160.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/rollups/hmac-md5.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/rollups/aes.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/x64-core.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/x64-core-min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/tripledes.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/tripledes-min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/sha512.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/sha512-min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/sha384.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/sha384-min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/sha3.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/sha3-min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/sha256.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/sha256-min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/sha224.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/sha224-min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/sha1.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/sha1-min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/ripemd160.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/ripemd160-min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/rc4.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/rc4-min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/rabbit.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/rabbit-min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/rabbit-legacy.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/rabbit-legacy-min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/pbkdf2.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/pbkdf2-min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/pad-zeropadding.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/pad-zeropadding-min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/pad-nopadding.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/pad-nopadding-min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/pad-iso97971.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/pad-iso97971-min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/pad-iso10126.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/pad-iso10126-min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/pad-ansix923.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/pad-ansix923-min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/mode-ofb.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/mode-ofb-min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/mode-ecb.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/mode-ecb-min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/mode-ctr.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/mode-ctr-min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/mode-ctr-gladman.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/mode-ctr-gladman-min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/mode-cfb.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/mode-cfb-min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/md5.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/md5-min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/lib-typedarrays.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/lib-typedarrays-min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/hmac.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/hmac-min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/format-hex.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/format-hex-min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/evpkdf.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/evpkdf-min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/enc-utf16.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/enc-utf16-min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/enc-base64.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/enc-base64-min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/core.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/core-min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/cipher-core.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/cipher-core-min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/aes.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/CryptoJS v3.1.2/components/aes-min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/anysignCommentUI.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/libs/anysign_all.min.js
+lex-shell/app/build/intermediates/assets/debug/html/receipt/css/sw1024.css
+lex-shell/app/build/intermediates/assets/debug/html/receipt/css/sp.css
+lex-shell/app/build/intermediates/assets/debug/html/receipt/css/plugin.css
+lex-shell/app/build/intermediates/assets/debug/html/receipt/css/mw480Portrait.css
+lex-shell/app/build/intermediates/assets/debug/html/receipt/css/canvas_css.css
+lex-shell/app/build/intermediates/assets/debug/html/receipt/anysignWebInterface.js
+lex-shell/app/build/intermediates/assets/debug/html/proposal/start.html
+lex-shell/app/build/intermediates/assets/debug/html/proposal/proposal_supply.js
+lex-shell/app/build/intermediates/assets/debug/html/proposal/proposal_supply.html
+lex-shell/app/build/intermediates/assets/debug/html/proposal/proposal_list.js
+lex-shell/app/build/intermediates/assets/debug/html/proposal/proposal_list.html
+lex-shell/app/build/intermediates/assets/debug/html/proposal/proposal.js
+lex-shell/app/build/intermediates/assets/debug/html/proposal/proposal.html
+lex-shell/app/build/intermediates/assets/debug/html/proposal/proposal.css
+lex-shell/app/build/intermediates/assets/debug/html/proposal/product_list.js
+lex-shell/app/build/intermediates/assets/debug/html/proposal/product_list.html
+lex-shell/app/build/intermediates/assets/debug/html/proposal/product_editor.js
+lex-shell/app/build/intermediates/assets/debug/html/proposal/product_editor.html
+lex-shell/app/build/intermediates/assets/debug/html/proposal/preview.js
+lex-shell/app/build/intermediates/assets/debug/html/proposal/preview.html
+lex-shell/app/build/intermediates/assets/debug/html/proposal/customer.js
+lex-shell/app/build/intermediates/assets/debug/html/proposal/customer.html
+lex-shell/app/build/intermediates/assets/debug/html/proposal/benefit_chart.js
+lex-shell/app/build/intermediates/assets/debug/html/proposal/benefit.js
+lex-shell/app/build/intermediates/assets/debug/html/proposal/benefit.html
+lex-shell/app/build/intermediates/assets/debug/html/productDetail/productDetail.js
+lex-shell/app/build/intermediates/assets/debug/html/productDetail/productDetail.html
+lex-shell/app/build/intermediates/assets/debug/html/ocr/js/jquery.2.1.1min.js
+lex-shell/app/build/intermediates/assets/debug/html/ocr/html/demo.html
+lex-shell/app/build/intermediates/assets/debug/html/js/swiper.min.js.map
+lex-shell/app/build/intermediates/assets/debug/html/js/swiper.min.js
+lex-shell/app/build/intermediates/assets/debug/html/js/swiper.js
+lex-shell/app/build/intermediates/assets/debug/html/js/react.production.min.js
+lex-shell/app/build/intermediates/assets/debug/html/js/react.js
+lex-shell/app/build/intermediates/assets/debug/html/js/react-dom.production.min.js
+lex-shell/app/build/intermediates/assets/debug/html/js/react-dom.js
+lex-shell/app/build/intermediates/assets/debug/html/js/proposal.js
+lex-shell/app/build/intermediates/assets/debug/html/js/pinyinUtil.js
+lex-shell/app/build/intermediates/assets/debug/html/js/pinyin_dict_firstletter.js
+lex-shell/app/build/intermediates/assets/debug/html/js/jquery.min.js
+lex-shell/app/build/intermediates/assets/debug/html/js/home.js
+lex-shell/app/build/intermediates/assets/debug/html/js/customer.js
+lex-shell/app/build/intermediates/assets/debug/html/js/common.js
+lex-shell/app/build/intermediates/assets/debug/html/js/check.js
+lex-shell/app/build/intermediates/assets/debug/html/js/browser.min.js
+lex-shell/app/build/intermediates/assets/debug/html/js/babel.min.js
+lex-shell/app/build/intermediates/assets/debug/html/js/apply.js
+lex-shell/app/build/intermediates/assets/debug/html/js/app.js
+lex-shell/app/build/intermediates/assets/debug/html/js/ajax.js
+lex-shell/app/build/intermediates/assets/debug/html/insurance/userInform.jsx
+lex-shell/app/build/intermediates/assets/debug/html/insurance/userInform.html
+lex-shell/app/build/intermediates/assets/debug/html/insurance/insurance.js
+lex-shell/app/build/intermediates/assets/debug/html/insurance/insurance.html
+lex-shell/app/build/intermediates/assets/debug/html/images/zoom.png
+lex-shell/app/build/intermediates/assets/debug/html/images/white-arrow-right.png
+lex-shell/app/build/intermediates/assets/debug/html/images/user.png
+lex-shell/app/build/intermediates/assets/debug/html/images/unchecked.png
+lex-shell/app/build/intermediates/assets/debug/html/images/teamC.png
+lex-shell/app/build/intermediates/assets/debug/html/images/teamB.png
+lex-shell/app/build/intermediates/assets/debug/html/images/success.png
+lex-shell/app/build/intermediates/assets/debug/html/images/sub.png
+lex-shell/app/build/intermediates/assets/debug/html/images/stop.png
+lex-shell/app/build/intermediates/assets/debug/html/images/seq3.png
+lex-shell/app/build/intermediates/assets/debug/html/images/seq2.png
+lex-shell/app/build/intermediates/assets/debug/html/images/seq1.png
+lex-shell/app/build/intermediates/assets/debug/html/images/right.png
+lex-shell/app/build/intermediates/assets/debug/html/images/proposal.png
+lex-shell/app/build/intermediates/assets/debug/html/images/mineC.png
+lex-shell/app/build/intermediates/assets/debug/html/images/mineB.png
+lex-shell/app/build/intermediates/assets/debug/html/images/mine/xzbq.png
+lex-shell/app/build/intermediates/assets/debug/html/images/mine/wdjys.png
+lex-shell/app/build/intermediates/assets/debug/html/images/mine/tbjdcx.png
+lex-shell/app/build/intermediates/assets/debug/html/images/mine/tbd.png
+lex-shell/app/build/intermediates/assets/debug/html/images/mine/myqrcode.png
+lex-shell/app/build/intermediates/assets/debug/html/images/mine/mycart-ewm.png
+lex-shell/app/build/intermediates/assets/debug/html/images/mine/lpfw.png
+lex-shell/app/build/intermediates/assets/debug/html/images/mine/khgl.png
+lex-shell/app/build/intermediates/assets/debug/html/images/mine/dzbd.png
+lex-shell/app/build/intermediates/assets/debug/html/images/md-levels-alt.png
+lex-shell/app/build/intermediates/assets/debug/html/images/male.png
+lex-shell/app/build/intermediates/assets/debug/html/images/logintitle.jpg
+lex-shell/app/build/intermediates/assets/debug/html/images/loginhead.jpg
+lex-shell/app/build/intermediates/assets/debug/html/images/login/loginportrait.png
+lex-shell/app/build/intermediates/assets/debug/html/images/login/loginButton.png
+lex-shell/app/build/intermediates/assets/debug/html/images/login/loginB.png
+lex-shell/app/build/intermediates/assets/debug/html/images/introduce5.gif
+lex-shell/app/build/intermediates/assets/debug/html/images/introduce4.gif
+lex-shell/app/build/intermediates/assets/debug/html/images/introduce3.gif
+lex-shell/app/build/intermediates/assets/debug/html/images/introduce2.gif
+lex-shell/app/build/intermediates/assets/debug/html/images/introduce1.gif
+lex-shell/app/build/intermediates/assets/debug/html/images/homeC2.png
+lex-shell/app/build/intermediates/assets/debug/html/images/homeC.png
+lex-shell/app/build/intermediates/assets/debug/html/images/homeB.png
+lex-shell/app/build/intermediates/assets/debug/html/images/home/showHome.png
+lex-shell/app/build/intermediates/assets/debug/html/images/home/search.png
+lex-shell/app/build/intermediates/assets/debug/html/images/home/proposal.png
+lex-shell/app/build/intermediates/assets/debug/html/images/home/product.png
+lex-shell/app/build/intermediates/assets/debug/html/images/home/oneKey.png
+lex-shell/app/build/intermediates/assets/debug/html/images/home/message.png
+lex-shell/app/build/intermediates/assets/debug/html/images/home/logo.png
+lex-shell/app/build/intermediates/assets/debug/html/images/home/insurePolicy.png
+lex-shell/app/build/intermediates/assets/debug/html/images/home/insure.png
+lex-shell/app/build/intermediates/assets/debug/html/images/home/independent.png
+lex-shell/app/build/intermediates/assets/debug/html/images/home/default_img.png
+lex-shell/app/build/intermediates/assets/debug/html/images/home/customer.png
+lex-shell/app/build/intermediates/assets/debug/html/images/home/company.png
+lex-shell/app/build/intermediates/assets/debug/html/images/home/banner.jpg
+lex-shell/app/build/intermediates/assets/debug/html/images/healthverify.png
+lex-shell/app/build/intermediates/assets/debug/html/images/gerenC.png
+lex-shell/app/build/intermediates/assets/debug/html/images/gerenB.png
+lex-shell/app/build/intermediates/assets/debug/html/images/finish.png
+lex-shell/app/build/intermediates/assets/debug/html/images/filled.png
+lex-shell/app/build/intermediates/assets/debug/html/images/file-add.png
+lex-shell/app/build/intermediates/assets/debug/html/images/female.png
+lex-shell/app/build/intermediates/assets/debug/html/images/favourite-add.png
+lex-shell/app/build/intermediates/assets/debug/html/images/documents.png
+lex-shell/app/build/intermediates/assets/debug/html/images/client/remind-renew.png
+lex-shell/app/build/intermediates/assets/debug/html/images/client/remind-birthday.png
+lex-shell/app/build/intermediates/assets/debug/html/images/checked.png
+lex-shell/app/build/intermediates/assets/debug/html/images/calendar.png
+lex-shell/app/build/intermediates/assets/debug/html/images/btn-scan.png
+lex-shell/app/build/intermediates/assets/debug/html/images/blueright.png
+lex-shell/app/build/intermediates/assets/debug/html/images/arrow.png
+lex-shell/app/build/intermediates/assets/debug/html/images/arrow-7-up.png
+lex-shell/app/build/intermediates/assets/debug/html/images/arrow-7-right.png
+lex-shell/app/build/intermediates/assets/debug/html/images/arrow-7-down.png
+lex-shell/app/build/intermediates/assets/debug/html/images/arrow-4-up.png
+lex-shell/app/build/intermediates/assets/debug/html/images/arrow-1-up.png
+lex-shell/app/build/intermediates/assets/debug/html/images/arrow-1-right.png
+lex-shell/app/build/intermediates/assets/debug/html/images/add.png
+lex-shell/app/build/intermediates/assets/debug/html/images/add-ins.png
+lex-shell/app/build/intermediates/assets/debug/html/images/1530287674060056.mp4
+lex-shell/app/build/intermediates/assets/debug/html/home/test.html
+lex-shell/app/build/intermediates/assets/debug/html/home/setting.html
+lex-shell/app/build/intermediates/assets/debug/html/home/setname.jsx
+lex-shell/app/build/intermediates/assets/debug/html/home/setname.html
+lex-shell/app/build/intermediates/assets/debug/html/home/qrCode.jsx
+lex-shell/app/build/intermediates/assets/debug/html/home/qrCode.html
+lex-shell/app/build/intermediates/assets/debug/html/home/productDetail.js
+lex-shell/app/build/intermediates/assets/debug/html/home/myCard.jsx
+lex-shell/app/build/intermediates/assets/debug/html/home/myCard.html
+lex-shell/app/build/intermediates/assets/debug/html/home/mine.jsx
+lex-shell/app/build/intermediates/assets/debug/html/home/mine.js
+lex-shell/app/build/intermediates/assets/debug/html/home/mine.html
+lex-shell/app/build/intermediates/assets/debug/html/home/login2.js
+lex-shell/app/build/intermediates/assets/debug/html/home/login2.html
+lex-shell/app/build/intermediates/assets/debug/html/home/login.js
+lex-shell/app/build/intermediates/assets/debug/html/home/login.html
+lex-shell/app/build/intermediates/assets/debug/html/home/home.js
+lex-shell/app/build/intermediates/assets/debug/html/home/home.html
+lex-shell/app/build/intermediates/assets/debug/html/home/CompanyIntroduction.html
+lex-shell/app/build/intermediates/assets/debug/html/home/ComoanyIntroduction.js
+lex-shell/app/build/intermediates/assets/debug/html/css/swiper.min.css
+lex-shell/app/build/intermediates/assets/debug/html/css/swiper.css
+lex-shell/app/build/intermediates/assets/debug/html/css/productDetail.less
+lex-shell/app/build/intermediates/assets/debug/html/css/productDetail.css
+lex-shell/app/build/intermediates/assets/debug/html/css/login.less
+lex-shell/app/build/intermediates/assets/debug/html/css/login.css
+lex-shell/app/build/intermediates/assets/debug/html/css/insurance.css
+lex-shell/app/build/intermediates/assets/debug/html/css/home.less
+lex-shell/app/build/intermediates/assets/debug/html/css/home.css
+lex-shell/app/build/intermediates/assets/debug/html/css/common.css
+lex-shell/app/build/intermediates/assets/debug/html/css/client.less
+lex-shell/app/build/intermediates/assets/debug/html/css/client.css
+lex-shell/app/build/intermediates/assets/debug/html/client/create_client.js
+lex-shell/app/build/intermediates/assets/debug/html/client/create_client.html
+lex-shell/app/build/intermediates/assets/debug/html/client/client_selector.js
+lex-shell/app/build/intermediates/assets/debug/html/client/client_selector.html
+lex-shell/app/build/intermediates/assets/debug/html/client/client_list.js
+lex-shell/app/build/intermediates/assets/debug/html/client/client_list.html
+lex-shell/app/build/intermediates/assets/debug/html/apply/success.js
+lex-shell/app/build/intermediates/assets/debug/html/apply/success.html
+lex-shell/app/build/intermediates/assets/debug/html/apply/start.html
+lex-shell/app/build/intermediates/assets/debug/html/apply/product_list.js
+lex-shell/app/build/intermediates/assets/debug/html/apply/product_list.html
+lex-shell/app/build/intermediates/assets/debug/html/apply/product_editor.js
+lex-shell/app/build/intermediates/assets/debug/html/apply/product_editor.html
+lex-shell/app/build/intermediates/assets/debug/html/apply/preview.js
+lex-shell/app/build/intermediates/assets/debug/html/apply/preview.html
+lex-shell/app/build/intermediates/assets/debug/html/apply/plan.js
+lex-shell/app/build/intermediates/assets/debug/html/apply/plan.html
+lex-shell/app/build/intermediates/assets/debug/html/apply/plan.css
+lex-shell/app/build/intermediates/assets/debug/html/apply/pay.js
+lex-shell/app/build/intermediates/assets/debug/html/apply/pay.html
+lex-shell/app/build/intermediates/assets/debug/html/apply/insurant.js
+lex-shell/app/build/intermediates/assets/debug/html/apply/insurant.html
+lex-shell/app/build/intermediates/assets/debug/html/apply/image.js
+lex-shell/app/build/intermediates/assets/debug/html/apply/image.html
+lex-shell/app/build/intermediates/assets/debug/html/apply/health.js
+lex-shell/app/build/intermediates/assets/debug/html/apply/health.html
+lex-shell/app/build/intermediates/assets/debug/html/apply/benefit.js
+lex-shell/app/build/intermediates/assets/debug/html/apply/benefit.html
+lex-shell/app/build/intermediates/assets/debug/html/apply/beneficiary_editor.js
+lex-shell/app/build/intermediates/assets/debug/html/apply/beneficiary_editor.html
+lex-shell/app/build/intermediates/assets/debug/html/apply/beneficiary.js
+lex-shell/app/build/intermediates/assets/debug/html/apply/beneficiary.html
+lex-shell/app/build/intermediates/assets/debug/html/apply/applicant.js
+lex-shell/app/build/intermediates/assets/debug/html/apply/applicant.html
+lex-shell/app/build/intermediates/assets/debug/html/apply/announce.js
+lex-shell/app/build/intermediates/assets/debug/html/apply/announce.html
+lex-shell/app/build/intermediates/assets/debug/DB2.dat
+lex-shell/app/build/intermediates/assets/debug/DB1.dat
+lex-shell/app/build/intermediates/assets/debug/cui_idc_front.png
+lex-shell/app/build/intermediates/assets/debug/cui_idc_back.png
+lex-shell/app/build/intermediates/assets/debug/cui_close.png
+lex-shell/app/build/generated/source/r/release/com/picc/ehome/R.java
+lex-shell/app/build/generated/source/r/debug/com/picc/ehome/R.java
+lex-shell/app/build/generated/source/r/androidTest/debug/com/picc/ehome/test/R.java
+lex-shell/app/build/generated/source/r/androidTest/debug/android/support/test/rule/R.java
+lex-shell/app/build/generated/source/r/androidTest/debug/android/support/test/R.java
+lex-shell/app/build/generated/source/r/androidTest/debug/android/support/test/espresso/R.java
+lex-shell/app/build/generated/source/r/androidTest/debug/android/support/test/espresso/idling/R.java
+lex-shell/app/build/generated/source/r/androidTest/debug/android/app/R.java
+lex-shell/app/build/generated/source/buildConfig/release/com/picc/ehome/BuildConfig.java
+lex-shell/app/build/generated/source/buildConfig/debug/com/picc/ehome/BuildConfig.java
+lex-shell/app/build/generated/source/buildConfig/androidTest/debug/com/picc/ehome/test/BuildConfig.java
+lex-shell/.idea/libraries/__local_jars___D__HX_Sum_nci_poc_app_lex_shell_app_libs_idcardscansdk_jar_unspecified_jar.xml
+lex-shell/.idea/libraries/__local_jars___D__HX_Sum_nci_poc_app_lex_shell_app_libs_gson_2_2_4_jar_unspecified_jar.xml
+lex-shell/.idea/libraries/__local_jars___D__HX_Sum_nci_poc_app_lex_shell_app_libs_fastjson_1_1_34_jar_unspecified_jar.xml
+lex-shell/.idea/libraries/__local_jars___D__HX_Sum_nci_poc_app_lex_shell_app_libs_ccrsdk_sdk_jar_unspecified_jar.xml
+.idea/workspace.xml
+.idea/vcs.xml
+.idea/nci-poc-app.iml
+.idea/modules.xml
+.idea/misc.xml
