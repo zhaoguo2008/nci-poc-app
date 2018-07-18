@@ -4,6 +4,9 @@
       <root url="file://$USER_HOME$/.android/build-cache/67f5036feb4d127572bf0784364ee893b7cf5585/output/res" />
       <root url="jar://$USER_HOME$/.android/build-cache/67f5036feb4d127572bf0784364ee893b7cf5585/output/jars/classes.jar!/" />
     </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/Users/lenovo/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/test/espresso/espresso-core/2.2.2/espresso-core-2.2.2-javadoc.jar!/" />
+    </JAVADOC>
     <SOURCES>
       <root url="jar://D:/Users/lenovo/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/test/espresso/espresso-core/2.2.2/espresso-core-2.2.2-sources.jar!/" />
     </SOURCES>

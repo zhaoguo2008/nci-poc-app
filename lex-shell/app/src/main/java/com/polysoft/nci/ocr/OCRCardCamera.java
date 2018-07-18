@@ -1,11 +1,7 @@
 package com.polysoft.nci.ocr;
 
-import java.io.File;
-
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 
 import com.intsig.idcardscan.sdk.CommonUtil;
 import com.intsig.idcardscan.sdk.IDCardScanSDK;
@@ -17,6 +13,8 @@ import com.polysoft.nci.interf.IActivityResult;
 import com.polysoft.nci.ocr.OCRData.OCRBackData;
 import com.polysoft.nci.ocr.OCRData.OCRFrontData;
 import com.polysoft.nci.utils.BitmapUtil;
+
+import java.io.File;
 
 public class OCRCardCamera implements IActivityResult {
 
@@ -84,7 +82,7 @@ public class OCRCardCamera implements IActivityResult {
 
 			// 获取身份证识别ResultData识别结果
 			ResultData result = (ResultData) data.getSerializableExtra(ISCardScanActivity.EXTRA_KEY_RESULT_DATA);
-			String bitmapStr = this.readFileBitmapStr(imagePath);
+			String bitmapStr = BitmapUtil.readFileBitmapStr(imagePath);
 			if (result.isFront()) { // 正面
 				OCRData ocr = new OCRData("", bitmapStr, new OCRFrontData(result));
 				this.callback.onResult(ocr);
@@ -93,18 +91,5 @@ public class OCRCardCamera implements IActivityResult {
 				this.callback.onResult(ocr);
 			}
 		}
-	}
-	
-	
-	private String readFileBitmapStr(String filePath) {
-		File file = new File(filePath);
-		if (!file.exists()) {
-			return "";
-		}
-		Bitmap bitmap = BitmapFactory.decodeFile(filePath);
-		String bitmapStr = BitmapUtil.bitmapToString(bitmap);
-		bitmap.recycle();
-		file.delete();
-		return bitmapStr;
 	}
 }

@@ -127,7 +127,7 @@ var Main = function (_React$Component) {
             var _this3 = this;
 
             var num = Math.random(); //Math.random()：得到一个0到1之间的随机数
-            num = Math.ceil(num * 5);
+            num = Math.ceil(num * 4) + 1;
 
             this.state.pay.applyNo = this.refs.applyNo.value;
             this.state.pay.bankCard = this.refs.bankCard.value;
@@ -152,22 +152,31 @@ var Main = function (_React$Component) {
             // 证件扫描
             OCR.callCardBank("APPNT", "OCR_BANK");
             window.callOCRBack = function callOCRBack(flag, jsonData, bitmapStr) {
+                var CardData = JSON.parse(localStorage.CardData);
                 var jsonDataObj = JSON.parse(jsonData);
                 var pay = that.state.pay;
                 pay.bankCard = jsonDataObj.cardNo;
                 that.setState({
-                    ocrImage: bitmapStr,
                     pay: pay
                 });
-                localStorage.payCardData = bitmapStr;
+                if(bitmapStr){
+                   localStorage.CardData = JSON.stringify([...CardData, bitmapStr]);
+                   localStorage.payCardData = JSON.stringify(true)
+                }else{
+                    if(this.refs.bankCard.value!=''&&this.refs.bankCard.value!=null){
+                        localStorage.payCardData = JSON.stringify(true)
+                    }
+                }
+
             };
         }
     }, {
         key: "next",
         value: function next() {
             this.save();
-            if (!this.state.ocrImage || !this.state.ocrImage.length > 0) {
+            if (localStorage.payCardData && !JSON.parse(localStorage.payCardData)) {
                 alert('请执行OCR扫描!!');
+                return;
             } else {
                 MF.navi("apply/image.html?orderId=" + this.state.orderId);
             }

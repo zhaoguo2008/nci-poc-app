@@ -101,7 +101,8 @@ var Main = function (_React$Component) {
             products: [],
             footNav: ['首页', '个人管理', '团队管理', '我的'],
             LabelDta: '',
-            orgId: common.param("orgId")
+            orgId: common.param("orgId"),
+            orderId: common.param("orderId")
         };
         return _this;
     }
@@ -120,7 +121,6 @@ var Main = function (_React$Component) {
                 data: {
                     "orgId": localStorage.orgId },
                 success: function success(data) {
-
                     that.setState({
                         LabelDta: data.content
                     });
@@ -190,8 +190,8 @@ var Main = function (_React$Component) {
             };
         }
     }, {
-        key: 'openApply',
-        value: function openApply(orderId) {
+        key: 'openPage',
+        value: function openPage(orderId) {
             window.MF && MF.navi("apply/start.html?orderId=" + orderId);
         }
     }, {
@@ -199,7 +199,19 @@ var Main = function (_React$Component) {
         value: function newApply() {
             window.MF && MF.navi("apply/start.html");
         }
-    }, {
+    },{
+      key: 'goTo',
+      value: function goTo(prod) {
+          if (prod.name === "一键投保" && localStorage.CardData) {
+              localStorage.removeItem('CardData');
+          }else if(prod.name == '投保单'){
+              MF.navi("insurance/insurance.html?orderId=" + this.state.orderId);
+          }else{
+            window.MF && MF.navi(prod.link)
+          }
+
+      }
+  }, {
         key: 'openProposal',
         value: function openProposal() {
             window.MF && MF.navi("proposal/proposal_list.html");
@@ -249,7 +261,7 @@ var Main = function (_React$Component) {
                     this.state.LabelDta && this.state.LabelDta.map(function (prod) {
                         return React.createElement(
                             'a',
-                            { className: 'srow-item', href: prod.link },
+                            { className: 'srow-item', href: 'javascript:void(0)' ,onClick: _this4.goTo.bind(_this4, prod)},
                             React.createElement(
                                 'div',
                                 null,

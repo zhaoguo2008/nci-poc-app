@@ -124,26 +124,35 @@ class Main extends React.Component {
         // 证件扫描
         OCR.callCardFront("INSURED", "OCR_FRONT");
         window.callOCRBack = function callOCRBack(flag, jsonData, bitmapStr){
-            let jsonDataObj = JSON.parse(jsonData);
-            let cust = that.state.cust[that.state.index];
-            const birthday = jsonDataObj.birthday.replace(/['年','月']/g, '-');
-            cust.name = jsonDataObj.name;
-            cust.gender = jsonDataObj.sex == "男" ? "M" : "F";
-            cust.birthday = birthday.substring(0, birthday.length - 1);
-            cust.certNo = jsonDataObj.cardNo;
-            cust.address = jsonDataObj.address;
+            var CardData = JSON.parse(localStorage.CardData);
+            var jsonDataObj = JSON.parse(jsonData);
+            var cust = that.state.cust[that.state.index];
+            if (jsonDataObj.name) {
+                var birthday = jsonDataObj.birthday.replace(/['年','月']/g, '-');
+                cust.name = jsonDataObj.name;
+                cust.gender = jsonDataObj.sex == "男" ? "M" : "F";
+                cust.birthday = birthday.substring(0, birthday.length - 1);
+                cust.certNo = jsonDataObj.cardNo;
+                cust.address = jsonDataObj.address;
+            } else if (jsonDataObj.validity) {
+                cust.certValidDate = jsonDataObj.validity.split('-')[0].replace(/\./g, '-');
+                cust.certUnValidDate = jsonDataObj.validity.split('-')[1].replace(/\./g, '-');
+            }
             that.state.cust[that.state.index] = cust;
             that.setState({
-                ocrImage: bitmapStr,
+                cust: that.state.cust
             });
-            localStorage.insurantsCardData = bitmapStr;
+            localStorage.CardData = JSON.stringify([...CardData, bitmapStr]);
+            localStorage.InsurCardDataState = JSON.stringify(true)
         }
     }
     next() {
         let pass = true
         this.state.cust.map(c => { pass = pass && c.mode1 && c.mode2 && c.mode3 && c.mode4 })
         if (pass) {
-            if (!this.state.ocrImage || !this.state.ocrImage.length > 0) {alert('请执行OCR扫描!!') }else {
+            if (localStorage.InsurCardDataState && !JSON.parse(localStorage.InsurCardDataState)) {
+                alert('请执行OCR扫描!!');
+            } else {
                 MF.navi("apply/plan.html?orderId=" + this.state.orderId);
             }
         } else {
@@ -270,6 +279,13 @@ class Main extends React.Component {
                         <div className="form-item-label"><span style={{color:"red"}}>*</span>证件有效期</div>
                         <div className="form-item-widget" onClick={v => {APP.pick("date", { begin: new Date() }, this.onValChange.bind(this, "certValidDate"))}}>
                             <div className={(cust.certValidDate == null ? "tc-gray " : "") + "text16 ml-1 mr-auto"}>{cust.certValidDate == null ? "请选择证件有效期" : cust.certValidDate}</div>
+                            <img className="mt-2 mr-0" style={{width:"27px", height:"39px"}} src="../images/right.png"/>
+                        </div>
+                    </div>
+                    <div className="form-item text16">
+                        <div className="form-item-label"><span style={{color:"red"}}>*</span>证件失效期</div>
+                        <div className="form-item-widget" onClick={v => {APP.pick("date", { begin: new Date() }, this.onValChange.bind(this, "certUnValidDate"))}}>
+                            <div className={(cust.certUnValidDate == null ? "tc-gray " : "") + "text16 ml-1 mr-auto"}>{cust.certUnValidDate == null ? "请选择证件失效期" : cust.certUnValidDate}</div>
                             <img className="mt-2 mr-0" style={{width:"27px", height:"39px"}} src="../images/right.png"/>
                         </div>
                     </div>

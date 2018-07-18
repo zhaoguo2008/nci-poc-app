@@ -60,12 +60,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 12);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ 12:
+/******/ ([
+/* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -109,7 +108,7 @@ var Main = function (_React$Component) {
                 _this2.setState({ form: _this2.state.form });
             });
             APP.apply.viewPlan(this.state.planId, function (plan) {
-                APP.apply.listRiders(_this2.state.planId, localStorage.channelId, localStorage.orgId, _this2.state.index, function (r) {
+                APP.apply.listRiders(_this2.state.planId, localStorage.channelId, localStorage.orgId, localStorage.mainProductId, _this2.state.index, function (r) {
                     r.map(function (v) {
                         var prdForm = {
                             name: v.name,
@@ -139,7 +138,6 @@ var Main = function (_React$Component) {
             var riderForm = this.state.form[prdIndex];
             if (riderForm.form == null) {
                 APP.apply.addProduct(this.state.planId, this.state.index, productId, function (r) {
-                alert(JSON.stringify(r))
                     r.product.map(function (r2, i) {
                         if (r2.productId == productId && r2.parent == _this3.state.index) APP.apply.editProduct(_this3.state.planId, localStorage.channelId, localStorage.orgId, localStorage.mainProductId, i, function (r1) {
                             riderForm.form = _this3.formOf(r1.factors);
@@ -169,6 +167,7 @@ var Main = function (_React$Component) {
                 });
                 return {
                     widget: w.widget,
+                    varName: w.name,
                     label: w.label,
                     detail: r,
                     value: w.value
@@ -181,7 +180,7 @@ var Main = function (_React$Component) {
             var _this4 = this;
 
             var vals = {};
-            vals[opt.name] = opt.detail[val];
+            vals[opt.varName] = val;
             APP.apply.saveProduct(this.state.planId, prdIndex, vals, function (r) {
                 _this4.state.form[prdIndex].form[formIndex].value = val;
                 _this4.setState({ form: _this4.state.form });
@@ -231,7 +230,7 @@ var Main = function (_React$Component) {
                                         } }) : v.widget == "switch" || v.widget == "select" ? React.createElement(
                                         "div",
                                         { style: { display: "flex" }, onClick: function onClick(x) {
-                                                APP.pick("select", v.detail, _this5.onValChange.bind(_this5, v, i, j, e.target.value));
+                                                APP.pick("select", v.detail, _this5.onValChange.bind(_this5, v, i, j));
                                             } },
                                         React.createElement(
                                             "div",
@@ -262,5 +261,4 @@ $(document).ready(function () {
 });
 
 /***/ })
-
-/******/ });
+/******/ ]);

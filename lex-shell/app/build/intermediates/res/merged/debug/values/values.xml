@@ -1,0 +1,1073 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sapi_liveness_head_pose">
+        <item>眨眨眼</item>
+        <item>点点头</item>
+        <item>请抬头</item>
+        <item>请向左摇头</item>
+        <item>请向右摇头</item>
+        <item>张张嘴</item>
+    </string-array>
+    <string-array name="smssdk_country_group_a">
+		<item>阿尔巴尼亚,355,110,27601|27602|27603|27604</item>
+		<item>阿尔及利亚,213,52,60303|60302|60301</item>
+		<item>阿富汗,93,46,41220|41230|41240|41250|41201</item>
+		<item>阿根廷,54,27,722070|72207|72236|722020|72201|72234|72202|722320|722310|722010|722340|722330|722341</item>
+		<item>阿拉伯联合酋长国,971,184,42402|42403</item>
+		<item>阿鲁巴岛,297,102,36301|36302</item>
+		<item>阿曼,968,182,42202|42203</item>
+		<item>阿塞拜疆,994,193,40002|40001|40004</item>
+		<item>埃及,20,5,60203|60202|60201</item>
+		<item>埃塞俄比亚,251,84,63601</item>
+		<item>爱尔兰,353,108,27201|27213|27202|27211|27205|27203|27209</item>
+		<item>爱沙尼亚,372,117,24803|24802|24801</item>
+		<item>安道尔,376,121,21303</item>
+		<item>安哥拉,244,79,63102|63104</item>
+		<item>安圭拉岛,1264,199,365840</item>
+		<item>安提瓜和巴布达,1268,200,338050|344030|344920</item>
+		<item>奥地利,43,16,23207|23209|23210|23211|23201|23212|23202|23214|23203|23204|23215|23205|23206</item>
+		<item>澳大利亚,61,33,50507|50506|50519|50590|50572|50571|50530|50501|50512|50511|50503|50502|505060|50538|50516|505061|50526</item>
+		<item>澳门,853,169,45501|45500|45503|45502|45505|45504</item>
+    </string-array>
+    <string-array name="smssdk_country_group_b">
+		<item>巴巴多斯,1246,198,342600</item>
+		<item>巴布亚新几内亚,675,155,53701|53702|53703</item>
+		<item>巴哈马群岛,1242,197,364390|36439</item>
+		<item>巴基斯坦,92,45,</item>
+		<item>巴拉圭,595,148,74404|74403|74402|74401</item>
+		<item>巴勒斯坦领土,970,183,42506-PS|42505-PS</item>
+		<item>巴林,973,186,42604|42605|42601|42602</item>
+		<item>巴拿马,507,140,71404|71402|71403|71401</item>
+		<item>巴西,55,28,72416|72405|72439|72406|72403|72415|72437|72404|72434|72423|72402|72432|72410|72433|72400|72411|72430|72431|72407</item>
+		<item>白俄罗斯,375,120,25704|25701|25702</item>
+		<item>百慕大群岛,1441,204,350000</item>
+		<item>保加利亚,359,114,28401|28405|28403</item>
+		<item>贝宁,229,64,61605|61601|61602|61603|61604</item>
+		<item>比利时,32,9,20610|20620|20640|20606|20605|20601</item>
+		<item>冰岛,354,109,27409|27411|27404|27401|27402|27407</item>
+		<item>波多黎各,1787,212,310970</item>
+		<item>波兰,48,22,26016|26038|26004|26018|26017|26006|26009|26019|26008|26010|26032|26001|26034|26012|26011|26003|26036|26014|26002|26013|26035</item>
+		<item>波利尼西亚（法属）,689,165,54720</item>
+		<item>波斯尼亚和黑塞哥维那,387,129,21890|21805|21803</item>
+		<item>玻利维亚,591,144,73603|73602|73601</item>
+		<item>伯利兹,501,134,70267</item>
+		<item>博茨瓦纳,267,99,65202|65201|65204</item>
+		<item>不丹,975,188,40211|40277</item>
+		<item>布基纳法索,226,61,61301|61302|61303</item>
+		<item>布隆迪,257,90,64201|64203|64202|64207|64282</item>
+    </string-array>
+    <string-array name="smssdk_country_group_c">
+		<item>朝鲜,850,167,46703</item>
+		<item>赤道几内亚,240,75,62701|62703</item>
+    </string-array>
+    <string-array name="smssdk_country_group_d">
+		<item>丹麦,45,19,23801|23812|23802|23813|23803|23806|23828|23807|23808|23830|23820|23810|23866|23877</item>
+		<item>德国,49,23,26203|26202|26205|26216|26204|26207|26217|26206|26209|26208|26243|26276|26220|26242|26212|26201|26211|26277</item>
+		<item>东帝汶,670,153,51401|51402</item>
+		<item>多哥,228,63,61501|61503</item>
+		<item>多米尼加共和国,1809,213,37001|37002|37003|37004</item>
+		<item>多米尼克,1767,210,366110</item>
+    </string-array>
+    <string-array name="smssdk_country_group_e">
+		<item>俄罗斯,7,3,25020|25099|25035|25002|25012|25001|25003|25039|25005|25007</item>
+		<item>厄瓜多尔,593,146,74002|74001|74000</item>
+    </string-array>
+    <string-array name="smssdk_country_group_f">
+		<item>法国,33,10,20816|20804|20826|20815|20825|20813|20802|20823|20801|20811|20822|20888|20810|20821|20831|20820|20809|20808|20817</item>
+		<item>法罗群岛,298,103,28801|28802|28803</item>
+		<item>菲律宾,63,35,51518|51502|51501|51503|51505</item>
+		<item>斐济,679,159,54202|54201</item>
+		<item>芬兰,358,113,24409|24432|24410|24421|24412|24411|24414|24403|24413|24405|24426|24404|24491</item>
+		<item>佛得角,238,73,62501|62502</item>
+    </string-array>
+    <string-array name="smssdk_country_group_g">
+		<item>冈比亚,220,55,60702|60701|60704|60703</item>
+		<item>刚果共和国,242,77,62907|62910|62901</item>
+		<item>刚果民主共和国,243,78,63086|63001|63089|63002|63005</item>
+		<item>哥伦比亚,57,30,732130|732020|732154|732111|732123|732101</item>
+		<item>哥斯达黎加,506,139,71204|71203|71201</item>
+		<item>格林纳达,1473,205,352110</item>
+		<item>格陵兰岛,299,104,29001</item>
+		<item>格鲁吉亚,995,194,28202|28201|28204|28205</item>
+		<item>古巴,53,26,36801</item>
+		<item>瓜德罗普岛,590,143,34008|34003|34002|34001|34020</item>
+		<item>关岛,1671,208,310400|310140|310470|310110</item>
+		<item>圭亚那,592,145,73802|73801</item>
+		<item>圭亚那（法属）,594,147,74201|74220</item>
+    </string-array>
+    <string-array name="smssdk_country_group_h">
+		<item>哈萨克斯坦,7,4,40102|40101|40177|40108|40107</item>
+		<item>海地,509,142,37201|37202</item>
+		<item>韩国,82,40,45006|45005|45008|45002|45004</item>
+		<item>荷兰,31,8,20423|20412|20410|20465|20420|20462|20409|20408|20407|20418|20406|20417|20428|20416|20405|20415|20404|20414|20469|20403|20468|20424|20402</item>
+		<item>荷属安的列斯群岛,599,152,36269|36202|36201|36251|36294|36282|36281</item>
+		<item>黑山共和国,382,126,29703|29702|29701</item>
+		<item>洪都拉斯,504,137,70830|70840|70802|70801</item>
+    </string-array>
+    <string-array name="smssdk_country_group_i">
+	    
+	</string-array>
+    <string-array name="smssdk_country_group_j">
+		<item>基里巴斯,686,163,54509</item>
+		<item>吉布提,253,86,63801</item>
+		<item>吉尔吉斯斯坦,996,195,43705|43701</item>
+		<item>几内亚,224,59,61105|61104|61103|61102|61101</item>
+		<item>几内亚比绍,245,80,63202|63203</item>
+		<item>加拿大,1,1,302657|302656|302710|302655|302500|302610|302720|302702|302270|302490|302880|302220|302680|302360|302690|302510|302653|302861|302222|302640|302651|302530|302221|302320</item>
+		<item>加纳,233,68,62001|62002|62003|62004|62006|62007</item>
+		<item>加蓬,241,76,62804|62801|62802|62803</item>
+		<item>柬埔寨,855,170,45602|45601|45608|45618|45609|45604|45603|45606|45605|23455-KH</item>
+		<item>捷克共和国,420,131,23001|23002|23003|23004|23005|23008</item>
+		<item>津巴布韦,263,95,64801|64803|64804</item>
+    </string-array>
+    <string-array name="smssdk_country_group_k">
+		<item>喀麦隆,237,72,62401|62402|62404</item>
+		<item>卡塔尔,974,187,42701|42702</item>
+		<item>开曼群岛,1345,203,346140</item>
+		<item>科摩罗,269,101,65401</item>
+		<item>科特迪瓦,225,60,61205|61204|61203|61202</item>
+		<item>科威特,965,179,41904|41903|41902</item>
+		<item>克罗地亚,385,127,21902|21901|21912|21910</item>
+		<item>肯尼亚,254,87,63905|63907|63903|63902</item>
+		<item>库克群岛,682,161,54801</item>
+    </string-array>
+    <string-array name="smssdk_country_group_l">
+		<item>拉脱维亚,371,116,24703|24706|24705|24708|24707|24709|24702|24701</item>
+		<item>莱索托,266,98,65101|65102</item>
+		<item>老挝,856,171,45701|45708|45703|45702</item>
+		<item>黎巴嫩,961,175,41503|41501</item>
+		<item>立陶宛,370,115,24601|24603|24602</item>
+		<item>利比里亚,231,66,61804|61807|61801|61802</item>
+		<item>利比亚,218,54,60603|60601|60600</item>
+		<item>列支敦士登,423,133,29501|29577|29505|29502</item>
+		<item>法属留尼汪岛,262,94,64710|64702</item>
+		<item>卢森堡,352,107,27099|27077|27001</item>
+		<item>卢旺达,250,83,63510|63512|63513|63514</item>
+		<item>罗马尼亚,40,14,22603|22604|22605|22610|22601</item>
+    </string-array>
+    <string-array name="smssdk_country_group_m">
+		<item>马达加斯加,261,93,64601|64602|64604</item>
+		<item>马尔代夫,960,174,47201|47202</item>
+		<item>马耳他,356,111,27821|27877|27801</item>
+		<item>马拉维,265,97,65010|65001</item>
+		<item>马来西亚,60,32,50220|50211|50213|502150|50212|502151|502152|50217|50216|50219|50218</item>
+		<item>马里,223,58,61002|61001</item>
+		<item>马其顿,389,130,29402|29401|29403</item>
+		<item>马提尼克,596,149,34003|34002|34001|34020</item>
+		<item>毛里求斯,230,65,61710|61701|61702</item>
+		<item>毛里塔尼亚,222,57,60910|60902</item>
+		<item>美国,1,2,311090|310080|311050|311370|310160|31150|311010|310680|310120|310560|311650|310880|310760|31190|310320|310630|310710|310090|310290|316993|310170|310050|31060|311580|310690|311020|311340|310570|311660|310450|310011|310770|316995|310012|316994|311730|310004|311610|310840|310005|310600|31100|311190|310180|31050|310060|316883|311150|310380|311030|310260|311230|310020|310340|311991|311430|316885|310660|310100|316884|310540|310023|310980|311740|310410|31016|310610|310016|31130|31011|31611|310190|311040|316011|310150|310790|310990|310870|310420|310300|310740|311710</item>
+		<item>蒙古,976,189,42898|42888|42899|42801</item>
+		<item>蒙特塞拉特岛,1664,207,354860</item>
+		<item>孟加拉国,880,172,47007|47005|47006|47003|47004|47001|47002</item>
+		<item>秘鲁,51,24,71610|71606|71617|71607|71615</item>
+		<item>密克罗尼西亚,691,166,55001</item>
+		<item>缅甸,95,48,41401|41406|41405</item>
+		<item>摩尔多瓦,373,118,25903|25902|25904|25901</item>
+		<item>摩洛哥,212,51,60405|60402|60401|60400</item>
+		<item>摩纳哥,377,122,21201</item>
+		<item>莫桑比克,258,91,64301|64304|64303</item>
+		<item>墨西哥,52,25,33402|33403|33401|33450|33406|334090|33404|33405</item>
+    </string-array>
+    <string-array name="smssdk_country_group_n">
+		<item>纳米比亚,264,96,64902|64901|64903</item>
+		<item>南非,27,6,65510|65512|65501|65502|65507|65519</item>
+		<item>南苏丹,211,50,65995</item>
+		<item>尼泊尔,977,190,42901|42902</item>
+		<item>尼加拉瓜,505,138,71021|71030</item>
+		<item>尼日尔,227,62,61401|61402|61403|61404</item>
+		<item>尼日利亚,234,69,62150|62140|62130|62120|62125|23455-NG|62160</item>
+		<item>挪威,47,21,24208|24209|24220|24221|24222|24201|24223|24202|24224|24204|24205|24206</item>
+    </string-array>
+    <string-array name="smssdk_country_group_o">
+	    
+	</string-array>
+    <string-array name="smssdk_country_group_p">
+		<item>帕劳,680,160,55201|55280</item>
+		<item>葡萄牙,351,106,26804|26806|26801|26803</item>
+    </string-array>
+    <string-array name="smssdk_country_group_q">
+	</string-array>
+    <string-array name="smssdk_country_group_r">
+		<item>日本,81,39,44027|44026|44029|44028|44023|44144|44022|44143|44025|44024|44145|44140|44021|44142|44141|44020|44016|44015|44018|44017|44012|44011|44099|44014|44013|44019|44090|44096|44095|44010|44098|44097|44092|44091|44094|44093|44004|44007|44006|44001|44089|44000|44088|44003|44002|44009|44008|44087|44199|44078|44198|44077|44079|44074|44194|44073|44076|44075|44191|44070|44190|44193|44072|44192|44071|44067|44066|44069|44068|44063|44062|44065|44064|44061|44060|44056|44055|44058|44052|44051|44054|44053|44050|44170|44049|44048|44045|44044|44165|44047|44046|44041|44162|44040|44161|44043|44164|44042|44163|44038|44037|44039|44034|44033|44036|44035|44030|44032|44031</item>
+		<item>瑞典,46,20,24035|24013|24036|24014|24037|24015|24038|24016|24039|24017|24018|24019|24030|24031|24010|24032|24033|24012|24034|24002|24003|24026|24027|24028|24006|24029|24007|24008|24040|24020|24043|24022|24000|24044|24023|24001|24045</item>
+		<item>瑞士,41,15,22812|22801|22802|22803|22805|22809|22851|22853|22854</item>
+    </string-array>
+    <string-array name="smssdk_country_group_s">
+		<item>萨尔瓦多,503,136,70602|70601|70604|70603|70605</item>
+		<item>萨摩亚,685,162,54900</item>
+		<item>塞尔维亚,381,125,29341|22001|22003|22005</item>
+		<item>塞拉利昂,232,67,61902|61903|61904|61905|61906|61909|61901</item>
+		<item>塞内加尔,221,56,60801|60803|60802</item>
+		<item>塞浦路斯,357,112,28022|28001|28020|28010</item>
+		<item>塞舌尔,248,81,63310|63301|63302</item>
+		<item>沙特阿拉伯,966,180,42003|42004|42001|42006</item>
+		<item>圣多美和普林西比,239,74,62601</item>
+		<item>圣基茨和尼维斯,1869,215,356110|356070</item>
+		<item>圣卢西亚,1758,209,358110</item>
+		<item>圣马力诺,378,123,29201</item>
+		<item>圣皮埃尔和密克隆岛,508,141,30801</item>
+		<item>圣文森特和格林纳丁斯,1784,211,360110</item>
+		<item>斯里兰卡,94,47,41301|41305|41302|41308</item>
+		<item>斯洛伐克,421,132,23199|23101|23102|23106</item>
+		<item>斯洛文尼亚,386,128,29364|29341|29340|29370</item>
+		<item>斯威士兰,268,100,65310|65301</item>
+		<item>苏丹,249,82,63401|63402|63407</item>
+		<item>苏里南,597,150,74604|74603|74602</item>
+		<item>所罗门群岛,677,157,54010</item>
+		<item>索马里,252,85,63782|63760|63730|63701|63725|63704</item>
+    </string-array>
+    <string-array name="smssdk_country_group_t">
+		<item>塔吉克斯坦,992,191,43605|43601|43602|43603|43604</item>
+		<item>台湾,886,173,46602|46668|46603|46688|46699|46601|46689|46656|46697|46610|46609|46606|46607|46605|46693|46692</item>
+		<item>泰国,66,38,52000|52099|52020|52003|52004|52015|52001|52023|52002|52018|52005</item>
+		<item>坦桑尼亚,255,88,64011|64003|64002|64005|64004|64007|64006|64009|64008</item>
+		<item>汤加,676,156,53901</item>
+		<item>特克斯和凯科斯群岛,1649,206,376352|376350</item>
+		<item>特立尼达，多巴哥,1868,214,374130|37412</item>
+		<item>突尼斯,216,53,60503|60502|60501</item>
+		<item>土耳其,90,43,28602|28603|28601|28604</item>
+		<item>土库曼斯坦,993,192,43801|43802</item>
+    </string-array>
+    <string-array name="smssdk_country_group_u">
+	    
+	</string-array>
+    <string-array name="smssdk_country_group_v">
+	    
+	</string-array>
+    <string-array name="smssdk_country_group_w">
+		<item>瓦努阿图,678,158,54101|54105</item>
+		<item>危地马拉,502,135,70402|70401|70403</item>
+		<item>维尔京群岛（美属）,1284,201,311470</item>
+		<item>维尔京群岛（英属）,1340,202,348570|348170</item>
+		<item>委内瑞拉,58,31,73406|73404|73401</item>
+		<item>文莱,673,154,52811|52802</item>
+		<item>乌干达,256,89,64111|64133|64166|64122|64110|64101|64114</item>
+		<item>乌克兰,380,124,25507|25506|25521|25501|25503|25502|25505|25504</item>
+		<item>乌拉圭,598,151,74803|74802|74801|74800|74810|74807</item>
+		<item>乌兹别克斯坦,998,196,43401|43402|43407|43403|43404|43405|43406</item>
+    </string-array>
+    <string-array name="smssdk_country_group_x">
+		<item>西班牙,34,11,21402|21401|21423|21411|21422|21410|21421|21432|21420|21409|21408|21419|21407|21418|21417|21406|21405|21427|21416|21404|21415|21425|21403</item>
+		<item>希腊,30,7,20203|20202|20201|20210|20209|20207|20205</item>
+		<item>香港,852,168,45413|45412|45401|45404|45403|45414|45400|45411|45409|45406|45405|45416|45408|45419|45429|45407</item>
+		<item>新加坡,65,37,52502|52503|52512|52501|52505</item>
+		<item>新喀里多尼亚,687,164,54601</item>
+		<item>新西兰,64,36,53001|53004|53005|53024|53002|53006</item>
+		<item>匈牙利,36,12,21630|21670|21601</item>
+		<item>叙利亚,963,177,41701|41702</item>
+    </string-array>
+    <string-array name="smssdk_country_group_y">
+		<item>牙买加,1876,216,338180|338020|338110</item>
+		<item>亚美尼亚,374,119,28301|28310|28305|28304</item>
+		<item>也门,967,181,42101|42102|42103</item>
+		<item>伊拉克,964,178,41805|41840|41820|41830|41845</item>
+		<item>伊朗,98,49,43235|43214|43220|43200|43211|43219</item>
+		<item>以色列,972,185,42577|42516|42505|42506|42507|RESTRICTED-IL|42519|42508|42501|42512|42523|42502|42503|42514|42515</item>
+		<item>意大利,39,13,22206|22207|22208|22210|22243|22288|22244|22299|22233|22201|22235|22204|22248|22205|22230</item>
+		<item>印度,91,44,405893|405892|405895|405894|405897|405896|405899|405898|40501|40506|40505|405891|405890|40503|405889|405882|405881|405883|405886|405885|405888|405887|405880|405879|405878|405871|405750|405870|405873|405752|405872|405751|405875|405754|405874|405753|405877|405756|405876|405755|405868|405867|405869|405860|405862|405861|405864|405863|405866|405865|405856|405859|405858|40494|40493|40492|40491|40498|40497|40496|40495|40490|40483|40482|40481|40480|40487|40486|40485|405799|40484|40489|40488|40472|40471|40470|40476|40475|40474|40473|40479|40478|40477|40460|405930|405811|40462|405810|405931|40469|40468|40467|40466|405809|405802|405923|405801|405922|405804|405925|405803|405924|405806|405927|405805|405926|405808|405929|405807|405928|40450|40570|40454|40453|40452|405800|405921|40451|405920|40458|40457|40456|40455|40459|405919|405912|405914|405913|405916|405915|405918|405917|40443|40442|40441|40567|40446|40566|40449|405901|405900|405903|405902|405905|405904|405907|405906|40553|40552|40431|40551|40430|40436|40556|40435|40555|40434|40554|40433|40438|40437|405851|405850|40421|405853|40420|405852|405855|405854|40425|40424|40422|40429|40428|40427|40419|405846|405845|405848|405847|405849|405046|405045|405840|405047|40410|405842|405841|405843|40413|40412|405040|40411|40418|405042|40417|405041|40416|405044|40415|405043|40409|405835|405834|405837|405836|405839|405838|405035|405034|405037|405036|40520|405039|405831|405038|405830|405833|405832|40524|40403|40402|40523|40522|40401|40521|40400|40407|405031|40406|405030|40405|405033|40404|405032|40519|40518|405824|405823|405825|405828|405827|405829|405026|405025|405820|405027|405822|405029|405821|40513|40512|40511|40510|40517|40515|40514|40509|40508|40507|405813|405812|405815|405814|405817|405816|405819|405818</item>
+		<item>印度尼西亚,62,34,51010|51021|51089|51001|51011|51027|51007|51028|51009|51008</item>
+		<item>英国,44,17,23427|23428|23407|23409|23420|23400|23401|23423|23500|23424|23402|23403|23425|23426|23416|23417|23418|23419|23430|23431|23476|23410|23433|23455|23411|23478|23434|23458|23414|23415|23450|23451</item>
+		<item>约旦,962,176,41601|41677|41603</item>
+		<item>越南,84,41,45204|45205|45202|45201|45207</item>
+    </string-array>
+    <string-array name="smssdk_country_group_z">
+		<item>赞比亚,260,92,64502|64501|64503</item>
+		<item>泽西,44,18,</item>
+		<item>乍得,235,70,62201|62203</item>
+		<item>直布罗陀,350,105,26606|26609|26601</item>
+		<item>智利,56,29,73008|73006|73004|73002|73013|73003|73014|73011|73012|73001</item>
+		<item>中非共和国,236,71,62301|62302|62303|62304</item>
+		<item>中国,86,42,46006|46007|46005|46002|46003|46000|46001</item>
+    </string-array>
+    <color name="camera_bottom_black">#1c1d22</color>
+    <color name="camera_mask">#cc000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="indicator_circle_normal_color">#DBE3F0</color>
+    <color name="rim_base_action_bar_line_ccccccc">#cccccc</color>
+    <color name="rim_base_alpha50_white">#80ffffff</color>
+    <color name="rim_base_background1_color">#F5F5F5</color>
+    <color name="rim_base_background1_color_7f">#7FF5F5F5</color>
+    <color name="rim_base_bg_color_gray">#eeeeee</color>
+    <color name="rim_base_bg_color_gray2">#c0c0c0</color>
+    <color name="rim_base_bg_fafafafa">#fafafa</color>
+    <color name="rim_base_black">#000</color>
+    <color name="rim_base_black2">#3B3B3B</color>
+    <color name="rim_base_black3">#222222</color>
+    <color name="rim_base_black_transparent">#80000000</color>
+    <color name="rim_base_blue">#5baef5</color>
+    <color name="rim_base_btn_send_sms_normal">#3E9BF2</color>
+    <color name="rim_base_button_disable_ec6d6b">#ec6d6b</color>
+    <color name="rim_base_button_red">#f34848</color>
+    <color name="rim_base_color_3E9BF2">#3E9BF2</color>
+    <color name="rim_base_color_7fdb5353">#7fdb5353</color>
+    <color name="rim_base_color_db5353">#db5353</color>
+    <color name="rim_base_color_dddddd">#DDDDDD</color>
+    <color name="rim_base_color_e85352">#e85352</color>
+    <color name="rim_base_color_f4586a">#F4586A</color>
+    <color name="rim_base_color_f8f8f8">#f8f8f8</color>
+    <color name="rim_base_color_gray_494949">#494949</color>
+    <color name="rim_base_dash_rect_line_normal">#787878</color>
+    <color name="rim_base_dash_rect_line_press">#d5d5d5</color>
+    <color name="rim_base_dialog_bg">#ffffff</color>
+    <color name="rim_base_dialog_btn_highlight_color">#3e9bf2</color>
+    <color name="rim_base_dialog_btn_normal_color">#222222</color>
+    <color name="rim_base_dialog_btndisable">#dcdcdc</color>
+    <color name="rim_base_dialog_btnpress_bg">#f2f2f2</color>
+    <color name="rim_base_dialog_contenttext">#555555</color>
+    <color name="rim_base_dialog_lineblue">#37a6fb</color>
+    <color name="rim_base_dialog_linegray">#dddddd</color>
+    <color name="rim_base_dialog_linegray_d9d9d9">#d9d9d9</color>
+    <color name="rim_base_dialog_text_999999">#999999</color>
+    <color name="rim_base_dialog_text_e94643">#e94643</color>
+    <color name="rim_base_dialog_titletext">#2c2c2c</color>
+    <color name="rim_base_dialog_titletext_111111">#111111</color>
+    <color name="rim_base_dialog_titletext_222222">#222222</color>
+    <color name="rim_base_divide_line_gray">#d9d9d9</color>
+    <color name="rim_base_edittextdialog_textcolor_gray">#999999</color>
+    <color name="rim_base_edittextdialog_textcolor_normal">#333333</color>
+    <color name="rim_base_font_text1Color">#222222</color>
+    <color name="rim_base_font_text1Color_50">#112222</color>
+    <color name="rim_base_font_text2Color">#666666</color>
+    <color name="rim_base_font_text3Color">#999999</color>
+    <color name="rim_base_font_text4Color">#AAAAAA</color>
+    <color name="rim_base_font_text5Color">#CCCCCC</color>
+    <color name="rim_base_font_text6Color">#E85352</color>
+    <color name="rim_base_font_text6Color_7f">#7FE85352</color>
+    <color name="rim_base_font_text6Color_half">#7FE85352</color>
+    <color name="rim_base_font_text7Color">#FFE8D7</color>
+    <color name="rim_base_font_text8Color">#5E89D5</color>
+    <color name="rim_base_font_text9Color">#CED4DE</color>
+    <color name="rim_base_fp_text_white">#FFFFFF</color>
+    <color name="rim_base_gray">#f2f2f2</color>
+    <color name="rim_base_gray2">#e9e9e9</color>
+    <color name="rim_base_gray3">#757575</color>
+    <color name="rim_base_gray4">#f1f1f1</color>
+    <color name="rim_base_gray_999999">#999999</color>
+    <color name="rim_base_gray_disable">#e4effc</color>
+    <color name="rim_base_gray_pressed">#e3e3e3</color>
+    <color name="rim_base_half_font_text2Color">#77666666</color>
+    <color name="rim_base_item_bg_blue">#37A6FB</color>
+    <color name="rim_base_item_bg_blue_hover">#5fb2f9</color>
+    <color name="rim_base_item_divider_d9d9d9">#d9d9d9</color>
+    <color name="rim_base_item_divider_e5e5e5">#e5e5e5</color>
+    <color name="rim_base_lightapp_title_background_color">#f9f9f9</color>
+    <color name="rim_base_lightapp_title_btntext_sel">#c63c39</color>
+    <color name="rim_base_list_ffe09f">#ffffe09f</color>
+    <color name="rim_base_listitem_bg_grey2">#f6f6f6</color>
+    <color name="rim_base_mainColor">#6492E3</color>
+    <color name="rim_base_pressedColor">#F6F6F6</color>
+    <color name="rim_base_promotion_bg">#FFE8D7</color>
+    <color name="rim_base_pwdpay_light_gray">#cccccc</color>
+    <color name="rim_base_pwdpay_nopwd_protocol_text">#666666</color>
+    <color name="rim_base_pwdpay_text_before_channel">#999999</color>
+    <color name="rim_base_pwdpay_text_blue">#5cb6fb</color>
+    <color name="rim_base_pwdpay_title_bg">#fafafa</color>
+    <color name="rim_base_red">#e94643</color>
+    <color name="rim_base_red_dark">#e94643</color>
+    <color name="rim_base_safekeyboard_keynum_textcolor">#000000</color>
+    <color name="rim_base_safekeyboard_linegray">#d9d9d9</color>
+    <color name="rim_base_safekeyboard_title_bg">#ffffff</color>
+    <color name="rim_base_safekeyboard_title_textcolor">#333333</color>
+    <color name="rim_base_scroll_bar">#bbbbbb</color>
+    <color name="rim_base_separate2Color">#DDDDDD</color>
+    <color name="rim_base_separateColor">#EEEEEE</color>
+    <color name="rim_base_six_number_pwd_9f9f9f">#9f9f9f</color>
+    <color name="rim_base_six_number_pwd_cccccc">#cccccc</color>
+    <color name="rim_base_sub_text_color">#aaaaaa</color>
+    <color name="rim_base_text_111111">#111111</color>
+    <color name="rim_base_text_222222">#222222</color>
+    <color name="rim_base_text_333">#333</color>
+    <color name="rim_base_text_333333">#333333</color>
+    <color name="rim_base_text_3883d6">#3883D6</color>
+    <color name="rim_base_text_666666">#666666</color>
+    <color name="rim_base_text_999999">#999999</color>
+    <color name="rim_base_text_adadad">#ADADAD</color>
+    <color name="rim_base_text_banner_bg_color">#fcedd2</color>
+    <color name="rim_base_text_banner_color">#ff5e1f</color>
+    <color name="rim_base_text_banner_divider_color">#ffd964</color>
+    <color name="rim_base_text_blue">#3593dc</color>
+    <color name="rim_base_text_blue2">#37a6fb</color>
+    <color name="rim_base_text_blue3">#5f9be6</color>
+    <color name="rim_base_text_blue_withdraw">#3381d9</color>
+    <color name="rim_base_text_btn_disable">#eb615f</color>
+    <color name="rim_base_text_btn_enable">#ffffff</color>
+    <color name="rim_base_text_cashback_red">#e71f19</color>
+    <color name="rim_base_text_copyright">#888888</color>
+    <color name="rim_base_text_e4e4e4">#e4e4e4</color>
+    <color name="rim_base_text_e85352">#e85352</color>
+    <color name="rim_base_text_gray">#aaa</color>
+    <color name="rim_base_text_gray2">#aaaaaa</color>
+    <color name="rim_base_text_gray3">#545454</color>
+    <color name="rim_base_text_gray4">#ececec</color>
+    <color name="rim_base_text_hint">#ccc</color>
+    <color name="rim_base_text_link_hover">#73bff9</color>
+    <color name="rim_base_text_link_nomal">#0a55bc</color>
+    <color name="rim_base_text_negative">#e94643</color>
+    <color name="rim_base_text_normal">#555</color>
+    <color name="rim_base_text_orange">#ff7800</color>
+    <color name="rim_base_text_orange1">#ff5a00</color>
+    <color name="rim_base_text_press_bg_color">#f1f1f1</color>
+    <color name="rim_base_text_re3">#ea3d3d</color>
+    <color name="rim_base_text_red">#d60000</color>
+    <color name="rim_base_text_red2">#e94643</color>
+    <color name="rim_base_text_red_queqiao">#e94643</color>
+    <color name="rim_base_textcolor_adadad">#adadad</color>
+    <color name="rim_base_textcolor_e85352">#e85352</color>
+    <color name="rim_base_textcolor_scancode_logo_text">#b20000</color>
+    <color name="rim_base_title_bg">#383838</color>
+    <color name="rim_base_toast_bg">#cc000000</color>
+    <color name="rim_base_trans_fail">#E65757</color>
+    <color name="rim_base_trans_wait_pay">#F2A42A</color>
+    <color name="rim_base_translucence_color">#77000000</color>
+    <color name="rim_base_transparent">#00000000</color>
+    <color name="rim_base_white">#fff</color>
+    <color name="rim_base_whiteColor">#FFFFFF</color>
+    <color name="rim_base_whiteColor_7f">#7FFFFFFF</color>
+    <color name="rim_base_white_7f">#7fffffff</color>
+    <color name="sapi_background_color">#FFFFFF</color>
+    <color name="sapi_dialog_edit_hint_color">#dddddd</color>
+    <color name="sapi_dialog_msg_text_color">#999999</color>
+    <color name="sapi_dialog_negative_btn_text_color">#222222</color>
+    <color name="sapi_dialog_neutral_btn_text_color">#3e9bf2</color>
+    <color name="sapi_dialog_positive_btn_text_color">#3e9bf2</color>
+    <color name="sapi_dialog_title_text_color">#222222</color>
+    <color name="sapi_liveness_guide_bg_color">#e3ebed</color>
+    <color name="sapi_liveness_recog_guide_tip_color">#fd855d</color>
+    <color name="sapi_liveness_recog_loading_color">#bb000000</color>
+    <color name="sapi_liveness_recog_ok_bg_color">#88000000</color>
+    <color name="sapi_liveness_separator_line_color">#e7e7e7</color>
+    <color name="sapi_liveness_transparent">#00000000</color>
+    <color name="sapi_liveness_video_guide_tip_color">#F5A623</color>
+    <color name="video_guide_hint_color">#989EAA</color>
+    <dimen name="liveness_video_lrc_text_gap">50dp</dimen>
+    <dimen name="liveness_video_lrc_tip_margintop_afteranim">60dp</dimen>
+    <dimen name="liveness_video_lrc_tip_text01_gap">20dp</dimen>
+    <dimen name="liveness_video_lrc_tip_text12_gap">6dp</dimen>
+    <dimen name="liveness_video_lrcview_circle_point_gap">10dp</dimen>
+    <dimen name="liveness_video_lrcview_circle_point_radius">7dp</dimen>
+    <dimen name="liveness_video_warning_toast_margintop_afteranim">84dp</dimen>
+    <dimen name="liveness_video_warning_toast_originmargintop">191dp</dimen>
+    <dimen name="liveness_video_xfordview_circle_gap">7dp</dimen>
+    <dimen name="rim_base_15dp">15dp</dimen>
+    <dimen name="rim_base_25dp">25dp</dimen>
+    <dimen name="rim_base_5dp">5dp</dimen>
+    <dimen name="rim_base_8dp">8dp</dimen>
+    <dimen name="rim_base_base_menu_margin">4dp</dimen>
+    <dimen name="rim_base_cashdesk_progressview_height">2.5dp</dimen>
+    <dimen name="rim_base_contact_name_width">90dp</dimen>
+    <dimen name="rim_base_dialog_bottombutton_height">50dp</dimen>
+    <dimen name="rim_base_dialog_title_height">45dp</dimen>
+    <dimen name="rim_base_dialog_title_height_90">90dp</dimen>
+    <dimen name="rim_base_empty_view_logo_width">138dp</dimen>
+    <dimen name="rim_base_empty_view_tip_margin">12dp</dimen>
+    <dimen name="rim_base_fix_line_height_1px">1px</dimen>
+    <dimen name="rim_base_fix_line_width_1px">1px</dimen>
+    <dimen name="rim_base_footer_height">49dp</dimen>
+    <dimen name="rim_base_fp_text_size_fix_tip">15sp</dimen>
+    <dimen name="rim_base_fp_text_size_history_mobile">20sp</dimen>
+    <dimen name="rim_base_fp_text_size_history_name">16sp</dimen>
+    <dimen name="rim_base_fp_text_size_largest">23sp</dimen>
+    <dimen name="rim_base_fp_text_size_mobile">27sp</dimen>
+    <dimen name="rim_base_fp_text_size_mobile_hint">18sp</dimen>
+    <dimen name="rim_base_fp_text_size_msg">14sp</dimen>
+    <dimen name="rim_base_fp_text_size_small">10sp</dimen>
+    <dimen name="rim_base_header_max_padding">55dp</dimen>
+    <dimen name="rim_base_home_group_gap_width">15dp</dimen>
+    <dimen name="rim_base_home_separator_line_width">0.5dp</dimen>
+    <dimen name="rim_base_identity_h5_margin_left">75dp</dimen>
+    <dimen name="rim_base_identity_height">160dp</dimen>
+    <dimen name="rim_base_identity_margin_top">160dp</dimen>
+    <dimen name="rim_base_item_height_49dp">49dp</dimen>
+    <dimen name="rim_base_item_padding_left">19dp</dimen>
+    <dimen name="rim_base_level10Font">10dp</dimen>
+    <dimen name="rim_base_level11Font">11dp</dimen>
+    <dimen name="rim_base_level12Font">12dp</dimen>
+    <dimen name="rim_base_level13Font">13dp</dimen>
+    <dimen name="rim_base_level14Font">14dp</dimen>
+    <dimen name="rim_base_level15Font">15dp</dimen>
+    <dimen name="rim_base_level16Font">16dp</dimen>
+    <dimen name="rim_base_level17Font">17dp</dimen>
+    <dimen name="rim_base_level18Font">18dp</dimen>
+    <dimen name="rim_base_level19Font">19dp</dimen>
+    <dimen name="rim_base_level20Font">20dp</dimen>
+    <dimen name="rim_base_level21Font">21dp</dimen>
+    <dimen name="rim_base_level22Font">22dp</dimen>
+    <dimen name="rim_base_level23Font">23dp</dimen>
+    <dimen name="rim_base_level24Font">24dp</dimen>
+    <dimen name="rim_base_level25Font">25dp</dimen>
+    <dimen name="rim_base_level26Font">26dp</dimen>
+    <dimen name="rim_base_level27Font">27dp</dimen>
+    <dimen name="rim_base_level28Font">28dp</dimen>
+    <dimen name="rim_base_level29Font">29dp</dimen>
+    <dimen name="rim_base_level30Font">30dp</dimen>
+    <dimen name="rim_base_level31Font">31dp</dimen>
+    <dimen name="rim_base_level32Font">32dp</dimen>
+    <dimen name="rim_base_level33Font">33dp</dimen>
+    <dimen name="rim_base_level34Font">34dp</dimen>
+    <dimen name="rim_base_level35Font">35dp</dimen>
+    <dimen name="rim_base_level36Font">36dp</dimen>
+    <dimen name="rim_base_level45Font">45dp</dimen>
+    <dimen name="rim_base_level50Font">50dp</dimen>
+    <dimen name="rim_base_level60Font">60dp</dimen>
+    <dimen name="rim_base_lightapp_titlebar_height">50dp</dimen>
+    <dimen name="rim_base_menu_item_height">45dp</dimen>
+    <dimen name="rim_base_menu_item_margin">16dp</dimen>
+    <dimen name="rim_base_menu_item_margin_drawable">10dp</dimen>
+    <dimen name="rim_base_menu_item_width">126dp</dimen>
+    <dimen name="rim_base_normal_item_height">44dp</dimen>
+    <dimen name="rim_base_normal_item_left_margin">15dp</dimen>
+    <dimen name="rim_base_normal_item_top_margin">18dp</dimen>
+    <dimen name="rim_base_normal_line_height_1dp">1dp</dimen>
+    <dimen name="rim_base_normal_line_height_1px">1px</dimen>
+    <dimen name="rim_base_normal_margin_9dp">9dp</dimen>
+    <dimen name="rim_base_paysetting_item_height">74dp</dimen>
+    <dimen name="rim_base_pwdpay_item_height">49dp</dimen>
+    <dimen name="rim_base_pwdpay_item_padding_right">32dp</dimen>
+    <dimen name="rim_base_pwdpay_select_payment_title_height">40dp</dimen>
+    <dimen name="rim_base_safekeyboard_button_height">45dp</dimen>
+    <dimen name="rim_base_safekeyboard_closebtn_marginright">14dp</dimen>
+    <dimen name="rim_base_safekeyboard_grayline_width_0.5">1px</dimen>
+    <dimen name="rim_base_safekeyboard_grayline_width_1">1px</dimen>
+    <dimen name="rim_base_safekeyboard_keynum_textsize">23sp</dimen>
+    <dimen name="rim_base_safekeyboard_logo_marginright">5dp</dimen>
+    <dimen name="rim_base_safekeyboard_title_height">30dp</dimen>
+    <dimen name="rim_base_safekeyboard_title_textsize">11sp</dimen>
+    <dimen name="rim_base_sendsms_button_width">112dp</dimen>
+    <dimen name="rim_base_tab_indicator_line_height_low">1dp</dimen>
+    <dimen name="rim_base_tab_indicator_line_height_tall">2dp</dimen>
+    <dimen name="rim_base_text_size_27sp">27sp</dimen>
+    <dimen name="rim_base_text_size_large">20sp</dimen>
+    <dimen name="rim_base_text_size_largest">48sp</dimen>
+    <dimen name="rim_base_text_size_medium">18sp</dimen>
+    <dimen name="rim_base_text_size_normal">15sp</dimen>
+    <dimen name="rim_base_text_size_small">12sp</dimen>
+    <dimen name="rim_base_text_size_xsmall">10sp</dimen>
+    <dimen name="rim_base_text_size_xxxlarge">36sp</dimen>
+    <dimen name="rim_base_textsize_17sp">17dp</dimen>
+    <dimen name="rim_base_transfer_confirm_money">25sp</dimen>
+    <dimen name="rim_base_transfer_item_height">50dp</dimen>
+    <dimen name="rim_bt_height">45dip</dimen>
+    <dimen name="rim_dialog_img_height">150dp</dimen>
+    <dimen name="rim_dialog_img_width">260dp</dimen>
+    <dimen name="rim_dialog_width">290dip</dimen>
+    <dimen name="rim_dimen_0dp">0dp</dimen>
+    <dimen name="rim_dimen_10dp">10dp</dimen>
+    <dimen name="rim_dimen_15dp">15dp</dimen>
+    <dimen name="rim_dimen_20dp">20dp</dimen>
+    <dimen name="rim_dimen_30dp">30dp</dimen>
+    <dimen name="rim_dimen_50dp">50dp</dimen>
+    <dimen name="rim_dimen_5dp">5dp</dimen>
+    <dimen name="rim_fast_max_width">68dp</dimen>
+    <dimen name="rim_fp_button_padding_top">20dp</dimen>
+    <dimen name="rim_fp_face_padding_top">15dp</dimen>
+    <dimen name="rim_fp_operator_small_size">12sp</dimen>
+    <dimen name="rim_line_height_0.5">0.5dp</dimen>
+    <dimen name="rim_line_margin_10">10dp</dimen>
+    <dimen name="rim_line_margin_12">12dp</dimen>
+    <dimen name="rim_line_margin_15">15dp</dimen>
+    <dimen name="rim_line_margin_17">17dp</dimen>
+    <dimen name="rim_line_margin_20">20dp</dimen>
+    <dimen name="rim_line_width_0.5">0.5dp</dimen>
+    <dimen name="rim_six_number_cell_width">47dp</dimen>
+    <dimen name="rim_six_number_layout_height">47dp</dimen>
+    <dimen name="rim_six_number_pwd_height">46dp</dimen>
+    <dimen name="rim_text_size_12">12sp</dimen>
+    <dimen name="rim_text_size_13">13sp</dimen>
+    <dimen name="rim_text_size_14">14sp</dimen>
+    <dimen name="rim_text_size_15">15sp</dimen>
+    <dimen name="rim_text_size_16">16sp</dimen>
+    <dimen name="rim_text_size_17">17sp</dimen>
+    <dimen name="rim_text_size_18">18sp</dimen>
+    <dimen name="rim_text_size_20">20sp</dimen>
+    <dimen name="rim_text_size_24">24sp</dimen>
+    <dimen name="rim_text_size_25">25sp</dimen>
+    <dimen name="rim_text_size_30">30sp</dimen>
+    <dimen name="rim_text_size_32">32sp</dimen>
+    <dimen name="rim_text_size_35">35sp</dimen>
+    <dimen name="rim_text_size_36">36sp</dimen>
+    <dimen name="rim_text_size_40">40sp</dimen>
+    <dimen name="rim_text_size_50">50sp</dimen>
+    <dimen name="rim_title_heigth">46dp</dimen>
+    <dimen name="rim_white_line_height">46dip</dimen>
+    <dimen name="sapi_bio_dialog_msg_text_size">16sp</dimen>
+    <dimen name="sapi_bio_standard_margin">8dp</dimen>
+    <dimen name="sapi_bio_standard_padding">8dip</dimen>
+    <dimen name="sapi_bio_text_size">16sp</dimen>
+    <dimen name="sapi_liveness_btn_height">50dp</dimen>
+    <dimen name="sapi_liveness_face_guide_tip_margin_top">6dp</dimen>
+    <dimen name="sapi_liveness_face_guide_tip_text_size">12sp</dimen>
+    <dimen name="sapi_liveness_face_round_height">381dp</dimen>
+    <dimen name="sapi_liveness_face_round_width">315dp</dimen>
+    <dimen name="sapi_liveness_guide_bottom_margin_top">40dp</dimen>
+    <dimen name="sapi_liveness_guide_bottom_tip_margin_top">8dp</dimen>
+    <dimen name="sapi_liveness_guide_middle_margin_top">12dp</dimen>
+    <dimen name="sapi_liveness_guide_title_margin_top">12dp</dimen>
+    <dimen name="sapi_liveness_guide_title_tip_margin_top">10dp</dimen>
+    <dimen name="sapi_liveness_record_video_tip_margin_left">52dp</dimen>
+    <dimen name="sapi_liveness_title_layout_margin_left">20dp</dimen>
+    <dimen name="sapi_liveness_title_layout_margin_right">20dp</dimen>
+    <dimen name="sapi_liveness_title_layout_margin_top">15dp</dimen>
+    <drawable name="ssdk_oks_classic_platfrom_cell_back_nor">#ffffffff</drawable>
+    <drawable name="ssdk_oks_classic_platfrom_cell_back_sel">#ffeeeeee</drawable>
+    <item name="ssdk_sina_web_title_id" type="id"/>
+    <item name="ssdk_sms_id_clCountry" type="id"/>
+    <item name="ssdk_sms_id_et_put_identify" type="id"/>
+    <item name="ssdk_sms_id_ivSearch" type="id"/>
+    <item name="ssdk_sms_id_iv_clear" type="id"/>
+    <item name="ssdk_sms_id_llSearch" type="id"/>
+    <item name="ssdk_sms_id_llTitle" type="id"/>
+    <item name="ssdk_sms_id_ll_back" type="id"/>
+    <item name="ssdk_sms_id_tv_title" type="id"/>
+    <integer name="rim_base_lightapp_menu_maxems">4</integer>
+    <integer name="rim_base_titlebar_centertext_maxems">8</integer>
+    <integer name="rim_base_titlebar_centertext_maxems_1">6</integer>
+    <string name="app_name">MShell</string>
+    <string name="liveness_video_file_exceptio_dialog_msg">视频录制异常，请检查是否开启摄像头和麦克风权限</string>
+    <string name="liveness_video_interrupt_dialog_msg">视频录制已中断</string>
+    <string name="liveness_video_timeout_dialog_msg">操作超时，请保持脸部出现在框内</string>
+    <string name="rim_base__no_network">网络不给力，请稍后重试</string>
+    <string name="rim_base_action_bar_text_close">关闭</string>
+    <string name="rim_base_action_bar_text_refresh">刷新</string>
+    <string name="rim_base_action_bar_text_return">返回</string>
+    <string name="rim_base_asdasdasd_assdadsads">AAAAAn7</string>
+    <string name="rim_base_dialog_common_loading_text">验证中...</string>
+    <string name="rim_base_get_data_fail">系统开小差，等一会儿再试吧</string>
+    <string name="rim_base_multi_window_close">请先切到全屏模式再使用该功能</string>
+    <string name="rim_base_multi_window_tips">当前界面在分屏模式下可能显示不正常</string>
+    <string name="rim_base_safekeyboard_key_0">0</string>
+    <string name="rim_base_safekeyboard_key_1">1</string>
+    <string name="rim_base_safekeyboard_key_2">2</string>
+    <string name="rim_base_safekeyboard_key_3">3</string>
+    <string name="rim_base_safekeyboard_key_4">4</string>
+    <string name="rim_base_safekeyboard_key_5">5</string>
+    <string name="rim_base_safekeyboard_key_6">6</string>
+    <string name="rim_base_safekeyboard_key_7">7</string>
+    <string name="rim_base_safekeyboard_key_8">8</string>
+    <string name="rim_base_safekeyboard_key_9">9</string>
+    <string name="rim_base_safekeyboard_key_X">X</string>
+    <string name="rim_base_safekeyboard_title">百度钱包安全键盘</string>
+    <string name="rim_face_video_guide_indicator2_title">预览朗读内容</string>
+    <string name="rim_face_video_guide_indicator2_title_hint">录制过程中请使用普通话读出屏幕出现内容</string>
+    <string name="rim_face_video_guide_voice_hint">建议调整到较大的音量</string>
+    <string name="rim_liveness_cancle">取消</string>
+    <string name="rim_liveness_network_set">设置</string>
+    <string name="rim_liveness_no_network_tip">网络不给力，请稍后重试</string>
+    <string name="rim_liveness_video_put_face_round">请将脸移入框内</string>
+    <string name="rim_liveness_video_tofar_from_camera">请凑近一点</string>
+    <string name="rim_liveness_video_tonear_from_camera">请离远一点</string>
+    <string name="sapi_alert_dialog_btn_cancel">取消</string>
+    <string name="sapi_alert_dialog_btn_ok">确定</string>
+    <string name="sapi_alert_dialog_btn_try_again">重试</string>
+    <string name="sapi_alert_dialog_default_msg_text">提示</string>
+    <string name="sapi_biometric_app_name">demo-biometrics</string>
+    <string name="sapi_biometric_cancel">取消</string>
+    <string name="sapi_biometric_next">下一步</string>
+    <string name="sapi_liveness_brightness_too_dark">光线再亮一点</string>
+    <string name="sapi_liveness_dialog_contrast_fail_msg1">您可以拍摄一段视频给我们</string>
+    <string name="sapi_liveness_dialog_contrast_fail_title">人脸对比失败</string>
+    <string name="sapi_liveness_dialog_recognized_fail_cancel">重试</string>
+    <string name="sapi_liveness_dialog_recognized_fail_msg1">您可以再试一次，或者拍摄一段视频给我们</string>
+    <string name="sapi_liveness_dialog_recognized_fail_msg2">  视频将帮助我们判断是否本人操作，请按照提示引导拍摄</string>
+    <string name="sapi_liveness_dialog_recognized_fail_msg3"> 视频将在高度压缩后传输，非wifi环境下也不会偷跑您的流量</string>
+    <string name="sapi_liveness_dialog_recognized_fail_ok">拍摄视频</string>
+    <string name="sapi_liveness_dialog_recognized_fail_title">无法识别 ？</string>
+    <string name="sapi_liveness_dialog_recognized_time_out_msg">请平视手机，正对光源，露出五官</string>
+    <string name="sapi_liveness_dialog_recognized_time_out_title">验证超时</string>
+    <string name="sapi_liveness_dialog_video_done_msg">请确保您在拍摄过程中完成了引导动作</string>
+    <string name="sapi_liveness_dialog_video_done_title">拍摄完成</string>
+    <string name="sapi_liveness_dialog_video_try_again">重新拍摄</string>
+    <string name="sapi_liveness_dialog_video_upload">确认并上传</string>
+    <string name="sapi_liveness_face_to_screen">请双眼平视屏幕</string>
+    <string name="sapi_liveness_guide_front_screen">平视手机  正对光源</string>
+    <string name="sapi_liveness_guide_liveness_recog">刷脸验证</string>
+    <string name="sapi_liveness_guide_liveness_video_recog">签约视频录制</string>
+    <string name="sapi_liveness_guide_look_at_phone">平视手机，正对光源</string>
+    <string name="sapi_liveness_guide_no_glass">不能配戴眼镜</string>
+    <string name="sapi_liveness_guide_no_raise_head">不能仰头俯拍</string>
+    <string name="sapi_liveness_guide_no_shelter_from_face">不能遮挡脸部</string>
+    <string name="sapi_liveness_guide_photo_command">请平视摄像头，并保持光线充足</string>
+    <string name="sapi_liveness_guide_photo_tip">请确保是%s本人操作</string>
+    <string name="sapi_liveness_guide_start_recog">立即验证</string>
+    <string name="sapi_liveness_open_camera_no_permission">打开相机失败，请检查是否有相机权限</string>
+    <string name="sapi_liveness_permission_camera">请在 设置-应用-%s-权限 中开启相机权限，以正常使用人脸识别功能</string>
+    <string name="sapi_liveness_permission_camera_record_audio">请在 设置-应用-%s-权限 中开启相机和录音权限，以正常使用人脸识别和录制视频功能</string>
+    <string name="sapi_liveness_put_face_round">请将脸移入框内</string>
+    <string name="sapi_liveness_recog_fail_dialog_msg">人脸识别失败，请保证光线充足或者更换设备后尝试</string>
+    <string name="sapi_liveness_recog_loading">加载中</string>
+    <string name="sapi_liveness_recoging">正在识别中</string>
+    <string name="sapi_liveness_record_up_interrupt">视频上传中，确定要终止流程吗？</string>
+    <string name="sapi_liveness_record_up_interrupt_btn_cancel">终止流程</string>
+    <string name="sapi_liveness_record_up_interrupt_btn_ok">继续上传</string>
+    <string name="sapi_liveness_record_video_fail_dialog_title">拍摄中断了，再来一次吧</string>
+    <string name="sapi_liveness_record_video_guide_tip_1">录制时\n脸部居中</string>
+    <string name="sapi_liveness_record_video_guide_tip_2">录制中\n回答问题</string>
+    <string name="sapi_liveness_record_video_guide_tip_3">录制完\n上传视频</string>
+    <string name="sapi_liveness_record_video_identify">录制视频  验证身份</string>
+    <string name="sapi_liveness_record_video_liveness_again">重新刷脸验证</string>
+    <string name="sapi_liveness_record_video_moible_network_btn_ok">确定上传</string>
+    <string name="sapi_liveness_record_video_moible_network_tip">视频大约为%s，当前为移动网络环境，上传将产生手机流量，确认上传吗？</string>
+    <string name="sapi_liveness_record_video_no_audio_permission">录制视频失败，请检查是否有麦克风权限</string>
+    <string name="sapi_liveness_record_video_record_again">重新录制</string>
+    <string name="sapi_liveness_record_video_start">开始录制</string>
+    <string name="sapi_liveness_record_video_tip_1">为了您的帐号安全</string>
+    <string name="sapi_liveness_record_video_tip_2">建议录制视频，验证身份</string>
+    <string name="sapi_liveness_record_video_tip_3">录制时脸部居中</string>
+    <string name="sapi_liveness_record_video_tip_4">录制中回答问题</string>
+    <string name="sapi_liveness_record_video_tip_5">录制完上传视频</string>
+    <string name="sapi_liveness_record_video_title_upload_timeout">视频上传超时</string>
+    <string name="sapi_liveness_record_video_up_time_out_tip">录制视频后，建议您在3分钟之内上传，以便于审核</string>
+    <string name="sapi_liveness_title_text">拍摄照片</string>
+    <string name="sapi_liveness_tofar_from_camera">凑近一点</string>
+    <string name="sapi_liveness_tonear_from_camera">请离远一点</string>
+    <string name="sapi_liveness_upload_video_fail_dialog_cancel">取消</string>
+    <string name="sapi_liveness_upload_video_fail_dialog_msg">视频上传失败，请重新上传</string>
+    <string name="sapi_liveness_upload_video_fail_dialog_ok">重试</string>
+    <string name="sapi_liveness_upload_video_fail_dialog_reupload">重新上传</string>
+    <string name="sapi_liveness_uploading">上传中</string>
+    <string name="sapi_liveness_video_guide_start_recog">马上签约</string>
+    <string name="sapi_liveness_video_record_failed">录制视频失败，请检查是否有相机权限</string>
+    <string name="sapi_liveness_video_start_record">开始录制</string>
+    <string name="sapi_liveness_video_start_record_later">即将开始录制...</string>
+    <string name="sapi_loading">加载中…</string>
+    <string name="sapi_permission_audio">麦克风</string>
+    <string name="sapi_permission_audio_camera">麦克风、相机</string>
+    <string name="sapi_permission_camera">相机</string>
+    <string name="sapi_permission_record_audio_msg">请在 设置-应用-百度钱包-权限 中开启麦克风权限，以正常使用声纹验证功能</string>
+    <string name="sapi_permission_record_audio_refuse">无法录音，请开启麦克风权限</string>
+    <string name="sapi_permission_request">权限申请</string>
+    <string name="sapi_permission_without_msg1">检测到您未开启%s权限，将无法正常录制视频，验证身份。</string>
+    <string name="sapi_permission_without_msg2">建议您开启%s权限后重试</string>
+    <string name="sapi_permission_without_title">%s不可用</string>
+    <string name="sapi_point">●</string>
+    <string name="ssdk_alipay">支付宝好友</string>
+    <string name="ssdk_alipay_client_inavailable">目前您的支付宝版本过低或未安装，需要安装支付宝才能使用</string>
+    <string name="ssdk_alipaymoments">支付宝生活圈</string>
+    <string name="ssdk_bluetooth">蓝牙</string>
+    <string name="ssdk_dingding">钉钉</string>
+    <string name="ssdk_dont_keep_activitys_client">由于您已开启 不保留活动 ,导致授权功能无法正常使用.我们建议您点击左下方 设置 按钮,在 开发者选项 中关闭 不保留活动 功能.</string>
+    <string name="ssdk_douban">豆瓣</string>
+    <string name="ssdk_dropbox">Dropbox</string>
+    <string name="ssdk_email">邮件</string>
+    <string name="ssdk_evernote">印象笔记</string>
+    <string name="ssdk_facebook">Facebook</string>
+    <string name="ssdk_facebookmessenger">Facebook Messenger</string>
+    <string name="ssdk_facebookmessenger_client_inavailable">目前您的FacebookMessenger版本过低或未安装，需要安装才能使用</string>
+    <string name="ssdk_flickr">Flickr</string>
+    <string name="ssdk_foursquare">FourSquare</string>
+    <string name="ssdk_gender_female">女</string>
+    <string name="ssdk_gender_male">男</string>
+    <string name="ssdk_google_plus_client_inavailable">Google+ 版本过低或者没有安装，需要升级或安装Google+才能使用！</string>
+    <string name="ssdk_googleplus">Google+</string>
+    <string name="ssdk_instagram">Instagram</string>
+    <string name="ssdk_instagram_client_inavailable">Instagram版本过低或者没有安装，需要升级或安装Instagram才能使用！</string>
+    <string name="ssdk_instapager_email_or_password_incorrect">Email或密码不正确</string>
+    <string formatted="false" name="ssdk_instapager_login_html">
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+&lt;meta content=\"text/html; charset=utf-8\" http-equiv=\"Content-Type\">
+&lt;meta content=\"width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no\" id=\"viewport\" name=\"viewport\">
+&lt;meta content=\"yes\" name=\"apple-mobile-web-app-capable\">
+&lt;title>%s&lt;/title>
+&lt;style type=\"text/css\">
+body{margin:0;padding:0}
+.inputstyle {
+    -webkit-tap-highlight-color:rgba(255,255,255,0);
+    width:100%%;
+    height:44px;
+    color:#000;
+    background:0;
+    border:0;
+    font-size:16px;
+    outline: none;
+    -webkit-appearance:none
+}
+
+.btn {
+    width:90%%;
+    height:44px;
+    line-height:44px;
+    background:#A0C035;
+    border:0;
+    border-radius:4px;
+    color:#fff;
+    font-size:16px;
+    text-align:center;
+    margin-top:15px;
+    display:block
+}
+.btn:disabled {
+    background: #dddddd;
+}
+.error {
+    color:red;
+}
+&lt;/style>
+&lt;/head>
+
+&lt;body>
+&lt;script type=\"text/javascript\">
+function login(form){
+    var u=form[\"u\"].value,p=form[\"p\"].value;
+    if(!u || !p)
+        return false;
+    form[\"s\"].disabled = true;
+    return true;
+}
+&lt;/script>
+&lt;form style=\"margin-top:45px;\" action=\"%s\" metho=\"get\" onsubmit=\"return login(this);\">
+%s
+&lt;div style=\"padding-left:15px;border-top:1px solid #E3E3E5;border-bottom:1px solid #E3E3E5;\">
+ &lt;input type=\"hidden\" name=\"ID_SIGN\" value=\"OWELJSFPWECSFEW\"/>
+ &lt;input class=\"inputstyle\" id=\"u\" name=\"u\" type=\"text\" value=\"%s\" placeholder=\"%s\" style=\"border-bottom:1px solid #E3E3E5;\"/>
+ &lt;input class=\"inputstyle\" id=\"p\" name=\"p\" type=\"password\" placeholder=\"%s\"/>
+&lt;/div>
+&lt;p>&lt;input style=\"margin:0 auto;\" type=\"submit\" name=\"s\" value=\"  %s  \" class=\"btn\"/>&lt;/p>
+&lt;/form>
+&lt;/body>
+&lt;/html>
+</string>
+    <string name="ssdk_instapaper">Instapaper</string>
+    <string name="ssdk_instapaper_email">邮箱</string>
+    <string name="ssdk_instapaper_login">登录</string>
+    <string name="ssdk_instapaper_logining">登录中…</string>
+    <string name="ssdk_instapaper_pwd">密码</string>
+    <string name="ssdk_kaixin">开心网</string>
+    <string name="ssdk_kakaostory">KakaoStory</string>
+    <string name="ssdk_kakaostory_client_inavailable">目前您的KakaoStory版本过低或未安装，需要安装KakaoStory才能使用</string>
+    <string name="ssdk_kakaotalk">KakaoTalk</string>
+    <string name="ssdk_kakaotalk_client_inavailable">目前您的KakaoTalk版本过低或未安装，需要安装KakaoTalk才能使用</string>
+    <string name="ssdk_laiwang">来往</string>
+    <string name="ssdk_laiwang_client_inavailable">目前您的来往版本过低或未安装，需要安装来往才能使用</string>
+    <string name="ssdk_laiwangmoments">来往动态</string>
+    <string name="ssdk_line">Line</string>
+    <string name="ssdk_line_client_inavailable">目前您的Line版本过低或未安装，需要安装Line才能使用</string>
+    <string name="ssdk_linkedin">领英</string>
+    <string name="ssdk_meipai">美拍</string>
+    <string name="ssdk_mingdao">明道</string>
+    <string name="ssdk_mingdao_share_content">网页分享</string>
+    <string name="ssdk_neteasemicroblog">网易微博</string>
+    <string name="ssdk_oks_cancel">取消</string>
+    <string name="ssdk_oks_confirm">确定</string>
+    <string name="ssdk_oks_contacts">联系人</string>
+    <string name="ssdk_oks_multi_share">图文分享</string>
+    <string name="ssdk_oks_pull_to_refresh">下拉刷新</string>
+    <string name="ssdk_oks_refreshing">刷新中…</string>
+    <string name="ssdk_oks_release_to_refresh">松开刷新</string>
+    <string name="ssdk_oks_share">分享</string>
+    <string name="ssdk_oks_share_canceled">分享已取消</string>
+    <string name="ssdk_oks_share_completed">分享成功</string>
+    <string name="ssdk_oks_share_failed">分享失败</string>
+    <string name="ssdk_oks_sharing">分享操作正在后台进行…</string>
+    <string name="ssdk_pinterest">Pinterest</string>
+    <string name="ssdk_pinterest_client_inavailable">Pinterest版本过低或者没有安装，需要升级或安装Pinterest才能使用！</string>
+    <string name="ssdk_plurk">Plurk</string>
+    <string name="ssdk_pocket">Pocket</string>
+    <string name="ssdk_qq">QQ</string>
+    <string name="ssdk_qq_client_inavailable">QQ 版本过低或者没有安装，需要升级或安装QQ才能使用！</string>
+    <string name="ssdk_qzone">QQ空间</string>
+    <string name="ssdk_renren">人人网</string>
+    <string name="ssdk_share_to_facebook">分享到Facebook</string>
+    <string name="ssdk_share_to_googleplus">分享到Google+</string>
+    <string name="ssdk_share_to_mingdao">分享到明道</string>
+    <string name="ssdk_share_to_qq">分享到QQ</string>
+    <string name="ssdk_share_to_qzone">分享到QQ空间</string>
+    <string name="ssdk_share_to_qzone_default">来自%s的分享</string>
+    <string name="ssdk_share_to_youtube">分享到Youtube</string>
+    <string name="ssdk_shortmessage">信息</string>
+    <string name="ssdk_sina_web_close">关闭</string>
+    <string name="ssdk_sina_web_login_title">登录-新浪微博</string>
+    <string name="ssdk_sina_web_net_error">网络出错啦，请点击按钮重新加载</string>
+    <string name="ssdk_sina_web_refresh">重新加载</string>
+    <string name="ssdk_sina_web_title">微博分享</string>
+    <string name="ssdk_sinaweibo">新浪微博</string>
+    <string name="ssdk_sms_btn_next">下一步</string>
+    <string name="ssdk_sms_btn_sende_voice">发送语音验证</string>
+    <string name="ssdk_sms_btn_submit">提交</string>
+    <string name="ssdk_sms_china">中国</string>
+    <string name="ssdk_sms_choose_country">选择国家和地区</string>
+    <string name="ssdk_sms_code">验证码</string>
+    <string name="ssdk_sms_country_search">搜索</string>
+    <string name="ssdk_sms_dialog_btn_back">返回</string>
+    <string name="ssdk_sms_dialog_btn_cancel">取消</string>
+    <string name="ssdk_sms_dialog_btn_login">确认登录</string>
+    <string name="ssdk_sms_dialog_btn_ok">好</string>
+    <string name="ssdk_sms_dialog_btn_sure">我知道了</string>
+    <string name="ssdk_sms_dialog_btn_wait">等待</string>
+    <string name="ssdk_sms_dialog_close_identify_page">验证码短信可能略有延迟，确定返回\n并重新开始？</string>
+    <string name="ssdk_sms_dialog_confirm_des">我们将发送验证码短信到这个手机号：\n</string>
+    <string name="ssdk_sms_dialog_confirm_title">确认手机号码</string>
+    <string name="ssdk_sms_dialog_error_code">验证码不正确，请重新填写</string>
+    <string name="ssdk_sms_dialog_error_des">您输入的是一个无效手机号码</string>
+    <string name="ssdk_sms_dialog_error_desc_100">服务器错误</string>
+    <string name="ssdk_sms_dialog_error_desc_101">没有权限请求</string>
+    <string name="ssdk_sms_dialog_error_desc_102">解密数据失败</string>
+    <string name="ssdk_sms_dialog_error_desc_103">请求参数列表中缺少必要数据</string>
+    <string name="ssdk_sms_dialog_error_desc_104">请求数据非法</string>
+    <string name="ssdk_sms_dialog_error_desc_105">验证码错误</string>
+    <string name="ssdk_sms_dialog_error_desc_106">请求发送验证码失败</string>
+    <string name="ssdk_sms_dialog_error_desc_107">该号码超过接收验证码上\n限次数，请明日再试</string>
+    <string name="ssdk_sms_dialog_error_desc_108">该设备超过请求发送验证\n码上限次数，请明日再试</string>
+    <string name="ssdk_sms_dialog_error_desc_109">发送短信太频繁</string>
+    <string name="ssdk_sms_dialog_error_title">手机号码错误</string>
+    <string name="ssdk_sms_dialog_login_success">登录成功</string>
+    <string name="ssdk_sms_dialog_net_error">网络不给力，请稍后重试</string>
+    <string name="ssdk_sms_dialog_send_success">发送成功</string>
+    <string name="ssdk_sms_dialog_smart_dec">您的设备为安全设备，该号码已通过智能\n云验证，无需短信验证\n（本验证过程不存在任何安全隐患）</string>
+    <string name="ssdk_sms_dialog_smart_title">恭喜！该号码已通过云检测</string>
+    <string name="ssdk_sms_dialog_system_error">系统有点小问题，请稍后重试</string>
+    <string name="ssdk_sms_dialog_voice_text">我们将以电话的方式告知您验证码，\n请注意接听</string>
+    <string name="ssdk_sms_input_code_hint">请输入验证码</string>
+    <string name="ssdk_sms_input_phone_hint">请输入手机号码</string>
+    <string name="ssdk_sms_input_voice_code"><Data>短信验证码收不到？请尝试&lt;font color=#2ba245>语音验证码&lt;/font></Data></string>
+    <string name="ssdk_sms_login">短信登录</string>
+    <string name="ssdk_sms_phone">手机号</string>
+    <string name="ssdk_sms_send_again">重新发送</string>
+    <string name="ssdk_sms_top_identify_text">短信已发送，请填写验证码</string>
+    <string name="ssdk_sms_top_text">请输入您的手机号</string>
+    <string name="ssdk_sms_zone">国家/地区</string>
+    <string name="ssdk_sohumicroblog">搜狐微博</string>
+    <string name="ssdk_sohusuishenkan">搜狐随身看</string>
+    <string name="ssdk_symbol_ellipsis">...</string>
+    <string name="ssdk_telegram">Telegram</string>
+    <string name="ssdk_telegram_client_inavailable">目前您的Telegram版本过低或未安装，需要安装才能使用</string>
+    <string name="ssdk_tencentweibo">腾讯微博</string>
+    <string name="ssdk_tumblr">Tumblr</string>
+    <string name="ssdk_twitter">Twitter</string>
+    <string name="ssdk_use_login_button">请改用“登录”按钮</string>
+    <string name="ssdk_vkontakte">VK</string>
+    <string name="ssdk_website">http://www.mob.com</string>
+    <string name="ssdk_wechat">微信好友</string>
+    <string name="ssdk_wechat_client_inavailable">目前您的微信版本过低或未安装微信，需要安装微信才能使用</string>
+    <string name="ssdk_wechatfavorite">微信收藏</string>
+    <string name="ssdk_wechatmoments">微信朋友圈</string>
+    <string name="ssdk_weibo_oauth_regiseter">应用授权</string>
+    <string name="ssdk_weibo_upload_content">分享图片</string>
+    <string name="ssdk_whatsapp">WhatsApp</string>
+    <string name="ssdk_whatsapp_client_inavailable">目前您的WhatsApp版本过低或未安装，需要安装WhatsApp才能使用</string>
+    <string name="ssdk_yixin">易信</string>
+    <string name="ssdk_yixin_client_inavailable">目前您的易信版本过低或未安装，需要安装易信才能使用</string>
+    <string name="ssdk_yixinmoments">易信朋友圈</string>
+    <string name="ssdk_youdao">有道云笔记</string>
+    <string name="ssdk_youtube">Youtube</string>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="android:Theme.Black.NoTitleBar">
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="BeautyDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+    <style name="SapiBio.App.Theme" parent="@android:style/Theme.Light">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="SapiBio.App.Theme.NoTitleBar" parent="SapiBio.App.Theme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="SapiBio.App.Theme.NoTitleBar.Fullscreen" parent="SapiBio.App.Theme.NoTitleBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="SapiTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="rim_base_custom_dialog_theme" parent="@android:style/Theme.Dialog">
+    <item name="android:windowBackground">@android:color/transparent</item>
+  </style>
+    <style name="rim_base_plugin_update_progressbar" parent="@android:style/Widget.ProgressBar.Horizontal">
+    <item name="android:maxHeight">50dip</item>
+    <item name="android:minHeight">8dip</item>
+    <item name="android:indeterminateOnly">false</item>
+    <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+  </style>
+    <style name="rim_base_safekeyboard_popwindown_anim" parent="android:Animation">
+    <item name="android:windowEnterAnimation">@anim/rim_base_safekeyboard_slide_from_down</item>
+    <item name="android:windowExitAnimation">@anim/rim_base_safekeyboard_slide_to_down</item>
+  </style>
+    <style name="rim_base_title_bar_title">
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+    <style name="rim_title">
+        <item name="android:background">#FFFFFF</item>
+    </style>
+    <style name="rim_titlebar_bottom_seperator">
+        <item name="android:background">#dddddd</item>
+         <item name="android:scaleType">fitXY</item>
+    </style>
+    <style name="rim_titlebar_center_safe_tip">
+    	<item name="android:textSize">10sp</item>    
+    	<item name="android:textColor">#999999</item>
+    	<item name="android:singleLine">true</item>
+    	<item name="android:ellipsize">end</item>
+    </style>
+    <style name="rim_titlebar_center_text">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#222222</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxEms">@integer/rim_base_titlebar_centertext_maxems</item>
+    </style>
+    <style name="rim_titlebar_left_close_img">
+        <item name="android:src">@drawable/rim_base_actionbar_close_selector</item>
+    </style>
+    <style name="rim_titlebar_left_close_text">
+        <item name="android:textColor">@color/rim_base_font_text1Color</item>
+        <item name="android:textSize">@dimen/rim_base_text_size_normal</item>
+<!--         <item name="android:text">关闭</item>
+ -->    </style>
+    <style name="rim_titlebar_left_imgzone2">
+    </style>
+    <style name="rim_titlebar_left_imgzone2_img">
+        <item name="android:gravity">center</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:src">@drawable/rim_base_actionbar_back_selector</item>
+    </style>
+    <style name="rim_titlebar_left_imgzone2_notify">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/rim_base_click_text1_color_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        
+        <item name="android:visibility">visible</item>         
+    </style>
+    <style name="rim_titlebar_right_imgzone2">
+    </style>
+    <style name="rim_titlebar_right_imgzone2_notify">
+        <item name="android:textSize">14sp</item>
+        <item name="android:clickable">false</item>
+        <item name="android:textColor">@color/rim_base_click_text2color_selector</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingRight">10dp</item>
+	     <item name="android:paddingLeft">10dp</item>
+    </style>
+    <style name="title_center_safe_icon">
+    	<item name="android:src">@drawable/rim_base_ation_bar_icon_safe</item>    
+    </style>
+</resources>

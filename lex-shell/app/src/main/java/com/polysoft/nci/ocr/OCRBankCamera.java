@@ -2,7 +2,6 @@ package com.polysoft.nci.ocr;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Bitmap;
 
 import com.intsig.ccrengine.CCREngine;
 import com.intsig.ccrengine.CCREngine.ResultData;
@@ -64,19 +63,19 @@ public class OCRBankCamera implements IActivityResult {
 		 * @EN: Specifies whether the SDK camera module returns the bank card
 		 * number. set true or false
 		 */
-		intent.putExtra(ISCardScanActivity.EXTRA_KEY_GET_NUMBER_IMG, true);
+		intent.putExtra(ISCardScanActivity.EXTRA_KEY_GET_NUMBER_IMG, false);
 		/*
 		 * @CN: 指定SDK相机模块银行卡切边图路径
 		 * 
 		 * @EN:Specify the SDK camera module bank khache edge graph path
 		 */
-//		intent.putExtra(ISCardScanActivity.EXTRA_KEY_GET_TRIMED_IMG, "/sdcard/trimedcard.jpg");
+		intent.putExtra(ISCardScanActivity.EXTRA_KEY_GET_TRIMED_IMG, OCRConstant.OCR_IMAGE_PATH);
 		/*
 		 * @CN: 指定SDK相机模块银行卡原图路径
 		 * 
 		 * @EN:Specify the SDK camera module bank card original path
 		 */
-		intent.putExtra(ISCardScanActivity.EXTRA_KEY_GET_ORIGINAL_IMG, OCRConstant.OCR_IMAGE_PATH);
+//		intent.putExtra(ISCardScanActivity.EXTRA_KEY_GET_ORIGINAL_IMG, OCRConstant.OCR_IMAGE_PATH.replaceAll(".jpg", "1.jpg"));
 		
 		iActivity.startActivityForResult(intent, OCRConstant.CALL_OCR_CODE, this);
 	}
@@ -97,10 +96,7 @@ public class OCRBankCamera implements IActivityResult {
 			
 		} else if (resultCode == Activity.RESULT_OK) {
 			ResultData result = (ResultData) data.getSerializableExtra(ISCardScanActivity.EXTRA_KEY_RESULT);
-			Bitmap bitmap = data.getParcelableExtra(ISCardScanActivity.EXTRA_KEY_GET_NUMBER_IMG);
-			String bitmapStr = BitmapUtil.bitmapToString(bitmap);
-			bitmap.recycle();
-			
+			String bitmapStr = BitmapUtil.readFileBitmapStr(OCRConstant.OCR_IMAGE_PATH);
 			this.callback.onResult(new OCRData("", bitmapStr, new OCRBankData(result)));
 		}
 	}
@@ -129,4 +125,6 @@ public class OCRBankCamera implements IActivityResult {
 			return " ";
 		}
 	}
+
+
 }

@@ -59,7 +59,8 @@ class Main extends React.Component {
             }
         })
     }
-    editProduct(e) {
+    editProduct(e,v) {
+
         APP.pop("proposal/product_editor.html?planId=" + this.state.plan.planId + "&index=" + e, 80, r => {
             APP.proposal.viewPlan(this.state.plan.planId, plan => {
                 this.setState({ plan: plan })
@@ -118,7 +119,7 @@ class Main extends React.Component {
                     <div className="card-content" style={{marginTop:"10px"}}>
                         { plan.product.map((v,i) => [
                             v.parent == null ?
-                                <div className="product product-main bg-white text16" style={{marginTop:"10px"}} onClick={this.editProduct.bind(this, i)}>
+                                <div className="product product-main bg-white text16" style={{marginTop:"10px"}} onClick={this.editProduct.bind(this, i,v)}>
                                     <div style={{height:"70px", display:"flex"}}>
                                         <img style={{width:"60px", height:"60px", margin:"10px 10px 0 10px"}} src={plan.icons[v.vendor]}></img>
                                         <div style={{width:"600px", marginTop:"10px"}}>

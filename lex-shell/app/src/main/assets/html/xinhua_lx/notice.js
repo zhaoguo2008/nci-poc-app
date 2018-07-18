@@ -60,12 +60,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ([
-/* 0 */,
-/* 1 */
+/* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -541,13 +540,11 @@ var Notice = function (_React$Component) {
                         { className: 'divx', onClick: this.submit.bind(this) },
                         React.createElement(
                             'div',
-                            { className: 'ml-0 mr-0', style: { width: "390px", textAlign: "right" } },
+                            { className: 'ml-0 mr-0', style: { width: "390px", textAlign: "right" }, onClick: function onClick() {
+                                    alert('提交成功');
+                                    MF.navi("insurance/insurance.html?orderId=" + common.param("orderId"));
+                                } },
                             '\u63D0\u4EA4'
-                        ),
-                        React.createElement(
-                            'div',
-                            { className: 'ml-1 mr-2', style: { width: "30px" } },
-                            React.createElement('img', { className: 'mt-3', style: { width: "27px", height: "39px" }, src: '../images/blueright.png' })
                         )
                     )
                 )

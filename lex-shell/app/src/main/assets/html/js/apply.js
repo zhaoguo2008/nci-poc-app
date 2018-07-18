@@ -54,7 +54,7 @@ var Apply = {
       onSucc(r)
     })
   },
-  listRiders(planId,channelId,orgCode, index, onSucc) {
+  listRiders(planId,channelId,orgCode, productId, index, onSucc) {
     Apply.host.req('/proposal/plan/list_riders.json', { planId: planId,channelId:channelId,orgCode:orgCode, index: index }, r => {
       onSucc(r)
     })

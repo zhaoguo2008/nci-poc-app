@@ -88,7 +88,7 @@ class Main extends React.Component {
     share(){
         SHARE.callOneKeyShare("分享", "http://114.112.96.30:10006/xinhua_lx/notice_xh.html", "onekeyshare");
         window.callShareBack = function callShareBack(flag, jsonData){
-            alert(jsonData);
+
         }
     }
     openApply(orderId) {

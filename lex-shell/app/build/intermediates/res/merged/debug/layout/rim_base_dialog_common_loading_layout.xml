@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/rim_base_dialog_common_loading_frame"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+>
+    <ImageView
+            android:id="@+id/rim_base_dialog_common_loading_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rim_base_dialog_common_loading_pic"
+    />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/rim_base_level18Font"
+            android:textColor="@color/rim_base_whiteColor"
+            android:text="@string/rim_base_dialog_common_loading_text"
+            android:layout_marginLeft="11dp"
+    />
+</LinearLayout>

@@ -17,7 +17,7 @@ class Main extends React.Component {
             this.setState({ form: this.state.form })
         })
         APP.apply.viewPlan(this.state.planId, plan => {
-            APP.apply.listRiders(this.state.planId, localStorage.channelId,localStorage.orgId,this.state.index, r => {
+            APP.apply.listRiders(this.state.planId, localStorage.channelId,localStorage.orgId,localStorage.mainProductId,this.state.index, r => {
                 r.map(v => {
                     let prdForm = {
                         name: v.name,
@@ -26,7 +26,7 @@ class Main extends React.Component {
                     }
                     plan.product.map((r3, i) => {
                         if (r3.productId == v.code && r3.parent == this.state.index) {
-                            APP.apply.editProduct(this.state.planId, localStorage.channelId,localStorage.orgId,localStorage.productId,i, r4 => {
+                            APP.apply.editProduct(this.state.planId, localStorage.channelId,localStorage.orgId,localStorage.mainProductId,i, r4 => {
                                 prdForm.form = this.formOf(r4.factors)
                                 this.setState({ form: this.state.form })
                             })
@@ -45,7 +45,7 @@ class Main extends React.Component {
             APP.apply.addProduct(this.state.planId, this.state.index, productId, r => {
                 r.product.map((r2, i) => {
                     if (r2.productId == productId && r2.parent == this.state.index) 
-                        APP.apply.editProduct(this.state.planId, localStorage.channelId,localStorage.orgId,localStorage.productId,i, r1 => {
+                        APP.apply.editProduct(this.state.planId, localStorage.channelId,localStorage.orgId,localStorage.mainProductId,i, r1 => {
                             riderForm.form = this.formOf(r1.factors)
                             this.setState({ form: this.state.form })
                         })
@@ -69,6 +69,7 @@ class Main extends React.Component {
             })
             return {
                 widget: w.widget,
+                varName: w.name,
                 label: w.label,
                 detail: r,
                 value: w.value
@@ -77,7 +78,7 @@ class Main extends React.Component {
     }
     onValChange(opt, prdIndex, formIndex, val) {
         let vals = {};
-        vals[opt.name] = opt.detail[val]
+        vals[opt.varName] = val
         APP.apply.saveProduct(this.state.planId, prdIndex, vals, r => {
             this.state.form[prdIndex].form[formIndex].value = val
             this.setState({ form: this.state.form })
@@ -100,7 +101,7 @@ class Main extends React.Component {
                                     {
                                         v.widget == "number" ? <input type="number" placeholder={"请输入"+v.label} value={v.value} onChange={ e => { this.onValChange(v, i, j, e.target.value) } }/> :
                                         v.widget == "switch" || v.widget == "select" ?
-                                            <div style={{display:"flex"}} onClick={x => { APP.pick("select", v.detail, this.onValChange.bind(this, v, i, j, e.target.value)) }}>
+                                            <div style={{display:"flex"}} onClick={x => { APP.pick("select", v.detail, this.onValChange.bind(this, v, i, j)) }}>
                                                 <div className="text17" style={{width:"350px", lineHeight:"60px"}}>{v.detail[v.value]}</div>
                                                 <img style={{width:"60px", height:"60px"}} src="../images/arrow-7-down.png"/>
                                             </div>

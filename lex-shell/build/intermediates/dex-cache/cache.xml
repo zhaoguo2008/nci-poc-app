@@ -2,184 +2,157 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="/Users/xindong/Desktop/HPoc/tools/lex-shell/app/libs/fastjson-1.1.34.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="D:\HX\Sum\lex-shell\app\libs\fastjson-1.1.34.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="83c6df5efce5ffdf5e0360fac3838f61f4c35695">
-        <dex dex="/Users/xindong/Desktop/HPoc/tools/lex-shell/app/build/intermediates/pre-dexed/debug/fastjson-1.1.34_98f25ac1d2660c3e2dbb63b59f74e4f1fc63c0a4.jar" />
+        <dex dex="D:\HX\Sum\lex-shell\app\build\intermediates\transforms\dex\debug\folders\1000\2\fastjson-1.1.34_0e62ff6c21b9661528fc75f837a2e44c06ad33e0\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/xindong/.gradle/caches/modules-2/files-2.1/com.mob/MobTools/2018.0614.1510/aa69886fb0ab7b1bf0b812ed12cbb24f1947532/MobTools-2018.0614.1510.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="D:\HX\Sum\lex-shell\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="0aa69886fb0ab7b1bf0b812ed12cbb24f1947532">
-        <dex dex="/Users/xindong/Desktop/HPoc/tools/lex-shell/app/build/intermediates/pre-dexed/debug/MobTools-2018.0614.1510_feec4f59f83990c3b76151aa8572ae7d7c8553dc.jar" />
+        sha1="2cdfba2807ea9b4894cdb99bdb61eb12a99e3492">
+        <dex dex="D:\HX\Sum\lex-shell\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_00bfe830d047a9b14de38eb3546216872c3572a0\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/xindong/Desktop/HPoc/tools/lex-shell/app/libs/ccrsdk_sdk.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="D:\HX\Sum\lex-shell\app\libs\galaxy-lite-2.0.0.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="5f0398caa5aefe181741c50d2a5e7b8627e16393">
-        <dex dex="/Users/xindong/Desktop/HPoc/tools/lex-shell/app/build/intermediates/pre-dexed/debug/ccrsdk_sdk_2ad1ef9a4baf34d01233e63c64ff0ef6cc0074d4.jar" />
+        sha1="a869df63042b91ed9ea028c5824f4a899cf3f6c4">
+        <dex dex="D:\HX\Sum\lex-shell\app\build\intermediates\transforms\dex\debug\folders\1000\2\galaxy-lite-2.0.0_781850f7e570e7b24127ef9c7009532d16669011\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/xindong/Desktop/HPoc/tools/lex-shell/app/libs/idcardscansdk.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\lenovo\.gradle\caches\modules-2\files-2.1\com.mob\MobCommons\2018.0704.1311\8a51c72350de3058b4c1f12fb2b91cba311c7e1d\MobCommons-2018.0704.1311.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="0583677172aac954f20c90f3934947f1d884259a">
-        <dex dex="/Users/xindong/Desktop/HPoc/tools/lex-shell/app/build/intermediates/pre-dexed/debug/idcardscansdk_544e4273ebeb8a7324de315b8fb9c8592259158a.jar" />
+        sha1="8a51c72350de3058b4c1f12fb2b91cba311c7e1d">
+        <dex dex="D:\HX\Sum\lex-shell\app\build\intermediates\transforms\dex\debug\folders\1000\10\MobCommons-2018.0704.1311_ab3333aa15f6e970f0bd46bf825d50251e9415b1\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/xindong/.gradle/caches/modules-2/files-2.1/com.mob/SDKWrapper/2018.0201.1609/1058045b6dc4bdee017560a29c4d46b236b9b76/SDKWrapper-2018.0201.1609.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="D:\HX\Sum\lex-shell\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="01058045b6dc4bdee017560a29c4d46b236b9b76">
-        <dex dex="/Users/xindong/Desktop/HPoc/tools/lex-shell/app/build/intermediates/pre-dexed/debug/SDKWrapper-2018.0201.1609_0b98249a7f1577f01ac09a0cd2c22712bb3ecb7b.jar" />
+        sha1="c323c36ecc68965c4cfb460f7721113d2b61ed03">
+        <dex dex="D:\HX\Sum\lex-shell\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_95787c8ab23b9174335e69e58833edf69d73fd97\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/xindong/Desktop/newPOC/nci-poc-app/lex-shell/app/libs/ccrsdk_sdk.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="5f0398caa5aefe181741c50d2a5e7b8627e16393">
-        <dex dex="/Users/xindong/Desktop/newPOC/nci-poc-app/lex-shell/app/build/intermediates/pre-dexed/debug/ccrsdk_sdk_9894f6c7e30b6fa311d2ad2f7968c2a982cfb997.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/xindong/Desktop/newPOC/nci-poc-app/lex-shell/app/libs/fastjson-1.1.34.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="83c6df5efce5ffdf5e0360fac3838f61f4c35695">
-        <dex dex="/Users/xindong/Desktop/newPOC/nci-poc-app/lex-shell/app/build/intermediates/pre-dexed/debug/fastjson-1.1.34_f6e338ef74259236b59f6bc2276c12e092ea9b70.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/xindong/Desktop/newPOC/nci-poc-app/lex-shell/app/libs/idcardscansdk.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0583677172aac954f20c90f3934947f1d884259a">
-        <dex dex="/Users/xindong/Desktop/newPOC/nci-poc-app/lex-shell/app/build/intermediates/pre-dexed/debug/idcardscansdk_fbabb4eea28c9fac45e7d3ceecb22f14c2fb4c80.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/xindong/.gradle/caches/modules-2/files-2.1/cn.sharesdk/ShareSDK-QQ/3.2.0/f3316e923e487c407f8206ebee47f9dd934c6318/ShareSDK-QQ-3.2.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f3316e923e487c407f8206ebee47f9dd934c6318">
-        <dex dex="/Users/xindong/Desktop/HPoc/tools/lex-shell/app/build/intermediates/pre-dexed/debug/ShareSDK-QQ-3.2.0_b53cf23f16bff2677d1454cf3163b3a88b9db12c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/xindong/.android/build-cache/e0633966777fe72eefc627ab30a9c3873ea8cb1a/output/jars/libs/ShareSDK-Core-3.2.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="753c9fcef4e7949ea2cdf7a25ed874dc7dd90720">
-        <dex dex="/Users/xindong/Desktop/HPoc/tools/lex-shell/app/build/intermediates/pre-dexed/debug/ShareSDK-Core-3.2.0_9fe6b3e96bb3ff77d3cbe440266b1264e9800a79.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/xindong/.android/build-cache/86738de81e94124c962fd4933c264bc3187be1d4/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c7c629b6a2e448098a9defa2b1cc2c713c20e0d4">
-        <dex dex="/Users/xindong/Desktop/HPoc/tools/lex-shell/app/build/intermediates/pre-dexed/debug/classes_01ed0f4b2515bedf003854d789f5d815b1d06456.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/xindong/Desktop/newPOC/nci-poc-app/lex-shell/app/libs/gson-2.2.4.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="973e832af433b44c3ed11c426f2f390b29f3f3f8">
-        <dex dex="/Users/xindong/Desktop/newPOC/nci-poc-app/lex-shell/app/build/intermediates/pre-dexed/debug/gson-2.2.4_a015381bd9dc66a599bb887fc01046c8c33192a5.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/xindong/.gradle/caches/modules-2/files-2.1/com.mob/MobGUI/2018.0614.1510/2236c58a21bcd7fd7631ae3f914f23746fcd8bd3/MobGUI-2018.0614.1510.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="2236c58a21bcd7fd7631ae3f914f23746fcd8bd3">
-        <dex dex="/Users/xindong/Desktop/HPoc/tools/lex-shell/app/build/intermediates/pre-dexed/debug/MobGUI-2018.0614.1510_da7da9ae0e1571fe781d42ccff4a55ede5a042b4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/xindong/Desktop/HPoc/tools/lex-shell/app/libs/gson-2.2.4.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="973e832af433b44c3ed11c426f2f390b29f3f3f8">
-        <dex dex="/Users/xindong/Desktop/HPoc/tools/lex-shell/app/build/intermediates/pre-dexed/debug/gson-2.2.4_c3726ae4fb3162305ccd407d4b8f7f8bf0f9d69b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/xindong/.android/build-cache/627a803cf30940191ef4383eee400b65f40a29fd/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="51c24b0fe4dd2a16f01a8ef237b8df60637e2f82">
-        <dex dex="/Users/xindong/Desktop/newPOC/nci-poc-app/lex-shell/app/build/intermediates/pre-dexed/debug/classes_970584ca19b56c139f2cd865f483ca2caf868812.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/xindong/.android/build-cache/8c070d244dc0a05ae8f4c0558ae6de0d4fbaee03/output/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\lenovo\.android\build-cache\43ee97fc8ff6ea940c5c7a6ad56e08d862ec4fc6\output\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="5ecaca6da6e4846f22ba78d7f321782574f7438c">
-        <dex dex="/Users/xindong/Desktop/newPOC/nci-poc-app/lex-shell/app/build/intermediates/pre-dexed/debug/classes_eec6a63dab6d4b273efd8d53bc695050874a560c.jar" />
+        <dex dex="D:\HX\Sum\lex-shell\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2e77e1e8e2cb2d673dafa2723b4a0f21a16b246f\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/xindong/.gradle/caches/modules-2/files-2.1/com.mob/MobCommons/2018.0614.1539/6bc2493efc0ee59861fbdc21f4a32a6cb6c5bcce/MobCommons-2018.0614.1539.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\lenovo\.gradle\caches\modules-2\files-2.1\com.mob\SDKWrapper\2018.0201.1609\1058045b6dc4bdee017560a29c4d46b236b9b76\SDKWrapper-2018.0201.1609.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="6bc2493efc0ee59861fbdc21f4a32a6cb6c5bcce">
-        <dex dex="/Users/xindong/Desktop/HPoc/tools/lex-shell/app/build/intermediates/pre-dexed/debug/MobCommons-2018.0614.1539_817dd6b52a3a44851a747598f7a3919c333e745c.jar" />
+        sha1="01058045b6dc4bdee017560a29c4d46b236b9b76">
+        <dex dex="D:\HX\Sum\lex-shell\app\build\intermediates\transforms\dex\debug\folders\1000\10\SDKWrapper-2018.0201.1609_bc5e5727f2b121e5071b38298feda303a5415573\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/xindong/Desktop/HPoc/tools/lex-shell/app/libs/galaxy-lite-2.0.0.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\lenovo\.gradle\caches\modules-2\files-2.1\cn.sharesdk\ShareSDK-QQ\3.2.0\f3316e923e487c407f8206ebee47f9dd934c6318\ShareSDK-QQ-3.2.0.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="a869df63042b91ed9ea028c5824f4a899cf3f6c4">
-        <dex dex="/Users/xindong/Desktop/HPoc/tools/lex-shell/app/build/intermediates/pre-dexed/debug/galaxy-lite-2.0.0_48ddaf8c567df2133a9edaf2fb94d2600085da0d.jar" />
+        sha1="f3316e923e487c407f8206ebee47f9dd934c6318">
+        <dex dex="D:\HX\Sum\lex-shell\app\build\intermediates\transforms\dex\debug\folders\1000\10\ShareSDK-QQ-3.2.0_4c87ee9d5b49adfaa5c926070d4c721c5eb99faf\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/xindong/.android/build-cache/e0633966777fe72eefc627ab30a9c3873ea8cb1a/output/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\lenovo\.gradle\caches\modules-2\files-2.1\com.mob\MobTools\2018.0704.1157\803aa669c9877dd1da04a517ee1bf9de94894b15\MobTools-2018.0704.1157.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="803aa669c9877dd1da04a517ee1bf9de94894b15">
+        <dex dex="D:\HX\Sum\lex-shell\app\build\intermediates\transforms\dex\debug\folders\1000\10\MobTools-2018.0704.1157_9136fd50148c1ce3e46bc9f6e2f59b3c29a06644\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\lenovo\.android\build-cache\91ff029f552679f9d999a02f0ee5581886929de5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c7c629b6a2e448098a9defa2b1cc2c713c20e0d4">
+        <dex dex="D:\HX\Sum\lex-shell\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_15c0fdc140b7e93ec78ebc53a69ed399f5131eed\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\lenovo\.gradle\caches\modules-2\files-2.1\com.mob\MobGUI\2018.0704.1157\c0b1b4bcfc94f59543bad56db9e460dfced00bee\MobGUI-2018.0704.1157.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c0b1b4bcfc94f59543bad56db9e460dfced00bee">
+        <dex dex="D:\HX\Sum\lex-shell\app\build\intermediates\transforms\dex\debug\folders\1000\10\MobGUI-2018.0704.1157_69b6a889b7e06fedc6a8ecc5b4d1ba23cf5366bb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\lenovo\.android\build-cache\fb4d50b2c372a94bfe6c01a798ddaaf95d886d6a\output\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="5afdaf989cba6d6d2c896227738aba74d42ead1a">
-        <dex dex="/Users/xindong/Desktop/HPoc/tools/lex-shell/app/build/intermediates/pre-dexed/debug/classes_50cae5ae497f4af6f7bcfc25d156f2afb396d4eb.jar" />
+        <dex dex="D:\HX\Sum\lex-shell\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_29b51d08bd247d5d85ac0e3cf6f65b36f35026fe\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/xindong/Desktop/newPOC/nci-poc-app/lex-shell/app/libs/galaxy-lite-2.0.0.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="D:\HX\Sum\lex-shell\app\libs\gson-2.2.4.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="a869df63042b91ed9ea028c5824f4a899cf3f6c4">
-        <dex dex="/Users/xindong/Desktop/newPOC/nci-poc-app/lex-shell/app/build/intermediates/pre-dexed/debug/galaxy-lite-2.0.0_f17a4203a935efb88cbf71c970512974a8a078d3.jar" />
+        sha1="973e832af433b44c3ed11c426f2f390b29f3f3f8">
+        <dex dex="D:\HX\Sum\lex-shell\app\build\intermediates\transforms\dex\debug\folders\1000\2\gson-2.2.4_58737a7abe29bf8fb78a49502910f713f257a325\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\HX\Sum\lex-shell\app\libs\ccrsdk_sdk.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5f0398caa5aefe181741c50d2a5e7b8627e16393">
+        <dex dex="D:\HX\Sum\lex-shell\app\build\intermediates\transforms\dex\debug\folders\1000\2\ccrsdk_sdk_caf5140d318d5fbdb0d9280b12e231c297adab76\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\lenovo\.android\build-cache\d274acc8cc754e0968be3a0df5c13d881250a08a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="51c24b0fe4dd2a16f01a8ef237b8df60637e2f82">
+        <dex dex="D:\HX\Sum\lex-shell\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_95ded25c1e8c8dad5f4f100dfdcce2b8436ea404\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\lenovo\.android\build-cache\fb4d50b2c372a94bfe6c01a798ddaaf95d886d6a\output\jars\libs\ShareSDK-Core-3.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="753c9fcef4e7949ea2cdf7a25ed874dc7dd90720">
+        <dex dex="D:\HX\Sum\lex-shell\app\build\intermediates\transforms\dex\debug\folders\1000\10\ShareSDK-Core-3.2.0_29c19a3199dd31302985ade621a05e8d0de21ee1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\HX\Sum\lex-shell\app\libs\idcardscansdk.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0583677172aac954f20c90f3934947f1d884259a">
+        <dex dex="D:\HX\Sum\lex-shell\app\build\intermediates\transforms\dex\debug\folders\1000\2\idcardscansdk_20780148ff6b42b1aab54c061793d856d4ae04c7\classes.dex" />
     </item>
 
 </items>

@@ -17,7 +17,6 @@ class Insurance extends React.Component {
                 tabs.push({tabName:`被保险人${ index + 1}`,id:index + 1});
                 return tabs;
             });
-            alert(tabs.length);
             /*this.setState({
                 tabs: tabs
             })*/
@@ -25,7 +24,7 @@ class Insurance extends React.Component {
     }
     componentDidMount() {
         window.MF && MF.setTitle("录入被保人告知");
-        localStorage.clear('userInfrom');
+
     }
     tabChoiced=(id)=>{
         // tab切换的方法
@@ -201,7 +200,7 @@ class Insurance extends React.Component {
                     
                 </div>
                 <div className="on-submit" onClick={this.OnSubmit.bind(this)}>
-                    <button className="submit-btn">提交</button>
+                    <button className="submit-btn">受益人</button>
                 </div>
             </div>
         )

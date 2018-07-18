@@ -60,12 +60,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ 2:
+/******/ ([
+/* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -95,7 +94,8 @@ var Main = function (_React$Component) {
             genderDict: { "M": "男", "F": "女" },
             ages: ages,
             cust: [{}, {}],
-            mode: -1
+            mode: -1,
+            showCustomer: false
         };
         return _this;
     }
@@ -140,9 +140,7 @@ var Main = function (_React$Component) {
         key: "onValChange",
         value: function onValChange(index, key, e) {
             if (key == "name") {
-            var name = e.target.value
                 e = e.value;
-                localStorage.insuranceName = name
             } else if (key == "birthday") {
                 this.state.cust[index].age = null;
             } else if (key == "age") {
@@ -152,9 +150,33 @@ var Main = function (_React$Component) {
             this.setState({ cust: this.state.cust });
         }
     }, {
+        key: "showCustomer",
+        value: function showCustomer(index) {
+            var _this4 = this;
+
+            APP.list("/customer/list.json", { from: 0, number: 20 }, function (r) {
+                console.log(JSON.stringify(r.list));
+                _this4.setState({
+                    showCustomer: true,
+                    index: index,
+                    mockData: r.list
+                });
+            });
+        }
+    }, {
+        key: "choseMember",
+        value: function choseMember(item) {
+            console.log(JSON.stringify(item));
+            this.state.cust[this.state.index] = item;
+            this.setState({
+                cust: this.state.cust,
+                showCustomer: false
+            });
+        }
+    }, {
         key: "render",
         value: function render() {
-            var _this4 = this;
+            var _this5 = this;
 
             return React.createElement(
                 "div",
@@ -174,7 +196,7 @@ var Main = function (_React$Component) {
                             ),
                             React.createElement(
                                 "div",
-                                { className: "ml-auto mr-2 tc-primary" },
+                                { className: "ml-auto mr-2 tc-primary", onClick: _this5.showCustomer.bind(_this5, i) },
                                 "\u9009\u62E9"
                             )
                         ),
@@ -192,7 +214,7 @@ var Main = function (_React$Component) {
                                 React.createElement(
                                     "div",
                                     { className: "form-item-widget" },
-                                    React.createElement("input", { className: "mt-1",  placeholder: "\u8BF7\u8F93\u5165\u59D3\u540D", onChange: _this4.onValChange.bind(_this4, i, "name") })
+                                    React.createElement("input", { className: "mt-1", value: v.name, placeholder: "\u8BF7\u8F93\u5165\u59D3\u540D", onChange: _this5.onValChange.bind(_this5, i, "name") })
                                 )
                             ),
                             React.createElement(
@@ -206,12 +228,12 @@ var Main = function (_React$Component) {
                                 React.createElement(
                                     "div",
                                     { className: "form-item-widget", onClick: function onClick(e) {
-                                            APP.pick("select", _this4.state.genderDict, _this4.onValChange.bind(_this4, i, "gender"));
+                                            APP.pick("select", _this5.state.genderDict, _this5.onValChange.bind(_this5, i, "gender"));
                                         } },
                                     React.createElement(
                                         "div",
                                         { className: (v.gender == null ? "tc-gray " : "") + "text16 ml-1 mr-auto" },
-                                        v.gender == null ? "请选择性别" : _this4.state.genderDict[v.gender]
+                                        v.gender == null ? "请选择性别" : _this5.state.genderDict[v.gender]
                                     ),
                                     React.createElement("img", { className: "mt-2 mr-0", style: { width: "27px", height: "39px" }, src: "../images/right.png" })
                                 )
@@ -227,7 +249,7 @@ var Main = function (_React$Component) {
                                 React.createElement(
                                     "div",
                                     { className: "form-item-widget", onClick: function onClick(e) {
-                                            APP.pick("select", _this4.state.ages, _this4.onValChange.bind(_this4, i, "age"));
+                                            APP.pick("select", _this5.state.ages, _this5.onValChange.bind(_this5, i, "age"));
                                         } },
                                     React.createElement(
                                         "div",
@@ -237,7 +259,7 @@ var Main = function (_React$Component) {
                                         v.age ? v.age + "周岁" : ""
                                     ),
                                     React.createElement("img", { className: "mt-1 mr-0", style: { width: "60px", height: "60px" }, src: "../images/calendar.png", onClick: function onClick(e) {
-                                            e.stopPropagation();APP.pick("date", { begin: "1900-01-01", end: new Date() }, _this4.onValChange.bind(_this4, i, "birthday"));
+                                            e.stopPropagation();APP.pick("date", { begin: "1900-01-01", end: new Date() }, _this5.onValChange.bind(_this5, i, "birthday"));
                                         } })
                                 )
                             )
@@ -254,6 +276,65 @@ var Main = function (_React$Component) {
                         { className: "mr-3", onClick: this.next.bind(this) },
                         "\u6295\u4FDD\u8BA1\u5212"
                     )
+                ),
+                this.state.showCustomer && React.createElement(
+                    "div",
+                    { className: "customer-box" },
+                    React.createElement(
+                        "div",
+                        { className: "customers" },
+                        React.createElement(
+                            "b",
+                            { onClick: function onClick() {
+                                    _this5.setState({ showCustomer: false });
+                                } },
+                            "X"
+                        ),
+                        React.createElement(
+                            "div",
+                            { className: "t-header" },
+                            React.createElement(
+                                "span",
+                                null,
+                                "\u59D3\u540D"
+                            ),
+                            React.createElement(
+                                "span",
+                                null,
+                                "\u6027\u522B"
+                            ),
+                            React.createElement(
+                                "span",
+                                null,
+                                "\u51FA\u751F\u65E5\u671F"
+                            )
+                        ),
+                        React.createElement(
+                            "div",
+                            { className: "t-body" },
+                            this.state.mockData && this.state.mockData.map(function (item) {
+                                return React.createElement(
+                                    "p",
+                                    { onClick: _this5.choseMember.bind(_this5, item) },
+                                    React.createElement(
+                                        "span",
+                                        null,
+                                        item.name
+                                    ),
+                                    React.createElement(
+                                        "span",
+                                        null,
+                                        _this5.state.genderDict[item.gender]
+                                    ),
+                                    React.createElement(
+                                        "span",
+                                        null,
+                                        item.birthday
+                                    )
+                                );
+                            })
+                        )
+                    )
                 )
             );
         }
@@ -267,5 +348,4 @@ $(document).ready(function () {
 });
 
 /***/ })
-
-/******/ });
+/******/ ]);

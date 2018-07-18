@@ -9,7 +9,8 @@ class Main extends React.Component {
             genderDict: {"M":"男", "F":"女"},
             ages: ages,
             cust: [{},{}],
-            mode: -1
+            mode: -1,
+            showCustomer: false
         }
     }
     componentDidMount() {
@@ -41,7 +42,6 @@ class Main extends React.Component {
     onValChange(index, key, e) {
         if (key == "name") {
             e = e.value
-            localStorage.insuranceName = e.value
         } else if (key == "birthday") {
             this.state.cust[index].age = null
         } else if (key == "age") {
@@ -50,6 +50,26 @@ class Main extends React.Component {
         this.state.cust[index][key] = e
         this.setState({ cust: this.state.cust })
     }
+    showCustomer (index) {
+        APP.list("/customer/list.json",{ from:0, number:20 }, r => {
+            console.log(JSON.stringify(r.list));
+            this.setState({
+                showCustomer: true,
+                index: index,
+                mockData: r.list
+            })
+        });
+    }
+
+    choseMember (item) {
+        console.log(JSON.stringify(item));
+        this.state.cust[this.state.index] = item;
+        this.setState({
+            cust: this.state.cust,
+            showCustomer: false,
+        })
+    }
+
     render() {
         return (
             <div>
@@ -57,7 +77,7 @@ class Main extends React.Component {
                     <div>
                         <div className="divx" style={{height:"80px", lineHeight:"80px"}}>
                             <div className="ml-2">{i==0?"投保人":"被保险人"}信息</div>
-                            <div className="ml-auto mr-2 tc-primary">选择</div>
+                            <div className="ml-auto mr-2 tc-primary" onClick={this.showCustomer.bind(this,i)}>选择</div>
                         </div>
                         <div className="div">
                             <div className="form-item text16">
@@ -84,6 +104,7 @@ class Main extends React.Component {
                     </div> 
                 )}
                 <div style={{height:"120px"}}></div>
+
                 <div className="bottom text18 tc-primary">
                     <div className="ml-3 mr-auto">
                     </div>
@@ -91,7 +112,34 @@ class Main extends React.Component {
                         投保计划
                     </div>
                 </div>
+
+                {
+                    this.state.showCustomer && <div className="customer-box">
+                        <div className="customers">
+                            <b onClick={() => {this.setState({showCustomer: false})}}>X</b>
+                            <div className="t-header">
+                                <span>姓名</span><span>性别</span><span>出生日期</span>
+                            </div>
+                            <div className="t-body">
+                                {
+                                    this.state.mockData && this.state.mockData.map((item) => {
+                                        return (
+                                            <p onClick={this.choseMember.bind(this, item)}>
+                                                <span>{item.name}</span>
+                                                <span>{this.state.genderDict[item.gender]}</span>
+                                                <span>{item.birthday}</span>
+                                            </p>
+                                        )
+                                    })
+                                }
+
+
+                            </div>
+                        </div>
+                    </div>
+                }
             </div>
+
         )
     }
 }

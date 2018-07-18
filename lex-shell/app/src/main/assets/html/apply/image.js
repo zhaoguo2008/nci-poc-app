@@ -60,12 +60,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ 7:
+/******/ ([
+/* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -99,15 +98,14 @@ var Main = function (_React$Component) {
             var _this2 = this;
 
             MF.setTitle("影像");
-            var cardJson = [];
-            localStorage.applicantCardData && cardJson.push(localStorage.applicantCardData);
-            localStorage.insurantsCardData && cardJson.push(localStorage.insurantsCardData);
+            // localStorage.applicantCardData && cardJson.push(localStorage.applicantCardData);
+            // localStorage.insurantsCardData && cardJson.push(localStorage.insurantsCardData);
             // localStorage.beneficiaryCardData && cardJson.push(localStorage.beneficiaryCardData);
-            localStorage.payCardData && cardJson.push(localStorage.payCardData);
+            // localStorage.payCardData && cardJson.push(localStorage.payCardData);
             this.setState({
-                cardData: cardJson
+                cardData: JSON.parse(localStorage.CardData)
             }, function () {
-                console.log(_this2.state.cardData.length);
+                console.log(_this2.state.cardData);
             });
         }
     }, {
@@ -124,9 +122,13 @@ var Main = function (_React$Component) {
                 null,
                 React.createElement(
                     "div",
-                    { style: { overflow: 'hidden' } },
+                    { style: { overflowY: 'scroll', display: "flex", flexWrap: 'wrap', justifyContent: 'spaceAround' } },
                     this.state.cardData && this.state.cardData.map(function (prod) {
-                        return React.createElement("img", { src: 'data:image/png;base64,' + prod, style: { width: '50%', height: '20%', float: 'left' } });
+                        return React.createElement(
+                            "p",
+                            { style: { width: '40%', padding: "5px 5px" } },
+                            React.createElement("img", { src: 'data:image/png;base64,' + prod, style: { width: '100%' } })
+                        );
                     })
                 ),
                 React.createElement(
@@ -151,5 +153,4 @@ $(document).ready(function () {
 });
 
 /***/ })
-
-/******/ });
+/******/ ]);

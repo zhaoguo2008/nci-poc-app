@@ -72,6 +72,8 @@
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -225,21 +227,27 @@ var Main = function (_React$Component) {
             // 证件扫描
             OCR.callCardFront("APPNT", "OCR_FRONT");
             window.callOCRBack = function callOCRBack(flag, jsonData, bitmapStr) {
-                var CardData = localStorage.applicantCardData?localStorage.applicantCardData:[]
+                var CardData = localStorage.CardData ? JSON.parse(localStorage.CardData) : [];
                 var jsonDataObj = JSON.parse(jsonData);
                 var cust = that.state.cust;
-                var birthday = jsonDataObj.birthday.replace(/['年','月']/g, '-');
-                cust.name = jsonDataObj.name;
-                cust.gender = jsonDataObj.sex == "男" ? "M" : "F";
-                cust.birthday = birthday.substring(0, birthday.length - 1);
-                cust.certNo = jsonDataObj.cardNo;
-                cust.address = jsonDataObj.address;
+                if (jsonDataObj.name) {
+                    // 正面
+                    var birthday = jsonDataObj.birthday.replace(/['年','月']/g, '-');
+                    cust.name = jsonDataObj.name;
+                    cust.gender = jsonDataObj.sex == "男" ? "M" : "F";
+                    cust.birthday = birthday.substring(0, birthday.length - 1);
+                    cust.certNo = jsonDataObj.cardNo;
+                    cust.address = jsonDataObj.address;
+                } else if (jsonDataObj.validity) {
+                    // 反面
+                    cust.certValidDate = jsonDataObj.validity.split('-')[0].replace(/\./g, '-');
+                    cust.certUnValidDate = jsonDataObj.validity.split('-')[1].replace(/\./g, '-');
+                }
                 that.setState({
-                    ocrImage: bitmapStr,
                     cust: cust
                 });
-                localStorage.CardData = JSON.stringify(CardData.push(bitmapStr));
-                localStorage.appliCardDataState = true
+                localStorage.CardData = JSON.stringify([].concat(_toConsumableArray(CardData), [bitmapStr]));
+                localStorage.appliCardDataState = JSON.stringify(true);
             };
         }
     }, {
@@ -248,16 +256,13 @@ var Main = function (_React$Component) {
             var c = this.state.cust;
             if (c.mode1 && c.mode2 && c.mode3 && c.mode4) {
                 localStorage.everyState = JSON.stringify({ applicant: this.state }); // 存放每个界面state数据
-                // localStorage.OcrArr = JSON.stringify(this.state.IdCardImg); // 存放ocr对象
-                MF.navi("apply/insurant.html?orderId=" + this.state.orderId);
+                if (localStorage.appliCardDataState && !JSON.parse(localStorage.appliCardDataState)) {
+                    alert('请执行OCR扫描!!');
+                } else {
+                    MF.navi("apply/insurant.html?orderId=" + this.state.orderId);
+                }
             } else {
                 MF.toast("请完善客户信息");
-            }
-            if (!c.mode1 && !c.mode2 && !c.mode3) return;
-            if (!localStorage.appliCardDataState) {
-                alert('请执行OCR扫描!!');
-            } else {
-                MF.navi("apply/insurant.html?orderId=" + this.state.orderId);
             }
         }
     }, {
@@ -523,6 +528,32 @@ var Main = function (_React$Component) {
                                 "div",
                                 { className: (cust.certValidDate == null ? "tc-gray " : "") + "text16 ml-1 mr-auto" },
                                 cust.certValidDate == null ? "请选择证件有效期" : cust.certValidDate
+                            ),
+                            React.createElement("img", { className: "mt-2 mr-0", style: { width: "27px", height: "39px" }, src: "../images/right.png" })
+                        )
+                    ),
+                    React.createElement(
+                        "div",
+                        { className: "form-item text16" },
+                        React.createElement(
+                            "div",
+                            { className: "form-item-label" },
+                            React.createElement(
+                                "span",
+                                { style: { color: "red" } },
+                                "*"
+                            ),
+                            "\u8BC1\u4EF6\u5931\u6548\u671F"
+                        ),
+                        React.createElement(
+                            "div",
+                            { className: "form-item-widget", onClick: function onClick(v) {
+                                    APP.pick("date", { begin: new Date() }, _this4.onValChange.bind(_this4, "certUnValidDate"));
+                                } },
+                            React.createElement(
+                                "div",
+                                { className: (cust.certUnValidDate == null ? "tc-gray " : "") + "text16 ml-1 mr-auto" },
+                                cust.certUnValidDate == null ? "请选择证件失效期" : cust.certUnValidDate
                             ),
                             React.createElement("img", { className: "mt-2 mr-0", style: { width: "27px", height: "39px" }, src: "../images/right.png" })
                         )

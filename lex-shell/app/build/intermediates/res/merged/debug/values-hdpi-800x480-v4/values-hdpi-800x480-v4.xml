@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sapi_liveness_face_round_height">362dp</dimen>
+    <dimen name="sapi_liveness_face_round_width">300dp</dimen>
+    <dimen name="sapi_liveness_guide_bottom_margin_top">15dp</dimen>
+    <dimen name="sapi_liveness_guide_bottom_tip_margin_top">8dp</dimen>
+    <dimen name="sapi_liveness_guide_middle_margin_top">0dp</dimen>
+    <dimen name="sapi_liveness_guide_title_margin_top">0dp</dimen>
+    <dimen name="sapi_liveness_guide_title_tip_margin_top">0dp</dimen>
+    <dimen name="sapi_liveness_record_video_tip_margin_left">26dp</dimen>
+    <dimen name="sapi_liveness_upload_video_ok_btn_margin_bottom">90dp</dimen>
+</resources>

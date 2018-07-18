@@ -171,9 +171,9 @@ var Main = function (_React$Component) {
         }
     }, {
         key: "editProduct",
-        value: function editProduct(e) {
+        value: function editProduct(e,v) {
             var _this6 = this;
-
+             localStorage.editorMainProduct = v.productId
             APP.pop("proposal/product_editor.html?planId=" + this.state.plan.planId + "&index=" + e, 80, function (r) {
                 APP.proposal.viewPlan(_this6.state.plan.planId, function (plan) {
                     _this6.setState({ plan: plan });
@@ -298,7 +298,7 @@ var Main = function (_React$Component) {
                         plan.product.map(function (v, i) {
                             return [v.parent == null ? React.createElement(
                                 "div",
-                                { className: "product product-main bg-white text16", style: { marginTop: "10px" }, onClick: _this9.editProduct.bind(_this9, i) },
+                                { className: "product product-main bg-white text16", style: { marginTop: "10px" }, onClick: _this9.editProduct.bind(_this9, i,v) },
                                 React.createElement(
                                     "div",
                                     { style: { height: "70px", display: "flex" } },

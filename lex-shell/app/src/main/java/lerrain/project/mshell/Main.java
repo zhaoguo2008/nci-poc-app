@@ -97,7 +97,7 @@ public class Main extends Activity implements IActivity
 			default:
 				break;
 		}
-		return super.onKeyDown(keyCode, event);
+		return false;
 	}
 
 	private void clickBack() {

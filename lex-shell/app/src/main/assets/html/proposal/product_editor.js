@@ -60,12 +60,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ 4:
+/******/ ([
+/* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -101,7 +100,7 @@ var Main = function (_React$Component) {
             var _this2 = this;
 
             this.state.form = [{}];
-            APP.proposal.editProduct(this.state.planId, localStorage.orgId, localStorage.mainProductId, this.state.index, function (r) {
+            APP.proposal.editProduct(this.state.planId, localStorage.channelId, localStorage.orgId, localStorage.mainProductId, this.state.index, function (r) {
                 _this2.state.form[0] = {
                     name: r.name,
                     form: _this2.formOf(r.factors)
@@ -140,7 +139,7 @@ var Main = function (_React$Component) {
             if (riderForm.form == null) {
                 APP.proposal.addProduct(this.state.planId, this.state.index, productId, function (r) {
                     r.product.map(function (r2, i) {
-                        if (r2.productId == productId && r2.parent == _this3.state.index) APP.proposal.editProduct(_this3.state.planId,localStorage.channelId, localStorage.orgId, localStorage.mainProductId, i, function (r1) {
+                        if (r2.productId == productId && r2.parent == _this3.state.index) APP.proposal.editProduct(_this3.state.planId, localStorage.channelId, localStorage.orgId, localStorage.mainProductId, i, function (r1) {
                             riderForm.form = _this3.formOf(r1.factors);
                             _this3.setState({ form: _this3.state.form });
                         });
@@ -177,11 +176,14 @@ var Main = function (_React$Component) {
         }
     }, {
         key: "onValChange",
-        value: function onValChange(opt, prdIndex, formIndex, val) {
+        value: function onValChange(opt, prdIndex, formIndex, val,w) {
             var _this4 = this;
-
-            console.log(JSON.stringify(opt));
-            console.log(JSON.stringify(val));
+            var productIdData = ''
+            if(w.productId){
+                productIdData = w.productId
+            }else{
+                productIdData = localStorage.editorMainProduct
+            }
             var vals = {};
             vals[opt.varName] = val;
             APP.proposal.saveProduct(this.state.planId, prdIndex, vals, function (r) {
@@ -198,6 +200,7 @@ var Main = function (_React$Component) {
                 "div",
                 null,
                 this.state.form.map(function (w, i) {
+
                     return React.createElement(
                         "div",
                         { "class": "div" },
@@ -229,7 +232,7 @@ var Main = function (_React$Component) {
                                     "div",
                                     { className: "form-item-widget", style: { width: "410px", margin: "10px 20px 0 0", textAlign: "right" } },
                                     v.widget == "number" ? React.createElement("input", { type: "number", placeholder: "请输入" + v.label, value: v.value, onChange: function onChange(e) {
-                                            _this5.onValChange(v, i, j, e.target.value);
+                                            _this5.onValChange(v, i, j, e.target.value,w);
                                         } }) : v.widget == "switch" || v.widget == "select" ? React.createElement(
                                         "div",
                                         { style: { display: "flex" }, onClick: function onClick(x) {
@@ -264,5 +267,4 @@ $(document).ready(function () {
 });
 
 /***/ })
-
-/******/ });
+/******/ ]);

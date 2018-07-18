@@ -119,7 +119,7 @@ var Main = function (_React$Component) {
             {
                 name: '设置',
                 icon: '../images/mine/lpfw.png',
-                link: 'xxxx'
+                link: '../home/setting.html'
             }],
             footNav:[
                 '首页','个人管理','团队管理','我的'

@@ -4,7 +4,7 @@
             var apiInstance;
             var fileData;
             var ocrCapture;
-            
+
 			var DATA_CANNOT_PARSED = "10003"; //输入数据项无法解析
 			var SERVICE_SYSTEM_EXCEPTION = "10011"; //服务系统异常错误
 			var RECOGNITION_RESULT_EMPTY = "10100"; //识别结果为空
@@ -18,7 +18,7 @@
                 document.title = "返回结果";
             }
 
-            
+
 			//配置模板数据
           testSetTemplateData();
             function testSetTemplateData()
@@ -58,7 +58,7 @@
                     return res;
                 }
             }
-            
+
             //选择文件
 			function  handleFiles(files)
 			{
@@ -78,7 +78,7 @@
         			reader.readAsArrayBuffer(file);
     			}
 			}
-			
+
           	//添加单签签名框
             function testAddSignatureObj(objId)
             {
@@ -233,7 +233,7 @@
             function testAnySign(channel)
             {
                 var res;
-                
+
                 //识别回调接口
                 var identify_callback = function(errCode){
                 	if(errCode == SUCCESS){
@@ -255,16 +255,16 @@
                 		// alert(errCode);
 					}
                 }
-                
+
                 var callback = function(context_id,context_type,val)
                 {
-                    	
+
         			document.getElementById("other").style.display = "block";
                 	if(context_type == CALLBACK_TYPE_START_RECORDING || context_type == CALLBACK_TYPE_STOP_RECORDING)
                 	{
                 		return;
                 	}
-                
+
                     if(context_type == CALLBACK_TYPE_SIGNATURE)
                     {
                         //签名回显
@@ -284,18 +284,18 @@
                             aImg[i].style.height="250";
                             aImg[i].style.width="250";
                         }
-                    	
+
                     }
-					
+
                     // setAlertTitle();
                     // alert("收到浏览器回调：" + "context_id：" + context_id + " context_type：" + context_type + " value：" + val);
                 };//测试回调，将回调数据显示
 
                 ////////////////////////////////////////////////
-                
+
                 //设置签名算法，默认为RSA，可以设置成SM2
     			EncAlgType.EncAlg = "RSA";
-    
+
                 apiInstance = new AnySignApi();
 //                var channel = "10010";//渠道号，由信手书提供，请咨询项目经理
                 //初始化签名接口
@@ -307,7 +307,7 @@
 
                 }
                 ////////////////////////////////////////////////
-                
+
                 //开启识别
                 ocrCapture = new OCRCapture();
                 ocrCapture.text = "a";
@@ -320,7 +320,7 @@
 				ocrCapture.serviceID = "999999";
 
 				setIdentifyCallBack(identify_callback);
-				
+
                 ///////////////////////////////////////////////
 
                 //注册单字签字对象20
@@ -373,9 +373,9 @@
                 }
 
                 ////////////////////////////////////////////////
-            
+
             }
-            
+
             function testIsReadyToUpload()
             {
                 // alert("testIsReadyToUpload :" + apiInstance.isReadyToUpload());
@@ -422,7 +422,7 @@
                         break;
                 }
             }
-            
+
             function setIdentifyCallBack(callback){
             	if(!apiInstance){
                     // alert("信手书接口没有初始化");
@@ -470,7 +470,7 @@
                 // alert(navigator.userAgent);
                 // alert(window.__wxjs_is_wkwebview);
             }
-            
+
             //jane
             function testAddEvidence(result)
             {

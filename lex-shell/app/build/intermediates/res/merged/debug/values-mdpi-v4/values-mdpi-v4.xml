@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="rim_base_safekeyboard_button_height">45dp</dimen>
+    <dimen name="rim_base_safekeyboard_closebtn_marginright">14dp</dimen>
+    <dimen name="rim_base_safekeyboard_grayline_width_0.5">1px</dimen>
+    <dimen name="rim_base_safekeyboard_grayline_width_1">1px</dimen>
+    <dimen name="rim_base_safekeyboard_keynum_textsize">23sp</dimen>
+    <dimen name="rim_base_safekeyboard_logo_marginright">5dp</dimen>
+    <dimen name="rim_base_safekeyboard_title_height">30dp</dimen>
+    <dimen name="rim_base_safekeyboard_title_textsize">11sp</dimen>
+</resources>

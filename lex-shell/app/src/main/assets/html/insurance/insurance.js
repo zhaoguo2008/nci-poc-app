@@ -22,10 +22,11 @@ class Insurance extends React.Component {
     /*操作按钮*/
     btnClick (status) {
         /*已投保，投保成功， 失败，核保中（上传通知书），已签单（回执）*/
-        if (status == 3) {
-            MF.navi("xinhua_lx/notice_xh.html");
-        } else if(status == 4) {
-            MF.navi("receipt/receipt.html");
+        if (status == 4) {
+
+            MF.navi("xinhua_lx/notice_xh.html?orderId=" + common.param("orderId"));
+        } else if(status == 5) {
+            MF.navi("receipt/receipt.html?orderId=" + common.param("orderId"));
         }
     }
     /*获取性别函数*/
@@ -60,7 +61,11 @@ class Insurance extends React.Component {
                                     </div>
 
                                     <div className="insuranceButton">
-                                        <span onClick={this.btnClick.bind(this, prod.status)}>{this.state.butArr[prod.status]}</span>
+                                        <span onClick={() => {
+                                            window.MF &&  MF.navi("xinhua_lx/autograph_xh.html?prod=" + JSON.stringify(prod))
+                                        }
+                                        }>查看</span>
+                                        <span onClick={this.btnClick.bind(this, prod.status)}>{this.state.butArr[prod.status * 1 - 1]}</span>
                                     </div>
 
                                 </li>

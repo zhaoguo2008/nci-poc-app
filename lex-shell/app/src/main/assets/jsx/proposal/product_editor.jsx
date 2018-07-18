@@ -9,7 +9,7 @@ class Main extends React.Component {
     }
     componentDidMount() {
         this.state.form = [{}]
-        APP.proposal.editProduct(this.state.planId, localStorage.orgId,localStorage.mainProductId, this.state.index, r => {
+        APP.proposal.editProduct(this.state.planId,localStorage.channelId, localStorage.orgId,localStorage.mainProductId, this.state.index, r => {
             this.state.form[0] = {
                 name: r.name,
                 form: this.formOf(r.factors)
@@ -45,7 +45,7 @@ class Main extends React.Component {
             APP.proposal.addProduct(this.state.planId, this.state.index, productId, r => {
                 r.product.map((r2, i) => {
                     if (r2.productId == productId && r2.parent == this.state.index) 
-                        APP.proposal.editProduct(this.state.planId, i, r1 => {
+                        APP.proposal.editProduct(this.state.planId, localStorage.channelId,localStorage.orgId,localStorage.mainProductId i, r1 => {
                             riderForm.form = this.formOf(r1.factors)
                             this.setState({ form: this.state.form })
                         })

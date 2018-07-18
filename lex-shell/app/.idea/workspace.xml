@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f1223036-405a-47c6-8bd5-358bc10482fe" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/1530287674060056.mp4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/add-ins.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/arrow-1-right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/arrow-1-up.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/arrow-4-up.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/arrow-7-down.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/arrow-7-right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/arrow-7-up.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/blueright.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/btn-scan.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/calendar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/checked.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/client/remind-birthday.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/client/remind-renew.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/documents.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/favourite-add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/female.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/file-add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/filled.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/finish.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/gerenB.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/gerenC.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/healthverify.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/home/banner.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/home/company.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/home/customer.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/home/default_img.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/home/independent.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/home/insure.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/home/insurePolicy.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/home/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/home/message.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/home/oneKey.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/home/product.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/home/proposal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/home/search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/home/showHome.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/homeB.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/homeC.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/homeC2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/introduce1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/introduce2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/introduce3.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/introduce4.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/introduce5.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/login/loginB.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/login/loginButton.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/login/loginportrait.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/loginhead.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/logintitle.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/male.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/md-levels-alt.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/mine/dzbd.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/mine/khgl.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/mine/lpfw.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/mine/mycart-ewm.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/mine/myqrcode.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/mine/tbd.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/mine/tbjdcx.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/mine/wdjys.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/mine/xzbq.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/mineB.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/mineC.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/proposal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/seq1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/seq2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/seq3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/stop.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/sub.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/success.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/teamB.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/teamC.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/unchecked.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/user.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/white-arrow-right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/images/zoom.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/.idea/html.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/apply/announce.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/apply/announce.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/apply/applicant.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/apply/applicant.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/apply/beneficiary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/apply/beneficiary.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/apply/beneficiary_editor.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/apply/beneficiary_editor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/apply/benefit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/apply/benefit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/apply/health.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/apply/health.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/apply/image.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/apply/image.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/apply/insurant.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/apply/insurant.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/apply/pay.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/apply/pay.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/apply/plan.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/apply/plan.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/apply/plan.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/apply/preview.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/apply/preview.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/apply/product_editor.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/apply/product_editor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/apply/product_list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/apply/product_list.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/apply/start.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/apply/success.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/apply/success.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/client/client_list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/client/client_list.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/client/client_selector.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/client/client_selector.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/client/create_client.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/client/create_client.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/css/client.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/css/client.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/css/common.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/css/home.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/css/home.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/css/insurance.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/css/login.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/css/login.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/css/productDetail.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/css/productDetail.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/css/swiper.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/css/swiper.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/home/ComoanyIntroduction.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/home/CompanyIntroduction.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/home/home.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/home/home.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/home/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/home/login.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/home/login2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/home/login2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/home/mine.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/home/mine.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/home/mine.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/home/myCard.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/home/myCard.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/home/productDetail.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/home/qrCode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/home/qrCode.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/home/setname.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/home/setname.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/home/setting.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/home/test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/insurance/insurance.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/insurance/insurance.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/insurance/userInform.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/insurance/userInform.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/js/ajax.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/js/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/js/apply.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/js/babel.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/js/browser.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/js/check.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/js/common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/js/customer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/js/home.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/js/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/js/pinyinUtil.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/js/pinyin_dict_firstletter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/js/proposal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/js/react-dom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/js/react-dom.production.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/js/react.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/js/react.production.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/js/swiper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/js/swiper.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/js/swiper.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/ocr/html/demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/ocr/js/jquery.2.1.1min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/productDetail/productDetail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/productDetail/productDetail.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/proposal/benefit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/proposal/benefit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/proposal/benefit_chart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/proposal/customer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/proposal/customer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/proposal/preview.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/proposal/preview.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/proposal/product_editor.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/proposal/product_editor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/proposal/product_list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/proposal/product_list.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/proposal/proposal.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/proposal/proposal.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/proposal/proposal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/proposal/proposal_list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/proposal/proposal_list.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/proposal/proposal_supply.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/proposal/proposal_supply.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/proposal/start.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/anysignWebInterface.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/css/canvas_css.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/css/mw480Portrait.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/css/plugin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/css/sp.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/css/sw1024.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/aes-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/aes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/cipher-core-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/cipher-core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/core-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/enc-base64-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/enc-base64.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/enc-utf16-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/enc-utf16.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/evpkdf-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/evpkdf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/format-hex-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/format-hex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/hmac-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/hmac.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/lib-typedarrays-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/lib-typedarrays.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/md5-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/md5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/mode-cfb-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/mode-cfb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/mode-ctr-gladman-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/mode-ctr-gladman.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/mode-ctr-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/mode-ctr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/mode-ecb-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/mode-ecb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/mode-ofb-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/mode-ofb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/pad-ansix923-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/pad-ansix923.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/pad-iso10126-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/pad-iso10126.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/pad-iso97971-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/pad-iso97971.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/pad-nopadding-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/pad-nopadding.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/pad-zeropadding-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/pad-zeropadding.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/pbkdf2-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/pbkdf2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/rabbit-legacy-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/rabbit-legacy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/rabbit-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/rabbit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/rc4-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/rc4.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/ripemd160-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/ripemd160.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/sha1-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/sha1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/sha224-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/sha224.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/sha256-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/sha256.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/sha3-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/sha3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/sha384-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/sha384.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/sha512-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/sha512.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/tripledes-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/tripledes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/x64-core-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/components/x64-core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/rollups/aes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/rollups/hmac-md5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/rollups/hmac-ripemd160.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/rollups/hmac-sha1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/rollups/hmac-sha224.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/rollups/hmac-sha256.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/rollups/hmac-sha3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/rollups/hmac-sha384.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/rollups/hmac-sha512.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/rollups/md5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/rollups/pbkdf2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/rollups/rabbit-legacy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/rollups/rabbit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/rollups/rc4.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/rollups/ripemd160.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/rollups/sha1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/rollups/sha224.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/rollups/sha256.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/rollups/sha3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/rollups/sha384.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/rollups/sha512.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/CryptoJS v3.1.2/rollups/tripledes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/anysignCommentUI.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/anysign_all.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/jquery-1.4.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/zlib/crc32.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/zlib/deflate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/zlib/deflate.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/zlib/gunzip.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/zlib/gunzip.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/zlib/gzip.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/zlib/gzip.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/zlib/inflate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/zlib/inflate.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/zlib/inflate_stream.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/zlib/inflate_stream.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/zlib/node-zlib.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/zlib/node-zlib.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/zlib/rawdeflate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/zlib/rawdeflate.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/zlib/rawinflate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/zlib/rawinflate.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/zlib/unzip.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/zlib/unzip.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/zlib/zip.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/zlib/zip.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/zlib/zlib.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/zlib/zlib.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/zlib/zlib_and_gzip.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/libs/zlib/zlib_and_gzip.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/qianming.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/receipt.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/receipt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/receipt/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/anysignWebInterface.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/autograph.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/autograph.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/autograph_xh.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/css/autograph.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/css/canvas_css.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/css/mw480Portrait.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/css/notice.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/css/plugin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/css/sp.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/css/sw1024.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/aes-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/aes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/cipher-core-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/cipher-core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/core-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/enc-base64-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/enc-base64.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/enc-utf16-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/enc-utf16.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/evpkdf-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/evpkdf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/format-hex-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/format-hex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/hmac-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/hmac.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/lib-typedarrays-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/lib-typedarrays.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/md5-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/md5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/mode-cfb-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/mode-cfb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/mode-ctr-gladman-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/mode-ctr-gladman.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/mode-ctr-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/mode-ctr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/mode-ecb-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/mode-ecb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/mode-ofb-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/mode-ofb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/pad-ansix923-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/pad-ansix923.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/pad-iso10126-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/pad-iso10126.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/pad-iso97971-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/pad-iso97971.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/pad-nopadding-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/pad-nopadding.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/pad-zeropadding-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/pad-zeropadding.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/pbkdf2-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/pbkdf2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/rabbit-legacy-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/rabbit-legacy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/rabbit-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/rabbit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/rc4-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/rc4.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/ripemd160-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/ripemd160.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/sha1-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/sha1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/sha224-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/sha224.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/sha256-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/sha256.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/sha3-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/sha3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/sha384-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/sha384.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/sha512-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/sha512.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/tripledes-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/tripledes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/x64-core-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/components/x64-core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/aes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/hmac-md5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/hmac-ripemd160.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/hmac-sha1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/hmac-sha224.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/hmac-sha256.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/hmac-sha3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/hmac-sha384.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/hmac-sha512.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/md5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/pbkdf2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/rabbit-legacy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/rabbit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/rc4.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/ripemd160.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/sha1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/sha224.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/sha256.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/sha3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/sha384.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/sha512.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/CryptoJS v3.1.2/rollups/tripledes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/anysignCommentUI.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/anysign_all.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/jquery-1.4.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/zlib/crc32.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/zlib/deflate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/zlib/deflate.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/zlib/gunzip.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/zlib/gunzip.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/zlib/gzip.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/zlib/gzip.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/zlib/inflate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/zlib/inflate.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/zlib/inflate_stream.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/zlib/inflate_stream.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/zlib/node-zlib.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/zlib/node-zlib.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/zlib/rawdeflate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/zlib/rawdeflate.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/zlib/rawinflate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/zlib/rawinflate.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/zlib/unzip.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/zlib/unzip.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/zlib/zip.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/zlib/zip.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/zlib/zlib.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/zlib/zlib.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/zlib/zlib_and_gzip.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/libs/zlib/zlib_and_gzip.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/notice.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/notice.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/notice_xh.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/html/xinhua_lx/qianming.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/jsx/apply/announce.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/jsx/apply/applicant.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/jsx/apply/beneficiary.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/jsx/apply/beneficiary_editor.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/jsx/apply/benefit.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/jsx/apply/health.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/jsx/apply/image.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/jsx/apply/insurant.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/jsx/apply/pay.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/jsx/apply/plan.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/jsx/apply/preview.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/jsx/apply/product_editor.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/jsx/apply/product_list.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/jsx/apply/success.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/jsx/client/client_list.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/jsx/client/client_selector.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/jsx/client/create_client.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/jsx/components/Swiper.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/jsx/home/home.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/jsx/home/login2.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/jsx/proposal/benefit.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/jsx/proposal/benefit_chart.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/jsx/proposal/customer.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/jsx/proposal/preview.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/jsx/proposal/product_editor.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/jsx/proposal/product_list.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/jsx/proposal/proposal.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/jsx/proposal/proposal_list.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/jsx/proposal/proposal_supply.jsx" />
+    </list>
+    <ignored path="$PROJECT_DIR$/build/classes/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="14" lean-forward="true" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1440" />
+    <option name="height" value="852" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gradle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wrapper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".gradle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="4.1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f1223036-405a-47c6-8bd5-358bc10482fe" name="Default" comment="" />
+      <created>1531816482710</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1531816482710</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="852" extended-state="6" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32939634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2532189" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="14" lean-forward="true" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

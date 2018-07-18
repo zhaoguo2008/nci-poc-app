@@ -12,15 +12,12 @@ class Main extends React.Component {
         }
     }
     componentDidMount() {
-        window.MF && MF.setTitle("新华人寿")
     }
     render() {
         return (
             <div className="loginMain">
                 <div className='PlayerMain'>
-                    <video controls="controls" autoplay="autoplay">
-                        <source src='../images/1530287674060056.mp4' type="video/mp4" />
-                    </video>
+                    <img src="../images/15260226247471255732456.png" alt="" style={{width:'100%'}}/>
                 </div>
                 <ul className="conpanyIn">
                     {

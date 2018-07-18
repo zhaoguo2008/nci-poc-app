@@ -7,15 +7,14 @@ class Main extends React.Component {
     }
     componentWillMount() {
         MF.setTitle("影像");
-        var cardJson = []
-        localStorage.applicantCardData && cardJson.push(localStorage.applicantCardData);
-        localStorage.insurantsCardData && cardJson.push(localStorage.insurantsCardData);
+        // localStorage.applicantCardData && cardJson.push(localStorage.applicantCardData);
+        // localStorage.insurantsCardData && cardJson.push(localStorage.insurantsCardData);
         // localStorage.beneficiaryCardData && cardJson.push(localStorage.beneficiaryCardData);
-        localStorage.payCardData && cardJson.push(localStorage.payCardData);
+        // localStorage.payCardData && cardJson.push(localStorage.payCardData);
         this.setState({
-            cardData: cardJson
+            cardData: JSON.parse(localStorage.CardData)
         }, () => {
-        console.log(this.state.cardData.length);
+        console.log(this.state.cardData);
         });
     }
     next() {
@@ -26,11 +25,13 @@ class Main extends React.Component {
     render() {
         return (
             <div>
-                <div style={{overflow:'hidden'}}>
+                <div style={{overflowY:'scroll',display:"flex", flexWrap: 'wrap', justifyContent:'spaceAround'}}>
                     {
                         this.state.cardData && this.state.cardData.map((prod)=>{
                             return(
-                                <img src={'data:image/png;base64,' + prod} style={{width:'50%',height:'20%',float:'left'}}/>
+                                <p style={{width: '40%', padding:"5px 5px"}}>
+                                    <img src={'data:image/png;base64,' + prod} style={{width:'100%'}}/>
+                                </p>
                             )
                         })
                     }

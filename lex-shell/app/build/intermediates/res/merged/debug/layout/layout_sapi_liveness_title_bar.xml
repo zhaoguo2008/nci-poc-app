@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/sapi_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+>
+
+    <ImageView
+            android:id="@+id/sapi_bio_title_btn_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="@dimen/sapi_bio_standard_padding"
+            android:paddingRight="@dimen/sapi_bio_standard_padding"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/sapi_liveness_back"
+            />
+    <TextView
+            android:id="@+id/sapi_bio_title_text"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/sapi_liveness_title_text"
+            android:textSize="18sp"
+            android:textColor="#666666"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+    />
+
+    <ImageView
+            android:id="@+id/sapi_bio_title_btn_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/sapi_bio_standard_padding"
+            android:paddingRight="@dimen/sapi_bio_standard_padding"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/sapi_liveness_camera_flash_closed"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            android:textSize="14sp"/>
+
+</RelativeLayout>

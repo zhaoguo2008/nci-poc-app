@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:id="@+id/rim_face_guide_video_page1"
+    android:orientation="vertical"
+    >
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:orientation="vertical">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sapi_liveness_guide_liveness_video_recog"
+                android:textColor="#333333"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sapi_liveness_guide_bottom_tip_margin_top"
+                android:id="@+id/tv_name"
+                android:text="@string/sapi_liveness_guide_photo_tip"
+                android:layout_gravity="bottom|center_horizontal"
+                android:textColor="#666666"
+                android:textSize="15sp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/rim_face_video_guide_indicator_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/rim_face_guide_indicator1_wrapper"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guide_imageview"
+                android:background="@drawable/rim_face_loading_indicator1_bg"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sapi_liveness_guide_front_screen"
+                android:textColor="@color/video_guide_hint_color"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_bottom"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btn_start_photo"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/sapi_liveness_btn_height"
+            android:background="@drawable/rim_face_round_btn_shape"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:text="@string/sapi_liveness_guide_start_recog"/>
+    </LinearLayout>
+</LinearLayout>
